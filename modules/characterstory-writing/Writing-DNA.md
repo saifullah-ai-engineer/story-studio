@@ -1,29 +1,29 @@
-# Writing-DNA — 玉玲2711「人物故事」
+# Writing-DNA: Yuling2711 "Character Stories"
 
-> 本文件是风格样本，使用时先执行 story-studio 的事实规则；数字、对白和场景示例未经本次核实不得写进新稿。
-> 语料基础：18篇逐字稿，覆盖田华、秦怡、杨丽坤、李维康、林徽因、王晓棠、阮玲玉7位人物。
-
----
-
-## 账号定位（一句话）
-
-替被时代辜负的女性发声，让她们的名字被更多人记住。用「您说……怎么会……」带着观众一起目击她们的命运。
+> This file is a style sample. When using it, first follow story-studio's fact rules. Numbers, dialogue, and scene examples in it must not be written into a new script unless verified in the current session.
+> Corpus basis: 18 verbatim transcripts, covering 7 people: Tian Hua, Qin Yi, Yang Likun, Li Weikang, Lin Huiyin, Wang Xiaotang, and Ruan Lingyu.
 
 ---
 
-## 一、选题与人物标准
+## Account Positioning (in One Sentence)
 
-**必须满足全部四条：**
-1. 女性（民国至当代演员/艺术家/建筑师优先）
-2. 有「巅峰—磨难—坚守/结局」三段弧线
-3. 磨难有具体维度（失子/重病/被时代迫害/被男性伤害/被遗忘之一）
-4. 不是纯成功故事，苦难是叙事必要条件
-
-**选题甜点区**：曾经辉煌、现在鲜为人知的女性；有精确数字/遗书/对话原话的人物；同一人物可拆3集。
+Speak up for women wronged by their times, so more people remember their names. Use "Tell me... how could..." to bring the audience in to witness their fate together.
 
 ---
 
-## 二、结构：T型命运回溯
+## 1. Topic and Person Criteria
+
+**All four must be met:**
+1. A woman (actresses / artists / architects from the Republican era to the present day preferred)
+2. A three-part arc: "peak, hardship, endurance / ending"
+3. Hardship with a concrete dimension (losing a child / serious illness / persecution by the times / harm by a man / being forgotten, at least one of these)
+4. Not a pure success story; suffering is a necessary condition for the narrative
+
+**Topic sweet spot**: Women who were once glorious and are now little known; people with exact numbers, a suicide note, or quoted dialogue; one person can be split across 3 episodes.
+
+---
+
+## 2. Structure: T-Shaped Fate Flashback
 
 ```
 钩子层（30-80字）：极端场景/数字/结局先行 → 「您说……」→ 姓名揭晓
@@ -34,78 +34,78 @@
 下集悬念（可选30-50字）：预告核心矛盾 + 「下集见」
 ```
 
-**三集系列节奏**：
-- 集1：身份建立，重心在巅峰成就，末尾引入磨难悬念
-- 集2：磨难深挖，情感密度最高，场景还原优先
-- 集3：结局/反转，必有意外角度（坚守/平反/后世记忆），最强金句压轴
+**Three-episode series pacing**:
+- Episode 1: Identity building, focus on peak achievements, ends by introducing the hardship as a cliffhanger
+- Episode 2: Deep dive into the hardship, highest emotional density, scene reconstruction first
+- Episode 3: Ending / reversal, must have a surprising angle (endurance / rehabilitation / how later generations remember her), strongest golden line as the finale
 
 ---
 
-## 三、开头钩子：五类机制
+## 3. Opening Hooks: Five Mechanisms
 
-**A. 数字连排炸弹**（集1首选）
+**A. Number Barrage** (first choice for Episode 1)
 ```
 [年龄]X，[年龄]Y，[年龄]Z结局，[数字][社会反应]。
 ```
-> 「她叫阮玲玉，6岁丧父，母亲做女佣，16岁出道，25岁服安眠药离世，30万人为他送葬。」
+> "She is called Ruan Lingyu. She lost her father at 6, her mother worked as a maid, she debuted at 16, died at 25 after taking sleeping pills, and 300,000 people attended her funeral."
 
-**B. 宿命定格**（命运被两段定义的人物）
+**B. Fate Freeze-Frame** (for people whose fate is defined by two phases)
 ```
 他/她一生只[极简描述]，[A是喜/B是悲]，这就是他/她的一生。他/她叫XX。
 ```
-> 「他一生只演了两部电影，一部叫五朵金花，是喜剧，一部叫阿诗玛，是悲剧，这就是他的一生。他叫杨丽坤。」
+> "In his whole life he acted in only two films. One was called Five Golden Flowers, a comedy. The other was called Ashima, a tragedy. That was his life. His name was Yang Likun."
 
-**C. 反常画面先行+揭晓**（身份与场景落差型）
+**C. Abnormal Scene First, Then the Reveal** (identity at odds with the scene)
 ```
 [反常/极端具象场景]……这个[意想不到的关系词]叫XX。
 ```
-> 「1个1米81 170斤的壮汉，发病时对着自己的母亲拳打脚踢……这个母亲叫秦怡。」
-> 「93岁的老太太站在海拔3000多米的青藏高原上，徒步三十多里山路……她叫秦怡。」
+> "A powerfully built man, 1.81 meters tall and 170 jin, beat his own mother with his fists when his illness flared up... That mother is called Qin Yi."
+> "A 93-year-old woman stood on the Qinghai-Tibet Plateau at more than 3,000 meters above sea level and walked more than thirty li of mountain road... Her name is Qin Yi."
 
-**D. 结局前行+设问**（续集/死亡结局型）
+**D. Ending First, Then a Question** (sequel / death ending type)
 ```
 [人物名]走的前夜还[正常行为]。[N小时后]，[极端结局]。
 这个[身份]叫[名字]，您说……怎么……
 ```
-> 「阮玲玉走的前一夜还笑着参加晚宴，临走亲了主人家两个孩子。几个小时后，他独自吞下了三瓶安眠药……您说一个被几十万人捧在手上的女明星，怎么就走投无路了。」
+> "On the night before Ruan Lingyu died, she was still smiling at a dinner party, and before she left she kissed the host family's two children. A few hours later, she took three bottles of sleeping pills alone... Tell me, how could a female star held up by hundreds of thousands of people end up with nowhere left to go?"
 
-**E. 时间地点+人物行动**（有历史时刻的人物）
+**E. Time, Place, and Action** (for people with a historical moment)
 ```
 [年份]，[地点]，[年龄]的[人物]，[具体动作]……
 ```
-> 「1938年，上海码头，1个16岁的姑娘偷偷买了船票……」
+> "In 1938, at the Shanghai docks, a 16-year-old girl secretly bought a boat ticket..."
 
-**续集衔接模板**：`[本集核心行为]……[姓名揭晓]。上回说到……`
+**Sequel bridge template**: `[本集核心行为]……[姓名揭晓]。上回说到……`
 
 ---
 
-## 四、语言系统
+## 4. Language System
 
-### 称呼
-- 人物全程「他/她」，观众全程「您」
-- 人物出场：先描述/先给数字，最后「她叫XX」
+### Forms of Address
+- The person is "he/she" throughout; the audience is always "you" (formal)
+- When the person appears: describe first / give numbers first, and reveal the name last, as in "her name is XX"
 
-### 「您说」句式（全篇反复，每篇3-6次）
-| 位置 | 句型 |
+### The "Tell Me" Sentence Pattern (repeated throughout, 3-6 times per piece)
+| Position | Pattern |
 |------|------|
-| 开头后/磨难入口 | 「您说一个[身份]，怎么会[反常结果]？」 |
-| 磨难堆叠后 | 「您说这是什么日子？」 |
-| 绝境前 | 「您说他还能往哪里走？」 |
-| 具象场景后 | 「您能想象吗？」 |
-| 遗书引用后 | 「您听听，这是一个女人在生命最后写下的话。」 |
+| After the opening / at the hardship entry | "Tell me, how could a [identity] end up [unexpected result]?" |
+| After hardships pile up | "Tell me, what kind of life is this?" |
+| Before the final desperate moment | "Tell me, where else could he possibly go?" |
+| After a concrete scene | "Can you imagine that?" |
+| After quoting a suicide note | "Listen to this. These are the words a woman wrote at the end of her life." |
 
-### 数字规则
-- 在可靠证据支持时使用精确数字；证据仅支持约数、范围或年份时保持原精度，不补造数量或日期
-- 日期精度由证据决定；只有材料支持到日时才写完整年月日
-- 数字连排时节奏本身制造冲击，数字间不加解释
+### Number Rules
+- Use exact numbers when reliable evidence supports them; when the evidence only supports an approximation, a range, or a year, keep the original precision and do not invent a quantity or a date
+- Date precision is decided by the evidence; write a full year, month, and day only when the source material supports it to the day
+- When numbers are listed in a row, the rhythm itself creates the impact, so add no explanation between the numbers
 
-### 句式节奏
-- 主体短句8-15字，极少超过25字
-- 转折三件套：「可/可谁也没想到」「偏偏」「竟」
-- 磨难升级：「还不够/这还不是最坏的」
-- 情感词密集：命、苦、扛、熬、撑、硬骨头、骨气、没断过、余生
+### Sentence Rhythm
+- Mainly short sentences of 8-15 characters, very rarely over 25
+- The three-part turn set: "but / but no one expected", "of all things", "actually"
+- Escalating hardship: "that was not enough / and that was not even the worst of it"
+- Dense emotional vocabulary: fate, suffering, endure, get through, hold on, backbone, pride, never broken, the rest of her life
 
-### 结尾金句结构（两种）
+### Closing Golden Line Structures (two kinds)
 ```
 真正的X不是Y，而是Z。
 → 「真正的美，从来不只是容颜，更是那份在风雨中依然坚守的情谊」
@@ -117,23 +117,23 @@
 
 ---
 
-## 五、素材策略
+## 5. Source Material Strategy
 
-**精确数字 > 模糊描述**
-> 「9年拍了29部电影」不写「拍了很多电影」
+**Exact numbers beat vague description**
+> "29 films in 9 years", not "she made a lot of films"
 
-**场景还原 > 概述**
-> 「遗书中写道：没有你那晚打我，今晚又打我，我大约不会这样做吧」不写「她遭受了家暴」
+**Scene reconstruction beats summary**
+> "Her suicide note reads: if you had not hit me that night, and hit me again tonight, I probably would not have done this", not "she suffered domestic violence"
 
-**细节道具增强真实感**
-> 「手里紧紧攥着一个彩珠串成的耳环」「临走亲了主人家的两个孩子」「一箱现金，请来真警察假装没收」
+**Detail props strengthen the sense of reality**
+> "Clutching tightly in her hand an earring strung with colored beads", "before she left she kissed the host family's two children", "a box of cash, and a real policeman brought in to pretend to confiscate it"
 
-**对话/遗言直接引用**
-> 「只要他愿意，我照顾他一辈子」「凤楼，要是我没病，应该好好照顾你」
+**Direct quotation of dialogue / last words**
+> "As long as he is willing, I will look after him for the rest of his life", "Fenglou, if I were not ill, I should have looked after you properly"
 
 ---
 
-## 六、传播号召语公式（每集末必现）
+## 6. Share Call to Action Formula (must appear at the end of every episode)
 
 ```
 A. 知识/天才型
@@ -150,24 +150,24 @@ C. 历史正名型（末集）
 
 ---
 
-## 七、叙事禁忌（不可触碰）
+## 7. Narrative Taboos (Do Not Touch)
 
-- ❌ 开篇直接报人名（必须先描述/先给数字）
-- ❌ 概述替代场景（「遭受困难」→ 必须场景还原）
-- ❌ 道德评判（「这个男人真可恶」→ 让事实说话）
-- ❌ 教导观众（「我们应该学习她……」→ 叙述者只记录）
-- ❌ 感叹号（用句号留白代替）
-- ❌ 主观形容词（「美丽的/伟大的/可怜的」→ 用事实给观众留下定语）
-- ❌ 纯成功故事（必须有苦难维度才能成立）
-- ❌ 金句放在磨难中间（金句压轴，在结局之后）
-- ❌ 省略传播号召语（必现，是账号核心传播引擎）
+- ❌ Opening by stating the person's name directly (must describe first / give numbers first)
+- ❌ Summary in place of a scene ("she suffered hardship" must become a reconstructed scene)
+- ❌ Moral judgment ("this man was truly awful" must give way to letting the facts speak)
+- ❌ Lecturing the audience ("we should learn from her..." must give way to the narrator only recording)
+- ❌ Exclamation marks (use a period and white space instead)
+- ❌ Subjective adjectives ("beautiful / great / pitiful" must give way to facts that leave the audience to supply the description)
+- ❌ Pure success stories (a suffering dimension is required for the story to work)
+- ❌ Golden line placed in the middle of the hardship (the golden line closes the piece, after the ending)
+- ❌ Omitting the share call to action (it must appear; it is the account's core sharing engine)
 
 ---
 
-## 八、核心命题（写作底层逻辑）
+## 8. Core Propositions (the Underlying Logic of the Writing)
 
-1. 时代不温柔，但有人在时代碾压下没有低头
-2. 女性的美是骨气和坚守，不是容颜
-3. 真正的爱是陪对方进入最深的黑暗
-4. 命运的馈赠暗中标好了价格，但有人用苦难换来了尊严
-5. 被遗忘的人值得被记住——这是创作者的使命感
+1. The times were not gentle, but some people did not bow their heads under the crushing weight of the times
+2. A woman's beauty is backbone and endurance, not her face
+3. True love is accompanying the other person into the deepest darkness
+4. Every gift of fate comes with a hidden price, but some people traded suffering for dignity
+5. Forgotten people deserve to be remembered. That is the creator's sense of mission.

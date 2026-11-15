@@ -1,67 +1,67 @@
-# 人物故事写作模块
+# Character Story Writing Module
 
-这是 story-studio 内置的玉玲人物故事风分支。先读 [人物写作适配](../../references/biography-writing.md) 和 [事实约束](../../references/fact-and-style.md)。下面的模板、数字和引语示例只说明写法，不是已核实史料；事实、用户要求和总入口阶段范围优先。单集不强制变系列。
+This is story-studio's built-in Yuling character story style branch. First read [Character Writing Adaptation](../../references/biography-writing.md) and [Fact Constraints](../../references/fact-and-style.md). The templates, numbers, and quoted examples below only illustrate the writing style; they are not verified historical sources. Facts, user requirements, and the scope set by the main entry point take priority. A single episode is not required to become a series.
 
-**原型账号**：玉玲2711（视频号「人物故事」垂类）
-**语料基础**：18篇逐字稿，7位人物（田华/秦怡/杨丽坤/李维康/林徽因/王晓棠/阮玲玉）
-**适用场景**：创作真实历史女性人物故事的短视频口播稿，系列化连载结构（同一人物2-3集）
-
----
-
-## 触发词
-
-- 帮我写[人物名]的口播稿
-- 按照玉玲2711的风格写
-- 给我写一篇人物故事口播
-- 仿写 / 续写 / 人物故事 / 历史女性口播
-- 按characterstory风格
+**Prototype account**: Yuling2711 (Channels "Character Stories" vertical)
+**Corpus basis**: 18 verbatim transcripts, 7 people (Tian Hua / Qin Yi / Yang Likun / Li Weikang / Lin Huiyin / Wang Xiaotang / Ruan Lingyu)
+**Use cases**: Creating short video voiceover scripts about real historical women, in a serialized structure (2-3 episodes per person)
 
 ---
 
-## 工作流程
+## Trigger Phrases
 
-1. 读取 `Writing-DNA.md`（整合版，含全部规则，可直接嵌入prompt）
-2. 确认：人物名、集数（集1/集2/集3）、核心事件、已知精确数字
-3. 按 `文章结构模板.md` 搭骨架
-4. 按 `开头钩子DNA.md` 选类型写开头（A/B/C/D/E五类）
-5. 按 `语言DNA.md` 检查语言合规性（数字/「您说」/金句/传播号召语）
-6. 输出完整口播稿
+- Write a voiceover script about [person's name] for me
+- Write it in the style of Yuling2711
+- Write me a character story voiceover
+- Imitate / continue / character story / historical women voiceover
+- In characterstory style
 
 ---
 
-## 文件索引
+## Workflow
 
-| 文件 | 内容 | 优先级 |
+1. Read `Writing-DNA.md` (integrated edition, contains all the rules, can be embedded directly in a prompt)
+2. Confirm: person's name, episode number (Episode 1 / Episode 2 / Episode 3), core events, known exact numbers
+3. Build the skeleton with `文章结构模板.md`
+4. Pick a hook type from `开头钩子DNA.md` and write the opening (five types A/B/C/D/E)
+5. Check language compliance with `语言DNA.md` (numbers / `您说` / golden lines / share call to action)
+6. Output the complete voiceover script
+
+---
+
+## File Index
+
+| File | Contents | Priority |
 |------|------|--------|
-| `Writing-DNA.md` | 整合版全规则，可直接嵌入prompt | ★★★ 必读 |
-| `开头钩子DNA.md` | 五类钩子机制+模板+18篇原文例句完整收录 | ★★★ 必读 |
-| `文章结构模板.md` | T型命运回溯单集模板 + 三集系列节奏 | ★★ |
-| `语言DNA.md` | 词频、句式、「您说」句式、数字用法、金句模板 | ★★ |
-| `写作视角与认知框架.md` | 选题逻辑、素材策略、核心命题、叙事禁忌 | ★★ |
-| `视觉风格指南.md` | 标题文案公式、封面文字风格、口播节奏 | ★ |
+| `Writing-DNA.md` | Integrated edition of all rules, can be embedded directly in a prompt | ★★★ Must read |
+| `开头钩子DNA.md` | Five hook mechanisms, templates, and the complete set of quoted lines from all 18 source pieces | ★★★ Must read |
+| `文章结构模板.md` | T-shaped fate flashback template for a single episode, plus three-episode series pacing | ★★ |
+| `语言DNA.md` | Word frequency, sentence patterns, the `您说` sentence pattern, number usage, golden line templates | ★★ |
+| `写作视角与认知框架.md` | Topic selection logic, source material strategy, core propositions, narrative taboos | ★★ |
+| `视觉风格指南.md` | Title copy formulas, cover text style, voiceover pacing | ★ |
 
 ---
 
-## 快速参考
+## Quick Reference
 
-### 结构记忆口诀
-> 钩子先行 → 背景铺底 → 巅峰数字 → 「可谁也没想到」 → 磨难场景 → 金句收尾 → 传播号召
+### Structure Mnemonic
+> Hook first, then background, then peak numbers, then "but no one expected", then hardship scenes, then a golden line close, then the share call to action.
 
-### 开头钩子选型
-| 人物特征 | 选哪类 |
+### Opening Hook Selection
+| Person's Traits | Which Type |
 |---------|--------|
-| 多个精确年龄/数字节点 | A型（数字连排） |
-| 命运被两段定义 | B型（宿命定格） |
-| 晚年/身份与场景强烈不符 | C型（反常画面） |
-| 死亡过程有具体细节 | D型（结局前行） |
-| 有明确历史时刻转折 | E型（时间地点） |
-| 续集（集2/集3） | 行为先行+「上回说到」 |
+| Many exact age / number milestones | Type A (number barrage) |
+| Fate defined by two phases | Type B (fate freeze-frame) |
+| Later years / identity sharply at odds with the scene | Type C (abnormal scene) |
+| Death process has concrete details | Type D (ending first) |
+| A clear historical moment as turning point | Type E (time and place) |
+| Sequel (Episode 2 / Episode 3) | Action first, plus "last time we left off" |
 
-### 三项风格偏好（事实与用户要求优先）
-1. `您说……怎么会……`（情感锚点）
-2. 有可靠依据时使用精确数字（年龄/年份/规模）；没有依据则保持材料精度或删除该细节
-3. 传播号召语（每集末尾固定公式）
+### Three Style Preferences (facts and user requirements take priority)
+1. `您说……怎么会……` (emotional anchor)
+2. Use exact numbers (age / year / scale) when there is reliable evidence; without evidence, keep the precision of the source material or delete the detail
+3. Share call to action (fixed formula at the end of every episode)
 
-### 结尾金句两模板
+### Two Closing Golden Line Templates
 - `真正的X不是Y，而是Z`
 - `你说什么叫X，不是Y，是Z`

@@ -1,47 +1,47 @@
-# 带货融入节点DNA — 人物故事账号变现策略
+# Product Integration Node DNA: Monetization Strategy for the Character Story Account
 
-> 基于315篇对标文案蒸馏，识别23篇带货文案
-> 用途：指导「融入带货」指令的创作流程，确保变现与内容自然结合
+> Distilled from 315 benchmark scripts, identifying 23 scripts with product integration
+> Purpose: guide the creative process for the "integrate product placement" instruction, so monetization blends naturally with the content
 
 ---
 
-## 一、带货概况统计
+## 1. Product Integration Overview
 
-### 语料覆盖
-- **总文案数**：315篇
-- **带货文案数**：23篇（占比7.3%）
-- **账号分布**：
-  - 红颜旧事志：62篇样本，4篇带货
-  - 人间人物志：78篇样本，6篇带货
-  - 闲读人间往事：79篇样本，5篇带货
-  - 通史观人物：36篇样本，3篇带货
-  - 策山读书：34篇样本，5篇带货（带货比例最高14.7%）
-  - 玉玲2711：19篇样本，0篇带货
+### Corpus Coverage
+- **Total scripts**: 315
+- **Scripts with product integration**: 23 (7.3%)
+- **Account distribution**:
+- Hongyan Jiushi Zhi: 62 samples, 4 with product integration
+- Renjian Renwu Zhi: 78 samples, 6 with product integration
+- Xiandu Renjian Wangshi: 79 samples, 5 with product integration
+- Tongshi Guan Renwu: 36 samples, 3 with product integration
+- Ceshan Dushu: 34 samples, 5 with product integration (highest product integration rate, 14.7%)
+- Yuling2711: 19 samples, 0 with product integration
 
-### 带货类型分布
-| 类型 | 数量 | 占比 | 代表产品 |
+### Product Integration Type Distribution
+| Type | Count | Share | Representative Products |
 |------|------|------|---------|
-| 书籍推荐型 | 18篇 | 78% | 人物传记、历史类书籍 |
-| 产品植入型 | 5篇 | 22% | 黄金五黑膏、养生食品 |
+| Book recommendation | 18 | 78% | Biographies, history books |
+| Product placement | 5 | 22% | Golden Five-Black Paste, health foods |
 
 ---
 
-## 二、带货融入时机地图
+## 2. Product Integration Timing Map
 
-### 时机1：结尾转化型（占比65%，15篇）
+### Timing 1: End Conversion (65%, 15 scripts)
 
-**特征**：故事讲完后，用过渡句引出产品
-**优势**：最安全稳妥，不破坏故事完整性
-**劣势**：转化较生硬，观众可能刷走
+**Traits**: After the story is told, a transition sentence introduces the product
+**Strengths**: Safest and most reliable; does not break the story's completeness
+**Weaknesses**: The conversion is fairly stiff; the audience may swipe away
 
-**标准过渡句模板**：
+**Standard transition sentence templates**:
 ```
 这个[人物]的故事，记录在[书名]里。
 如果你想了解更多[主题]，推荐这本[书名]。
 关于[人物]更完整的故事，这本书记录了[价值点]。
 ```
 
-**案例1**：
+**Case 1**:
 ```
 【故事结尾】
 她是江姐之子彭云的养母。1948年她把亲生儿子塞进孤儿院，抱回情敌的孩子。
@@ -55,24 +55,24 @@
 【CTA】
 点击左下角链接，把这本书带回家。
 ```
-**融入度评分**：3分（自然过渡，书籍与人物强相关）
+**Integration score**: 3 out of 4 (natural transition; book and person strongly related)
 
 ---
 
-### 时机2：中段过渡型（占比22%，5篇）
+### Timing 2: Mid-Story Transition (22%, 5 scripts)
 
-**特征**：故事讲到一半，借情节自然引入产品
-**优势**：融入度高，不违和
-**劣势**：需要产品与故事有强关联
+**Traits**: Halfway through the story, the plot naturally introduces the product
+**Strengths**: High integration; does not feel out of place
+**Weaknesses**: Needs a strong link between product and story
 
-**标准嵌入句式**：
+**Standard embedding sentence patterns**:
 ```
 就在这个时候，[人物][行为]——那是[时代背景/物品介绍]。
 说到这里，不得不提[产品相关的历史/知识]。
 [人物]当年用的/吃的/看的，就是[产品前身/同类]。
 ```
 
-**案例2**：
+**Case 2**:
 ```
 【故事前半】
 她5岁裹脚，18岁嫁给穷书生，替他打通军校关节，守空房七年。
@@ -89,25 +89,25 @@
 【故事后半继续】
 1925年以剪刀抵喉换来的，不过是他一个转身...
 ```
-**融入度评分**：2分（产品与人物生活相关，但非故事必要部分）
+**Integration score**: 2 out of 4 (product relates to the person's life, but is not a necessary part of the story)
 
 ---
 
-### 时机3：开头预告型（占比0%）
+### Timing 3: Opening Preview (0%)
 
-**特征**：开头就点明"今天讲的这个人物，和这本书/产品有关"
-**语料结果**：本语料库中**未出现**此类型
-**推测原因**：破坏开头钩子的悬念感，牺牲太大
+**Traits**: The opening states directly that "the person in today's story is connected to this book / product"
+**Corpus result**: This type **does not appear** in this corpus
+**Suspected reason**: It breaks the opening hook's suspense, and the sacrifice is too great
 
 ---
 
-### 时机4：全文贯穿型（占比13%，3篇）
+### Timing 4: Threaded Throughout (13%, 3 scripts)
 
-**特征**：产品本身就是故事的核心，全文围绕产品展开
-**优势**：融入度最高，观众不反感
-**劣势**：仅适用于产品即人物生命一部分的场景
+**Traits**: The product itself is the core of the story, and the whole piece revolves around the product
+**Strengths**: Highest integration; the audience does not object
+**Weaknesses**: Only works when the product is part of the person's life itself
 
-**案例3**：
+**Case 3**:
 ```
 【开头】
 日本心理医生中村恒子，干了70年，91岁还在出诊。
@@ -126,33 +126,33 @@
 关于如何在自宅安详离世，这本《一个人最后的旅程》写得很实在。
 点击左下角，提前为父母，也为自己做准备。
 ```
-**融入度评分**：4分（书籍是故事主角，完全不违和）
+**Integration score**: 4 out of 4 (the books are the protagonist of the story, completely natural)
 
 ---
 
-## 三、五种带货类型清单
+## 3. Five Product Integration Types
 
-### 类型1：书籍推荐型（主流，78%）
+### Type 1: Book Recommendation (mainstream, 78%)
 
-**适用场景**：人物传记、历史事件、思想启发类内容
+**Use cases**: Biography, historical events, and thought-provoking content
 
-**三种话术模板**：
+**Three copy templates**:
 
-**模板A：价值强化式**
+**Template A: Value Reinforcement**
 ```
 [人物]的故事，完整记录在[书名]里。
 这本书不只讲[人物]，更讲[时代/群体/精神]。
 适合[人群]读，让你看到[价值]。
 ```
 
-**模板B：知识扩展式**
+**Template B: Knowledge Extension**
 ```
 如果你想了解更多[主题]，推荐这本[书名]。
 书里收录了[数字]个[案例/故事]，
 每一个都是[特点]。
 ```
 
-**模板C：情感共鸣式**
+**Template C: Emotional Resonance**
 ```
 读完[人物]的故事，很多人会想：
 如果是我，会怎么选择？
@@ -161,21 +161,21 @@
 把[主题]讲得透彻又动人。
 ```
 
-**避坑指南**：
-- ❌ 不要生硬说"点击购买"
-- ❌ 不要打断故事高潮插入广告
-- ✅ 用"把这本书带回家""点击左下角链接"等柔和CTA
-- ✅ 强调书籍的情感价值而非功能价值
+**Pitfalls to avoid**:
+- ❌ Do not stiffly say "click to buy"
+- ❌ Do not interrupt the story's climax to insert an ad
+- ✅ Use soft calls to action like "take this book home" and "tap the link in the bottom left corner"
+- ✅ Stress the book's emotional value, not its functional value
 
 ---
 
-### 类型2：产品植入型（食品/保健品，22%）
+### Type 2: Product Placement (food / health products, 22%)
 
-**适用场景**：人物生活方式、养生习惯、长寿秘诀类内容
+**Use cases**: Content about a person's lifestyle, health habits, or secrets of longevity
 
-**三种话术模板**：
+**Three copy templates**:
 
-**模板A：时代连接式**
+**Template A: Era Connection**
 ```
 那个年代的[人群]，靠的是[天然食材/传统方子]。
 就像[人物]，[具体行为]。
@@ -183,7 +183,7 @@
 [成分列举]，[功效描述]。
 ```
 
-**模板B：场景代入式**
+**Template B: Scene Immersion**
 ```
 你有没有过这样的时刻：
 [场景描述，如：熬夜加班、带娃疲惫]。
@@ -193,7 +193,7 @@
 [功效]，[适用人群]。
 ```
 
-**模板C：长寿秘诀式**
+**Template C: Longevity Secret**
 ```
 [人物]活到[年龄]岁，有人问她长寿秘诀。
 她说：[引用原话，如"每天一勺黑芝麻糊"]。
@@ -202,19 +202,19 @@
 [成分说明]，[现代科技背书]。
 ```
 
-**避坑指南**：
-- ❌ 不要夸大功效（"包治百病""逆龄20岁"）
-- ❌ 不要生硬插入（"说到这里不得不推荐XX"）
-- ✅ 通过人物的生活方式自然引出
-- ✅ 强调传统配方+现代工艺，增强可信度
+**Pitfalls to avoid**:
+- ❌ Do not exaggerate effects ("cures everything", "20 years younger")
+- ❌ Do not insert stiffly ("speaking of which, I have to recommend XX")
+- ✅ Let the person's lifestyle introduce the product naturally
+- ✅ Stress traditional recipes plus modern craft to build credibility
 
 ---
 
-### 类型3：课程/知识付费型（0篇，推测可行）
+### Type 3: Courses / Paid Knowledge (0 scripts, inferred as feasible)
 
-**虽然语料中未出现，但根据逻辑推演可行**
+**Although it does not appear in the corpus, it is feasible by logical inference**
 
-**话术模板**：
+**Copy template**:
 ```
 [人物]的选择，让很多人开始思考：
 我的人生，该怎么过？
@@ -226,9 +226,9 @@
 
 ---
 
-### 类型4：实物商品型（服饰/文创，0篇，推测可行）
+### Type 4: Physical Products (clothing / cultural merchandise, 0 scripts, inferred as feasible)
 
-**话术模板**：
+**Copy template**:
 ```
 [人物]那个年代，[物品]是[意义]。
 现在我们复刻了这款[产品]——
@@ -238,9 +238,9 @@
 
 ---
 
-### 类型5：服务/体验型（旅游/展览，0篇，推测可行）
+### Type 5: Services / Experiences (travel / exhibitions, 0 scripts, inferred as feasible)
 
-**话术模板**：
+**Copy template**:
 ```
 [人物]走过的路，你也可以走一走。
 [地点]现在还保留着[遗迹/故物]，
@@ -250,15 +250,15 @@
 
 ---
 
-## 四、融入度评分标准（4级）
+## 4. Integration Scoring Standard (4 Levels)
 
-### ⭐⭐⭐⭐ 强关联（4分）
-**定义**：产品是故事的核心组成部分，不提产品故事讲不完整
-**特征**：
-- 产品本身有故事（如书籍是人物写的、物品是人物用过的）
-- 全文围绕产品展开，观众不会察觉在带货
+### ⭐⭐⭐⭐ Strong Link (4 points)
+**Definition**: The product is a core part of the story; without the product the story cannot be fully told
+**Traits**:
+- The product itself has a story (for example, the book was written by the person, or the item was used by the person)
+- The whole piece revolves around the product, and the audience will not notice it is product placement
 
-**案例**：
+**Case**:
 ```
 中村恒子写的《人间值得》劝人别太努力...
 → 书籍即人物作品，融入度100%
@@ -266,14 +266,14 @@
 
 ---
 
-### ⭐⭐⭐ 自然过渡（3分）
-**定义**：通过价值观/生活方式连接产品，过渡自然但非必要
-**特征**：
-- 结尾用"这个故事记录在XX书里"过渡
-- 产品与人物精神/主题强相关
-- 观众能接受，不反感
+### ⭐⭐⭐ Natural Transition (3 points)
+**Definition**: The product connects through values / lifestyle; the transition is natural but not necessary
+**Traits**:
+- At the end, "this story is recorded in XX book" bridges to the product
+- The product is strongly related to the person's spirit / theme
+- The audience accepts it and does not object
 
-**案例**：
+**Case**:
 ```
 【故事】江姐之子养母的故事...
 【过渡】这个故事记录在《红岩魂》里。
@@ -282,14 +282,14 @@
 
 ---
 
-### ⭐⭐ 主题相关（2分）
-**定义**：产品与故事主题一致，但关联较弱，略有广告感
-**特征**：
-- 中段插入，借话题引出产品
-- 产品与人物生活场景相关，但非故事核心
-- 观众能感觉到在带货，但不至于反感
+### ⭐⭐ Theme Related (2 points)
+**Definition**: The product matches the story's theme, but the link is weak and it feels slightly like an ad
+**Traits**:
+- Inserted mid-story, using the topic to introduce the product
+- The product relates to the person's life scenes, but is not the core of the story
+- The audience can tell it is product placement, but not enough to object
 
-**案例**：
+**Case**:
 ```
 【故事】她年轻时操劳过度，落下病根...
 【插入】后来用的黄金五黑膏，是老中医的方子...
@@ -298,24 +298,24 @@
 
 ---
 
-### ⭐ 生硬植入（1分）
-**定义**：产品与内容割裂，强行插入，破坏观看体验
-**特征**：
-- 突然打断故事插入广告
-- 产品与人物/主题无关
-- 观众强烈反感，影响完播率
+### ⭐ Stiff Placement (1 point)
+**Definition**: The product is cut off from the content, forced in, and breaks the viewing experience
+**Traits**:
+- Suddenly interrupts the story to insert an ad
+- The product has nothing to do with the person / theme
+- The audience strongly objects, and it hurts completion rate
 
-**避免此类操作！**
+**Avoid this kind of execution!**
 
 ---
 
-## 五、完整案例库（10个带货文案分析）
+## 5. Complete Case Library (Analysis of 10 Product Integration Scripts)
 
-### 案例1：江姐养母 — 结尾书籍推荐（⭐⭐⭐）
+### Case 1: Jiang Jie's Foster Mother: End Book Recommendation (⭐⭐⭐)
 
-**融入位置**：结尾
-**产品**：《红岩魂》
-**原文摘录**：
+**Integration position**: Ending
+**Product**: "The Soul of Red Rock"
+**Original excerpt**:
 ```
 她是江姐之子彭云的养母。1948年她把亲生儿子塞进孤儿院，
 抱回情敌的孩子。一生兑现承诺，59岁享福前夜骤然离世。
@@ -325,20 +325,20 @@
 这本书不只讲江姐，更讲那些在黑暗中燃烧自己的无名者。
 适合和孩子一起读，让下一代知道，信仰是什么。
 ```
-**分析**：
-- 融入时机：故事讲完后自然过渡
-- 过渡句："她的故事，记录在XX里"（标准句式）
-- 价值强化："不只讲X，更讲Y"（扩大受众）
-- 适用人群："适合和孩子一起读"（明确使用场景）
-- 融入度：3分，自然但有轻微广告感
+**Analysis**:
+- Integration timing: natural transition after the story is told
+- Transition sentence: "Her story is recorded in XX" (the standard sentence pattern)
+- Value reinforcement: "It tells not only X, but also Y" (broadens the audience)
+- Target audience: "Good to read with your children" (a clear use case)
+- Integration score: 3 out of 4, natural but with a slight advertising feel
 
 ---
 
-### 案例2：陈诚妻子 — 中段养生产品（⭐⭐）
+### Case 2: Chen Cheng's Wife: Mid-Story Health Product (⭐⭐)
 
-**融入位置**：中段
-**产品**：黄金五黑膏
-**原文摘录**：
+**Integration position**: Middle
+**Product**: Golden Five-Black Paste
+**Original excerpt**:
 ```
 她5岁裹脚，18岁嫁给穷书生，替他打通军校关节，守空房七年。
 
@@ -352,19 +352,19 @@
 【故事继续】
 1925年以剪刀抵喉换来的，不过是他一个转身...
 ```
-**分析**：
-- 融入时机：故事讲到身体健康时插入
-- 过渡方式：用"那个年代的女人"扩大共鸣，再聚焦个体
-- 产品介绍：传统方子+成分列举+功效（克制，不夸大）
-- 融入度：2分，有广告感但不至于反感
+**Analysis**:
+- Integration timing: inserted when the story reaches physical health
+- Transition method: broaden the resonance with "women of that era", then focus on the individual
+- Product introduction: traditional recipe, ingredient list, and effects (restrained, not exaggerated)
+- Integration score: 2 out of 4, feels like an ad but not enough to object
 
 ---
 
-### 案例3：中村恒子 — 全文贯穿书籍（⭐⭐⭐⭐）
+### Case 3: Nakamura Tsuneko: Book Threaded Throughout (⭐⭐⭐⭐)
 
-**融入位置**：全文
-**产品**：《人间值得》《一个人最后的旅程》
-**原文摘录**：
+**Integration position**: Throughout
+**Product**: "Life Is Worth It", "A Person's Final Journey"
+**Original excerpt**:
 ```
 日本心理医生中村恒子，干了70年，91岁还在出诊。
 她写的《人间值得》劝人别太努力，这话从别人嘴里是鸡汤，
@@ -380,18 +380,18 @@
 关于如何在自宅安详离世，这本《一个人最后的旅程》写得很实在。
 点击左下角，提前为父母，也为自己做准备。
 ```
-**分析**：
-- 融入度：4分，书籍即故事核心，完全不违和
-- 开头就点明书籍，全文围绕书的观点展开
-- 结尾CTA柔和："提前为父母，也为自己"（情感驱动）
+**Analysis**:
+- Integration score: 4 out of 4, the books are the core of the story, completely natural
+- The books are named at the opening, and the whole piece develops the books' ideas
+- The closing call to action is soft: "prepare early, for your parents and for yourself" (emotionally driven)
 
 ---
 
-### 案例4：赵一曼 — 结尾情感共鸣式（⭐⭐⭐）
+### Case 4: Zhao Yiman: End Emotional Resonance (⭐⭐⭐)
 
-**融入位置**：结尾
-**产品**：抗战历史书籍（未明确书名）
-**原文摘录**：
+**Integration position**: Ending
+**Product**: War of Resistance history books (no specific title named)
+**Original excerpt**:
 ```
 【故事结尾】
 从她倒下那天算起，离胜利，还有整整9年...
@@ -403,108 +403,108 @@
 有个妈妈，连自己的孩子都没能抱几回。
 关注我，这些不能忘的中国人，我一个一个讲给你听。
 ```
-**分析**：
-- 没有直接带货产品，而是带"关注"（涨粉）
-- 情感驱动："讲给孩子听""不能忘的中国人"
-- CTA克制：转发+关注，为后续变现蓄水
+**Analysis**:
+- There is no direct product placement; instead it drives "follows" (audience growth)
+- Emotionally driven: "tell it to your children", "Chinese people who must not be forgotten"
+- Restrained call to action: share and follow, storing up value for later monetization
 
 ---
 
-### 案例5-10：（其他案例摘要）
+### Cases 5-10: (Summaries of the Other Cases)
 
-- **案例5**：董竹君 — 结尾书籍《我的一个世纪》（⭐⭐⭐）
-- **案例6**：严幼韵 — 结尾书籍《一个人的朝圣》关联长寿主题（⭐⭐）
-- **案例7**：香奈儿 — 全文贯穿传记（⭐⭐⭐⭐）
-- **案例8**：让娜·卡尔芒 — 中段养生产品（⭐⭐）
-- **案例9**：孙连仲 — 结尾历史书籍（⭐⭐⭐）
-- **案例10**：周培源 — 结尾科学家传记（⭐⭐⭐）
-
----
-
-## 六、创作指南 — 「融入带货」指令执行流程
-
-### 触发指令
-用户说：
-- "融入带货"
-- "带上产品推荐"
-- "这篇文案加个书籍推荐"
-- "在结尾加个XX产品"
+- **Case 5**: Dong Zhujun, end book "My Century" (⭐⭐⭐)
+- **Case 6**: Yan Youyun, end book "One Person's Pilgrimage", linked to the longevity theme (⭐⭐)
+- **Case 7**: Chanel, biography threaded throughout (⭐⭐⭐⭐)
+- **Case 8**: Jeanne Calment, mid-story health product (⭐⭐)
+- **Case 9**: Sun Lianzhong, end history book (⭐⭐⭐)
+- **Case 10**: Zhou Peiyuan, end scientist biography (⭐⭐⭐)
 
 ---
 
-### 执行步骤
+## 6. Creative Guide: Execution Flow for the "Integrate Product Placement" Instruction
 
-#### Step 1：判断融入时机
-根据故事类型和产品类型，选择融入节点：
+### Trigger Instruction
+The user says:
+- "Integrate product placement"
+- "Add a product recommendation"
+- "Add a book recommendation to this script"
+- "Add XX product at the end"
 
-| 产品类型 | 推荐时机 | 理由 |
+---
+
+### Execution Steps
+
+#### Step 1: Judge the Integration Timing
+Choose the integration node based on the story type and product type:
+
+| Product Type | Recommended Timing | Reason |
 |---------|---------|------|
-| 书籍（人物传记/历史类） | 结尾转化型 | 最安全，不破坏故事 |
-| 书籍（人物著作） | 全文贯穿型 | 书即故事，融入度最高 |
-| 养生/食品 | 中段过渡型 | 借生活场景自然引入 |
-| 实物商品 | 结尾转化型 | 通过精神传承连接 |
+| Books (biography / history) | End conversion | Safest, does not break the story |
+| Books (written by the person) | Threaded throughout | The book is the story, highest integration |
+| Health / food | Mid-story transition | Introduced naturally through a life scene |
+| Physical products | End conversion | Connected through the spirit being passed on |
 
 ---
 
-#### Step 2：选择话术模板
-根据融入时机，套用对应模板：
+#### Step 2: Choose a Copy Template
+Apply the matching template for the integration timing:
 
-**结尾转化型 → 模板库**
-- 价值强化式："这个故事记录在XX里，不只讲A，更讲B"
-- 知识扩展式："想了解更多，推荐XX，收录N个案例"
-- 情感共鸣式："读完后你会想：如果是我...这本书帮你找答案"
+**End conversion type, template library**
+- Value reinforcement: "This story is recorded in XX. It tells not only A, but also B"
+- Knowledge extension: "To learn more, I recommend XX, which collects N cases"
+- Emotional resonance: "After reading it you will wonder: what would I do if it were me? This book helps you find the answer"
 
-**中段过渡型 → 模板库**
-- 时代连接式："那个年代靠XX，现在的产品就是传下来的"
-- 场景代入式："你有没有XX时刻？人物当年也是这样..."
-- 长寿秘诀式："人物活到N岁，秘诀是XX，产品配方按这个来"
+**Mid-story transition type, template library**
+- Era connection: "In that era people relied on XX. The product today is passed down from then"
+- Scene immersion: "Have you ever had an XX moment? The person back then was the same..."
+- Longevity secret: "The person lived to N years old. The secret was XX, and the product's recipe follows it"
 
-**全文贯穿型 → 策略**
-- 开头点明书籍/产品
-- 全文围绕书的观点/产品价值展开
-- 结尾CTA自然收束
-
----
-
-#### Step 3：撰写过渡句
-**核心原则**：
-- ✅ 用"这个故事""如果你想""关于XX"等柔和引入
-- ✅ 强调情感价值（"适合和孩子读""提前为父母准备"）
-- ✅ 避免"点击购买""立即下单"等生硬CTA
-- ✅ 用"把这本书带回家""点击左下角链接"代替
-
-**禁用词清单**：
-- ❌ "必买""必看""不买后悔"
-- ❌ "限时优惠""今日特价"
-- ❌ "包治百病""逆龄20岁"
-- ❌ "点击购买""立即下单"
+**Threaded throughout type, strategy**
+- Name the book / product at the opening
+- Develop the whole piece around the book's ideas / the product's value
+- Close naturally with the call to action at the end
 
 ---
 
-#### Step 4：融入度自检
-写完后，用4级标准自检：
+#### Step 3: Write the Transition Sentence
+**Core principles**:
+- ✅ Introduce softly with "this story", "if you want to", "about XX"
+- ✅ Stress emotional value ("good to read with your children", "prepare early for your parents")
+- ✅ Avoid stiff calls to action like "click to buy" or "order now"
+- ✅ Use "take this book home" and "tap the link in the bottom left corner" instead
 
-| 级别 | 标准 | 是否通过 |
+**Banned words list**:
+- ❌ "Must buy", "must read", "you will regret not buying"
+- ❌ "Limited time offer", "today's special price"
+- ❌ "Cures everything", "20 years younger"
+- ❌ "Click to buy", "order now"
+
+---
+
+#### Step 4: Integration Self-Check
+After writing, self-check against the 4-level standard:
+
+| Level | Standard | Pass? |
 |------|------|---------|
-| ⭐⭐⭐⭐ | 产品是故事核心，不提讲不完 | 理想状态 |
-| ⭐⭐⭐ | 价值观连接，过渡自然 | 合格线 |
-| ⭐⭐ | 主题相关，有广告感但可接受 | 及格线 |
-| ⭐ | 生硬植入，破坏体验 | **不合格，重写** |
+| ⭐⭐⭐⭐ | The product is the core of the story; without it the story cannot be fully told | Ideal |
+| ⭐⭐⭐ | Values connect it; the transition is natural | Pass line |
+| ⭐⭐ | Theme related; feels like an ad but acceptable | Bare pass |
+| ⭐ | Stiff placement, breaks the experience | **Fail, rewrite** |
 
-**重写信号**：
-- 如果你自己读完都觉得生硬 → 重写
-- 如果产品介绍超过50字 → 精简
-- 如果打断故事高潮插入 → 调整位置
+**Rewrite signals**:
+- If you read it yourself and it feels stiff, rewrite it
+- If the product introduction runs over 50 characters, shorten it
+- If it interrupts the story's climax, move it
 
 ---
 
-#### Step 5：CTA设计
-**结尾行动召唤公式**：
+#### Step 5: Call to Action Design
+**Closing call to action formula**:
 ```
 [情感驱动句] + [柔和CTA] + [价值再强化]
 ```
 
-**例句**：
+**Examples**:
 ```
 把这本书带回家，和孩子一起读，让下一代知道什么叫坚韧。
 点击左下角链接，提前为父母，也为自己做准备。
@@ -513,79 +513,78 @@
 
 ---
 
-## 七、避坑指南 — 5类不适合带货的场景
+## 7. Pitfalls: 5 Scenarios Unsuitable for Product Integration
 
-### 1. 悲剧高潮时带货
-❌ **错误示范**：
+### 1. Product Placement at the Tragic Climax
+❌ **Wrong example**:
 ```
 她在刑场上写完最后一封信...（此时插入书籍推荐）
 ```
-**为什么不行**：打断情绪，观众会反感
-**正确做法**：等情绪落地后再过渡
+**Why it fails**: It interrupts the emotion, and the audience will object
+**Correct approach**: Wait until the emotion has landed, then transition
 
 ---
 
-### 2. 产品与人物价值观冲突
-❌ **错误示范**：
+### 2. Product Conflicts with the Person's Values
+❌ **Wrong example**:
 ```
 她一生清贫，捐掉所有财产...（推荐奢侈品）
 ```
-**为什么不行**：价值观割裂，观众会质疑创作者动机
+**Why it fails**: The values are cut off from each other, and the audience will question the creator's motives
 
 ---
 
-### 3. 过度夸大产品功效
-❌ **错误示范**：
+### 3. Exaggerating the Product's Effects
+❌ **Wrong example**:
 ```
 用了这个产品，你也能活到122岁！
 ```
-**为什么不行**：违反广告法，且失去可信度
+**Why it fails**: It breaks advertising law and destroys credibility
 
 ---
 
-### 4. 带货占比过高
-❌ **错误示范**：
+### 4. Product Integration Takes Too Large a Share
+❌ **Wrong example**:
 ```
 【故事50秒】 + 【带货1分钟】
 ```
-**为什么不行**：观众是来听故事的，不是来听广告的
-**黄金比例**：故事80% + 带货20%
+**Why it fails**: The audience came to hear a story, not an ad
+**Golden ratio**: 80% story plus 20% product placement
 
 ---
 
-### 5. 每篇都带货
-❌ **错误做法**：每条视频都插入产品
-**为什么不行**：观众会取关
-**建议频率**：
-- 涨粉期：10条视频1条带货（10%）
-- 稳定期：5条视频1条带货（20%）
-- 变现期：3条视频1条带货（33%）
+### 5. Product Placement in Every Piece
+❌ **Wrong approach**: Insert a product into every video
+**Why it fails**: The audience will unfollow
+**Suggested frequency**:
+- Growth phase: 1 product placement video out of 10 (10%)
+- Stable phase: 1 out of 5 (20%)
+- Monetization phase: 1 out of 3 (33%)
 
 ---
 
-## 八、总结 — 带货的本质是价值传递
+## 8. Summary: Product Placement Is Essentially Passing On Value
 
-**记住一句话**：
-> 好的带货，是让观众觉得"这个产品能帮我延续故事里的精神"，
-> 而不是"你听完故事了，该买东西了"。
+**Remember one sentence**:
+> Good product placement makes the audience feel "this product can help me carry on the spirit in the story", not "you have finished the story, now it is time to buy something".
 
-**三个核心原则**：
-1. **产品即故事的一部分** → 融入度最高
-2. **价值观连接，不是功能连接** → 情感驱动转化
-3. **克制，克制，再克制** → 宁可不带，不要生硬
-
----
-
-**创作检查清单**：
-- [ ] 融入时机选对了吗？（结尾/中段/全文）
-- [ ] 过渡句自然吗？（不生硬、不打断）
-- [ ] 产品介绍克制吗？（不超过50字）
-- [ ] CTA柔和吗？（不用"立即购买"）
-- [ ] 融入度达标吗？（至少⭐⭐以上）
-- [ ] 自己读完会反感吗？（最重要的检验标准）
+**Three core principles**:
+1. **The product is part of the story**. That gives the highest integration
+2. **Connect through values, not through function**. Emotion drives conversion
+3. **Restraint, restraint, and more restraint**. Better to skip the placement than to force it
 
 ---
 
-**最后**：
-带货不是目的，让观众记住故事才是。
-如果为了带货破坏了故事，那就是本末倒置。
+**Creative checklist**:
+- [] Did you pick the right integration timing? (ending / middle / throughout)
+- [] Is the transition sentence natural? (not stiff, does not interrupt)
+- [] Is the product introduction restrained? (no more than 50 characters)
+- [] Is the call to action soft? (do not use "buy now")
+- [] Does the integration score pass? (at least ⭐⭐)
+- [] Would you object if you read it yourself? (the most important test)
+
+---
+
+**Finally**:
+Product placement is not the goal. Making the audience remember the story is.
+If placing a product breaks the story, that is putting the cart before the horse.

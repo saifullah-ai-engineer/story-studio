@@ -1,147 +1,147 @@
-# 语言DNA — 玉玲2711「人物故事」
+# Language DNA: Yuling2711 "Character Stories"
 
-> 基于18篇逐字稿蒸馏，覆盖田华、秦怡、杨丽坤、李维康、林徽因、王晓棠、阮玲玉共7位人物。
-
----
-
-## 一、称呼系统
-
-### 对人物
-- 全程「他」（视频为ASR自动转写，实际口播应为「她」）
-- 人物出场公式：先描述/先给数字，最后揭晓姓名
-  - 「他演了一辈子苦命女人，最后自己也成了苦命女人，**她叫阮玲玉**」
-  - 「这个母亲**叫秦怡**」
-  - 「这就是他的一生。**他叫杨丽坤**。」
-
-### 对观众
-- 统一用「您」（敬称，建立叙述者权威感，同时拉近距离）
-- 绝不用「你们」「大家」「观众朋友」
-
-### 叙述者立场
-- 有温度的旁观者，站在「替被遗忘的女性发声」位置
-- 不评判人物，只记录与还原
-- 对反派（渣男/时代）用事实积累情绪，不直接骂
+> Distilled from 18 verbatim transcripts, covering 7 people: Tian Hua, Qin Yi, Yang Likun, Li Weikang, Lin Huiyin, Wang Xiaotang, and Ruan Lingyu.
 
 ---
 
-## 二、「您说」句式体系
+## 1. Address System
 
-这是全账号最标志性的语言特征。功能：在叙事推进关键节点制造情感锚点，把观众从听故事状态拉回共情状态。
+### For the Person
+- Throughout, "he" (the videos are ASR auto-transcriptions; the spoken voiceover should say "she")
+- Person appearance formula: describe first / give numbers first, reveal the name last
+  - "She acted the part of a suffering woman all her life, and in the end she became a suffering woman herself. **Her name is Ruan Lingyu.**"
+  - "This mother **is called Qin Yi**"
+  - "That was his life. **His name is Yang Likun.**"
 
-### 四种句型
-| 句型 | 功能 | 例句 |
+### For the Audience
+- Always "you" (formal, which builds the narrator's authority while also closing the distance)
+- Never use "you all", "everyone", or "dear viewers"
+
+### Narrator Stance
+- A warm bystander, standing in the position of "speaking up for forgotten women"
+- Does not judge the person, only records and reconstructs
+- Toward villains (a scoundrel / the times), lets the facts pile up to build emotion, and never scolds directly
+
+---
+
+## 2. The "Tell Me" Sentence System
+
+This is the most distinctive language feature of the whole account. Function: at key narrative turning points, create an emotional anchor that pulls the audience back from listening to the story into feeling it.
+
+### Four Sentence Patterns
+| Pattern | Function | Example |
 |------|------|------|
-| `您说一个[身份]，怎么会[反常结果]？` | 设问引入解释 | 「您说一个被几十万人捧在手上的女明星，怎么就走投无路了。」 |
-| `您说[情境]，这是什么[X]？` | 感叹引发共情 | 「您说这是什么日子？」 |
-| `您说他还能[动词]哪里？` | 结论前的反问收束 | 「您说他还能往哪里走。」 |
-| `您能想象吗？` | 场景渲染后的惊叹 | 直接感叹句，加强画面冲击 |
+| `您说一个[身份]，怎么会[反常结果]？` | Rhetorical question introducing the explanation | "Tell me, how could a female star held up by hundreds of thousands of people end up with nowhere left to go?" |
+| `您说[情境]，这是什么[X]？` | Exclamation prompting shared feeling | "Tell me, what kind of life is this?" |
+| `您说他还能[动词]哪里？` | Rhetorical question closing in before the conclusion | "Tell me, where else could he possibly go?" |
+| `您能想象吗？` | Exclamation after a scene has been rendered | A direct exclamation, strengthening the visual shock |
 
-### 位置规律
-- 开头后第一段（建立共情基调）
-- 磨难累积到高点时（强化不公感）
-- 结局揭示前（最后的反问）
-- **不在结尾金句处使用**（金句位置用陈述句，不设问）
+### Position Patterns
+- The first paragraph after the opening (sets the shared-feeling tone)
+- When the hardship builds to its peak (strengthens the sense of injustice)
+- Before the ending is revealed (the final rhetorical question)
+- **Never at the closing golden line** (the golden line uses a statement, not a question)
 
 ---
 
-## 三、数字使用规律
+## 3. Number Usage Patterns
 
-### 精确性原则
-有可靠依据时使用精确数字；证据仅支持约数或范围时保持其精度，不能为符合风格补造。下列原稿例句仅为写法样本，不代表史实已核实：
+### Precision Principle
+Use exact numbers when there is reliable evidence; when the evidence only supports an approximation or a range, keep its precision and do not invent numbers to fit the style. The original example lines below are writing samples only and do not mean the historical facts have been verified:
 
-| 错误写法 | 正确写法 |
+| Wrong writing | Correct writing |
 |---------|---------|
-| 幼年丧父 | 6岁丧父 |
-| 大量观众 | 30万人为他送葬 |
-| 年轻时出道 | 16岁出道 |
-| 多个国家上映 | 46个国家和地区 |
-| 拍了很多电影 | 9年拍了29部电影 |
+| Lost her father as a child | Lost her father at 6 |
+| A huge audience | 300,000 people attended his funeral |
+| Debuted young | Debuted at 16 |
+| Shown in many countries | 46 countries and regions |
+| Made a lot of films | 29 films in 9 years |
 
-### 数字排列炸弹（开头钩子专用）
-将多个年龄/数字连续排列，制造密集冲击感：
-- 「6岁丧父，母亲做女佣，16岁出道，25岁服安眠药离世，30万人为他送葬」
-- 「4五岁丧母的彝族姑娘，17岁一个回眸，18岁让46国观众倾倒」
+### Number Barrage (for opening hooks only)
+List several ages / numbers in a row to create a dense shock:
+- "Lost her father at 6, mother worked as a maid, debuted at 16, died at 25 after taking sleeping pills, 300,000 people attended his funeral"
+- "A Yi girl who lost her mother at four or five, a single backward glance at 17, captivated audiences in 46 countries at 18"
 
-### 时间精度以可靠来源为准（有依据才到日）
-重要事件标注年月日：
-- 「1935年3月8日，25岁的阮玲玉永远地走了」
-- 「1973年5月22日两人在上海登记结婚」
-- 「2000年7月21日，58岁的杨立坤在上海家中平静离开」
+### Time Precision Follows Reliable Sources (down to the day only with evidence)
+Mark important events with year, month, and day:
+- "On March 8, 1935, 25-year-old Ruan Lingyu left forever"
+- "On May 22, 1973, the two registered their marriage in Shanghai"
+- "On July 21, 2000, 58-year-old Yang Likun passed away peacefully at home in Shanghai"
 
 ---
 
-## 四、句式与节奏
+## 4. Sentence Patterns and Rhythm
 
-### 句长分布
-- 主体短句：8-15字
-- 极少超过25字的长句
-- 逗号切分节奏，不用分号
-- 连续短句堆叠制造喘不过气的密度感
+### Sentence Length Distribution
+- Mainly short sentences: 8-15 characters
+- Very rarely a long sentence over 25 characters
+- Commas divide the rhythm; semicolons are not used
+- Stacked short sentences in a row create a breathless density
 
-### 「可」「偏偏」「竟」转折三件套
-| 词 | 用途 | 典型位置 |
+### The "But / Of All Things / Actually" Turn Set
+| Word | Use | Typical Position |
 |----|------|---------|
-| 可/可谁也没想到 | 命运急转直下 | 磨难层入口 |
-| 偏偏 | 反常天赋/才华 | 逆境中的亮点 |
-| 竟 | 结果出乎意料（好坏均可） | 关键事件后 |
+| But / but no one expected | Fate turns sharply for the worse | Hardship layer entry |
+| Of all things | Abnormal talent / gift | A bright spot inside adversity |
+| Actually | A result beyond expectation (good or bad) | After a key event |
 
-例：
-- 「可谁也没想到，拍完这部戏，他的人生急转直下」
-- 「这个女佣的女儿**偏偏**长得好看，又聪明」
-- 「这两部电影的结局**竟**像谶语一样预言了杨丽坤的一生」
+Examples:
+- "But no one expected that after filming this work, his life would turn sharply for the worse"
+- "This maid's daughter **of all things** grew up good-looking, and clever too"
+- "The endings of these two films **actually** foretold Yang Likun's whole life, like a prophecy"
 
-### 情感词密度
-核心情感词（高频）：
-- 苦难维度：命、苦、扛、熬、撑、扛住、低头、绝望、无力
-- 坚守维度：硬骨头、骨气、没断过、兑现
-- 爱情维度：陪、接住、装作、守、余生
-
----
-
-## 五、结尾金句结构
-
-### 模板A：真正的X不是Y，而是Z
-- 「真正的美，从来不只是容颜，更是那份在风雨中依然坚守的情谊」
-- 「真正的爱也从来不是花前月下，是你风光，我默默站在你身后，你坠落，我伸手接住你」
-
-### 模板B：你说什么叫X，不是Y，是Z
-- 「你说什么叫爱，不是花前月下的甜言蜜语，是你疯了，我陪你疯，你活在幻觉里，我就走进你的幻觉里陪你」
-
-### 模板C：什么叫X？不是Y，是这个人用一生证明的Z
-（变体，把金句嫁接到人物具体行为上，更具象）
+### Emotional Word Density
+Core emotional words (high frequency):
+- Suffering dimension: fate, suffering, endure, get through, hold on, hold out, bow one's head, despair, powerlessness
+- Endurance dimension: backbone, pride, never broken, keeping a promise
+- Love dimension: accompany, catch, pretend, guard, the rest of her life
 
 ---
 
-## 六、传播号召语公式
+## 5. Closing Golden Line Structures
 
-固定出现在每集结尾，三种变体：
+### Template A: True X Is Not Y, but Z
+- "True beauty was never only a face; it was that devotion that held firm through wind and rain"
+- "True love was never romance under the flowers and the moon; it is you in glory and me standing quietly behind you, you falling and me reaching out to catch you"
 
-**知识/天才型**：
-> 「[如果你觉得这个姑娘了不起]，就帮我传出去，不是为了别的，是[这种天才/这份坚守]值得被更多人知道」
+### Template B: Tell Me, What Is X? Not Y, but Z
+- "Tell me, what is love? It is not sweet words under the flowers and the moon. It is you going mad and me going mad with you, you living in a hallucination and me walking into your hallucination to keep you company"
 
-**情感共鸣型**：
-> 「如果你身边也有[在感情里受了委屈还在撑的人]，把这个故事转给他看看……[人物名]值得被更多人知道」
-
-**历史正名型**：
-> 「让更多人知道[人物名]的名字」
-
----
-
-## 七、系列尾句（有下集时）
-
-公式：`下集我给您讲讲[人物名][第N段故事/第N个身份/具体事件]`，末尾加「下集见」。
-
-例：
-- 「下集我给您讲讲阮玲玉的第二段悲剧。这个故事请帮我转发给更多人听听……下集见。」
-- 「下集我给您讲讲阮玲玉死后的故事，30万人为他送葬，可那封著名的遗书可能是假的。」
-- 「下集见。」（单独成句，极简）
+### Template C: What Is X? Not Y, but Z, Which This Person Proved With a Whole Life
+(Variant that ties the golden line to the person's concrete actions, making it more tangible)
 
 ---
 
-## 八、禁忌词汇
+## 6. Share Call to Action Formula
 
-- ❌ 感叹号（用句号留白代替张力）
-- ❌ 「大家」「朋友们」「亲爱的」
-- ❌ 「此时此刻」「话说当年」「且说」等戏说腔
-- ❌ 书面四字成语排比（「历经风雨，砥砺前行」之类）
-- ❌ 「小编」「博主」等自我指称
+Fixed at the end of every episode, in three variants:
+
+**Knowledge / Genius type**:
+> "If you think this young woman is remarkable, help me pass it on. It is not for anyone's follower count. It is because this kind of genius / this kind of endurance deserves to be known by more people"
+
+**Emotional resonance type**:
+> "If there is someone around you who has been wronged in love and is still holding on, forward this story to them... [Person's name] deserves to be known by more people"
+
+**Historical vindication type**:
+> "Let more people know the name [person's name]"
+
+---
+
+## 7. Series Closing Line (When There Is a Next Episode)
+
+Formula: `下集我给您讲讲[人物名][第N段故事/第N个身份/具体事件]`, ending with "See you next episode".
+
+Examples:
+- "Next episode I will tell you about the second tragedy of Ruan Lingyu. Please help me forward this story so more people can hear it... See you next episode."
+- "Next episode I will tell you the story of Ruan Lingyu after her death: 300,000 people attended her funeral, but that famous suicide note may have been fake."
+- "See you next episode." (standing alone as a sentence, extremely brief)
+
+---
+
+## 8. Banned Vocabulary
+
+- ❌ Exclamation marks (use a period and white space for tension instead)
+- ❌ "Everyone", "friends", "dear ones"
+- ❌ "At this very moment", "back in those days", "and so it is said" and other storytelling patter
+- ❌ Parallel strings of formal four-character idioms ("weathering storms, pressing forward with resolve" and the like)
+- ❌ "Your humble editor", "this creator" and other self-references

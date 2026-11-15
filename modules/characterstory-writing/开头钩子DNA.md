@@ -1,365 +1,365 @@
-# 开头钩子DNA — 玉玲2711「人物故事」
+# Opening Hook DNA: Yuling2711 "Character Stories"
 
-> 18篇逐字稿完整收录，钩子类型系统化整理。
-> 用途：写新稿前对照选型，确保开头在30-80字内打开「认知缺口」。
+> The complete set of lines from all 18 verbatim transcripts, organized into a hook type system.
+> Purpose: check the type before writing a new script, to make sure the opening creates a "cognitive gap" within 30-80 characters.
 
 ---
 
-## 一、五类钩子机制总览
+## 1. Overview of the Five Hook Mechanisms
 
-| 类型 | 核心机制 | 适用集数 | 例句来源 |
+| Type | Core Mechanism | Episodes | Example Source |
 |------|---------|---------|---------|
-| A. 数字连排炸弹 | 年龄/数字密集排列，短时间内堆叠极端人生 | 集1 | 阮玲玉集1、秦怡集1（间接） |
-| B. 宿命定格 | 用极简语言宣判人物一生的命运结构 | 集1 | 杨丽坤集1 |
-| C. 反常画面先行+揭晓 | 现在时态切入反常场景，最后揭晓身份 | 集1/集2 | 秦怡集1、秦怡集2 |
-| D. 结局前行+设问 | 死亡/极端结局先交代，「您说……」引发解释 | 集1/集2 | 阮玲玉集2 |
-| E. 时间地点+人物行动 | 年份+地点+年龄+动作，画面感强 | 集1 | 田华集1 |
+| A. Number Barrage | Ages / numbers packed densely, stacking an extreme life in a short time | Episode 1 | Ruan Lingyu Episode 1, Qin Yi Episode 1 (indirect) |
+| B. Fate Freeze-Frame | Extremely simple language that pronounces the fate structure of a person's life | Episode 1 | Yang Likun Episode 1 |
+| C. Abnormal Scene First, Then the Reveal | Present tense entry into an abnormal scene, identity revealed at the end | Episode 1 / Episode 2 | Qin Yi Episode 1, Qin Yi Episode 2 |
+| D. Ending First, Then a Question | Death / extreme ending given first, "Tell me..." raises the question of why | Episode 1 / Episode 2 | Ruan Lingyu Episode 2 |
+| E. Time, Place, and Action | Year plus place plus age plus action, strong sense of scene | Episode 1 | Tian Hua Episode 1 |
 
-| F. 极端数字堆叠（句号断句版） | 短句+句号，数字密集但更有呼吸感 | 新增 | 红颜旧事志、闲读人间往事 |
-| G. 时代对比开场 | 历史时间锚点+现代缺失对比，制造时空落差 | 新增 | 红颜旧事志、人间人物志 |
-| H. 震惊事实列举+反问 | 平铺震撼事实，末尾用疑问或感叹强化认知冲击 | 新增 | 人间人物志 |
-| I. 人生轨迹三段式 | 三个年龄节点+三个身份/状态，呈现完整人生弧线 | 新增 | 人间人物志、闲读人间往事 |
+| F. Extreme Number Stacking (period-broken version) | Short sentences broken by periods, numbers dense but with more breathing room | New | Hongyan Jiushi Zhi, Xiandu Renjian Wangshi |
+| G. Era Contrast Opening | Historical time anchor plus a modern absence contrast, creating a gap across time | New | Hongyan Jiushi Zhi, Renjian Renwu Zhi |
+| H. Shocking Facts Listed, Then a Rhetorical Question | Shocking facts laid out flat, ending with a question or exclamation to strengthen the cognitive shock | New | Renjian Renwu Zhi |
+| I. Three-Stage Life Trajectory | Three age milestones plus three identities / states, showing a complete life arc | New | Renjian Renwu Zhi, Xiandu Renjian Wangshi |
 ---
 
-## 二、各类型详解 + 全部原文例句
+## 2. Each Type in Detail, With All Original Example Lines
 
 ---
 
-### A型：数字连排炸弹
+### Type A: Number Barrage
 
-**机制**：在30字内连续排列多个年龄/数字节点，末尾接「反常结局」或「大众反应」，制造密度冲击。
+**Mechanism**: Within 30 characters, list several age / number milestones in a row, ending with an "abnormal ending" or a "public reaction", to create a density shock.
 
-**模板**：
+**Template**:
 ```
 [年龄]X，[年龄]Y，[年龄]Z[行为/结果]，[数字][社会反应]。
 ```
 
-**原文例句**：
+**Original example lines**:
 
-> 「他演了一辈子苦命女人，最后自己也成了苦命女人，她叫阮玲玉，**6岁丧父，母亲做女佣，16岁出道，25岁服安眠药离世，30万人为他送葬**。」
-> ——阮玲玉集1
+> "She acted the part of a suffering woman all her life, and in the end she became a suffering woman herself. Her name is Ruan Lingyu. **She lost her father at 6, her mother worked as a maid, she debuted at 16, died at 25 after taking sleeping pills, and 300,000 people attended her funeral.**"
+>: Ruan Lingyu Episode 1
 
-**变体用法**：
-- 标题即钩子（直接用数字连排作发布文案）：
-  「她六岁丧父，随母亲做女佣，十六岁出道，九年拍二十九部电影，成为默片皇后。她演尽苦命女人，二十五岁却服药离世，三十万人为她送葬。」
+**Variant usage**:
+- The title is the hook (use the number barrage directly as the publishing copy):
+  "She lost her father at six, followed her mother into work as a maid, debuted at sixteen, made twenty-nine films in nine years and became the queen of silent film. She played suffering women all her life, yet died at twenty-five after taking medicine, and 300,000 people attended her funeral."
 
-**写法要点**：
-- 数字之间无解释，直接跳跃，让节奏本身制造紧迫感
-- 末尾用「[大数字][群体反应]」收束（30万人/46个国家）
-- 每个数字都是一个独立冲击点，不超过5个节点
+**Writing points**:
+- No explanation between the numbers; the jumps are direct, and the rhythm itself creates urgency
+- End with "[large number][group reaction]" (300,000 people / 46 countries)
+- Each number is a separate shock point; no more than 5 milestones
 
-**机制**：用极简高度凝练语言，直接宣判人物一生的命运结构，制造「这个人的命已经写好了」的宿命感。
+**Mechanism**: Use extremely condensed language to directly pronounce the fate structure of a person's life, creating the sense that "this person's fate was already written".
 
-**模板**：
+**Template**:
 ```
 他/她一生只[极简量词+描述]，[对比]，这就是他/她的一生。他/她叫XX。
 ```
 
-**原文例句**：
+**Original example lines**:
 
-> 「**他一生只演了两部电影，一部叫五朵金花，是喜剧，一部叫阿诗玛，是悲剧，这就是他的一生。**他叫杨丽坤。」
-> ——杨丽坤集1（玉玲2711）
+> "**In his whole life he acted in only two films. One was called Five Golden Flowers, a comedy. The other was called Ashima, a tragedy. That was his life.** His name was Yang Likun."
+>: Yang Likun Episode 1 (Yuling2711)
 
-**新增变体 - B2型：极端对比+画龙点睛收束**：
+**New variant, Type B2: Extreme Contrast Plus a Finishing Line**:
 
-> 「**徐志摩骂她乡下土包子，逼她打胎，把她一个人扔在欧洲。**她在柏林独自生子、签下中国第一桩西式离婚书。几年后，她成了上海滩的女银行家。最后还自掏腰包出版了前夫全集。**88岁离世，腰板最直。**」
-> ——红颜旧事志
+> "**Xu Zhimo called her a country bumpkin, forced her to have an abortion, and left her alone in Europe.** She gave birth alone in Berlin and signed China's first Western-style divorce papers. A few years later, she became a woman banker in Shanghai. In the end she even paid out of her own pocket to publish her ex-husband's complete works. **She died at 88, with her back at its straightest.**"
+>: Hongyan Jiushi Zhi
 
-**B2写法要点**：
-- 前半部分：极端的遭遇或屈辱（被骂、被抛弃、被逼迫）
-- 中间部分：逆袭过程（独自生子、成银行家）
-- 收束句：用一个形容词或短语定性一生（「腰板最直」「从未低头」）
-- 收束必须是精炼的、有力量的、画龙点睛的
+**B2 writing points**:
+- First half: extreme hardship or humiliation (being insulted, abandoned, forced)
+- Middle: the comeback (giving birth alone, becoming a banker)
+- Closing line: one adjective or short phrase that defines the whole life ("back at its straightest", "never bowed her head")
+- The closing must be concise, forceful, and the finishing touch
 
-**原文例句**：
+**Original example lines**:
 
-> 「**他一生只演了两部电影，一部叫五朵金花，是喜剧，一部叫阿诗玛，是悲剧，这就是他的一生。**他叫杨丽坤。」
-> ——杨丽坤集1
+> "**In his whole life he acted in only two films. One was called Five Golden Flowers, a comedy. The other was called Ashima, a tragedy. That was his life.** His name was Yang Likun."
+>: Yang Likun Episode 1
 
-**写法要点**：
-- 「这就是他的一生」是宿命定格的核心句，必须有
-- 姓名放在最后揭晓，且单独成句
-- 喜剧/悲剧、光明/黑暗的二元对比是此类型的结构核心
-- 适合命运被两种完全不同的阶段定义的人物
+**Writing points**:
+- "That was his life" is the core line of the fate freeze-frame; it must be there
+- The name is revealed last, in its own sentence
+- The binary contrast of comedy / tragedy, light / darkness, is the structural core of this type
+- It suits people whose fate is defined by two completely different phases
 
 ---
 
-### C型：反常画面先行+揭晓
+### Type C: Abnormal Scene First, Then the Reveal
 
-**机制**：用现在时态切入一个反常/极端场景（与人物已知身份强烈不符），最后揭晓「这个人是谁」。
+**Mechanism**: Use the present tense to enter an abnormal / extreme scene (sharply at odds with the person's known identity), and reveal "who this person is" at the end.
 
-**模板（C1：现象反常型）**：
+**Template (C1: Abnormal Phenomenon)**:
 ```
 [数字/年龄]的[反常描述]……这个[关系/身份]叫XX。
 ```
 
-**模板（C2：极端状态型）**：
+**Template (C2: Extreme State)**:
 ```
 [年龄]的[人物标签]，[正在做的反常事情]……她叫XX。
 ```
 
-**原文例句**：
+**Original example lines**:
 
-C1-场景反常：
-> 「**1个1米81 170斤的壮汉，发病时对着自己的母亲拳打脚踢……这个母亲叫秦怡。**」
-> ——秦怡集2（从handoff提炼）
+C1, abnormal scene:
+> "**A powerfully built man, 1.81 meters tall and 170 jin, beat his own mother with his fists when his illness flared up... That mother is called Qin Yi.**"
+>: Qin Yi Episode 2 (distilled from handoff)
 
-C2-年龄反差：
-> 「**93岁的老太太站在海拔3000多米的青藏高原上，徒步三十多里山路……她叫秦怡。**有人问他图什么？」
-> ——秦怡集1（从handoff提炼）
+C2, age contrast:
+> "**A 93-year-old woman stood on the Qinghai-Tibet Plateau at more than 3,000 meters above sea level and walked more than thirty li of mountain road... Her name is Qin Yi.** Someone asked her what she was doing it for?"
+>: Qin Yi Episode 1 (distilled from handoff)
 
-**写法要点**：
-- 画面描述要具象、有物理细节（身高体重/海拔/公里数）
-- 「这个[意想不到的关系词]叫XX」中，关系词是反差的核心（「这个母亲」比「这个女演员」冲击力强10倍）
-- 适合人物身份与眼前场景之间存在强烈落差的篇章
+**Writing points**:
+- The scene description must be concrete, with physical details (height and weight / altitude / kilometers)
+- In "That [unexpected relationship word] is called XX", the relationship word is the core of the contrast ("that mother" hits 10 times harder than "that actress")
+- It suits pieces where there is a strong gap between the person's identity and the scene before our eyes
 
 ---
 
-### D型：结局前行+设问
+### Type D: Ending First, Then a Question
 
-**机制**：先交代死亡或极端结局（以事实语气，不渲染），再用「您说……怎么会……」引入解释，制造悬念。
+**Mechanism**: First state the death or extreme ending (in a factual tone, without embellishment), then use "Tell me... how could..." to bring in the explanation, creating suspense.
 
-**模板**：
+**Template**:
 ```
 [人物名]走的前夜还[正常/快乐的行为]。[N小时后/那夜]，[死亡/极端结局]。
 [这个/她叫][人物标签]，您说……怎么……
 ```
 
-**原文例句**：
+**Original example lines**:
 
-D1-死亡前夜对比（玉玲2711原版）：
-> 「**阮玲玉走的前一夜还笑着参加晚宴，临走亲了主人家两个孩子。几个小时后，他独自吞下了三瓶安眠药。**这个女人叫阮玲玉，25岁，民国最红的磨片皇后，您说一个被几十万人捧在手上的女明星，怎么就走投无路了。」
-> ——阮玲玉集2（玉玲2711）
+D1, contrast with the night before death (Yuling2711 original):
+> "**On the night before Ruan Lingyu died, she was still smiling at a dinner party, and before she left she kissed the host family's two children. A few hours later, she took three bottles of sleeping pills alone.** This woman is called Ruan Lingyu, 25 years old, the most popular silent film queen of the Republican era. Tell me, how could a female star held up by hundreds of thousands of people end up with nowhere left to go?"
+>: Ruan Lingyu Episode 2 (Yuling2711)
 
-**新增变体 - D2型：决定性时刻开场**：
+**New variant, Type D2: Decisive Moment Opening**:
 
-> 「**29岁那年，董竹君做了个石破天惊的决定：副都督夫人不当了，家产一分不要，只带四个女儿走。**从亭子间到锦江饭店，她用十年证明：不认命的女人，到哪儿都能站起来。」
-> ——红颜旧事志
+> "**At 29, Dong Zhujun made a world-shaking decision: she would no longer be the vice governor's wife, she would take not one cent of the family property, and she would leave with only her four daughters.** From a small attic room to the Jinjiang Hotel, she spent ten years proving that a woman who refuses to accept her fate can stand up anywhere."
+>: Hongyan Jiushi Zhi
 
-> 「**31岁的母亲在刑场写下一封信，却二十年后才被儿子读到。**她叫赵一曼，离胜利还有九年，她没能等到。那封信，只写了一件事：妈妈是为国而牺牲的。」
-> ——红颜旧事志
+> "**A 31-year-old mother wrote a letter on the execution ground, and her son did not read it until twenty years later.** Her name is Zhao Yiman. Nine years short of victory, she did not live to see it. That letter wrote about only one thing: mother sacrificed herself for the country."
+>: Hongyan Jiushi Zhi
 
-**D2写法要点**：
-- 用「X岁那年」或「X岁的母亲」锁定关键时刻
-- 开头即交代最极端的决定或行为（放弃副都督夫人、在刑场写信）
-- 后半句交代结果或代价（用十年证明、离胜利还有九年）
-- 适合有明确人生转折点的故事，不适合渐进式改变
-- 此类型续集适用（观众已知身份，不需再揭晓）
+**D2 writing points**:
+- Use "In the year she was X" or "A mother of X years old" to lock in the key moment
+- The opening states the most extreme decision or act at once (giving up the vice governor's wife, writing a letter on the execution ground)
+- The second half states the result or the price (ten years to prove it, nine years short of victory)
+- It suits stories with a clear turning point in life, not gradual change
+- This type also works for sequels (the audience already knows the identity, so no reveal is needed)
 
 ---
 
-### E型：时间地点+人物行动
+### Type E: Time, Place, and Action
 
-**机制**：用历史感强的「年份+地点+年龄+动作」构成画面，制造临场感。
+**Mechanism**: Use the historically charged combination of "year plus place plus age plus action" to build a scene, creating a sense of being there.
 
-**模板**：
+**Template**:
 ```
 [年份]，[地点]，[年龄]的[人物]，[动作/决定]……
 ```
 
-**原文例句**：
+**Original example lines**:
 
-> 「**1938年，上海码头，1个16岁的姑娘偷偷买了船票……**」
-> ——田华集1（从handoff提炼）
+> "**In 1938, at the Shanghai docks, a 16-year-old girl secretly bought a boat ticket...**"
+>: Tian Hua Episode 1 (distilled from handoff)
 
-**写法要点**：
-- 年份/地点/年龄三要素缺一不可，是历史感的来源
-**机制**：用现在时态切入一个反常/极端场景（与人物已知身份强烈不符），最后揭晓「这个人是谁」。
+**Writing points**:
+- The three elements of year / place / age are all required; they are the source of the historical feeling
+**Mechanism**: Use the present tense to enter an abnormal / extreme scene (sharply at odds with the person's known identity), and reveal "who this person is" at the end.
 
-**模板（C1：现象反常型）**：
+**Template (C1: Abnormal Phenomenon)**:
 ```
 [数字/年龄]的[反常描述]……这个[关系/身份]叫XX。
 ```
 
-**模板（C2：极端状态型）**：
+**Template (C2: Extreme State)**:
 ```
 [年龄]的[人物标签]，[正在做的反常事情]……她叫XX。
 ```
 
-**原文例句**：
+**Original example lines**:
 
-C1-场景反常（玉玲2711原版）：
-> 「**1个1米81 170斤的壮汉，发病时对着自己的母亲拳打脚踢……这个母亲叫秦怡。**」
-> ——秦怡集2（玉玲2711）
+C1, abnormal scene (Yuling2711 original):
+> "**A powerfully built man, 1.81 meters tall and 170 jin, beat his own mother with his fists when his illness flared up... That mother is called Qin Yi.**"
+>: Qin Yi Episode 2 (Yuling2711)
 
-C2-年龄反差（玉玲2711原版）：
-> 「**93岁的老太太站在海拔3000多米的青藏高原上，徒步三十多里山路……她叫秦怡。**有人问他图什么？」
-> ——秦怡集1（玉玲2711）
+C2, age contrast (Yuling2711 original):
+> "**A 93-year-old woman stood on the Qinghai-Tibet Plateau at more than 3,000 meters above sea level and walked more than thirty li of mountain road... Her name is Qin Yi.** Someone asked her what she was doing it for?"
+>: Qin Yi Episode 1 (Yuling2711)
 
-**新增变体 - C3型：极端场景+对比揭晓**：
+**New variant, Type C3: Extreme Scene Plus Contrast Reveal**:
 
-> 「**永安百货四小姐，难产时丈夫与人私通，她换上旗袍笑着把丈夫接回家。丈夫死于狱中留下14万债务，她近60岁还在农场砸石头——却每天梳好头发，泡一杯下午茶。**」
-> ——闲读人间往事
+> "**The fourth young lady of Wing On Department Store. While she was in labor, her husband was with another woman, so she changed into a qipao and smilingly welcomed him home. Her husband died in prison leaving 140,000 in debt, and she was still smashing rocks on a farm at nearly 60, yet every day she combed her hair neatly and brewed a cup of afternoon tea.**"
+>: Xiandu Renjian Wangshi
 
-**C3写法要点**：
-- 开头身份标签（永安百货四小姐）与后续遭遇形成反差
-- 中间是极端的磨难和屈辱（难产时被出轨、农场砸石头）
-- 「——却」是转折关键词，后面接精神状态（梳头发、泡下午茶）
-- 强调的是「苦难没有击垮体面」，比单纯的苦难更有力量
-
----
+**C3 writing points**:
+- The opening identity label (fourth young lady of Wing On) contrasts with the suffering that follows
+- The middle is extreme hardship and humiliation (betrayed during labor, smashing rocks on a farm)
+- "Yet" is the key turning word, followed by the state of mind (combing her hair, brewing afternoon tea)
+- The emphasis is that "suffering did not crush her dignity", which carries more force than suffering alone
 
 ---
 
-### F型：极端数字堆叠（句号断句版）
+---
 
-**机制**：用句号将数字节点切分成独立短句，制造节奏感和呼吸感，比A型更克制但冲击力更强。
+### Type F: Extreme Number Stacking (Period-Broken Version)
 
-**模板**：
+**Mechanism**: Use periods to cut the number milestones into standalone short sentences, creating rhythm and breathing room. More restrained than Type A, but with a stronger shock.
+
+**Template**:
 ```
 [极端事实1]。[极端事实2]。[极端事实3]。她叫XX。[补充定语]。
 ```
 
-**原文例句**：
+**Original example lines**:
 
-> 「**守寡54年。13个孩子全成博士。活到106岁，跨越三个世纪。**她叫王淑珍，李昌钰的妈妈。用一双裹过又放开的小脚，踏遍了近代史。」
-> ——红颜旧事志
+> "**A widow for 54 years. All 13 of her children became PhDs. She lived to 106, spanning three centuries.** Her name is Wang Shuzhen, the mother of Li Changyu. With a pair of small feet that had been bound and then unbound, she walked through modern history."
+>: Hongyan Jiushi Zhi
 
-> 「**6岁跳河、两次高考落榜、两次自杀未遂，她用一生写了1300万字爱情。**86岁那年，她把身后事安排妥当，选择翩然离去，亲手为自己的故事画上句号。」
-> ——闲读人间往事
+> "**She jumped into a river at 6, failed the college entrance exam twice, and twice failed to take her own life. She spent her life writing 13 million words of romance.** At 86, she arranged everything after her death, chose to leave gracefully, and drew the final line under her own story with her own hand."
+>: Xiandu Renjian Wangshi
 
-> 「**13岁被抵押入青楼，月夜翻墙出逃。嫁入豪门却被丈夫拿枪逼迫，净身出户带四女创办锦江饭店，最后无偿捐给国家。**97岁留下遗言：我从不因被曲解而改变初衷。」
-> ——红颜旧事志
+> "**At 13 she was pawned into a brothel, and escaped by climbing over the wall on a moonlit night. She married into a wealthy family, was forced out at gunpoint by her husband, left with nothing, took four daughters, and founded the Jinjiang Hotel, which she finally donated to the country for free.** At 97 she left her last words: I never change my original intent because I am misunderstood."
+>: Hongyan Jiushi Zhi
 
-**写法要点**：
-- 句号断句是核心，每个短句独立完整，可以单独成立
-- 每句一个极端数字或极端事实，不超过15字
-- 3-5个短句后揭晓姓名，制造「原来是她」的恍然
-- 最后一句可以是遗言、评价或画龙点睛的定语
-- 与A型区别：A型用顿号连排，F型用句号断句
+**Writing points**:
+- Period-broken sentences are the core. Each short sentence stands complete on its own
+- Each sentence holds one extreme number or extreme fact, no more than 15 characters
+- After 3-5 short sentences, reveal the name, creating the sudden realization of "so it was her"
+- The last sentence can be a final wish, an evaluation, or a finishing description
+- Difference from Type A: Type A links with enumeration commas, Type F breaks with periods
 
 ---
 
-### G型：时代对比开场
+### Type G: Era Contrast Opening
 
-**机制**：用具体历史时间做锚点，对比「那时有/那时没有」或「谁跑了/谁留下」，制造时空落差和价值反差。
+**Mechanism**: Use a concrete historical time as an anchor, and contrast "what there was then / what there was not then" or "who ran away / who stayed", creating a gap across time and a contrast of values.
 
-**模板**：
+**Template**:
 ```
 [N年前/历史年份]，没有[现代标配]，没有[现代标配]。[人物身份]，[反常行为]……
 ```
 
-**原文例句**：
+**Original example lines**:
 
-G1-时代缺失对比：
-> 「**100年前的520，没有红包，没有截图。**他是耶鲁高材生，娶了大字不识的村姑，一生没说过我爱你，却为她造了一只铁皮饭盒。」
-> ——红颜旧事志
+G1, era absence contrast:
+> "**100 years ago, on May 20, there were no red envelopes, no screenshots.** He was a Yale graduate who married a village woman who could not read a single character. He never said 'I love you' in his whole life, yet he made her a tin lunchbox."
+>: Hongyan Jiushi Zhi
 
-G2-历史时刻+身份对比：
-> 「**1900年八国联军攻入北京。皇帝跑了，慈禧跑了，一个妓女留下了。**她用一口流利的德语劝下联军统帅，救了整座北京城。老百姓跪着叫她——九天护国娘娘。她叫赛金花。」
-> ——人间人物志
+G2, historical moment plus identity contrast:
+> "**In 1900, the Eight-Nation Alliance entered Beijing. The emperor ran, the empress dowager ran, and a courtesan stayed.** She used her fluent German to talk the allied commander down and saved the whole city of Beijing. The common people knelt and called her the Nine-Heaven Protecting Goddess. Her name is Sai Jinhua."
+>: Renjian Renwu Zhi
 
-G3-历史时刻+动作链：
-> 「**1935年天津佛堂三声枪响，她杀了大军阀孙传芳，然后关保险、撒传单、等警察自首。**十年里她托付过两个男人，全部落空——最后她改名、放脚、立遗嘱，自己动手。」
-> ——人间人物志
+G3, historical moment plus action chain:
+> "**In 1935, three gunshots rang out in a Buddhist hall in Tianjin. She killed the great warlord Sun Chuanfang, then closed the safe, scattered leaflets, and waited for the police to arrest her.** In ten years she entrusted herself to two men, and both failed her. In the end she changed her name, unbound her feet, wrote her will, and did it herself."
+>: Renjian Renwu Zhi
 
-**写法要点**：
-- 必须有明确的时间锚点（年份/历史事件）
-- G1型：「没有XX，没有XX」的排比对比，强化时代感
-- G2型：「谁跑了/谁留下」的身份对比，制造反差
-- G3型：具体动作链（关保险、撒传单、等自首），细节感强
-- 适合有明确历史时刻转折的故事，不适合时间跨度过大的叙事
+**Writing points**:
+- There must be a clear time anchor (a year / a historical event)
+- Type G1: the parallel contrast of "no XX, no XX" strengthens the sense of the era
+- Type G2: the identity contrast of "who ran away / who stayed" creates the clash
+- Type G3: a concrete action chain (closing the safe, scattering leaflets, waiting for arrest) gives a strong sense of detail
+- It suits stories with a clear historical moment as a turning point, not narratives that span too much time
 
 ---
 
-### H型：震惊事实列举+反问/感叹
+### Type H: Shocking Facts Listed, Then a Rhetorical Question / Exclamation
 
-**机制**：用顿号或逗号快速列举多个震惊事实，末尾用反问或感叹句强化认知冲击，邀请观众共鸣。
+**Mechanism**: Use enumeration commas or commas to quickly list several shocking facts, ending with a rhetorical question or exclamation to strengthen the cognitive shock and invite the audience to resonate.
 
-**模板**：
+**Template**:
 ```
 [震惊事实1]，[震惊事实2]，[震惊事实3]。她叫XX，[核心评价]。这样的女人，你敢[反问]/[感叹句]？
 ```
 
-**原文例句**：
+**Original example lines**:
 
-> 「**五个孩子，四个父亲，三个妹妹嫁给了她的前夫。**她叫李一纯，乱世里燃尽自己，却把每一个孩子都送上了光明的路。**这样的女人，你敢相信真实存在过？**」
-> ——人间人物志
+> "**Five children, four fathers, three younger sisters who married her ex-husband.** Her name is Li Yichun. In chaotic times she burned herself out, yet she sent every one of her children onto a bright road. **Could you believe a woman like this really existed?**"
+>: Renjian Renwu Zhi
 
-**写法要点**：
-- 前半部分必须是「不可能同时成立」的极端事实
-- 事实之间用顿号或逗号，节奏要快，不给喘息
-- 反问句是灵魂：「你敢相信」「你能想象吗」「这可能吗」
-- 适合人物经历极其离奇、违背常识的故事
-- 反问的作用：把冲击从作者转嫁给观众，增强代入感
+**Writing points**:
+- The first half must be extreme facts that "cannot possibly all be true at once"
+- The facts are joined with enumeration commas or commas, at a fast pace, with no room to breathe
+- The rhetorical question is the soul: "Would you dare believe it", "Can you imagine it", "Is this possible"
+- It suits people whose lives are extremely strange and defy common sense
+- The question works by shifting the shock from the author to the audience, strengthening identification
 
 ---
 
-### I型：人生轨迹三段式
+### Type I: Three-Stage Life Trajectory
 
-**机制**：用三个年龄节点+三个身份/状态，呈现完整的人生弧线，制造命运起伏感。
+**Mechanism**: Use three age milestones plus three identities / states to present a complete life arc, creating a sense of fate rising and falling.
 
-**模板**：
+**Template**:
 ```
 [起点身份/遭遇]，[年龄1][转折1]，[年龄2][转折2]，[结局状态]。[定性评价]。
 ```
 
-**原文例句**：
+**Original example lines**:
 
-I1-年龄+成就轨迹：
-> 「**被退婚的小姑娘离家闯天津，23岁当上校长，35岁成上海女富豪，一辈子没嫁，47岁削发为尼。**民国第一传奇女子。」
-> ——人间人物志
+I1, age plus achievement trajectory:
+> "**A young girl jilted at her engagement left home to make her way in Tianjin. At 23 she became a school principal, at 35 a wealthy woman of Shanghai, never married in her whole life, and at 47 she shaved her head and became a nun.** The most legendary woman of the Republican era."
+>: Renjian Renwu Zhi
 
-I2-巅峰到谷底：
-> 「**28岁拿下百花影后，春晚首位双语主持，她是那个年代最耀眼的女人。却为爱变卖首饰、放弃事业，45岁净身出户，被年轻副导演问'这谁啊'。**她没垮，用余生活成了自己的光。」
-> ——闲读人间往事
+I2, peak to valley:
+> "**At 28 she won the Hundred Flowers Best Actress award, and was the first bilingual host of the Spring Festival Gala. She was the most dazzling woman of her era. Yet for love she sold her jewelry, gave up her career, left at 45 with nothing, and was asked by a young assistant director, 'Who is this?'** She did not collapse. She spent the rest of her life becoming her own light."
+>: Xiandu Renjian Wangshi
 
-I3-磨难到逆袭：
-> 「**12岁丧母被父亲抛弃，在孤儿院学缝纫，在酒馆卖唱讨生活。**这个被全世界抛弃的女孩，**最终让全世界的女人追着她的名字走。**」
-> ——人间人物志
+I3, hardship to comeback:
+> "**At 12 she lost her mother and was abandoned by her father. She learned sewing in an orphanage and sang for a living in a tavern.** This girl, abandoned by the whole world, **in the end made women all over the world chase after her name.**"
+>: Renjian Renwu Zhi
 
-I4-奉献到被弃：
-> 「**为保护学生甘入土匪营，命运阴差阳错送她到少帅张学良身边。她随军奔赴前线、帮他圆梦南开，却在二十六岁那年收到离婚书。**此后改名隐姓，一生未再嫁。」
-> ——闲读人间往事
+I4, devotion to abandonment:
+> "**To protect her students she willingly entered a bandit camp, and fate sent her to the side of the Young Marshal Zhang Xueliang by a twist of chance. She followed the army to the front and helped him realize his dream of Nankai, yet at twenty-six she received a divorce letter.** After that she changed her name, hid her identity, and never married again in her whole life."
+>: Xiandu Renjian Wangshi
 
-**写法要点**：
-- 必须有至少三个明确的时间/年龄节点
-- 人生弧线清晰：上升、下降、V型反转、倒V型
-- 每个节点用一个具象的身份或事件，不用抽象评价
-- 末尾可以用「民国第一XX」「活成自己的光」等总结性定语
-- 适合人生轨迹曲折、有明确转折点的故事
+**Writing points**:
+- There must be at least three clear time / age milestones
+- The life arc is clear: rising, falling, V-shaped reversal, or inverted V
+- Each milestone uses a concrete identity or event, not an abstract evaluation
+- The end can use a summarizing description like "the Republic's most legendary XX" or "became her own light"
+- It suits lives with twists and clear turning points
 
 
-## 三、续集开头专用：「上回说到」衔接模板
+## 3. Sequel Openings: The "Last Time We Left Off" Bridge Template
 
-集2/集3续集，先简短回顾上集结尾，再切入本集核心场景：
+For Episodes 2 / 3, briefly recap the end of the previous episode, then cut into this episode's core scene:
 
-**模板A（行为先行+上回衔接）**：
+**Template A (action first, plus the bridge)**:
 ```
 [本集核心场景/行为先行]……他叫XX，他叫XX。上回说到[上集末尾]……
 ```
-> 「他在精神病院里见到了面目全非的他，还是娶了他。此后27年，他陪他演了一场最长的戏，他叫杨丽坤。他叫唐凤楼。上回说到唐凤楼在湖南郴州的精神病院里见到了已经不再是银幕上模样的杨丽坤。」
-> ——杨丽坤集3
+> "In the mental hospital she met him, no longer recognizable, and still married him. For the 27 years after that, he accompanied her in the longest performance of all. His name is Yang Likun. His name is Tang Fenglou. Last time we left off with Tang Fenglou meeting Yang Likun, no longer the figure from the screen, in a mental hospital in Chenzhou, Hunan."
+>: Yang Likun Episode 3
 
-**模板B（直接接续，无回顾）**：
-适用于磨难集，直接切入最黑暗场景，不需要回顾。
+**Template B (direct continuation, no recap)**:
+For hardship episodes, cut directly into the darkest scene. No recap is needed.
 
 ---
 
-## 四、「您说」推进句完整清单
+## 4. Complete List of "Tell Me" Driving Lines
 
-不是开头钩子，但是贯穿全篇的节奏推进器。每篇出现3-6次：
+These are not opening hooks, but they are the rhythm drivers running through the whole piece. Each piece uses them 3-6 times:
 
-| 句型 | 出现位置 | 功能 |
+| Pattern | Position | Function |
 |------|---------|------|
-| 「您说一个[身份]，怎么会[反常结果]？」 | 开头后/磨难入口 | 制造认知缺口 |
-| 「您说这是什么日子？」 | 磨难堆叠后 | 感叹代替评判 |
-| 「您说他还能往哪里走？」 | 最后一道绝境前 | 预告极端结局 |
-| 「您能想象吗？」 | 具象场景后 | 强化画面冲击 |
-| 「您听听，这是一个女人在生命最后写下的话」 | 遗书/遗言引用后 | 让事实自己说话 |
+| "Tell me, how could a [identity] end up [unexpected result]?" | After the opening / at the hardship entry | Creates a cognitive gap |
+| "Tell me, what kind of life is this?" | After hardships pile up | Sighing instead of judging |
+| "Tell me, where else could he possibly go?" | Before the last desperate moment | Foreshadows the extreme ending |
+| "Can you imagine that?" | After a concrete scene | Strengthens the visual shock |
+| "Listen to this. These are the words a woman wrote at the end of her life" | After quoting a suicide note / last words | Lets the facts speak for themselves |
 
 ---
 
-## 五、选型速查
+## 5. Quick Type Selection
 
-| 人物特征 | 推荐类型 |
+| Person's Traits | Recommended Type |
 |---------|---------|
-| 数字特别密集（多个精确年龄/数量） | A型/F型 |
-| 命运被两部作品/两段人生定义 | B型 |
-| 晚年反常场景/身份与场景强烈不符 | C型 |
-| 死亡过程有具体可还原细节 | D型 |
-| 有明确历史时刻/地点的命运转折 | E型/G型 |
-| 有明确的三个年龄节点和身份变化 | I型 |
-| 人生经历极其离奇、违背常识 | H型 |
-| 有时代对比或历史时刻锚点 | G型 |
-| 续集/第2-3集 | 行为先行+「上回说到」 |
+| Numbers especially dense (many exact ages / quantities) | Type A / Type F |
+| Fate defined by two works / two phases of life | Type B |
+| Abnormal scene in later years / identity sharply at odds with the scene | Type C |
+| Death process has concrete, restorable details | Type D |
+| A clear historical moment / place as fate's turning point | Type E / Type G |
+| Three clear age milestones and identity changes | Type I |
+| Life extremely strange, defying common sense | Type H |
+| Era contrast or historical moment anchor | Type G |
+| Sequel / Episode 2-3 | Action first, plus "last time we left off" |

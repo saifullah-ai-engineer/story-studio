@@ -1,730 +1,722 @@
-# 选题策略DNA — 人物故事选题方法论
+# Topic Selection Strategy DNA: Method for Choosing Character Story Topics
 
-> 基于315篇对标文案蒸馏，覆盖7大人物类型、4个时代、8种故事角度
-> 用途：指导如何选人物、选角度、找触发点，避免选题同质化
-
----
-
-## 一、语料分析概况
-
-### 1. 语料规模
-- **总计**：315篇人物故事文案
-- **账号分布**：
-  - 红颜旧事志：63篇
-  - 人间人物志：78篇
-  - 闲读人间往事：79篇
-  - 通史观人物：37篇
-  - 策山读书：34篇
-  - 玉玲2711（已有）：19篇（田华、秦怡、杨丽坤、李维康、林徽因、王晓棠等）
-
-### 2. 深度分析样本
-- **精读文案**：42篇代表性文案
-- **覆盖人物类型**：革命烈士、民国名媛、科学家、艺术家、普通英雄、国际人物、政治人物等7大类
-- **时间跨度**：清末至当代，横跨150年
+> Distilled from 315 benchmark scripts, covering 7 major person types, 4 eras, and 8 story angles
+> Purpose: guide how to choose a person, choose an angle, and find the trigger point, so topics do not become samey
 
 ---
 
-## 二、选题维度地图
+## 1. Corpus Analysis Overview
 
-### 维度一：人物类型分布（按出现频次排序）
+### 1. Corpus Scale
+- **Total**: 315 character story scripts
+- **Account distribution**:
+  - Hongyan Jiushi Zhi: 63
+  - Renjian Renwu Zhi: 78
+  - Xiandu Renjian Wangshi: 79
+  - Tongshi Guan Renwu: 37
+  - Ceshan Dushu: 34
+  - Yuling2711 (existing): 19 (Tian Hua, Qin Yi, Yang Likun, Li Weikang, Lin Huiyin, Wang Xiaotang, and others)
 
-#### 1. **革命先烈/抗战英雄**（占比约25%）
-- **代表人物**：赵一曼、江竹筠（江姐）、施剑翘、秋瑾、谢晋元妻子凌维诚
-- **选题特征**：牺牲精神、家国情怀、隐忍坚韧
-- **情感触点**：母子分离、托孤遗书、临刑从容
-
-#### 2. **民国名媛/大家闺秀**（占比约22%）
-- **代表人物**：严幼韵、董竹君、郭婉莹（永安四小姐）、赵一荻（赵四小姐）、黄蕙兰
-- **选题特征**：从云端跌落、体面与坚韧、优雅到老
-- **情感触点**：豪门到贫民的反差、旗袍与煤球炉的对比、穿越苦难不失优雅
-
-#### 3. **科学家/知识分子**（占比约15%）
-- **代表人物**：钱学森、邓稼先、郭永怀、李佩、林巧稚、周培源
-- **选题特征**：隐姓埋名、两地分离、科研报国
-- **情感触点**：28年等待、辐射满身、5个师的价值
-
-#### 4. **艺术家/演员/京剧名角**（占比约12%）
-- **代表人物**：孟小冬、杨丽坤、方舒、田华、秦怡、李维康
-- **选题特征**：巅峰与低谷、坚守初心、晚年坚韧
-- **情感触点**：最红时隐退、精神病院十年、68岁还在演戏
-
-#### 5. **普通人英雄**（占比约10%）
-- **代表人物**：庞众望母亲（高位截瘫摇轮椅借3万救命钱）、保姆养大弃婴、王淑珍（11个孩子的母亲）
-- **选题特征**：底层逆袭、母爱伟大、平凡中的不凡
-- **情感触点**：树皮粥、一字不识、挨家挨户借钱
-
-#### 6. **创业女性/实业家**（占比约8%）
-- **代表人物**：董竹君（锦江饭店）、吕碧城（上海女富豪）、香奈儿
-- **选题特征**：白手起家、商业传奇、不靠男人
-- **情感触点**：青楼逃出、29岁净身出户、孤儿院学缝纫
-
-#### 7. **国际人物**（占比约5%）
-- **代表人物**：让娜·卡尔芒（122岁法国老太太）、中村恒子（日本91岁心理医生）
-- **选题特征**：长寿智慧、人生哲理、跨文化共鸣
-- **情感触点**：抽100年烟活122岁、91岁劝人别太努力
-
-#### 8. **政治人物/军人**（占比约3%）
-- **代表人物**：孙连仲（台儿庄上将卖包子）、杜月笙
-- **选题特征**：功成身退、晚年清贫、底线坚守
-- **情感触点**：上将卖包子、烧掉借条、不向日本人弯腰
+### 2. Deep Analysis Sample
+- **Scripts read closely**: 42 representative scripts
+- **Person types covered**: Revolutionary martyrs, Republican-era society ladies, scientists, artists, ordinary heroes, international figures, political figures, and 7 other major types
+- **Time span**: From the late Qing dynasty to the present day, across 150 years
 
 ---
 
-### 维度二：时代分布
+## 2. Topic Dimension Map
 
-#### 清末民初（1890-1920）：约15%
-- 人物：吕碧城、秋瑾、施剑翘父亲被杀、林徽因出生
-- 特征：旧制度崩塌、女性觉醒、裹脚与放脚
+### Dimension 1: Person Type Distribution (sorted by frequency)
 
-#### 民国时期（1920-1949）：约40%
-- **黄金选题带**：战火、名媛、谍战、离乱
-- 代表：赵一曼、董竹君、严幼韵、孟小冬、江姐
+#### 1. **Revolutionary Martyrs / War of Resistance Heroes** (about 25%)
+- **Representative people**: Zhao Yiman, Jiang Zhujun (Jiang Jie), Shi Jianqiao, Qiu Jin, Ling Weicheng (wife of Xie Jinyuan)
+- **Topic traits**: Spirit of sacrifice, love of country and family, endurance and forbearance
+- **Emotional touchpoints**: Mother and child separated, a final letter entrusting a child, calm before execution
 
-#### 建国后（1949-1980）：约30%
-- **核心主题**：隐姓埋名、科研报国、运动冲击、坚守初心
-- 代表：钱学森归国、邓稼先消失28年、林巧稚被批斗
+#### 2. **Republican-Era Society Ladies / Daughters of Good Families** (about 22%)
+- **Representative people**: Yan Youyun, Dong Zhujun, Guo Wanying (fourth young lady of Wing On), Zhao Yidi (Miss Zhao the Fourth), Huang Huilan
+- **Topic traits**: Falling from the clouds, dignity and endurance, graceful into old age
+- **Emotional touchpoints**: The contrast of a grand household and a poor household, qipao against a coal stove, keeping elegance while passing through suffering
 
-#### 改革开放至今（1980-现在）：约15%
-- **聚焦点**：晚年坚守、长寿智慧、当代选择
-- 代表：秦怡93岁拍戏、中村恒子91岁出诊、方舒45岁重新开始
+#### 3. **Scientists / Intellectuals** (about 15%)
+- **Representative people**: Qian Xuesen, Deng Jiaxian, Guo Yonghuai, Li Pei, Lin Qiaozhi, Zhou Peiyuan
+- **Topic traits**: Living under a false name, separated across two places, serving the country through research
+- **Emotional touchpoints**: 28 years of waiting, a body full of radiation, the value of five divisions
 
----
+#### 4. **Artists / Actors / Peking Opera Stars** (about 12%)
+- **Representative people**: Meng Xiaodong, Yang Likun, Fang Shu, Tian Hua, Qin Yi, Li Weikang
+- **Topic traits**: Peak and valley, holding to one's original intent, endurance in old age
+- **Emotional touchpoints**: Withdrawing at the height of fame, ten years in a mental hospital, still acting at 68
 
-### 维度三：知名度分布
+#### 5. **Ordinary Heroes** (about 10%)
+- **Representative people**: The mother of Pang Zhongwang (paralyzed from the waist down, pushing her wheelchair to borrow 30,000 to save a life), a nanny who raised an abandoned baby, Wang Shuzhen (mother of 11 children)
+- **Topic traits**: Rising from the bottom, the greatness of a mother's love, the extraordinary inside the ordinary
+- **Emotional touchpoints**: Tree bark porridge, not knowing a single character, borrowing money door to door
 
-#### 1. **家喻户晓（约30%）**
-- 人物：钱学森、邓稼先、江姐、林徽因、董竹君
-- **选题策略**：**找新角度**，不讲熟知的，讲被忽略的
-  - 钱学森：不讲导弹，讲特米诺岛的软禁和那封藏在香烟纸里的信
-  - 江姐：不讲刑讯，讲用竹签给儿子写托孤信
-  - 林徽因：不讲"人间四月天"，讲她穿旗袍高跟鞋爬古建筑测绘
+#### 6. **Entrepreneurial Women / Businesswomen** (about 8%)
+- **Representative people**: Dong Zhujun (Jinjiang Hotel), Lü Bicheng (wealthy woman of Shanghai), Chanel
+- **Topic traits**: Starting from nothing, business legend, not relying on men
+- **Emotional touchpoints**: Escaping a brothel, leaving at 29 with nothing, learning to sew in an orphanage
 
-#### 2. **圈内知名、大众陌生（约40%）**
-- 人物：李佩（郭永怀妻子）、许鹿希（邓稼先妻子）、周培源、林巧稚
-- **选题策略**：**借光策略** + **补全叙事**
-  - "他的丈夫值十个师，她自己培养了半个中科院"（李佩）
-  - "1958年丈夫消失，28年后回来满身辐射"（许鹿希）
+#### 7. **International Figures** (about 5%)
+- **Representative people**: Jeanne Calment (122-year-old French woman), Nakamura Tsuneko (91-year-old Japanese psychologist)
+- **Topic traits**: Wisdom of longevity, philosophy of life, cross-cultural resonance
+- **Emotional touchpoints**: Smoking for 100 years and living to 122, at 91 advising people not to push themselves so hard
 
-#### 3. **小众传奇（约25%）**
-- 人物：施剑翘、谭正伦（江姐儿子养母）、凌维诚（谢晋元妻子）
-- **选题策略**：**钩子前置** + **身份标签**
-  - "1935年天津佛堂三声枪响，她杀了大军阀孙传芳"（施剑翘）
-  - "她把亲生儿子送进孤儿院，抱回情敌的孩子"（谭正伦）
-
-#### 4. **无名英雄（约5%）**
-- 人物：庞众望母亲、保姆养大弃婴、树皮粥养11个孩子的母亲
-- **选题策略**：**极致细节** + **结果反差**
-  - "高位截瘫一字不识，摇轮椅借3万，儿子清华博士拒2000万年薪"
-  - "树皮粥熬11个孩子，3个大学生5个中专生0个文盲"
+#### 8. **Political Figures / Soldiers** (about 3%)
+- **Representative people**: Sun Lianzhong (general of Taierzhuang who sold steamed buns), Du Yuesheng
+- **Topic traits**: Retiring after success, poor in old age, holding the line
+- **Emotional touchpoints**: A general selling buns, burning IOUs, not bowing to the Japanese
 
 ---
 
-### 维度四：故事角度选择（为什么讲这个角度？）
+### Dimension 2: Era Distribution
 
-#### 角度1：**母子分离/托孤视角**（高情感浓度）
-- 赵一曼："31岁母亲刑场写信，20年后儿子才读到"
-- 江姐："竹签扎手指后，用竹签给3岁儿子写遗书"
-- 邓稼先："消失28年，回来满身辐射，两年后离世"
-- **为什么有效**：亲情 + 生死 + 时间错位 = 最强催泪
+#### Late Qing and Early Republic (1890-1920): about 15%
+- People: Lü Bicheng, Qiu Jin, the father of Shi Jianqiao killed, Lin Huiyin born
+- Traits: The old system collapsing, women awakening, bound feet and unbound feet
 
-#### 角度2：**从云端到泥里的体面**（反差与坚韧）
-- 严幼韵："105岁穿旗袍跳华尔兹，战火里撑起40口人"
-- 郭婉莹："永安四小姐，难产时丈夫出轨，换旗袍笑着接回家"
-- 董竹君："29岁净身出户带四女，十年建锦江饭店"
-- **为什么有效**：旗袍 + 煤球炉 = 视觉化的精神力量
+#### Republican Era (1920-1949): about 40%
+- **Golden topic band**: War, society ladies, espionage, separation and chaos
+- Representatives: Zhao Yiman, Dong Zhujun, Yan Youyun, Meng Xiaodong, Jiang Jie
 
-#### 角度3：**隐藏的代价**（功成名就背后的牺牲）
-- 钱学森："28岁名刻航空史，被美国软禁5年，信藏香烟纸"
-- 周培源："爱因斯坦私人班唯一中国人，拒诺奖，冰路骑车一年救妻"
-- 林巧稚："接生5万孩子，批斗台被吐浓痰，68岁跪地洗便盆"
-- **为什么有效**：成就是公开的，代价是隐藏的，讲代价更动人
+#### After the Founding of the PRC (1949-1980): about 30%
+- **Core themes**: Living under a false name, serving the country through research, the shock of the movements, holding to one's original intent
+- Representatives: Qian Xuesen returning to China, Deng Jiaxian disappearing for 28 years, Lin Qiaozhi being denounced
 
-#### 角度4：**临终一刻/遗言视角**（时间的终极紧张感）
-- 赵四小姐："临终11个字'我最放不下的就是你'，百岁张学良失声痛哭"
-- 杨丽坤："精神病院10年，丈夫陪她演幻觉27年"
-- 周培源："91岁晨练回来扯嗓门'我只爱你'，躺下就没醒"
-- **为什么有效**：生命最后一刻的话，重如千钧
-
-#### 角度5：**单一物件承载一生**（具象化记忆）
-- 董竹君："三次'不要'：青楼不要赎身、离婚不要家产、捐饭店留一只笔"
-- 王淑珍："一碗树皮粥养11个孩子，临终手边放着那个旧碗"
-- 庞众望母亲："摇轮椅借3万，儿子说'我这条命是娘从泥里刨出来的'"
-- **为什么有效**：物件 = 可视化情感锚点
-
-#### 角度6：**年龄反差**（打破刻板印象）
-- 严幼韵："105岁穿旗袍跳华尔兹，112岁离世"
-- 让娜·卡尔芒："抽100年烟活122岁，见过梵高，骗律师30年"
-- 中村恒子："91岁还出诊，劝人别太努力"
-- **为什么有效**：老年 + 活力 = 认知颠覆
-
-#### 角度7：**性别颠覆**（女扮男装、女性闯男性领域）
-- 孟小冬："女扮男装唱遍天下，京剧史唯一'冬皇'"
-- 吕碧城："23岁当大学校长，终身未嫁，骨灰扔南海"
-- 李佩："丈夫值10个师，她自己培养半个中科院"
-- **为什么有效**：性别 + 能力 = 时代先锋感
-
-#### 角度8：**认知颠覆点**（反常识、反预期）
-- 香奈儿："12岁孤儿院学缝纫，小酒馆卖唱，最后全世界女人追她名字"
-- 孙连仲："台儿庄上将，赴台后主动卖包子，凭双手活97岁"
-- 让娜·卡尔芒："抽烟喝酒从不养生，却是人类最长寿的人"
-- **为什么有效**：违反常识 = 好奇心黑洞
+#### Reform and Opening to the Present (1980 to now): about 15%
+- **Focus**: Endurance in old age, wisdom of longevity, choices of the present day
+- Representatives: Qin Yi acting at 93, Nakamura Tsuneko still seeing patients at 91, Fang Shu starting over at 45
 
 ---
 
-## 三、选题触发点清单（18个场景）
+### Dimension 3: Fame Distribution
 
-### 时间节点触发（6个）
+#### 1. **Household Names (about 30%)**
+- People: Qian Xuesen, Deng Jiaxian, Jiang Jie, Lin Huiyin, Dong Zhujun
+- **Topic strategy**: **Find a new angle**. Do not tell what is already known; tell what has been overlooked
+  - Qian Xuesen: do not tell the missile story; tell the confinement on Terminal Island and the letter hidden in cigarette paper
+  - Jiang Jie: do not tell the torture story; tell the letter of entrustment written to her son with a bamboo skewer
+  - Lin Huiyin: do not tell "April Days on Earth"; tell how she climbed ancient buildings in a qipao and high heels to survey them
 
-1. **纪念日/忌日**
-   - 8月15日日本投降 → 赵一曼"离胜利还有9年她没等到"
-   - 清明、烈士纪念日 → 江姐、施剑翘
+#### 2. **Known in the Field, Unknown to the Public (about 40%)**
+- People: Li Pei (wife of Guo Yonghuai), Xu Luxi (wife of Deng Jiaxian), Zhou Peiyuan, Lin Qiaozhi
+- **Topic strategy**: **Borrow the light** plus **complete the narrative**
+  - "Her husband was worth ten divisions, and she herself trained half the Chinese Academy of Sciences" (Li Pei)
+  - "In 1958 her husband vanished, and 28 years later he returned covered in radiation" (Xu Luxi)
 
-2. **节日关联**
-   - 母亲节 → 赵一曼给儿子的信、王淑珍11个孩子
-   - 5月20日 → "100年前的520，他造了铁皮饭盒"（周培源）
+#### 3. **Niche Legends (about 25%)**
+- People: Shi Jianqiao, Tan Zhenglin (foster mother of Jiang Jie's son), Ling Weicheng (wife of Xie Jinyuan)
+- **Topic strategy**: **Hook first** plus **identity label**
+  - "In 1935, three gunshots rang out in a Buddhist hall in Tianjin. She killed the great warlord Sun Chuanfang" (Shi Jianqiao)
+  - "She sent her own son to an orphanage and took in her rival's child" (Tan Zhenglin)
 
-3. **季节/天气**
-   - 寒冬 → 周培源冰路骑车、王淑珍树皮粥
-   - 战火纪念 → 四行仓库、台儿庄
-
-4. **当代热点对照**
-   - 讨论养老焦虑 → 中村恒子91岁"人间值得"
-   - 讨论内卷 → 严幼韵"每一天都是好日子"
-
-5. **生日/逝世周年**
-   - 林徽因诞辰 → 强调她是建筑师不只是诗人
-   - 钱学森归国纪念 → 特米诺岛软禁
-
-6. **历史事件周年**
-   - 西安事变 → 赵四小姐陪囚54年
-   - 两弹一星 → 邓稼先消失28年
-
----
-
-### 情感共鸣点触发（7个）
-
-7. **母爱/亲情**
-   - 赵一曼托孤信、江姐竹签写信
-   - 庞众望母亲摇轮椅借钱、王淑珍树皮粥
-
-8. **爱情坚守**
-   - 赵四小姐等36年婚礼、周培源冰路骑车救妻
-   - 许鹿希等28年、杨丽坤丈夫陪演幻觉27年
-
-9. **苦难中的体面**
-   - 郭婉莹穿旗袍刷厕所泡下午茶
-   - 林巧稚批斗后依然整洁
-
-10. **底层逆袭**
-    - 香奈儿孤儿院到时尚帝国
-    - 庞众望树皮粥到清华博士
-
-11. **晚年坚韧**
-    - 秦怡93岁高原拍戏
-    - 中村恒子91岁出诊
-
-12. **被辜负后的独立**
-    - 董竹君29岁净身出户
-    - 方舒45岁净身出户独撑两女
-
-13. **临终遗言**
-    - 赵四小姐"最放不下你"
-    - 林巧稚昏迷喊"产钳"
+#### 4. **Nameless Heroes (about 5%)**
+- People: The mother of Pang Zhongwang, the nanny who raised an abandoned baby, the mother who raised 11 children on tree bark porridge
+- **Topic strategy**: **Extreme detail** plus **result contrast**
+  - "Paralyzed from the waist down and not knowing a single character, she pushed her wheelchair to borrow 30,000, and her son became a Tsinghua PhD who turned down a 20 million annual salary"
+  - "Tree bark porridge raised 11 children: 3 university students, 5 technical school students, 0 illiterate"
 
 ---
 
-### 认知颠覆点触发（5个）
+### Dimension 4: Story Angle Selection (Why Tell It From This Angle?)
 
-14. **身份反差**
-    - 孙连仲上将卖包子
-    - 吕碧城富豪削发为尼
+#### Angle 1: **Mother and Child Separated / Entrusted Child** (high emotional concentration)
+- Zhao Yiman: "A 31-year-old mother wrote a letter on the execution ground, and her son did not read it until 20 years later"
+- Jiang Jie: "After a bamboo skewer pierced her finger, she used a bamboo skewer to write a final letter to her 3-year-old son"
+- Deng Jiaxian: "He vanished for 28 years, returned covered in radiation, and died two years later"
+- **Why it works**: Family love plus life and death plus time out of joint equals the strongest tearjerker
 
-15. **年龄反常**
-    - 122岁抽烟喝酒
-    - 105岁穿高跟鞋
+#### Angle 2: **Dignity From the Clouds Down Into the Mud** (contrast and endurance)
+- Yan Youyun: "At 105 she danced a waltz in a qipao, and held up 40 people through the flames of war"
+- Guo Wanying: "Fourth young lady of Wing On. While she was in labor her husband cheated, and she changed into a qipao and smilingly welcomed him home"
+- Dong Zhujun: "At 29 she left with nothing and four daughters, and built the Jinjiang Hotel in ten years"
+- **Why it works**: Qipao plus coal stove equals a visualized spiritual force
 
-16. **性别突破**
-    - 孟小冬女扮男装成"冬皇"
-    - 李佩"培养半个中科院"
+#### Angle 3: **The Hidden Price** (the sacrifice behind fame and success)
+- Qian Xuesen: "At 28 his name was engraved in aviation history; he was confined by the United States for 5 years, with a letter hidden in cigarette paper"
+- Zhou Peiyuan: "The only Chinese student in Einstein's private class; he turned down a Nobel Prize and rode a bicycle on icy roads for a year to save his wife"
+- Lin Qiaozhi: "She delivered 50,000 babies, was spat on thickly on the denunciation platform, and at 68 knelt to wash bedpans"
+- **Why it works**: The achievement is public, the price is hidden, and telling the price moves people more
 
-17. **违反常识**
-    - "91岁劝人别太努力"
-    - "抽100年烟却最长寿"
+#### Angle 4: **The Final Moment / Last Words** (the ultimate tension of time)
+- Miss Zhao the Fourth: "Her dying words, 11 characters, 'What I cannot let go of most is you', made the hundred-year-old Zhang Xueliang weep aloud"
+- Yang Likun: "Ten years in a mental hospital, her husband acted out her hallucinations with her for 27 years"
+- Zhou Peiyuan: "At 91 he came back from morning exercise, shouted 'I love only you', lay down, and never woke up"
+- **Why it works**: The last words of a life carry the weight of a thousand pounds
 
-18. **隐藏真相揭示**
-    - 林徽因不是写诗的是建筑师
-    - 蒋友梅律师函告三婶守家族遗产
+#### Angle 5: **A Single Object Carrying a Whole Life** (making memory tangible)
+- Dong Zhujun: "Three 'no's': no ransom from the brothel, no property in the divorce, donate the hotel and keep only one pen"
+- Wang Shuzhen: "One bowl of tree bark porridge raised 11 children, and at her death that old bowl sat by her hand"
+- The mother of Pang Zhongwang: "She pushed her wheelchair to borrow 30,000, and her son said, 'My life was dug out of the mud by my mother'"
+- **Why it works**: An object equals a visual emotional anchor
 
----
+#### Angle 6: **Age Contrast** (breaking stereotypes)
+- Yan Youyun: "At 105 she danced a waltz in a qipao and high heels, and died at 112"
+- Jeanne Calment: "She smoked for 100 years and lived to 122, met Van Gogh, and fooled a lawyer for 30 years"
+- Nakamura Tsuneko: "At 91 she was still seeing patients, advising people not to push themselves so hard"
+- **Why it works**: Old age plus vitality equals overturned expectations
 
-## 四、角度选择方法论（8条可操作原则）
+#### Angle 7: **Gender Subversion** (women in men's dress, women breaking into men's fields)
+- Meng Xiaodong: "She sang across the country dressed as a man, the only 'Winter Emperor' in Peking opera history"
+- Lü Bicheng: "At 23 she was a university principal, never married in her whole life, and her ashes were scattered in the South China Sea"
+- Li Pei: "Her husband was worth 10 divisions, and she herself trained half the Chinese Academy of Sciences"
+- **Why it works**: Gender plus ability equals a sense of being ahead of the times
 
-### 原则1：**同一人物找认知盲区**
-
-**方法**：已有叙事 → 找空白 → 补全真相
-
-**案例**：
-- 林徽因：大众认知是"人间四月天"诗人 → 空白：建筑师身份 → 角度："穿旗袍高跟鞋爬千年古建，病床写完中国建筑史"
-- 钱学森：大众认知是导弹之父 → 空白：归国过程 → 角度："被美国软禁5年，信藏香烟纸"
-- 江姐：大众认知是刑讯不屈 → 空白：母亲身份 → 角度："用竹签给3岁儿子写托孤信"
-
-**操作步骤**：
-1. 列出人物标签前3条（百度百科前三段）
-2. 问：哪个身份被忽略了？（母亲/妻子/女儿/晚年/失败/代价）
-3. 从被忽略的身份切入
-
----
-
-### 原则2：**时间错位制造张力**
-
-**方法**：事件 A（过去） → 时间间隔 → 事件 B（未来） → 放大时间差的残酷
-
-**黄金公式**：
-- "X年前她做了Y，Z年后才被知道"
-- "当时是A，多年后变成B"
-
-**案例**：
-- 赵一曼："31岁刑场写信 → 20年后 → 儿子才读到"
-- 江姐："用竹签写遗书 → 同一根竹签 → 刚扎过她手指"
-- 沈从文："写了一辈子情书 → 去世后 → 张兆和才懂'太晚了'"
+#### Angle 8: **Overturned Expectations** (against common sense, against anticipation)
+- Chanel: "At 12 she learned sewing in an orphanage and sang in a small tavern, and in the end women all over the world chased after her name"
+- Sun Lianzhong: "A general of Taierzhuang, after going to Taiwan he took the initiative to sell buns, and lived to 97 on his own two hands"
+- Jeanne Calment: "She smoked, drank, and never cared for her health, yet she was the longest-lived person in human history"
+- **Why it works**: Breaking common sense equals a black hole of curiosity
 
 ---
 
-### 原则3：**极致反差构建张力**
+## 3. Topic Trigger Checklist (18 Scenarios)
 
-**对比维度**：
-- 身份反差：上将 ↔ 卖包子
-- 物质反差：旗袍 ↔ 煤球炉
-- 年龄反差：105岁 ↔ 高跟鞋
-- 处境反差：接生5万孩子 ↔ 跪地洗便盆
+### Time-Based Triggers (6)
 
-**句式模板**：
-- "曾经A，后来B，却依然C"
-- "一边A，一边B"
+1. **Anniversaries / Death Anniversaries**
+   - August 15, Japan's surrender, leads to Zhao Yiman and "nine years short of victory, she did not live to see it"
+   - Qingming Festival, Martyrs' Day, leads to Jiang Jie and Shi Jianqiao
 
-**案例**：
-- 郭婉莹："难产时丈夫出轨，她换旗袍笑着接回家；丈夫死留14万债，60岁砸石头，每天泡下午茶"
-- 林巧稚："接生5万孩子 ↔ 批斗台被吐浓痰 ↔ 跪地洗便盆 ↔ 从不吭声"
+2. **Festival Links**
+   - Mother's Day leads to Zhao Yiman's letter to her son and Wang Shuzhen's 11 children
+   - May 20 leads to "100 years ago, on May 20, he made a tin lunchbox" (Zhou Peiyuan)
 
----
+3. **Seasons / Weather**
+   - Deep winter leads to Zhou Peiyuan riding on icy roads and Wang Shuzhen's tree bark porridge
+   - War commemorations lead to the Sihang Warehouse and Taierzhuang
 
-### 原则4：**单一物件作为情感锚点**
+4. **Present-Day Hot Topics as a Mirror**
+   - Discussion of anxiety about old age leads to Nakamura Tsuneko at 91 and "Life Is Worth It"
+   - Discussion of involution leads to Yan Youyun and "every day is a good day"
 
-**方法**：找到贯穿一生的具象物
+5. **Birthdays / Death Anniversaries**
+   - Lin Huiyin's birthday is a chance to stress that she was an architect, not only a poet
+   - The anniversary of Qian Xuesen's return to China leads to the confinement on Terminal Island
 
-**高频物件**：
-- 信件：赵一曼托孤信、钱学森香烟纸
-- 衣物：旗袍（体面的象征）
-- 食物：树皮粥、当归黑豆
-- 工具：自行车、铁皮饭盒、竹签
-- 空间：7平米小屋、四行仓库
-
-**案例**：
-- 董竹君："三次'不要'" → 具象化一生选择
-- 王淑珍："一碗树皮粥" → 母爱的视觉化
-- 周培源："咯吱响的自行车" → 爱情的载体
+6. **Historical Event Anniversaries**
+   - The Xi'an Incident leads to Miss Zhao the Fourth, who accompanied a prisoner for 54 years
+   - Two Bombs, One Satellite leads to Deng Jiaxian vanishing for 28 years
 
 ---
 
-### 原则5：**从结果倒推起点**
+### Emotional Resonance Triggers (7)
 
-**方法**：震撼结果 → 追溯源头 → 放大反差
+7. **Mother's Love / Family**
+   - Zhao Yiman's letter of entrustment, Jiang Jie's letter written with a bamboo skewer
+   - The mother of Pang Zhongwang pushing her wheelchair to borrow money, Wang Shuzhen's tree bark porridge
 
-**案例**：
-- 庞众望："拒2000万年薪" ← 倒推 ← "母亲一字不识摇轮椅借3万"
-- 李昌钰："华人神探" ← 倒推 ← "母亲守寡54年，13个孩子全成博士"
-- 香奈儿："全世界女人追她名字" ← 倒推 ← "12岁孤儿院学缝纫"
+8. **Love and Endurance**
+   - Miss Zhao the Fourth waiting 36 years for a wedding, Zhou Peiyuan riding icy roads to save his wife
+   - Xu Luxi waiting 28 years, Yang Likun's husband acting out her hallucinations for 27 years
 
-**句式**："为什么能X？因为曾经Y"
+9. **Dignity Inside Suffering**
+   - Guo Wanying wearing a qipao to scrub toilets and brew afternoon tea
+   - Lin Qiaozhi still neat and tidy after being denounced
 
----
+10. **Rising From the Bottom**
+    - Chanel from the orphanage to a fashion empire
+    - Pang Zhongwang from tree bark porridge to a Tsinghua PhD
 
-### 原则6：**借光策略（站在巨人肩上）**
+11. **Endurance in Old Age**
+    - Qin Yi acting on a plateau at 93
+    - Nakamura Tsuneko still seeing patients at 91
 
-**方法**：主角不够知名 → 借配角的知名度
+12. **Independence After Being Wronged**
+    - Dong Zhujun leaving with nothing at 29
+    - Fang Shu leaving with nothing at 45 and raising two daughters alone
 
-**案例**：
-- 李佩：不够知名 → "她的丈夫值10个师"（借郭永怀）
-- 许鹿希：不够知名 → "邓稼先的妻子"（借邓稼先）
-- 谭正伦：不够知名 → "江姐儿子的养母"（借江姐）
-- 凌维诚：不够知名 → "谢晋元的妻子，接回八百壮士"（借谢晋元）
-
-**公式**："她是X的Y，但她自己Z"
-
----
-
-### 原则7：**寻找隐藏的"第二主角"**
-
-**方法**：名人故事 → 找被遮蔽的配角 → 补全他们的叙事
-
-**案例**：
-- 赵一曼 → 第二主角：儿子宁儿（20年后才知道母亲是谁）
-- 江姐 → 第二主角：养母谭正伦（把亲儿送孤儿院，抱回情敌孩子）
-- 谢晋元 → 第二主角：妻子凌维诚（接回107个孤军老兵）
-- 郭永怀 → 第二主角：李佩（"她自己培养了半个中科院"）
-
-**价值**：避开红海（主角已被讲烂），开辟蓝海（配角故事新鲜）
+13. **Dying Words**
+    - Miss Zhao the Fourth and "what I cannot let go of most is you"
+    - Lin Qiaozhi calling out "forceps" while unconscious
 
 ---
 
-### 原则8：**晚年/临终视角**（时间的终极审判）
+### Expectation-Overturning Triggers (5)
 
-**方法**：不讲巅峰，讲谢幕
+14. **Identity Contrast**
+    - Sun Lianzhong, a general selling buns
+    - Lü Bicheng, a wealthy woman who shaved her head and became a nun
 
-**为什么有效**：
-- 晚年最纯粹（名利褪去，只剩本质）
-- 临终遗言最重（一生浓缩成一句话）
-- 长寿智慧最稀缺（活得久的人见过更多）
+15. **Age Anomaly**
+    - Smoking and drinking at 122
+    - High heels at 105
 
-**案例**：
-- 周培源："91岁晨练回来，扯嗓门'我只爱你'，躺下就没醒"
-- 赵四小姐："临终'我最放不下的就是你'，百岁张学良痛哭"
-- 林巧稚："昏迷中喊'产钳产钳'，梦里还在接生"
-- 杜月笙："63岁临终烧掉一保险箱借条，告诉子女'靠本事不靠人情'"
+16. **Gender Breakthrough**
+    - Meng Xiaodong, a woman dressed as a man who became the "Winter Emperor"
+    - Li Pei, who "trained half the Chinese Academy of Sciences"
 
----
+17. **Against Common Sense**
+    - "At 91, advising people not to push themselves so hard"
+    - "Smoking for 100 years, yet the longest-lived"
 
-## 五、选题避坑指南（5类不适合讲的）
-
-### 1. **过于沉重无法消化**
-
-**避开**：
-- 纯粹酷刑描写（只讲痛苦不讲精神）
-- 绝望式结局（死得毫无意义）
-- 纯负能量（只有苦难没有光）
-
-**正确处理**：
-- 江姐：不详细描写酷刑过程，聚焦"用竹签写信"的母爱
-- 赵一曼：不渲染牺牲的惨烈，聚焦"信20年后才被读到"的错位
-
-**原则**：苦难是背景，精神是主角
+18. **Revealing a Hidden Truth**
+    - Lin Huiyin was an architect, not a poet
+    - Jiang Youmei serving a lawyer's letter on her third aunt to guard the family inheritance
 
 ---
 
-### 2. **争议性强容易撕裂**
+## 4. Angle Selection Method (8 Workable Principles)
 
-**避开**：
-- 历史评价未定论（如汪精卫早年）
-- 立场高度敏感（政治人物的站队）
-- 道德伦理争议（如婚外情无正当理由）
+### Principle 1: **Find the Blind Spot of the Same Person**
 
-**边界案例**（可讲但需谨慎）：
-- 孙连仲：国民党将领 → 强调抗日功绩 + 晚年清贫 + 不向日本人弯腰
-- 杜月笙：黑帮大佬 → 强调抗战贡献 + 临终烧借条的觉悟
+**Method**: Existing narrative, then find the gap, then complete the truth
 
-**原则**：讲人性不讲政治，讲亮点不讲污点
+**Cases**:
+- Lin Huiyin: the public sees her as the "April Days on Earth" poet, so the gap is her identity as an architect, and the angle is "climbing thousand-year-old buildings in a qipao and high heels, finishing the history of Chinese architecture from a sickbed"
+- Qian Xuesen: the public sees him as the father of missiles, so the gap is the return to China, and the angle is "confined by the United States for 5 years, with a letter hidden in cigarette paper"
+- Jiang Jie: the public sees her as unyielding under torture, so the gap is her identity as a mother, and the angle is "writing a letter of entrustment to her 3-year-old son with a bamboo skewer"
 
----
-
-### 3. **过于小众无共鸣点**
-
-**特征**：
-- 只有专业领域的人知道
-- 贡献太抽象（如某个数学定理）
-- 生平过于平淡
-
-**例外**：如果能找到强钩子可以讲
-- 周培源：物理学家太抽象 → 但"爱因斯坦私人班" + "冰路骑车救妻"有画面感
-
-**判断标准**：
-- 开头3秒能否抓住人？
-- 钩子能否让外行也想听？
+**Steps**:
+1. List the person's top 3 labels (the first three paragraphs of their Baidu Baike entry)
+2. Ask: which identity has been ignored? (mother / wife / daughter / old age / failure / price paid)
+3. Enter from the ignored identity
 
 ---
 
-### 4. **时代距离过远难以共情**
+### Principle 2: **Use Time Out of Joint to Create Tension**
 
-**避开**：
-- 唐宋元明（太远，生活细节难以还原）
-- 清代早期（裹脚、纳妾等难以引发现代共鸣）
+**Method**: Event A (past), then a time gap, then Event B (future), amplifying how cruel the time gap is
 
-**最佳时间带**：
-- 清末民初至今（1890-2024）
-- 跨度130年，既有历史感又有现代共鸣
+**Golden formulas**:
+- "X years ago she did Y, and it was only Z years later that anyone knew"
+- "At the time it was A, and many years later it became B"
 
-**例外**：
-- 如果人物横跨多个时代（如孝庄太后扶顺治康熙）可讲
-- 但需要找到现代共鸣点（母爱、权谋智慧）
-
----
-
-### 5. **纯成功学无苦难底色**
-
-**避开**：
-- 一帆风顺的人生（富二代 → 更富）
-- 纯靠运气/背景（无个人奋斗）
-- 只有光环无代价
-
-**为什么**：
-- 缺乏张力（没有低谷就没有高潮）
-- 难以共鸣（大部分观众是普通人）
-
-**正确示范**：
-- 严幼韵：豪门千金 → 但丈夫被日军杀害 → 战火里撑40口人
-- 郭婉莹：永安四小姐 → 但丈夫出轨 → 60岁砸石头还债
-
-**原则**：必须有苦难 + 必须有坚韧 + 必须有转折
+**Cases**:
+- Zhao Yiman: "She wrote the letter at 31 on the execution ground, and 20 years later her son finally read it"
+- Jiang Jie: "She wrote the final letter with a bamboo skewer, the same skewer that had just pierced her finger"
+- Shen Congwen: "He wrote love letters all his life, and only after he died did Zhang Zhaohe understand 'too late'"
 
 ---
 
-## 六、实战案例分析（5个典型选题逻辑拆解）
+### Principle 3: **Build Tension With Extreme Contrast**
 
-### 案例1：赵一曼 —— 时间错位 + 母子分离
+**Contrast dimensions**:
+- Identity contrast: general versus bun seller
+- Material contrast: qipao versus coal stove
+- Age contrast: 105 years old versus high heels
+- Situation contrast: delivering 50,000 babies versus kneeling to wash bedpans
 
-**选题触发点**：
-- 8月15日日本投降纪念日
-- 母亲节
+**Sentence templates**:
+- "Once A, later B, yet still C"
+- "On one side A, on the other side B"
 
-**为什么选这个人**：
-1. 知名度高（课本里的英雄）
-2. 但有认知盲区（大家只知道她是烈士，不知道她是母亲）
-3. 有强烈的时间错位（31岁写信 → 20年后才被读到）
-
-**为什么选这个角度**：
-- 不讲大家熟知的刑讯逼供
-- 聚焦"托孤信" + "儿子20年后才知道母亲是谁"
-- 情感浓度：母爱 × 生死 × 时间错位 = 最强催泪
-
-**钩子设计**：
-"31岁的母亲在刑场写下一封信，却二十年后才被儿子读到。她叫赵一曼，离胜利还有九年，她没能等到。那封信，只写了一件事：妈妈是为国而牺牲的。"
-
-**结构**：
-1. 开头：信 + 20年错位
-2. 中间：她是谁，为什么被捕，受了什么苦
-3. 高潮：写信的细节（竹签 + 毛边纸 + 棉灰墨水）
-4. 结尾：儿子30多岁才读到，把"赵一曼"三个字刺在手臂上
-
-**选题方法论**：
-- **原则2**：时间错位制造张力
-- **原则4**：单一物件（托孤信）作为锚点
-- **触发点7**：母爱/亲情共鸣
+**Cases**:
+- Guo Wanying: "While she was in labor her husband cheated, and she changed into a qipao and smilingly welcomed him home; her husband died leaving 140,000 in debt, and at 60 she smashed rocks, still brewing afternoon tea every day"
+- Lin Qiaozhi: "Delivered 50,000 babies, spat on thickly on the denunciation platform, knelt to wash bedpans, never made a sound"
 
 ---
 
-### 案例2：严幼韵 —— 极致反差 + 长寿智慧
+### Principle 4: **A Single Object as the Emotional Anchor**
 
-**选题触发点**：
-- 讨论"如何优雅老去"
-- 名媛话题热度
+**Method**: Find the tangible thing that runs through the whole life
 
-**为什么选这个人**：
-1. 活到112岁（罕见）
-2. 身份反差大（名媛 → 寡妇 → 撑起40口人 → 联合国职员）
-3. 有视觉化细节（105岁穿旗袍跳华尔兹）
+**High-frequency objects**:
+- Letters: Zhao Yiman's letter of entrustment, Qian Xuesen's cigarette paper
+- Clothing: the qipao (a symbol of dignity)
+- Food: tree bark porridge, angelica and black beans
+- Tools: bicycle, tin lunchbox, bamboo skewer
+- Spaces: a 7-square-meter room, the Sihang Warehouse
 
-**为什么选这个角度**：
-- 不只讲名媛生活（浅层）
-- 聚焦"战火中的坚韧" + "晚年的优雅"
-- 情感线：豪门千金 → 丈夫被日军杀害 → 撑起40口人 → 活成传奇
-
-**钩子设计**：
-"105岁生日那天，她穿着金线绣花的旗袍，踩着三寸高跟鞋和主治医生跳了一只华尔兹。活到112岁，从不晨跑，不碰保健品，顿顿要吃肥得流油的红烧肉，配一杯加冰的威士忌。"
-
-**结构**：
-1. 开头：105岁跳华尔兹（视觉冲击）
-2. 回溯：豪门出身 → 丈夫被杀 → 40口人
-3. 中段：如何在战火里撑住（卖钻戒、开荒种菜、分半袋发霉面粉）
-4. 后半生：联合国职员 → 嫁顾维钧 → 112岁离世
-5. 结尾："每一天都是好日子"
-
-**选题方法论**：
-- **原则3**：极致反差（105岁 ↔ 高跟鞋、旗袍 ↔ 战火）
-- **原则6**：借光策略（"上海滩最后一位名媛"）
-- **触发点9**：苦难中的体面
+**Cases**:
+- Dong Zhujun: "Three 'no's'" makes a whole life of choices tangible
+- Wang Shuzhen: "One bowl of tree bark porridge" visualizes a mother's love
+- Zhou Peiyuan: "The creaking bicycle" carries the love
 
 ---
 
-### 案例3：江姐（江竹筠）—— 物件锚点 + 母亲视角
+### Principle 5: **Work Backward From the Result to the Start**
 
-**选题触发点**：
-- 清明节、烈士纪念日
-- 母亲节
+**Method**: Shocking result, then trace the origin, then amplify the contrast
 
-**为什么选这个人**：
-1. 极高知名度（《红岩》主角）
-2. 有认知盲区（大家只知道刑讯，不知道她是母亲）
-3. 有强物件锚点（竹签）
+**Cases**:
+- Pang Zhongwang: "Turning down a 20 million annual salary", traced back to "his mother, not knowing a single character, pushed her wheelchair to borrow 30,000"
+- Li Changyu: "The Chinese detective", traced back to "his mother was a widow for 54 years, and all 13 of her children became PhDs"
+- Chanel: "Women all over the world chase after her name", traced back to "at 12 she learned sewing in an orphanage"
 
-**为什么选这个角度**：
-- 不讲大家熟知的"竹签扎手指"
-- 聚焦"同一根竹签" → 刑具 vs 写信工具
-- 物件的双重含义：酷刑 + 母爱
-
-**钩子设计**：
-"竹签扎进她的手指，她一个字没吐。又用竹签写下给三岁儿子的托孤遗书。渣滓洞一年三个月，她用一句谎言保住二十多名同志。29岁，蓝布旗袍，从容赴死。"
-
-**结构**：
-1. 开头：竹签的双重用途
-2. 身世：穷苦出身 → 入党 → 地下工作 → 丈夫牺牲
-3. 被捕：用"我知道"保护20多名同志
-4. 高潮：用竹签给儿子写信
-5. 结尾：29岁穿蓝布旗袍赴死，儿子后来成才
-
-**选题方法论**：
-- **原则1**：同一人物找认知盲区（母亲身份）
-- **原则4**：单一物件（竹签）作为情感锚点
-- **触发点7**：母爱共鸣
+**Sentence pattern**: "Why could she do X? Because she once did Y"
 
 ---
 
-### 案例4：李佩 —— 借光策略 + 隐藏贡献
+### Principle 6: **Borrow the Light (Standing on a Giant's Shoulders)**
 
-**选题触发点**：
-- 讨论"科学家妻子的牺牲"
-- 女性独立话题
+**Method**: The lead is not famous enough, so borrow the fame of a supporting figure
 
-**为什么选这个人**：
-1. 丈夫郭永怀知名度高（两弹一星元勋）
-2. 她自己贡献被严重低估（"中国应用语言学之母"）
-3. 有强烈对比："丈夫值10个师，她自己培养半个中科院"
+**Cases**:
+- Li Pei: not famous enough, so "her husband was worth 10 divisions" (borrowing Guo Yonghuai)
+- Xu Luxi: not famous enough, so "the wife of Deng Jiaxian" (borrowing Deng Jiaxian)
+- Tan Zhenglin: not famous enough, so "the foster mother of Jiang Jie's son" (borrowing Jiang Jie)
+- Ling Weicheng: not famous enough, so "the wife of Xie Jinyuan, who brought back the 800 heroes" (borrowing Xie Jinyuan)
 
-**为什么选这个角度**：
-- 不只讲"科学家妻子"（被动身份）
-- 强调"她自己的成就"（主动身份）
-- 双线叙事：她的付出 + 她的成就
-
-**钩子设计**：
-"她的丈夫值十个师，她自己培养了半个中科院。中年丧夫，晚年丧女，却优雅了整整一生。这是李佩。"
-
-**结构**：
-1. 开头：双重身份（妻子 + 她自己）
-2. 相识：与郭永怀的爱情
-3. 丧夫：1968年郭永怀飞机失事
-4. 她的成就：编教材、办讲坛、培养学生
-5. 晚年：丧女、捐60万、99岁依然整洁
-6. 结尾：郭永怀星 + 李佩星
-
-**选题方法论**：
-- **原则6**：借光策略（借郭永怀的知名度）
-- **原则7**：寻找隐藏的"第二主角"（补全她自己的叙事）
-- **触发点8**：爱情坚守 + 独立成就
+**Formula**: "She is X's Y, but she herself is Z"
 
 ---
 
-### 案例5：庞众望母亲 —— 普通人英雄 + 教育启示
+### Principle 7: **Find the Hidden "Second Lead"**
 
-**选题触发点**：
-- 讨论"如何教育孩子"
-- 高考季、开学季
-- 底层逆袭话题
+**Method**: In a famous person's story, find the supporting figure who has been hidden, and complete their narrative
 
-**为什么选这个人**：
-1. 极致反差：高位截瘫一字不识 → 儿子清华博士拒2000万年薪
-2. 有教育方法论："书是给你自己念的"（不施加压力）
-3. 有具象化细节：摇轮椅挨家借钱、一毛一毛凑3万
+**Cases**:
+- Zhao Yiman leads to the second lead, her son Ning'er (who only learned who his mother was 20 years later)
+- Jiang Jie leads to the second lead, her foster mother Tan Zhenglin (who sent her own son to an orphanage and took in her rival's child)
+- Xie Jinyuan leads to the second lead, his wife Ling Weicheng (who brought back 107 veteran soldiers of the lone army)
+- Guo Yonghuai leads to the second lead, Li Pei ("she herself trained half the Chinese Academy of Sciences")
 
-**为什么选这个角度**：
-- 不只讲儿子成才（结果）
-- 聚焦母亲的教育智慧（原因）
-- 核心金句："书是给你自己念的"（不识字的母亲 vs 最好的教育）
-
-**钩子设计**：
-"母亲高位截瘫一字不识，摇轮椅挨家挨户借来3万救命钱。她只会说一句话：书是给你自己念的。儿子考上清华读到博士，拒绝国外2000万年薪，只因妈妈那句话长进了骨头里。"
-
-**结构**：
-1. 开头：结果震撼（清华博士拒2000万）
-2. 倒推：母亲如何凑3万救命钱
-3. 教育：母亲那句话的智慧（"为你自己"vs"为我争气"）
-4. 儿子成长：捡废品、树皮粥、奖状贴满墙
-5. 结尾：母亲临终"走好你自己的路"，儿子设助学金
-
-**选题方法论**：
-- **原则5**：从结果倒推起点
-- **原则4**：单一物件（轮椅、3万块、那句话）
-- **触发点7 + 10**：母爱 + 底层逆袭
+**Value**: Avoid the red ocean (the lead has already been told to death) and open a blue ocean (the supporting figure's story is fresh)
 
 ---
 
-## 七、选题方法论总结（口诀）
+### Principle 8: **The Old Age / Deathbed Perspective** (Time's Final Judgment)
 
-### 选人物的3个标准：
-1. **有反差**：身份反差、命运反差、年龄反差
-2. **有代价**：成就背后的牺牲、光环背后的苦难
-3. **有共鸣**：母爱、爱情、坚韧、底层逆袭
+**Method**: Do not tell the peak; tell the curtain call
 
-### 选角度的3个问题：
-1. **哪个身份被忽略了**？（母亲/妻子/晚年/失败）
-2. **哪个细节最具象**？（物件/空间/动作）
-3. **哪个时刻最震撼**？（临终/转折/选择）
+**Why it works**:
+- Old age is the purest (fame and fortune have faded, leaving only the essence)
+- Dying words weigh the most (a whole life condensed into one sentence)
+- The wisdom of longevity is the scarcest (people who live long have seen more)
 
-### 写钩子的3个要素：
-1. **数字**：年龄、时间、金额（31岁、20年、3万块）
-2. **反差**：身份对比、处境对比（上将卖包子、旗袍刷厕所）
-3. **冲突**：生死、爱恨、选择（托孤 vs 母爱、囚禁 vs 坚守）
+**Cases**:
+- Zhou Peiyuan: "At 91 he came back from morning exercise, shouted 'I love only you', lay down, and never woke up"
+- Miss Zhao the Fourth: "Her dying words, 'What I cannot let go of most is you', made the hundred-year-old Zhang Xueliang weep"
+- Lin Qiaozhi: "Unconscious, she called out 'forceps, forceps', still delivering babies in her dreams"
+- Du Yuesheng: "At 63, on his deathbed, he burned a safe full of IOUs and told his children, 'Rely on your own ability, not on favors'"
 
 ---
 
-## 八、选题自检清单
+## 5. Topic Pitfalls (5 Kinds Not to Tell)
 
-在确定选题前，问自己5个问题：
+### 1. **Too Heavy to Digest**
 
-1. ☑ **钩子够不够硬**？开头3秒能否抓住人？
-2. ☑ **角度够不够新**？这个角度之前被讲过吗？
-3. ☑ **细节够不够实**？有没有可视化的具象细节？
-4. ☑ **情感够不够浓**？能否让人眼眶发热？
-5. ☑ **结尾够不够升华**？有没有精神内核/人生启示？
+**Avoid**:
+- Pure torture description (only pain, no spirit)
+- A hopeless ending (a death with no meaning)
+- Pure negative energy (only suffering, no light)
 
-如果5个问题有3个以上答"是" → 可以讲
+**Correct handling**:
+- Jiang Jie: do not describe the torture in detail; focus on "writing a letter with a bamboo skewer" and a mother's love
+- Zhao Yiman: do not dwell on how harrowing the sacrifice was; focus on "the letter was only read 20 years later" and the time out of joint
 
-如果5个问题有4个以上答"是" → 爆款潜力
+**Principle**: Suffering is the background; spirit is the lead
+
+### 2. **Highly Divisive, Likely to Split the Audience**
+
+**Avoid**:
+- Historical judgments that are not settled (such as Wang Jingwei's early years)
+- Highly sensitive positions (a political figure's allegiance)
+- Moral and ethical disputes (such as an affair with no justifiable reason)
+
+**Borderline cases** (tellable, but handle with care):
+- Sun Lianzhong: a Nationalist general, so stress his service against Japan, his poor old age, and not bowing to the Japanese
+- Du Yuesheng: a gang boss, so stress his contribution to the war effort and the realization in burning the IOUs on his deathbed
+
+**Principle**: Tell the humanity, not the politics; tell the bright spots, not the stains
+
+### 3. **Too Niche to Resonate**
+
+**Traits**:
+- Only people in a specialized field know them
+- The contribution is too abstract (such as a mathematical theorem)
+- The life is too uneventful
+
+**Exception**: If a strong hook can be found, it can be told
+- Zhou Peiyuan: a physicist is too abstract, but "the only Chinese student in Einstein's private class" plus "riding icy roads to save his wife" has a visual feel
+
+**Test**:
+- Can the first 3 seconds grab someone?
+- Can the hook make even an outsider want to listen?
+
+### 4. **Too Far in Time to Relate To**
+
+**Avoid**:
+- Tang, Song, Yuan, Ming (too far away, and the details of life are hard to reconstruct)
+- Early Qing (bound feet, concubines, and the like are hard for a modern audience to relate to)
+
+**Best time band**:
+- From the late Qing and early Republic to the present day (1890-2024)
+- A span of 130 years, with both a historical feel and modern resonance
+
+**Exceptions**:
+- If the person spans several eras (such as Empress Dowager Xiaozhuang supporting Shunzhi and Kangxi), it can be told
+- But a modern point of resonance is needed (a mother's love, the wisdom of power)
+
+### 5. **Pure Success Stories With No Undercurrent of Suffering**
+
+**Avoid**:
+- A smooth life (a rich second generation becoming richer)
+- Pure luck / background (no personal struggle)
+- Only a halo, no price
+
+**Why**:
+- No tension (without a valley there is no peak)
+- Hard to relate to (most of the audience are ordinary people)
+
+**Correct examples**:
+- Yan Youyun: a daughter of a grand household, but her husband was killed by the Japanese army, and she held up 40 people through the flames of war
+- Guo Wanying: fourth young lady of Wing On, but her husband cheated, and at 60 she smashed rocks to pay off debts
+
+**Principle**: There must be suffering, there must be endurance, and there must be a turning point
 
 ---
 
-## 九、选题资源库（快速查找人物）
+## 6. Case Studies (Breaking Down 5 Typical Topic Logics)
 
-### 按情感触点分类：
+### Case 1: Zhao Yiman: Time Out of Joint Plus Mother and Child Separated
 
-**母爱系列**：
-赵一曼、江姐、王淑珍、庞众望母亲、李昌钰母亲
+**Topic trigger points**:
+- August 15, the anniversary of Japan's surrender
+- Mother's Day
 
-**爱情坚守系列**：
-赵四小姐、周培源 & 王蕙成、许鹿希、杨丽坤丈夫
+**Why choose this person**:
+1. High fame (a hero from the textbooks)
+2. But a blind spot in what people know (everyone knows she was a martyr; few know she was a mother)
+3. Strong time out of joint (she wrote the letter at 31, and it was only read 20 years later)
 
-**体面系列**：
-严幼韵、郭婉莹、董竹君、吕碧城
+**Why choose this angle**:
+- Do not tell the torture and interrogation everyone already knows
+- Focus on "the letter of entrustment" plus "her son only learned who his mother was 20 years later"
+- Emotional concentration: mother's love times life and death times time out of joint equals the strongest tearjerker
 
-**科学家系列**：
-钱学森、邓稼先、郭永怀、李佩、林巧稚、周培源
+**Hook design**:
+"A 31-year-old mother wrote a letter on the execution ground, and her son did not read it until twenty years later. Her name is Zhao Yiman. Nine years short of victory, she did not live to see it. That letter wrote about only one thing: mother sacrificed herself for the country."
 
-**底层逆袭系列**：
-香奈儿、董竹君、庞众望、吕碧城
+**Structure**:
+1. Opening: the letter plus the 20-year gap
+2. Middle: who she was, why she was arrested, what suffering she endured
+3. Climax: the details of writing the letter (bamboo skewer plus rough paper plus ink made of cotton ash)
+4. Ending: her son only read it in his thirties, and tattooed the three characters "Zhao Yiman" on his arm
 
-**晚年坚韧系列**：
-秦怡、田华、王晓棠、中村恒子、让娜·卡尔芒
-
-**隐藏英雄系列**：
-谭正伦（江姐儿子养母）、凌维诚（谢晋元妻子）、保姆养大弃婴
-
----
-
-## 十、总结：选题的本质是什么？
-
-选题不是找"名人"，而是找**情感浓度最高的那个点**。
-
-好的选题 = **认知盲区** + **情感共鸣** + **视觉化细节** + **精神内核**
-
-- 赵一曼：认知盲区（母亲）+ 情感（母子分离）+ 细节（托孤信）+ 内核（家国）
-- 严幼韵：认知盲区（战火中的坚韧）+ 情感（体面）+ 细节（旗袍 + 高跟鞋）+ 内核（优雅）
-- 李佩：认知盲区（她自己的成就）+ 情感（丧夫丧女）+ 细节（捐60万）+ 内核（独立）
-
-**最后一条铁律**：
-
-> 选题的终极标准只有一个：**讲完这个故事，观众会不会转给自己在乎的人？**
-
-如果会 → 选题成功
-
-如果不会 → 重新找角度
+**Topic method**:
+- **Principle 2**: Time out of joint creates tension
+- **Principle 4**: A single object (the letter of entrustment) as the anchor
+- **Trigger point 7**: Mother's love / family resonance
 
 ---
 
-## 附录：315篇语料统计数据
+### Case 2: Yan Youyun: Extreme Contrast Plus Wisdom of Longevity
 
-- **时代分布**：清末15% | 民国40% | 建国后30% | 改革开放至今15%
-- **人物类型TOP5**：革命烈士25% | 民国名媛22% | 科学家15% | 艺术家12% | 普通英雄10%
-- **高频情感触点TOP5**：母爱28% | 爱情坚守22% | 苦难体面18% | 底层逆袭15% | 晚年坚韧12%
-- **高频钩子类型TOP3**：时间错位35% | 极致反差30% | 身份颠覆20%
-- **最高转化率角度TOP3**：母子分离 | 托孤遗言 | 临终一刻
+**Topic trigger points**:
+- Discussion of "how to age gracefully"
+- The heat around society lady topics
+
+**Why choose this person**:
+1. She lived to 112 (rare)
+2. Large identity contrast (society lady, then widow, then holding up 40 people, then a United Nations staff member)
+3. Visual details (at 105, dancing a waltz in a qipao and high heels)
+
+**Why choose this angle**:
+- Not only society lady life (shallow)
+- Focus on "endurance in the flames of war" plus "elegance in old age"
+- Emotional line: daughter of a grand household, then her husband killed by the Japanese army, then holding up 40 people, then living into legend
+
+**Hook design**:
+"On her 105th birthday, she wore a qipao embroidered with gold thread, stepped into three-inch high heels, and danced a waltz with her attending doctor. She lived to 112, never ran in the morning, never touched health supplements, and every meal had to include fatty braised pork swimming in oil, with a glass of whiskey on ice."
+
+**Structure**:
+1. Opening: dancing a waltz at 105 (visual shock)
+2. Looking back: grand household origins, then her husband killed, then 40 people
+3. Middle: how she held on through the flames of war (selling diamond rings, opening wasteland to grow vegetables, splitting half a bag of moldy flour)
+4. Second half of life: United Nations staff member, then marrying Gu Weijun, then passing at 112
+5. Ending: "Every day is a good day"
+
+**Topic method**:
+- **Principle 3**: Extreme contrast (105 years old versus high heels, qipao versus flames of war)
+- **Principle 6**: Borrow the light ("the last society lady of Shanghai")
+- **Trigger point 9**: Dignity inside suffering
 
 ---
 
-**以上即为完整的《选题策略DNA.md》。本文档提炼自315篇真实语料，每一条方法论都有实战案例支撑，可直接用于选题决策。**
+### Case 3: Jiang Jie (Jiang Zhujun): Object Anchor Plus Mother's Perspective
+
+**Topic trigger points**:
+- Qingming Festival, Martyrs' Day
+- Mother's Day
+
+**Why choose this person**:
+1. Extremely high fame (the lead of "Red Rock")
+2. A blind spot in what people know (everyone knows the torture; few know she was a mother)
+3. A strong object anchor (the bamboo skewer)
+
+**Why choose this angle**:
+- Do not tell "a bamboo skewer piercing her finger", which everyone already knows
+- Focus on "the same bamboo skewer", the instrument of torture versus the tool for writing a letter
+- The object's double meaning: torture plus a mother's love
+
+**Hook design**:
+"A bamboo skewer pierced her finger, and she did not utter a single word. Then she used a bamboo skewer to write a final letter of entrustment to her three-year-old son. A year and three months in Zhazidong, she used one lie to protect more than twenty comrades. At 29, in a blue cloth qipao, she walked calmly to her death."
+
+**Structure**:
+1. Opening: the bamboo skewer's double use
+2. Life story: born poor, joined the Party, underground work, her husband sacrificed
+3. Arrest: using "I know" to protect more than twenty comrades
+4. Climax: using a bamboo skewer to write a letter to her son
+5. Ending: at 29, walking to her death in a blue cloth qipao, and her son later making something of himself
+
+**Topic method**:
+- **Principle 1**: Find the blind spot of the same person (the mother identity)
+- **Principle 4**: A single object (the bamboo skewer) as the emotional anchor
+- **Trigger point 7**: Mother's love resonance
+
+---
+
+### Case 4: Li Pei: Borrow the Light Plus Hidden Contribution
+
+**Topic trigger points**:
+- Discussion of "the sacrifice of scientists' wives"
+- Topics about women's independence
+
+**Why choose this person**:
+1. Her husband Guo Yonghuai is highly famous (a founding father of the Two Bombs, One Satellite program)
+2. Her own contribution has been seriously underestimated ("the mother of applied linguistics in China")
+3. A strong contrast: "Her husband was worth 10 divisions, and she herself trained half the Chinese Academy of Sciences"
+
+**Why choose this angle**:
+- Not only "the scientist's wife" (a passive identity)
+- Stress "her own achievements" (an active identity)
+- Two-thread narrative: her devotion plus her achievements
+
+**Hook design**:
+"Her husband was worth ten divisions, and she herself trained half the Chinese Academy of Sciences. She lost her husband in middle age and her daughter in old age, yet she stayed elegant for her whole life. This is Li Pei."
+
+**Structure**:
+1. Opening: double identity (wife plus herself)
+2. Meeting: her love story with Guo Yonghuai
+3. Losing her husband: Guo Yonghuai died in a plane crash in 1968
+4. Her achievements: compiling textbooks, running a lecture series, training students
+5. Old age: losing her daughter, donating 600,000, still neat and tidy at 99
+6. Ending: the Guo Yonghuai star plus the Li Pei star
+
+**Topic method**:
+- **Principle 6**: Borrow the light (borrowing Guo Yonghuai's fame)
+- **Principle 7**: Finding the hidden "second lead" (completing her own narrative)
+- **Trigger point 8**: Love and endurance plus independent achievement
+
+---
+
+### Case 5: The Mother of Pang Zhongwang: Ordinary Hero Plus Lessons on Education
+
+**Topic trigger points**:
+- Discussion of "how to educate a child"
+- The college entrance exam season, the start of school
+- Topics about rising from the bottom
+
+**Why choose this person**:
+1. Extreme contrast: paralyzed from the waist down and not knowing a single character, yet her son became a Tsinghua PhD who turned down a 20 million annual salary
+2. A method for education: "Books are for yourself" (no pressure applied)
+3. Tangible details: pushing her wheelchair to borrow money door to door, scraping together 30,000 one mao at a time
+
+**Why choose this angle**:
+- Not only the son's success (the result)
+- Focus on the mother's wisdom in education (the cause)
+- The core golden line: "Books are for yourself" (a mother who cannot read versus the best education)
+
+**Hook design**:
+"His mother was paralyzed from the waist down and could not read a single character, yet she pushed her wheelchair door to door to borrow 30,000 to save a life. She could only say one sentence: books are for yourself. Her son got into Tsinghua, read to a PhD, and turned down a 20 million annual salary abroad, only because his mother's words had grown into his bones."
+
+**Structure**:
+1. Opening: the shocking result (a Tsinghua PhD turning down 20 million)
+2. Working backward: how his mother scraped together the 30,000 to save a life
+3. Education: the wisdom in his mother's words ("for yourself" versus "to bring me glory")
+4. The son growing up: collecting scrap, tree bark porridge, a wall covered in certificates
+5. Ending: his mother on her deathbed saying "walk your own road well", and her son setting up a scholarship fund
+
+**Topic method**:
+- **Principle 5**: Work backward from the result to the start
+- **Principle 4**: A single object (the wheelchair, the 30,000, that one sentence)
+- **Trigger points 7 and 10**: Mother's love plus rising from the bottom
+
+---
+
+## 7. Summary of the Topic Method (Mnemonic)
+
+### The 3 Standards for Choosing a Person:
+1. **There is contrast**: identity contrast, fate contrast, age contrast
+2. **There is a price**: the sacrifice behind the achievement, the suffering behind the halo
+3. **There is resonance**: mother's love, love, endurance, rising from the bottom
+
+### The 3 Questions for Choosing an Angle:
+1. **Which identity has been ignored?** (mother / wife / old age / failure)
+2. **Which detail is the most tangible?** (object / space / action)
+3. **Which moment is the most shocking?** (deathbed / turning point / choice)
+
+### The 3 Elements for Writing a Hook:
+1. **Numbers**: age, time, money (31 years old, 20 years, 30,000)
+2. **Contrast**: identity contrast, situation contrast (a general selling buns, scrubbing toilets in a qipao)
+3. **Conflict**: life and death, love and hate, choice (entrusting a child versus a mother's love, imprisonment versus endurance)
+
+---
+
+## 8. Topic Self-Check List
+
+Before settling on a topic, ask yourself 5 questions:
+
+1. ☑ **Is the hook hard enough?** Can the first 3 seconds grab someone?
+2. ☑ **Is the angle fresh enough?** Has this angle been told before?
+3. ☑ **Are the details solid enough?** Are there tangible, visual details?
+4. ☑ **Is the emotion strong enough?** Can it make someone's eyes sting?
+5. ☑ **Does the ending elevate enough?** Is there a spiritual core / a lesson for life?
+
+If 3 or more of the 5 questions get a "yes", it can be told
+
+If 4 or more of the 5 get a "yes", it has breakout potential
+
+---
+
+## 9. Topic Resource Library (Quick Person Lookup)
+
+### By Emotional Touchpoint:
+
+**Mother's love series**:
+Zhao Yiman, Jiang Jie, Wang Shuzhen, the mother of Pang Zhongwang, the mother of Li Changyu
+
+**Love and endurance series**:
+Miss Zhao the Fourth, Zhou Peiyuan and Wang Huicheng, Xu Luxi, the husband of Yang Likun
+
+**Dignity series**:
+Yan Youyun, Guo Wanying, Dong Zhujun, Lü Bicheng
+
+**Scientist series**:
+Qian Xuesen, Deng Jiaxian, Guo Yonghuai, Li Pei, Lin Qiaozhi, Zhou Peiyuan
+
+**Rising from the bottom series**:
+Chanel, Dong Zhujun, Pang Zhongwang, Lü Bicheng
+
+**Endurance in old age series**:
+Qin Yi, Tian Hua, Wang Xiaotang, Nakamura Tsuneko, Jeanne Calment
+
+**Hidden hero series**:
+Tan Zhenglin (foster mother of Jiang Jie's son), Ling Weicheng (wife of Xie Jinyuan), the nanny who raised an abandoned baby
+
+---
+
+## 10. Summary: What Is Topic Selection, Essentially?
+
+Choosing a topic is not about finding a "famous person". It is about finding **the point with the highest emotional concentration**.
+
+A good topic equals **blind spot in what people know** plus **emotional resonance** plus **visualized detail** plus **spiritual core**
+
+- Zhao Yiman: blind spot (mother) plus emotion (mother and child separated) plus detail (the letter of entrustment) plus core (country and family)
+- Yan Youyun: blind spot (endurance in the flames of war) plus emotion (dignity) plus detail (qipao plus high heels) plus core (elegance)
+- Li Pei: blind spot (her own achievements) plus emotion (losing husband and daughter) plus detail (donating 600,000) plus core (independence)
+
+**One last iron rule**:
+
+> There is only one ultimate standard for a topic: **after hearing this story, will the audience forward it to someone they care about?**
+
+If they will, the topic works
+
+If they will not, find another angle
+
+---
+
+## Appendix: Statistics From the 315-Script Corpus
+
+- **Era distribution**: Late Qing 15% | Republican era 40% | After the founding of the PRC 30% | Reform and opening to now 15%
+- **Top 5 person types**: Revolutionary martyrs 25% | Republican society ladies 22% | Scientists 15% | Artists 12% | Ordinary heroes 10%
+- **Top 5 high-frequency emotional touchpoints**: Mother's love 28% | Love and endurance 22% | Dignity in suffering 18% | Rising from the bottom 15% | Endurance in old age 12%
+- **Top 3 high-frequency hook types**: Time out of joint 35% | Extreme contrast 30% | Identity subversion 20%
+- **Top 3 angles by conversion rate**: Mother and child separated | Final letter of entrustment | The final moment
+
+---
+
+**That is the complete "Topic Selection Strategy DNA". Every method in this document is distilled from 315 real scripts, and every method is backed by a real case study. It can be used directly for topic decisions.**
