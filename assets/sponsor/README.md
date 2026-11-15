@@ -1,12 +1,12 @@
-# 赞赏与联系二维码存放目录
+# Tip and Contact QR Codes Directory
 
-请将你的收款码与微信二维码截图保存到本目录下，命名如下：
+Save your payment QR code and WeChat QR code screenshots in this directory, named as follows:
 
-- **微信赞赏码**：`wechat-pay.png`
-- **支付宝赞赏码**：`alipay.png`
-- **个人/交流群微信二维码**：`wechat.png`
+- **WeChat tip code**: `wechat-pay.png`
+- **Alipay tip code**: `alipay.png`
+- **Personal / group chat WeChat QR code**: `wechat.png`
 
-放好图片后，在终端执行以下三条命令推送到 GitHub 即可在 README 中自动显示：
+Once the images are in place, run these three commands in the terminal to push to GitHub, and they will show automatically in the README:
 
 ```bash
 git add assets/
