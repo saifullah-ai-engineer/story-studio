@@ -1,48 +1,48 @@
-# 历史写作模块
+# History Writing Module
 
-这是 story-studio 内置模块。仅写作开启且选择历史叙事时执行；先遵守 [事实与风格优先级](../../references/fact-and-style.md)。本模块路径为 GUIDE.md 所在目录，不依赖原 history-writing 安装目录。
+This is a built-in module of story-studio. It runs only when writing is enabled and historical narrative is selected; first follow [Fact and Style Priority](../../references/fact-and-style.md). This module's path is the directory containing GUIDE.md, and it does not depend on the original history-writing installation directory.
 
-把历史中值得追问的一件事讲清楚：开头留下具体问题，正文以行动、条件和后果推进，结尾兑现问题。共性来自 4 个账号的 57 篇高赞样本，原稿仅作写法参考。点赞是筛选条件，不是史实认证或流量保证。
+Tell one thing from history that is worth questioning, and tell it clearly: open with a concrete question, advance the body through actions, conditions, and consequences, and close by answering the question. The shared patterns come from 57 highly liked sample pieces across 4 accounts, and the original drafts serve only as writing references. Likes were the selection criterion, not certification of historical fact or a guarantee of traffic.
 
-默认写有可追溯依据的史事稿。历史准确性约束开头、正文、标题和选题前提；不能为了钩子、指定字数或模仿文风补造事实。对标原稿、清洗稿、分类标签和模型记忆均不直接充当历史证据。只有用户明确要求演义、传说或文学演绎时才进入相应模式，并标明性质。
+By default, write historical drafts that rest on traceable evidence. Historical accuracy constrains the opening, the body, the title, and the premise of the topic; do not invent facts to serve a hook, a specified word count, or imitation of a style. Benchmark drafts, cleaned drafts, category labels, and model memory do not directly count as historical evidence. Only when the user explicitly asks for romance, legend, or literary dramatization should you enter the corresponding mode, and label its nature.
 
-## 按请求进入工作
+## Working by Request
 
-| 请求 | 读取与行动 |
+| Request | What to Read and Do |
 | --- | --- |
-| 不知道发什么、按朝代找题 | 读 [选题与系列](references/选题与系列.md)，检索 `corpus/catalog.json`；可从 [新选题卡](references/新选题卡.md) 起步 |
-| 写一篇、给定人物和字数 | 执行下方写作流程 |
-| 优化开头、几版钩子供选择 | 读 [开头钩子](references/开头钩子.md)，按写作流程校准风格和核实事实；明确要求备选才输出多版，只要钩子时先不写全文 |
-| 改稿、缩写、扩写、换角度 | 执行写作流程；保留用户意图和有依据的内容，发现事实错误则纠正并简述影响，按新字数选择事件，不填句凑字 |
-| 核史、查错、检查历史正确性 | 读 [史实与素材](references/史实与素材.md)，逐项对照断言与出处；区分错误、争议和未核，不把缺少证据一律判成伪造 |
-| 连续选题、系列排期 | 读 [选题与系列](references/选题与系列.md)，让每篇问题独立且相邻篇不重复兑现同一件事 |
-| 增加对标文稿、更新风格库 | 读 [维护流程](references/维护流程.md)，先识别新增与变更，再逐篇标注；不修改用户原文 |
+| Does not know what to post, looking for a topic by dynasty | Read [Topics and Series](references/选题与系列.md), search `corpus/catalog.json`; can start from [New Topic Card](references/新选题卡.md) |
+| Write one piece, with a given figure and word count | Follow the writing workflow below |
+| Improve the opening, several hooks to choose from | Read [Opening Hooks](references/开头钩子.md), calibrate style and verify facts against the writing workflow; only produce multiple versions when alternatives are explicitly requested, and when only hooks are wanted, do not write the full text yet |
+| Revise, shorten, expand, or change the angle of a draft | Follow the writing workflow; keep the user's intent and the supported content, correct any factual errors found and briefly explain the impact, choose events to fit the new word count, and do not pad sentences to fill words |
+| Verify history, check for errors, check historical correctness | Read [Historical Facts and Sources](references/史实与素材.md), check each claim against its source one by one; distinguish errors, disputes, and unverified items, and do not judge everything lacking evidence as fabrication |
+| Consecutive topics, series scheduling | Read [Topics and Series](references/选题与系列.md), make each piece's question independent and avoid having adjacent pieces answer the same thing |
+| Add benchmark drafts, update the style library | Read [Maintenance Workflow](references/维护流程.md), first identify what is new and what changed, then annotate each piece one by one; do not modify the user's original text |
 
-## 写作流程
+## Writing Workflow
 
-1. 从请求确定核心问题、目标字数、史事或演绎模式。默认中文历史口播，不自设作者年龄、教龄、亲历、人脉或售书身份。用户只要选题时不擅自写长稿；已给人物和字数时直接推进。
-2. 每次写稿前通读五份产物：[语言](references/语言DNA.md)、[结构](references/文章结构模板.md)、[视角](references/写作视角与认知框架.md)、[视觉边界](references/视觉风格指南.md)、[总纲](references/Writing-DNA.md)。再通读 5 篇相关 `corpus/raw/` 原文及其元数据风险；用同体裁补齐稀疏题材，尽量分散账号和故事簇。本库缺发布时间，不能把采集时间当作“最新风格”。
-3. 读 [史实与素材](references/史实与素材.md)，先建立事实核查表和必要时间线，再据此写稿。实际阅读原典、可靠研究或考古博物馆资料；可复用 [核验事实包](references/核验事实包.md) 已核的有限主张。记录出处、支持范围和争议，核对开头与选题的问题前提。未核实的关键情节删去、换已证切口或改成有来源的争议介绍；证据仍不足则交付已核部分与缺口，不默认输出待核整稿。只有用户明确要求待核草稿时才提供，并就地标记。
-4. 选一套主结构，列出问题、证据事件、转折和结尾。读 [开头钩子](references/开头钩子.md)，从已核实事实选入口，让首句给具体信息，随后推进并留下正文可兑现的问题。正常写稿交付一版；明确要多版则按用户数量（未指定时 3 版）改变切入方式，只要备选时等选定再写全文。正文用短段落，不插资料编号和操作说明。标题与资料备注放正文之外；默认不加卖书、催赞、下期吊胃口。用户要求文学演绎时，在成稿前明确标明性质。
-5. 按 [史实与素材](references/史实与素材.md) 的交付核验，从最终稿反向检查事实表：时间线、身份制度、数量、引语、史源层级及因果是否成立，标题与每一版钩子同查。再查正文兑现、同题套写和无依据读心。清理重复总结、空泛升华与无效反问；新增事实须先补核，删改不得去掉改变含义的时间、条件或不确定性。
-6. 将纯正文保存到本次工作目录，运行字数校验；每次最终修改后重算。运行相似片段检查，人工查看高重复是否来自原典引用、固定名词或照搬句子。详细命令见 [工具说明](references/工具说明.md)。
+1. From the request, settle the core question, target word count, and whether this is a historical or dramatized piece. By default, write Chinese historical voiceover, and do not invent an author age, teaching tenure, firsthand experience, network of contacts, or book-selling identity. When the user only wants a topic, do not write a long draft on your own; when a figure and word count are already given, proceed directly.
+2. Before each draft, read all five products in full: [Language](references/语言DNA.md), [Structure](references/文章结构模板.md), [Perspective](references/写作视角与认知框架.md), [Visual Boundaries](references/视觉风格指南.md), and [General Guide](references/Writing-DNA.md). Then read 5 related original texts in `corpus/raw/` in full, together with their metadata risks; use the same genre to fill in sparse topics, and spread across accounts and story clusters as much as possible. This library has no publication dates, so do not treat collection time as the "latest style".
+3. Read [Historical Facts and Sources](references/史实与素材.md), first build a fact-check table and any necessary timeline, then write from that. Actually read the primary sources, reliable research, or archaeological and museum material; you may reuse the limited claims already verified in the [Fact Verification Pack](references/核验事实包.md). Record sources, the scope of support, and disputes, and check the premise of the opening and the topic question. Delete unverified key plot points, swap in a verified angle, or recast them as a sourced dispute; if the evidence is still insufficient, deliver the verified portion together with the gaps, and do not output a full draft pending verification by default. Only provide one when the user explicitly asks for a draft pending verification, and mark it in place.
+4. Pick one main structure, and list the question, the evidence events, the turning point, and the ending. Read [Opening Hooks](references/开头钩子.md), choose the entry point from verified facts, make the first sentence carry concrete information, then advance and leave a question the body can answer. Normal drafts deliver one version; when multiple versions are explicitly requested, change the entry approach according to the user's number (3 versions when unspecified), and when only alternatives are wanted, wait for a selection before writing the full text. Use short paragraphs in the body, and do not insert source numbers or operating instructions. Put titles and source notes outside the body; by default, do not add book-selling, like-begging, or next-episode teasers. When the user asks for literary dramatization, clearly label its nature before the finished draft.
+5. Following the delivery check in [Historical Facts and Sources](references/史实与素材.md), check the fact table backwards from the final draft: whether the timeline, identity and institutions, numbers, quotations, source hierarchy, and causation hold up, and check the title and every version of the hook the same way. Then check whether the body delivers on its promise, whether the same topic is being rewritten, and whether there is any unsupported mind-reading. Clean out repeated summaries, empty uplift, and ineffective rhetorical questions; any newly added fact must be verified first, and edits must not remove the time, conditions, or uncertainty that change the meaning.
+6. Save the pure body text to this session's working directory and run the word-count check; recalculate after every final change. Run the similar-fragment check, and manually review whether high repetition comes from primary-source quotation, fixed proper nouns, or copied sentences. See [Tool Notes](references/工具说明.md) for the detailed commands.
 
-## 字数与交付
+## Word Count and Delivery
 
-用户明确计数口径优先。默认“字”指 Unicode 字母和数字字符数，汉字一个计一字，数字及英文逐字符计，标点和空白不计。标题、出处、说明不计入正文。指定“N字”默认严格 N；“约N字”默认 ±5%，同时报告实际字数。极短篇幅收窄到一个事件，不能为了塞完整生平破坏事实。
+The user's explicitly stated counting method takes priority. By default, "character" (字) means the count of Unicode letters and digits: one Chinese character counts as one, digits and English letters count one by one, and punctuation and whitespace do not count. Titles, sources, and notes do not count toward the body. A specified "N characters" defaults to exactly N; "about N characters" defaults to plus or minus 5%, and the actual count is reported alongside. Very short pieces narrow to a single event, and must not damage the facts in order to squeeze in a full life story.
 
-一般交付标题、完整正文、实际字数及简短来源备注。只要纯口播时，用户可见部分只给正文，校验和事实依据留在本次工作文件。史实不确定性须在相应表述中体现，不能只藏在备注。
+Normal delivery includes the title, the complete body, the actual word count, and a brief source note. When only pure voiceover is wanted, the user-visible part contains only the body, with the checks and factual basis kept in this session's working files. Historical uncertainty must be reflected in the wording itself, not hidden away in a note.
 
-事实核查表与时间线保存在本次项目目录，不自动写回技能或冒充全库核验。来源备注只列实际使用且支持相应内容的材料；未完成的核验直说，不声称“百分之百正确”或将文件完整性校验当作史实认证。
+The fact-check table and timeline are kept in this project's directory, and are not written back to the skill automatically or presented as a whole-library verification. Source notes list only materials actually used that support the corresponding content; incomplete verification should be stated plainly, without claiming "100% correct" or treating a file-integrity check as historical certification.
 
-## 资料入口
+## Source Entry Points
 
-- [完整选题库](corpus/选题库.md)：57 篇主题、朝代覆盖、故事簇、风险和延伸角度。
-- [57 篇开头分析](corpus/开头钩子逐篇分析.md)：9 类主要机制、逐篇早期文字窗口、悬念推进与正文承诺；无音频时间戳，不视为真实前几秒测量。
-- `corpus/meta/Hxxx.json`：逐篇结构、点赞等采集指标、原始哈希、清洗记录、来源边界。
-- `corpus/raw/` 为原件快照；`corpus/clean/` 仅作有限转写清洗，未整体史实核验。
-- `scripts/history_tool.py` 使用 Python 3 标准库；运行时使用本模块内的规则、语料和工具，不依赖私人素材目录。
+- [Complete Topic Library](corpus/选题库.md): 57 topics, dynasty coverage, story clusters, risks, and extension angles.
+- [57 Opening Analyses](corpus/开头钩子逐篇分析.md): 9 main mechanisms, per-piece early text windows, suspense development, and body promises; no audio timestamps, so not treated as measured first-seconds data.
+- `corpus/meta/Hxxx.json`: per-piece structure, likes and other collection metrics, original hashes, cleaning records, and source boundaries.
+- `corpus/raw/` holds original snapshots; `corpus/clean/` is only limited transcription cleaning, without whole-library historical verification.
+- `scripts/history_tool.py` uses only the Python 3 standard library; at runtime it uses this module's rules, corpus, and tools, and does not depend on a private source directory.
 
-本模块按story-studio的扩展与验证规则维护，不自动发布或同步其他安装目录。
+This module is maintained under story-studio's extension and validation rules, and does not automatically publish or sync to other installation directories.
 
-用户本次明确要求优先于风格偏好。史实准确、明确区分演绎是所有模板的基础，不能用“原稿就这么写”来取消。
+The user's explicit request for this session takes priority over style preferences. Historical accuracy and a clear distinction of dramatization are the foundation of all templates, and "the original draft was written that way" cannot cancel them.
