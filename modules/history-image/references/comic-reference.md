@@ -1,25 +1,25 @@
-# 漫画风参考记录与试用示例
+# Comic Style Reference Record and Trial Example
 
-本风格基于十二张历史题材视频截图的视觉分析提炼。原始截图未随包分发；使用本技能不依赖作者的素材目录。实际需要额外参考图时，由当前使用者提供可用文件。
+This style was distilled from visual analysis of twelve screenshots of historical videos. The original screenshots are not distributed with the package; using this skill does not depend on the author's material directory. When extra reference images are actually needed, the current user provides usable files.
 
-另附六张经视觉选样的正文成品，见[正文画风参考图库](style-reference-library.md)。这些成品用于生图时参考笔触、材质与配色，不是本记录所述原始截图，也不构成史实或生成模型的验证。
+Six finished body-text works chosen by visual sampling are also included; see [Body-Style Reference Library](style-reference-library.md). These finished works are used to reference brushwork, material, and color when generating images; they are not the original screenshots described in this record, and they do not constitute historical fact or verification of a generation model.
 
-## 观察依据
+## Observation Basis
 
-| 截图后缀 | 可见内容与画风证据 |
+| Screenshot suffix | Visible content and style evidence |
 | --- | --- |
-| 参考01、参考02 | 全身人物、王座与群像；大体量主角，暗金衣纹、赭金环境、强烈块面塑形 |
-| 参考03、参考05 | 平民迁徙与冲突；人物保持写实比例，衣料地面和天空的破碎厚涂笔触明显 |
-| 参考04 | 车窗旁女性；面部相对细腻、车体与远景更粗放，说明画风不能锁定成硬朗男性 |
-| 参考06、参考07 | 群像议事与骑队；斜向线条、队列纵深、旗帜和尘土组织场面 |
-| 参考08、参考09、参考10 | 侧面静坐、人物主导与室内书写；静态画面同样成立，不能把动态战争作为必需项 |
-| 参考11、参考12 | 古代人物与现代列车、城市、学生并置；这是有意的跨时代内容，不是全部历史图片应有的元素 |
+| References 01, 02 | Full-body figures, a throne, and a crowd scene; large-scale protagonists, dark-gold clothing patterns, ochre-gold surroundings, strong block modeling |
+| References 03, 05 | Civilian migration and conflict; figures keep realistic proportions, with clearly broken impasto brushwork on clothing, ground, and sky |
+| Reference 04 | A woman beside a train window; the face is relatively fine while the train body and distant view are looser, showing the style cannot be locked into tough masculinity |
+| References 06, 07 | Crowd deliberation and a riding column; diagonal lines, column depth, flags, and dust organize the scene |
+| References 08, 09, 10 | A seated figure in profile, figure-led scenes, and indoor writing; still images work just as well, so dynamic warfare must not be treated as required |
+| References 11, 12 | Ancient figures placed alongside a modern train, city, and students; this is a deliberate cross-era juxtaposition, not an element every historical image should have |
 
-操作性描述采用“厚涂历史漫画风”，强调与参考接近的手绘塑形。截图中的黄色字幕、黑边不写入底图，人物身份、器物年代不依据画面臆断为已核实。
+The working description uses "impasto historical comic style", emphasizing hand-painted modeling close to the references. The yellow subtitles and black bars in the screenshots are not written into the base image, and character identities and object eras are not assumed verified from the images.
 
-## 完整试用提示词
+## Complete Trial Prompt
 
-以下为新编写的漫画风示例，未完成实际生图验证。复用已知“老臣筹措军饷”的场景有助于比较两套画风，不表示该风格只适合清代。具体风格规则以对应 styles 文件为准。
+The following is a newly written comic-style example, without completed actual image generation verification. Reusing the known "old minister raising military funds" scene helps compare the two styles; it does not mean this style only suits the Qing dynasty. The specific style rules follow the corresponding styles file.
 
 ```text
 生成一张 9:16 竖版厚涂历史漫画插图，主题“老臣筹措军饷”。
@@ -37,12 +37,12 @@
 只生成单幅完整插图，无字幕、标题、黄色文字、气泡、漫画格、边框、水印或白色漂浮光斑。避免 Q 版、日系大眼、平涂赛璐璐、光滑三维、塑料皮肤、重复人物、错误手部及满箱银两。
 ```
 
-## 对抗性走查
+## Adversarial Walkthrough
 
-- 新文稿未选择风格：应先问两种风格选哪种，不能从过去的写实风样例自动赋值。
-- 明确“漫画风，只要提示词”：直接应用 historical-comic，不再询问，不生图，不注入写实风的无粗笔触约束。
-- 同一已选漫画风项目继续第三镜：沿用该项目风格及人物，不每镜重问；遇到新文稿则重新判断是否已选。
-- 漫画风汉代普通生活：按身份和年代设计，不自动加冕冠、纸账册、战争或现代列车。
-- 维护 Skill 而未要求创作：完成配置和验证，不把未来创作的风格选择问题抛给用户。
+- New manuscript with no style chosen: ask which of the two styles to use first; do not automatically assign it from a past realism-style sample.
+- Explicit "comic style, prompts only": apply historical-comic directly, do not ask again, do not generate images, and do not inject the realism style's no-heavy-brushstroke constraint.
+- Continuing the third shot of the same already-chosen comic-style project: keep the project's style and characters, do not ask again every shot; when a new manuscript arrives, judge again whether a style has been chosen.
+- Comic style for ordinary Han dynasty life: design by identity and era; do not automatically add a crown, paper ledgers, warfare, or a modern train.
+- Maintaining the Skill without a creation request: finish the configuration and verification, and do not throw the style-choice question for future creation at the user.
 
-这些是维护时的行为检查场景，不能据此声称已通过模型出图测试。
+These are behavior check scenarios for maintenance; they cannot be used to claim model image output testing has passed.

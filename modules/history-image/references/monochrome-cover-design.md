@@ -1,42 +1,42 @@
-# 黑白人物金红书法封面
+# Monochrome Figure Gold-Red Calligraphy Cover
 
-封面风格 ID：`monochrome-gold-red-cover`。附有3:4参考图；4:3为同风格横向布局规则，未提供独立验收样例。只有当前请求明确选择时使用，不继承作者的个人偏好。
+Cover style ID: `monochrome-gold-red-cover`. A 3:4 reference image is included; the 4:3 version is a horizontal layout rule in the same style, with no standalone acceptance sample provided. Use it only when the current request explicitly chooses it; do not inherit the author's personal preference.
 
-## 触发与范围
+## Trigger and Scope
 
-- 用户明确要求封面时使用，支持 3:4 竖版或 4:3 横版；只生成所请求的比例与数量。不能把正文配图的比例要求误判为封面请求。
-- 只更新规则、讨论风格不生图。黑白正文仍默认无字且不自动加封面。
-- 本期主角、标题、年龄、服饰、场景、象征物均取自本期内容。常香玉、戏台、飞机和原样图文案只属于样例，不复制到无关主题。
+- Use it when the user explicitly requests a cover, supporting a 3:4 vertical or 4:3 horizontal version; generate only the requested ratios and quantities. Do not mistake a body-text illustration ratio requirement for a cover request.
+- Only updating the rules or discussing the style does not generate an image. Monochrome body text still defaults to text-free with no automatic cover.
+- This issue's lead character, title, age, clothing, scenes, and symbolic objects all come from this issue's content. Chang Xiangyu, the opera stage, the airplane, and the original sample's text and images belong only to the sample; do not copy them into unrelated themes.
 
-## 内置样图与参考用途
+## Built-in Samples and Reference Use
 
-- **文字风格参考**：[赵一曼 3:4 封面](../assets/cover-reference-zhao-yiman-3x4.png)，1086 × 1448。使用技能内副本，不依赖外部项目。生图前打开并实际传入，重点参考整套文字语言。常香玉样图可作补充。
-- 赵一曼样图的层级为：顶部巨大浅金人名、中部黑白人物近景、下部两行短句，上金下红。底部常用每行四字，但需由本期内容决定，不为凑字数编造史实。示例“赵一曼／坚贞不屈／硬如钢铁”只说明排版，不作为下一期默认文案。
-- 文字必须保持粗壮宽厚的手写榜书、明显斜向笔势和收笔拖锋、飞白断裂、毛边溅墨、斑驳金箔。红色重点字同样是粗毛笔，不能换成无衬线印刷字、普通行楷或整齐的办公字体。标题与墨色背景融合，无描边贴纸、矩形横条或规则卡片。
+- **Text style reference**: [Zhao Yiman 3:4 Cover](../assets/cover-reference-zhao-yiman-3x4.png), 1086 x 1448. Use the copy inside the skill, without depending on an external project. Open it before generating and actually pass it in, focusing on the whole text language. The Chang Xiangyu sample may serve as a supplement.
+- The Zhao Yiman sample's hierarchy is: a huge pale-gold person's name at the top, a black-and-white close-up of the person in the middle, and two short lines below, gold above and red below. The bottom often uses four characters per line, but this is decided by this issue's content; do not invent historical facts to fill the character count. The example "Zhao Yiman / Unyielding and steadfast / Hard as steel" only illustrates layout, and is not default copy for the next issue.
+- Text must keep the thick, broad handwritten large-character calligraphy, a clear diagonal brush rhythm with trailing strokes, flying-white breaks, ragged ink-splash edges, and mottled gold leaf. Red emphasis characters are likewise thick brushwork; do not replace them with sans-serif print type, ordinary xingkai, or tidy office fonts. Titles blend with the ink-black background, with no outline stickers, rectangular bars, or regular cards.
 
-- 技能内稳定副本：`../assets/cover-reference-chang-xiangyu-3x4.png`。
-- 生图前打开样图，工具支持时实际传入，标明只控制书法、金红配色、黑白摄影质感、烟墨融合与视觉层级。它是 AI 封面样图，不是历史人物原照；不用于核验新人物身份或史实。
-- 本期人物参考另行传入并标清用途；缺少样图时按以下完整规则执行并如实说明，不能声称已传入。
+- Stable copy inside the skill: `../assets/cover-reference-chang-xiangyu-3x4.png`.
+- Open the sample before generating, and actually pass it in when the tool supports it, stating that it only controls calligraphy, gold-red colors, black-and-white photographic texture, smoky-ink blending, and visual hierarchy. It is an AI cover sample, not an original photo of a historical person; do not use it to verify a new person's identity or historical facts.
+- This issue's character reference is passed in separately with its purpose stated clearly; when the sample is missing, follow the complete rules below and say so honestly, without claiming it was passed in.
 
-## 固定视觉规则
+## Fixed Visual Rules
 
-1. 人物及叙事背景使用纯黑白电影摄影质感：自然皮肤、清晰面部、丰富中间调、轻微胶片颗粒；不泛黄，不把人物改成金褐厚涂或漫画。面部神态克制、有力量，年龄及衣着符合本期事件。
-2. 以一位主要人物的大幅胸像或近景为默认视觉中心，必要时按故事调整人数。主角与主标题形成两个清晰焦点，背景从属，不让装饰遮脸。
-3. 主标题通常为人名或核心主题：巨大宽厚榜书、粗犷毛笔、飞白破锋、干刷毛边、斑驳浅金／米金金箔颗粒。字势错落而可辨，不能用普通电脑行楷、细软字体或整齐办公排版替代。
-4. 副标题提炼本期一个有依据的核心事件或冲突，常规词用暖米金，最重要的短语用朱砂红。竖版可断成两行，红色重点行更有视觉力度；不额外堆积口号。
-5. 不规则烟墨、干刷纹理与场景暗部自然融合文字和画面；不用黑色矩形题头、分格边框或巨大空黑块。黑白场景配金红标题是固定配色关系。
-6. 背景选择一至两个有依据的次要场景或象征物，以叙事蒙太奇连接。象征性组合不是同场发生的历史证据，不凭封面创造事实。
-7. 标题与图像一体生成，逐字指定文案。文字距边缘约 6%，完整清晰，小屏可读；无额外文字、水印或标志。
+1. People and the narrative background use a pure black-and-white cinematic photographic texture: natural skin, clear faces, rich midtones, and slight film grain; no yellowing, and do not turn people into gold-brown impasto or comics. Facial expressions are restrained and strong, with age and clothing matching this issue's events.
+2. Use a large bust or close-up of one lead character as the default visual center, adjusting the headcount by the story when needed. The lead character and the main title form two clear focal points, with the background subordinate, and no decoration covering the face.
+3. The main title is usually the person's name or the core theme: huge broad large-character calligraphy, rough brush, flying-white broken edges, dry-brush ragged edges, and mottled pale-gold / rice-gold gold-leaf granules. The character rhythm is varied yet legible; do not replace it with ordinary computer xingkai, thin soft fonts, or tidy office layout.
+4. The subtitle distills one evidenced core event or conflict from this issue; ordinary words use warm rice-gold, and the most important short phrase uses cinnabar red. In the vertical version it may break into two lines, with the red emphasis line carrying more visual force; do not pile on extra slogans.
+5. Irregular smoky ink, dry-brush texture, and the scene's dark areas blend the text and image naturally; do not use a black rectangular header, paneled borders, or a huge empty black block. A black-and-white scene with gold-red titles is the fixed color relationship.
+6. The background picks one or two evidenced secondary scenes or symbolic objects, connected as a narrative montage. A symbolic combination is not historical evidence that they happened in the same place; do not create facts from the cover.
+7. Titles and the image are generated as one, with the copy specified character by character. Text sits about 6% from the edges, complete and clear, and legible on a small screen; no extra text, watermarks, or logos.
 
-## 比例适配
+## Ratio Adaptation
 
-- 3:4：主标题上方或左上占显著面积；主角中部偏右；副标题置于左下或下方，重点短语朱红；背景场景在左侧或远处，象征物可置于右上，避开标题。
-- 4:3：重新设计横向布局，标题与副标题集中左侧，主角放右侧并保持面部体量，背景向横向展开。根据字数调整断行，不横向拉伸竖图或裁掉原文字。
-- 构图服务本期内容，样图位置是参考，不机械照搬物件坐标。核验最终像素比例。
+- 3:4: the main title takes a prominent area at the top or upper left; the lead character sits in the middle, slightly to the right; the subtitle goes at the lower left or below, with the key short phrase in cinnabar red; background scenes sit to the left or in the distance, and a symbolic object may sit at the upper right, avoiding the title.
+- 4:3: redesign the horizontal layout, with the title and subtitle concentrated on the left, the lead character on the right keeping facial scale, and the background spreading horizontally. Adjust line breaks by character count; do not stretch the vertical image horizontally or crop out the original text.
+- Composition serves this issue's content; the sample's positions are references, not a mechanical copy of object coordinates. Verify the final pixel ratio.
 
-## 独立提示词模板
+## Standalone Prompt Template
 
-使用时将占位项替换为本期内容，删除未采用的选项。
+When using it, replace the placeholders with this issue's content and delete options that were not adopted.
 
 ```text
 制作本期《[主题]》完整中文人物传记封面，严格[3:4竖版或4:3横版]。输入的已确认封面样图只用于书法风格、黑白摄影质感、金红配色、烟墨融合及层级，不复制其人物、原文案和事件。[说明本期人物参考及其用途，如无则删除。]
@@ -47,8 +47,8 @@
 构图：[按当前比例写明文字、主角及背景布局]。主角面部与主标题是两个焦点，文字距边缘至少约6%，无裁字、无水印、无额外标志。
 ```
 
-## 验收与交付
+## Acceptance and Delivery
 
-逐字核对标题和红色重点词、画幅、脸部、字体飞白、金箔颗粒、黑白场景与烟墨衔接。检查标题裁切、文字遮脸、样图人物或事件泄漏、把摄影画成厚涂这几个高发问题。明显瑕疵按主入口规则最多定向修正一次；如实记录剩余问题。
+Check the title and red emphasis words character by character, along with the frame size, face, calligraphy flying white, gold-leaf granules, black-and-white scene, and smoky-ink joins. Check the high-frequency problems: title cropping, text covering the face, sample people or events leaking in, and photographic work drawn as impasto. Fix clear flaws with at most one targeted revision per the main entry point's rules; record remaining problems honestly.
 
-输出本期 `COVER_3x4.png` 或 `COVER_4x3.png`，已有文件未经要求不覆盖，使用版本后缀。记录最终文案、提示词、实际参考输入与尺寸。只有本期实际生成并查看的结果才称为已检验。
+Output this issue's `COVER_3x4.png` or `COVER_4x3.png`; do not overwrite an existing file without a request, using a version suffix instead. Record the final copy, prompt, actual reference inputs, and dimensions. Only results actually generated and viewed in this issue may be called verified.

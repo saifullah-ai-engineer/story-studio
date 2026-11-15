@@ -1,31 +1,31 @@
-# 配图与口播节奏
+# Illustration and Voiceover Pacing
 
-适用于全部正文画风及镜级画风覆盖；画风只改变视觉表达，不另设拆镜密度。封面、首尾帧不计入正文镜数。以下秒数是可调整的制作默认值，不是实测语速或通用审美定律；用户明确节奏和数量优先。
+Applies to all body-text styles and per-shot style overrides; style only changes visual expression, not storyboard density. Covers and first/last frames do not count toward the body-text shot count. The seconds below are adjustable production defaults, not measured speaking speeds or universal aesthetic laws; the user's explicit pacing and count take priority.
 
-口播项目先执行 [先音频后分镜](audio-first-storyboard.md)。下面无音频估算仅用于草稿或明确的纯文本请求，不能代替生图前的实际口播核验。
+Voiceover projects first follow [Audio First, Then Storyboard](audio-first-storyboard.md). The no-audio estimates below are only for drafts or clearly pure-text requests, and cannot replace actual voiceover verification before image generation.
 
-## 先分配时长，再落语义切点
+## Allocate Duration First, Then Set Semantic Cut Points
 
-- 有已核验音文时间轴时按真实讲述速度规划：默认目标 8 秒/图，常规 5–12 秒；少于 3 秒、大于 16 秒、相邻时长超过 2 倍、连续三镜均不足 5 秒都需复查。情绪停顿或事件突变可例外，逐镜写明具体原句与原因。不要为平均秒数让画面提前泄露下一事件或落后于口播。
-- 无指定数量时，以真实口播总时长 T / 8 四舍五入（至少一镜）作为初始镜数，结合完整语义调整。固定 N 时以 T/N 为分配基线，保留 N；若数量本身导致普遍过快或过慢，报告可实现的节奏和建议镜数，不能静默增减。不得通过多次展示同一图片、裁切成多镜或加速配音伪造均衡。
-- 没有可用时间轴时，允许用可配置的 4 个有效字/秒作粗估，明确是拆镜规划假设。数字、年份、外语缩写按实际读法考虑，长停顿单独标注。预计时长只填 estimated_duration，不写入 audio_start/audio_end；timing_status 保持 unavailable。普通镜初步约 20–48 个有效字，不能据此机械切字。交付标记待音频复核。
-- 通读全文后一次规划全部范围。切点优先选句末、分句停顿或人物/地点/时间/动作转折；不要每条字幕一镜。一个短句里的多个修辞不等于多个可视事件；同一事件的连续短句可以共用一图。长段含多个事件时拆为相应画面，不能只用第一句的图覆盖整段。
-- 每镜明确 visual_anchor（画面对应的原文连续短语）和 beat_summary（该范围的叙事重点）。画面主动作必须在本镜范围内得到支持，且能覆盖该段核心信息；不能只用泛用肖像承载多个不同事件。确需连续场景时改变有意义的动作或景别，不靠换画风充当事件变化。
+- When a verified audio-text timeline exists, plan by real speaking speed: the default target is 8 seconds per image, with a usual range of 5 to 12 seconds; under 3 seconds, over 16 seconds, adjacent durations differing by more than 2 times, or three consecutive shots all under 5 seconds all need review. Emotional pauses or sudden event changes may be exceptions, with the specific original sentence and reason stated shot by shot. Do not let an image reveal the next event early or lag behind the voiceover just to average the seconds.
+- When no count is specified, use the real total voiceover duration T / 8, rounded (at least one shot), as the initial shot count, adjusting for complete semantics. With a fixed N, use T/N as the allocation baseline and keep N; when the count itself makes the pacing generally too fast or too slow, report the achievable pacing and suggested shot count, without quietly adding or removing shots. Do not fake balance by showing the same image multiple times, splitting it into multiple shots, or speeding up the voiceover.
+- When no usable timeline exists, a configurable 4 effective characters per second may be used as a rough estimate, stated clearly as a storyboarding planning assumption. Numbers, years, and foreign-language abbreviations are considered by their actual spoken form, and long pauses are marked separately. Estimated durations only go in estimated_duration, never in audio_start/audio_end; timing_status stays unavailable. An ordinary shot is initially about 20 to 48 effective characters, which must not be used to cut characters mechanically. Mark the delivery as pending audio review.
+- Plan all ranges in one pass after reading the whole text. Prefer cut points at sentence ends, clause pauses, or turns in person, place, time, or action; do not make one shot per subtitle. Multiple rhetorical turns inside one short sentence do not equal multiple visible events; consecutive short sentences about the same event may share one image. When a long passage contains multiple events, split it into matching images; do not let the first sentence's image cover the whole passage.
+- Each shot states a clear visual_anchor (the continuous source-text phrase the image matches) and beat_summary (the narrative focus of that range). The image's main action must be supported within the shot's range and must cover that passage's core information; do not use a generic portrait to carry several different events. When a continuous scene is genuinely needed, change a meaningful action or shot size; do not use a style change as a substitute for event change.
 
-## 画面生效的原文边界
+## Source-Text Boundaries Where Images Take Effect
 
-每镜除了 visual_anchor，还记录 visual_onset_anchor（画面开始适用的完整分句原文）、semantic_subject（人物及年龄阶段）、semantic_event（动作及发生阶段）。visual_onset_anchor 必须属于该镜原文，锚点对应的偏移与出现次序由程序定位。画面只对应后半句时，不能从前半句就显示下一事件：新拆镜时调整边界或改为覆盖整段的画面；已有镜头则标出需修复之处，不静默改稿或重拆。
+Besides visual_anchor, each shot also records visual_onset_anchor (the complete source-text clause where the image starts applying), semantic_subject (the person and age stage), and semantic_event (the action and its stage). visual_onset_anchor must belong to the shot's source text, with the anchor's offset and occurrence order located by a program. When an image only matches the second half of a sentence, it must not be shown from the first half as the next event: for a new storyboard, adjust the boundary or change it to an image covering the whole passage; for an existing shot, mark what needs fixing, without quietly revising the manuscript or re-splitting.
 
-生成后必须打开实际图片核对角色、时空和事件，不能把提示词正确视为图片正确。记录 observed_content 与 image_semantic_status（pending/verified/mismatch），未生图保持 pending。图中出现下一段事件、错误动作、年龄或场景时修正图片/分镜，禁止把错误图片交下游靠挪时间修补。各画风都执行，秒数均衡让位于事件匹配。
+After generation, the actual image must be opened and checked for character, time and space, and event; a correct prompt must not be taken as a correct image. Record observed_content and image_semantic_status (pending/verified/mismatch), keeping pending when no image was generated. When the image shows an event from the next passage, a wrong action, age, or scene, fix the image or storyboard; do not hand a wrong image downstream to be patched by shifting times. All styles follow this; seconds balance gives way to event matching.
 
-## 音频到位后的复核
+## Review After Audio Arrives
 
-口播配图生图前必须已有核验过的音频/SRT 时间轴，再完成分镜定稿。没有音频不强制创建配音，先保留草稿并请求最终配音；音频后到时先 Coli 转录、核对全文，再重新确认分镜边界和画面，之后才生图。SRT 句级时间不能冒充逐字时间：切点落在字幕内部时优先选择有证据的边界，否则标记低精度，不能按字符插值后称精确对齐。
+Before generating images for voiceover illustration, a verified audio/SRT timeline must already exist, then the storyboard is finalized. Without audio, do not force voiceover creation; keep the draft and request the final voiceover first. When audio arrives, first transcribe with Coli, check the full text, then re-confirm storyboard boundaries and images, and only then generate images. SRT sentence-level times must not be passed off as word-level times: when a cut point falls inside a subtitle, prefer a boundary with evidence; otherwise mark it low precision, and do not call it precisely aligned after interpolating by character.
 
-未生图且已授权拆镜/节奏修复：合并同事件的过短镜、将释放的镜数用于超长段，更新原文范围、锚点、提示词与统计；固定总数不变。已有图片时先判断调整边界是否仍与图片语义相符，不能把后一事件的图提前来凑时长。需要新画面而尚未授权生图时，交付补图分镜、提示词与缺口说明，不把失衡版本标为节奏验收通过。仅 prompt/generate 请求仍保留已有边界，发现问题附诊断，不能自行重拆。
+When no image has been generated and storyboard or pacing fixes are authorized: merge overly short shots about the same event, use the freed shot counts for overlong passages, and update source-text ranges, anchors, prompts, and statistics; the fixed total stays unchanged. When images already exist, first judge whether adjusting a boundary still matches the image's semantics; do not bring the next event's image forward to fill duration. When a new image is needed but image generation is not yet authorized, deliver the supplementary storyboard, prompts, and a gap statement; do not mark the imbalanced version as having passed pacing acceptance. For prompt/generate-only requests, keep the existing boundaries, and attach a diagnosis when a problem is found, without re-splitting on your own.
 
-## 记录与验收
+## Recording and Acceptance
 
-项目可追加 pacing: {target_seconds: 8, min_seconds: 5, max_seconds: 12, assumed_chars_per_second: 4}；这些是规划值。逐镜追加 estimated_duration（可空）、visual_anchor、beat_summary、pacing_exception（可空）。对齐后另外记录实际显示 start/end；显示从 0 秒开始不代表首句在 0 秒发声，片头静音计入首镜显示时长并说明。
+A project may add pacing: {target_seconds: 8, min_seconds: 5, max_seconds: 12, assumed_chars_per_second: 4}; these are planning values. Append estimated_duration (may be empty), visual_anchor, beat_summary, and pacing_exception (may be empty) shot by shot. After alignment, also record the actual display start/end; display starting at 0 seconds does not mean the first sentence is spoken at 0 seconds, and opening silence counts in the first shot's display duration and is stated as such.
 
-交付时报告时长依据、镜数、最短/最长/中位显示时长、异常镜号及处理。先检查语义，再检查单镜长短、连续短镜、相邻突变和尾部积压；有明确理由保留的异常仍列出，不用平均值掩盖。文字覆盖通过仅说明未漏稿，不能替代口播节奏通过。
+When delivering, report the duration basis, shot count, shortest/longest/median display durations, abnormal shot numbers, and how they were handled. Check semantics first, then single-shot length, consecutive short shots, adjacent jumps, and tail backlog; anomalies kept for a clear reason are still listed, and averages must not hide them. Passing text coverage only means nothing in the manuscript was missed; it does not replace passing voiceover pacing.

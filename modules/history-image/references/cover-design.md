@@ -1,25 +1,25 @@
-# 历史封面样式
+# Historical Cover Style
 
-> 本规则用于 historical-comic 项目封面，或当前使用者明确指定的同类封面。其他画风仍遵循正文与封面风格绑定；只请求单比例时不额外生成另一比例。
+> These rules apply to historical-comic project covers, or to the same kind of cover the current user explicitly specifies. Other styles still follow body-text and cover style binding; when only one ratio is requested, do not generate the other ratio as well.
 
-本规则描述厚涂金箔榜书封面样式，不自动代表当前使用者已选定或认可该样式。
+These rules describe the impasto gold-leaf large-character calligraphy cover style; they do not automatically mean the current user has chosen or approved this style.
 
-## 执行与内容
+## Execution and Content
 
-完成指定配图后额外生成两张封面，分别输出 COVER_3x4.png、COVER_4x3.png；不占指定分镜数量。封面主题、标题、人物、年代、服饰、道具与事件必须来自本期正文。可提炼标题但不擅改正文、不编造史实。人物按内容选择一位主角配次要人物、双主角或群像，不固定某种人数。用有意的历史叙事蒙太奇连接相关事件，避免分格边框。
+After completing the specified illustrations, generate two extra covers, output as COVER_3x4.png and COVER_4x3.png; they do not count toward the specified storyboard count. The cover theme, title, people, era, clothing, props, and events must come from this issue's body text. Titles may be distilled, but do not alter the body text or invent historical facts. Choose one lead character with supporting characters, two leads, or a crowd scene based on the content; do not fix a single headcount. Connect related events with a deliberate historical narrative montage, avoiding paneled borders.
 
-## 字体与画面
+## Typography and Image
 
-- 主标题：巨大、强劲、宽厚的手写榜书；粗犷毛笔、飞白、破锋、干刷毛边、长短错落笔势，斑驳金箔与颜料颗粒，大小错落而字形完整。
-- 第二层：主题或冲突句，暖米金为主，重点可用朱砂红字或暗红干刷底上的米金字，保持凌厉笔锋；不要整行同等强调。可选第三层短副标题，以较小暖米色文字补充内容，不能挤压主标题。
-- 标题默认与画面一体生成，不用普通电脑行楷、细软圆滑字体或均匀办公字距替代已通过效果。主标题、冲突句必须提供逐字文本。
-- 墨底为不规则烟墨、干刷和自然融入场景的暗部；不要纯黑矩形、巨大空黑块。标题与脸是清楚的视觉焦点，保留安全边距，小屏清晰。
-- 厚涂历史叙事、破碎笔触、块面塑形；金褐、烟黑、暗红，脸与手清楚；保持符合本期时代的服饰和器物，不把风格参考当成史实来源。
-- 3:4 可将标题放上方或左上、主角放中下、相关场景环绕；4:3 通常左上标题、中右主角、背景横向展开。每张独立排版，不拉伸或简单裁切另一比例。
+- Main title: huge, forceful, broad handwritten large-character calligraphy; rough brush, flying white, broken edges, dry-brush ragged edges, varied stroke rhythm, mottled gold leaf and pigment granules, varied in size while the character forms stay complete.
+- Second layer: a theme or conflict line, mainly warm rice-gold, with key words optionally in cinnabar red or in rice-gold on a dark-red dry-brush ground, keeping a sharp brush edge; do not emphasize the whole line equally. An optional third layer of short subtitle text may supplement the content in smaller warm rice-colored text, without squeezing the main title.
+- Titles are generated as one with the image by default; do not replace the approved effect with ordinary computer xingkai, thin soft rounded fonts, or even office letter spacing. The main title and conflict line must be supplied character by character.
+- The ink ground is irregular smoky ink, dry brushing, and shadows that blend naturally into the scene; do not use a pure black rectangle or a huge empty black block. The title and faces are clear visual focal points, with safe margins kept, and legible on a small screen.
+- Impasto historical narrative, broken brushwork, block modeling; gold-brown, smoky black, dark red, with faces and hands clear; keep clothing and objects that fit this issue's era, and do not treat style references as sources of historical fact.
+- In 3:4, the title may go at the top or upper left, the lead character in the middle and lower area, with related scenes around them; in 4:3, usually the title at upper left, the lead character at middle right, with the background spreading horizontally. Lay out each ratio independently; do not stretch or simply crop the other ratio.
 
-## 独立完整提示词模板
+## Standalone Complete Prompt Template
 
-将方括号全部替换为本期内容；每个比例输出一条完整提示词。实际传入可用的已确认封面参考，明确它仅用于字体和视觉风格；没有传入时不得声称已传。
+Replace all square brackets with this issue's content; output one complete prompt per ratio. Actually pass in the available confirmed cover reference, stating clearly that it is only for typography and visual style; when nothing was passed in, do not claim it was.
 
 ```text
 为本期《[主题]》制作完整成品历史封面，包含准确中文标题，画幅[3:4竖版／4:3横版，只保留一个]。
@@ -32,22 +32,22 @@
 构图：[针对当前画幅写明确标题位置、人物体量、场景布局和安全边距]。
 ```
 
-## 验收与修正
+## Acceptance and Revision
 
-逐字核对标题，检查笔锋和金箔质感、文字裁切、主体手脸、年代道具、场景与本期内容的对应关系。标题错误优先用生图工具针对修正，保持画面与书法风格。确需本地排版时也必须保留已通过的粗笔飞白和颗粒效果，不能以普通行楷平色叠字代替。不要为所有未来封面额外设置用户审批关卡；按当前请求执行，使用者明确要求先审时才等待。
+Check the title character by character, and check brush edge and gold-leaf texture, text cropping, the main figure's hands and face, era-appropriate props, and how the scene matches this issue's content. Fix title errors first with targeted generation using the image tool, keeping the image and calligraphy style. When local typesetting is genuinely needed, the approved rough brush, flying white, and granule effect must still be kept; do not replace it with ordinary xingkai flat-color overlaid text. Do not add an extra user approval checkpoint for all future covers; execute per the current request, and wait only when the user explicitly asks to review first.
 
-## 内置参考图与执行规则
+## Built-in Reference Images and Execution Rules
 
-优先使用技能内稳定副本，避免依赖原项目路径。生图前打开对应画幅样图，工具支持时实际作为风格参考传入；只控制字体、笔触、配色和构图，不作为历史人物原照或史实依据。
+Prefer the stable copies inside the skill, avoiding reliance on original project paths. Before generating, open the sample image for the matching ratio and actually pass it in as a style reference when the tool supports it; it controls only typography, brushwork, color, and composition, not historical figures or historical fact.
 
-| 参考图 | 用途 |
+| Reference image | Purpose |
 | --- | --- |
-| [常遇春 3:4](../assets/cover-reference-chang-yuchun-3x4.png) | 金箔榜书、飞白破锋、暗红干刷、厚涂人物的原始参考 |
-| [曾左 3:4](../assets/cover-reference-zeng-zuo-3x4.png) | 上部大标题，下部人物，以烟墨衔接的竖版成品 |
-| [曾左 4:3](../assets/cover-reference-zeng-zuo-4x3.png) | 左文右人、独立重排的横版成品 |
+| [Chang Yuchun 3:4](../assets/cover-reference-chang-yuchun-3x4.png) | Original reference for gold-leaf large-character calligraphy, flying-white broken edges, dark-red dry brushing, and impasto figures |
+| [Zeng and Zuo 3:4](../assets/cover-reference-zeng-zuo-3x4.png) | Vertical finished work with a large title at the top and figures below, joined by smoky ink |
+| [Zeng and Zuo 4:3](../assets/cover-reference-zeng-zuo-4x3.png) | Horizontal finished work with text on the left and people on the right, laid out independently |
 
-- 字体延续巨大宽厚、粗犷有力的手写榜书，飞白破锋、干刷毛边、斑驳金箔颗粒；主标题金色，副标题米金与暗朱红。人物与场景为赭金、焦褐、烟黑、暗红的厚涂历史漫画。不能用普通电脑行楷或平滑平色字替代。
-- 3:4 与 4:3 分别设计，不能拉伸或简单裁切。参考成品尺寸分别为 1086×1448、1448×1086；可使用其他相同比例分辨率，1086×814 不是精确 4:3。
-- 人数与场景由本期内容决定，不固定双人，不照搬曾左姓名、清代官服、长城或毛笔。跨时空人物并置要明确为叙事蒙太奇，避免误画成真实会面。
-- 本期示例标题“曾国藩／与左宗棠”“决裂八年／一联泯恩仇”“一生恩怨，落笔成敬”只作层级参考，每期替换。标题中的数字与引文须核对，不放大原稿的明显错误。
-- 交付前检查四类易错点：中文错漏；榜书退化为普通电脑字体；画幅或文字裁切；样例人物和异时代道具误带。打开每张成品逐字核对，验证实际尺寸，并记录所用参考图和生成方式。
+- Typography continues the huge, broad, forceful handwritten large-character calligraphy, with flying-white broken edges, dry-brush ragged edges, and mottled gold-leaf granules; the main title is gold, and the subtitle is rice-gold and dark cinnabar red. People and scenes are impasto historical comics in ochre-gold, burnt brown, smoky black, and dark red. Do not replace them with ordinary computer xingkai or smooth flat-color characters.
+- Design 3:4 and 4:3 separately; do not stretch or simply crop. The reference finished works are 1086x1448 and 1448x1086 respectively; other resolutions at the same ratio may be used, and 1086x814 is not an exact 4:3.
+- Headcount and scenes are decided by this issue's content; do not fix them at two people, and do not copy the Zeng and Zuo names, Qing official dress, the Great Wall, or the writing brush. When people from across time are placed together, state clearly that it is a narrative montage, to avoid drawing it as a real meeting.
+- This issue's sample titles "Zeng Guofan / and Zuo Zongtang", "Eight years apart / one couplet ends the grudge", and "A lifetime of grudges, settled with a brushstroke of respect" serve only as hierarchy references; replace them every issue. Numbers and quotations in titles must be checked; do not amplify obvious errors from the original manuscript.
+- Before delivery, check four common error types: Chinese errors or omissions; large-character calligraphy degrading into an ordinary computer font; ratio or text cropping; and sample figures and out-of-period props leaking in. Open each finished cover and check it character by character, verify the actual dimensions, and record the reference image used and the generation method.

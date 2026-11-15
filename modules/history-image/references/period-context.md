@@ -1,70 +1,70 @@
-# 从文稿识别时代并适配画面
+# Identifying the Era from the Manuscript and Adapting the Image
 
-目标：用户不填写朝代也能从讲解内容识别所绘事件的历史背景，再将背景落实为可见的时代特征。保持的是用户所选画风，不是清代造型或漫画参考中的帝王形象；时代适配对历史写实风、厚涂历史漫画风与黑白叙事风同样生效。本文不是朝代服饰百科，不以几个流行符号代替具体考据。
+Goal: identify the historical background of the depicted content from the narration without the user filling in the dynasty, then ground that background in visible period features. What is kept is the user's chosen style, not Qing-dynasty styling or the emperor figures in the comic references; era adaptation applies equally to the historical realism style, the impasto historical comic style, and the monochrome narrative style. This document is not a dynasty costume encyclopedia, and a few popular symbols do not substitute for specific research.
 
-## 先识别事件，再确定时空
+## Identify the Event First, Then Fix Time and Space
 
-1. 阅读可用全文、上下段和分镜，识别本镜真正描绘的人物与事件。区分故事发生时间、旁白说话时间、引用古人的时间和比较对象的时间。“今天讲”“就在前几天”等口播措辞不能直接用于历史画面定年。
-2. 优先使用与本事件对应的明确年份、年号、朝代、在位人物与地名；再用人物和具体事件相互印证。人物跨越多个政权时以当前事件阶段为准；同名人物、重复年号或单独的“皇帝、丞相、将军”不能唯一确定朝代。
-3. 主线时空可传给没有新时间线索的后续镜头。出现“二十年前、后来、想起、相比唐朝”等切换时，判断画面表现的是回忆、主线谈话还是比较对象。不要给整篇文稿所有镜头机械指定同一个朝代。
-4. 只使用证据支持的精度：能确定唐代但不能确定某一年，就写唐代；知道年号阶段就写相应时期。不为了填字段虚构精确年份、地点或人物年龄。
-5. 区分朝代、地域、政权与人物群体。并行政权、边疆、多族群或跨国事件，按各人物在该时地的身份分别着装，不把同一画面所有人套成中央官服。非中国历史采用对应历史时期与当地政权，不硬套中国朝代。
+1. Read the available full text, surrounding passages, and storyboard, and identify the people and events this shot truly depicts. Distinguish the story's time, the narration's speaking time, the time of a quoted ancient figure, and the time of a comparison object. Voiceover phrasing like "today we talk about" or "just a few days ago" cannot be used directly to date a historical image.
+2. Prefer the definite year, era name, dynasty, reigning figure, and place names matching this event; then cross-check people against specific events. When a person spans multiple regimes, use the current event's stage; a shared name, a repeated era name, or a bare "emperor, chancellor, general" cannot uniquely determine the dynasty.
+3. The main timeline's time and space may carry over to later shots with no new time clues. When a switch like "twenty years ago, later, recalling, compared with the Tang dynasty" appears, judge whether the image shows the memory, the main-line conversation, or the comparison object. Do not mechanically assign the same dynasty to every shot in a whole piece.
+4. Only use the precision the evidence supports: when the Tang dynasty is certain but the year is not, write Tang dynasty; when an era-name stage is known, write that period. Do not invent a precise year, place, or character age to fill a field.
+5. Distinguish dynasty, region, regime, and population group. For parallel regimes, border regions, multi-ethnic settings, or cross-border events, dress each person by their identity in that place and time; do not put everyone in the same image into central official dress. For non-Chinese history, use the corresponding historical period and local regime; do not force Chinese dynasties onto it.
 
-## 缺失与冲突
+## Gaps and Conflicts
 
-- 有足够人物事件线索就主动推断，用一句简短说明给出结论及依据，不把可以自行判断的问题退给用户。
-- 只能识别宽泛时期时保留宽泛标记，减少无依据的装饰细节。完全无法区分会显著改变造型的时代时，只问一个关键问题，并先完成其余确定镜头的提示词。
-- 显式朝代、人物、年份互相冲突时指出具体冲突；若改变会影响人物身份或整个时代，待澄清后执行相关生图，不静默把文稿改成另一个故事。
-- 用户明确指定架空、穿越或跨时代造型时遵循其创作设定，分别标明来源时代，不当成真实历史复原。
-- 对关键服装形制、标志性建筑或军械的年代存疑时，优先核验用户资料或可用的可靠来源，如博物馆藏品说明、考古资料及专业研究；无法核验则降低细节精度并说明不确定性。无需为每个普通镜头强制全面研究，也不把未经查询的记忆写成“已核实”。
+- When there are enough clues about people and events, infer actively, giving the conclusion and its basis in one brief sentence, instead of passing a decidable question back to the user.
+- When only a broad period can be identified, keep the broad label and reduce decorative detail without evidence. When the era cannot be distinguished at all and it would significantly change the styling, ask only one key question, and first complete the prompts for the remaining shots that are certain.
+- When an explicit dynasty, person, or year conflicts with another, point out the specific conflict; when changing it would affect a character's identity or the whole era, wait for clarification before generating the related images, and do not quietly turn the manuscript into a different story.
+- When the user explicitly specifies an alternate-history, time-travel, or cross-era look, follow their creative setting, marking each element's source era separately, and do not treat it as a true historical reconstruction.
+- When the era of key costume forms, landmark buildings, or military equipment is in doubt, prefer verifying against the user's material or available reliable sources, such as museum collection notes, archaeological material, or specialist research; when verification is impossible, lower the detail precision and state the uncertainty. There is no need to force comprehensive research for every ordinary shot, and do not write unqueried memory as "verified".
 
-## 将判断落实为时代设定
+## Grounding the Judgment in a Period Setting
 
-为每镜建立简短工作记录：朝代或政权、时期、地域、主要人物身份、判断依据、仍不确定的信息，以及实际入镜的外观约束。结构化字段见 [分镜输入约定](storyboard-interface.md)。不必向用户展示内部长表格。
+For each shot, build a brief working record: dynasty or regime, period, region, the main people's identities, the basis for the judgment, what is still uncertain, and the actual appearance constraints for what enters the frame. The structured fields are in [Storyboard Input Conventions](storyboard-interface.md). There is no need to show the user a long internal table.
 
-只针对实际入镜内容检查以下维度：
+Check only the following dimensions for what actually enters the frame:
 
-| 维度 | 应落实的外观与条件 |
+| Dimension | Appearance and conditions to ground |
 | --- | --- |
-| 人物身份 | 年龄阶段、性别、社会身份、官民军区别、族群与当地习俗；不把一个朝代的人都画成同一种人 |
-| 服饰与冠帽 | 领型、袖型、衣长、层次、束带、冠帽及身份场合；朝服、常服、戎装不能互换 |
-| 发式与胡须 | 当时该人物群体的束发、冠巾、剃发或辫发习惯；清代辫发官帽不外溢到其他时代，也不无差别套给所有清代人物 |
-| 建筑与室内 | 地域建筑、屋顶、门窗、墙体、座具与陈设；不把晚期宫殿、雕花窗和高桌高椅套入所有古代场景 |
-| 书写与交易 | 当时适用的简牍、帛、纸及书册形制，书写工具、货币和支付方式；不把线装账册、毛边纸、银锭当作万能古代道具 |
-| 军事与交通 | 与年代、地域和部队相符的甲胄、兵器、马具、车船、装运方式；分清器物的出现时间与当地实际使用 |
-| 工艺与细节 | 织物、瓷器、金属、照明及纹样的时代适用性；不确定品级颜色或具体纹样时采用保守描述，不编造精确制度 |
+| Character identity | Age stage, gender, social identity, official/civilian/military distinction, ethnicity, and local custom; do not draw everyone in one dynasty as the same kind of person |
+| Clothing and headwear | Collar type, sleeve type, garment length, layers, belts, hats, and caps, by identity and occasion; court dress, everyday dress, and military dress cannot be swapped |
+| Hairstyles and beards | The hair-bundling, cap-and-cloth, shaved-head, or queue customs of that population group at the time; the Qing queue and official hat do not spill into other eras, and do not apply them indiscriminately to every Qing figure |
+| Architecture and interiors | Regional buildings, roofs, doors and windows, walls, seating, and furnishings; do not put late-period palaces, carved windows, and high tables and chairs into every ancient scene |
+| Writing and trade | The bamboo slips, silk, paper, and book forms in use at the time, plus writing tools, currency, and payment methods; do not treat thread-bound ledgers, deckle-edged paper, and silver ingots as universal ancient props |
+| Military and transport | Armor, weapons, horse gear, carts and boats, and loading methods matching the era, region, and unit; distinguish when objects appeared and where they were actually used |
+| Craft and detail | The period suitability of fabrics, porcelain, metal, lighting, and patterns; when the grade color or specific pattern is uncertain, use a conservative description and do not invent a precise system |
 
-把最影响识别的可见特征写进提示词。例如汉代镜头应按该身份和时期明确服装冠巾与书写载体，并排除误带的清式官帽辫发；不能仅写“符合汉代”。“各朝代一套固定服装”同样不可取，仍需考虑时期、身份、地域与场合。
+Write the most identifying visible features into the prompt. For example, a Han dynasty shot should state the clothing, head cloth, and writing medium for that identity and period, and exclude mistakenly carried Qing official hats and queues; writing only "fits the Han dynasty" is not enough. "One fixed costume per dynasty" is equally wrong; period, identity, region, and occasion must still be considered.
 
-参考图若有异时代服装，可保留脸部身份、姿势或绘画质感，明确要求替换其服饰与道具。已明确要求保留的异时代造型按用户的架空设定处理。历史设定优先于旧示例中的纸张、灯具和人物装束。
+When a reference image has out-of-period clothing, the face identity, pose, or painting texture may be kept, with an explicit requirement to replace its clothing and props. Out-of-period looks that were explicitly requested to be kept are handled per the user's alternate-history setting. Historical settings take priority over the paper, lamps, and character dress in old examples.
 
-## 跨镜和蒙太奇
+## Across Shots and Montage
 
-同一个连续时段复用时代设定，遇到回忆、身份变化或改朝换代重新检查。角色 ID 保持，但年龄阶段、服装和物件按剧情变化。跨时代蒙太奇分别指定各区域人物和器物的时期，不能让两套服饰混到同一人物身上。
+Reuse the period setting within one continuous time span, and recheck it when a memory, identity change, or dynastic change occurs. Character IDs stay, but age stage, clothing, and objects change with the plot. In a cross-era montage, specify the period of the people and objects in each region separately, and do not let two sets of clothing mix on the same person.
 
-## 交付与检验
+## Delivery and Checking
 
-自然语言交付可先写：“根据文稿中的某人物与某事件，本镜按某朝某时期、某地域处理。”每镜完整提示词仍包含本镜时空和具体外观，不依赖这句总说明。实际生成后核对可见时代元素；提示词正确不代表模型没有画错。
+In natural-language delivery, first write: "Based on a certain person and event in the manuscript, this shot is set in a certain dynasty and period, in a certain region." Each shot's complete prompt still contains this shot's time, space, and concrete appearance, without relying on that general statement. After actual generation, check the visible period elements; a correct prompt does not mean the model drew nothing wrong.
 
-维护本规则时用以下场景作对抗性走查，不把规则覆盖称为已经生图测试：
+When maintaining these rules, use the following scenarios as adversarial walkthroughs, without calling rule coverage completed image testing:
 
-| 输入场景 | 应有判断与行为 |
+| Input scenario | Expected judgment and behavior |
 | --- | --- |
-| 未写朝代，但明确“李世民即位后与魏征议政” | 识别唐代相应阶段，按人物身份适配服饰建筑，不沿用清代示例，也不编具体年份 |
-| 明代官员在议事中引用唐太宗 | 当前议事画面仍为明代；只有明确切到唐代回忆或对比画面时才切换造型 |
-| 分镜从明代主线切至汉代旧事 | 保留镜号与叙事切换，逐镜形成两套时代设定，不共享同一服装道具清单 |
-| 仅写“老臣筹措军饷”，无本篇背景 | 不因为已验证示例而默认为清代，询问时代；本次项目已明确背景则继承 |
-| 标记“唐代”，上游却给清式辫发官服参考图 | 指出时代外观冲突，保留身份特征并换为对应时代造型；明确穿越要求则尊重设定 |
+| No dynasty written, but clearly "after Li Shimin took the throne, he discussed policy with Wei Zheng" | Identify the corresponding Tang dynasty stage, adapt clothing and architecture by character identity, do not carry over the Qing example, and do not invent a specific year |
+| A Ming dynasty official quotes Tang Taizong during a discussion | The current discussion image stays Ming; only switch the look when explicitly cutting to a Tang memory or comparison image |
+| The storyboard cuts from the Ming main line to an old Han dynasty event | Keep the shot numbers and the narrative switch, forming two period settings shot by shot, without sharing one clothing and prop list |
+| Only "old minister raising military funds", with no background in this piece | Do not default to the Qing dynasty because of the verified example; ask about the era; when this project's background is already definite, inherit it |
+| Marked "Tang dynasty", but the upstream gives a Qing queue and official-hat reference image | Point out the period-appearance conflict, keep the identity features, and change to the matching period's look; when time travel is explicitly requested, respect the setting |
 
-## 人物传记逐镜现实约束（2026-09-11 补充）
+## Per-Shot Realism Constraints for Character Biographies (added 2026-09-11)
 
-核心原则：画风只控制表现方式，人物与场景由该镜实际事件的年代、地域、年龄、身份和场合决定。黑白不等于民国，厚涂不等于古代；不能把风格截图的人物、衣着和环境当作跨项目模板。
+Core principle: style only controls the manner of depiction; people and scenes are decided by the shot's actual event era, region, age, identity, and occasion. Black and white does not equal the Republic of China era, and impasto does not equal antiquity; do not use the style screenshots' people, clothing, and environments as cross-project templates.
 
-- **先建立人物时间线，再写画面。** 通读文稿，逐镜确定实际描绘的事件时期，记录年龄阶段、地点、职业或社会身份和场合。不同人物分别判断，同一人物的童年、青年、中晚年也分别匹配；回忆按回忆时期，不能沿用叙述时点。
-- **外貌与衣着分别有据。** 有照片的人物按同期真实照片核验可见面容、发型、妆容、体态及服装；照片中的舞台服、影视角色服或礼服只用于相应场合，不能泛化为日常穿着。无照片的古人依据可信画像、考古或文字资料谨慎设计，不承诺真实人脸复原。普通配角同样符合当时年龄、职业、地域和身份。
-- **环境按当地当时落实。** 衣服形制、材质、鞋帽、配饰，以及建筑、门窗、家具、照明、交通、通讯、书写工具和日用品，选择该时期实际可用且适合场景的类型。不是“过去的人”就都穿长衫、住破屋；当代人物也不因黑白画风被换成民国造型。
-- **参考优先级。** 已核验且适用于本镜的史实和同期资料优先于风格截图、影视印象及既有生成图；用户明确要求架空时依其设定并标明。资料不支持的精确制服标识、奖杯、建筑细节等不杜撰为确定事实。关键疑点主动检索来源；不能确认时记录未知或采用较少细节的表现，不能称为精确复原。
-- **把约束传到每一镜。** 在 `period_context.visual_constraints` 和独立提示词中写出实际选定的服饰发式、人物阶段及关键环境物件，不只写“符合年代”。通过 `character_stage_ids`、`reference_ids` 关联分期依据；无参考时如实留空并说明，不虚构文件。
-- **生图前后两次核对。** 生图前查人物阶段、参考输入和时代设定是否对应；生图后打开图片，核对实际画出的年龄、衣着、发式与环境，不把提示词正确等同于图片正确。发现穿帮按主入口修正规则处理，交付注明仍存在的不确定性。
+- **Build the character timeline first, then write the image.** Read the whole manuscript, determine the actual depicted event period shot by shot, and record age stage, place, occupation or social identity, and occasion. Judge different people separately, and judge the same person's childhood, youth, and middle to late years separately; memories follow the remembered period, not the narration point.
+- **Appearance and clothing each need evidence.** For people with photos, verify the visible face, hairstyle, makeup, build, and clothing against real photos from the same period; stage costumes, film-role costumes, or formal dress in photos are only for the matching occasion, and must not be generalized into everyday dress. For ancient figures without photos, design cautiously from credible portraits, archaeology, or written material, without promising a true face reconstruction. Ordinary supporting characters likewise fit the age, occupation, region, and identity of the time.
+- **Ground the environment in the place and time.** Choose clothing forms, materials, shoes and hats, accessories, and buildings, doors and windows, furniture, lighting, transport, communications, writing tools, and daily items of types actually available in that period and suited to the scene. Not every person "from the past" wears a long gown or lives in a broken house; and a contemporary person must not be changed into a Republic of China era look because of a black-and-white style.
+- **Reference priority.** Verified facts and same-period material that apply to this shot take priority over style screenshots, film and TV impressions, and existing generated images; when the user explicitly requests alternate history, follow their setting and mark it. Do not invent precise uniform insignia, trophies, or building details that the material does not support as established facts. Actively search for sources on key doubts; when something cannot be confirmed, record it as unknown or use a less detailed depiction, and do not call it a precise reconstruction.
+- **Carry the constraints into every shot.** Write the actually selected clothing and hairstyles, character stage, and key environmental objects in `period_context.visual_constraints` and in the standalone prompt, not only "fits the era". Link the staged basis through `character_stage_ids` and `reference_ids`; when there is no reference, leave it honestly empty and explain, without inventing a file.
+- **Check twice, before and after image generation.** Before generating, check whether the character stage, reference inputs, and period setting match; after generating, open the image and check the actual age, clothing, hairstyles, and environment drawn, without equating a correct prompt with a correct image. When an anachronism is found, handle it per the main entry point's revision rules, and note the remaining uncertainty in the delivery.
 
-对抗性走查：当代演员黑白肖像应保持现代装束；同一人物从青年切到晚年要换用对应阶段面貌；古代人物不携带现代通讯设备；礼服照片不意味着劳动场景穿礼服；回忆中的旧居不沿用晚年现代室内。以上是规则检查案例，不是已完成的图片测试。
+Adversarial walkthrough: a black-and-white portrait of a contemporary actor should keep modern dress; the same person cutting from youth to old age must switch to the matching stage's face; ancient figures do not carry modern communications devices; a formal-dress photo does not mean formal dress in a labor scene; an old home in a memory does not use a modern interior from later years. These are rule-check cases, not completed image tests.

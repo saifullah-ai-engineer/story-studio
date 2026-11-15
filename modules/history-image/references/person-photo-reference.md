@@ -1,35 +1,35 @@
-# 真实人物分期照片参考流程
+# Real-Person Staged Photo Reference Flow
 
-用于有可考照片的真实人物，尤其近现代传记；适用于所有画风，黑白叙事风默认启用。目标分开检查：像本人、符合当时年龄及装束、符合事件事实。相貌相似不证明场景发生过，生成图片不能当作历史照片。
+For real people with verifiable photos, especially modern-era biographies; applies to all styles, and is enabled by default for the monochrome narrative style. The goal is to check three things separately: that it looks like the person, that it fits the age and dress of the time, and that it fits the event facts. A similar face does not prove the scene happened, and a generated image cannot stand as a historical photo.
 
-## 1. 建立人物与时期索引
+## 1. Build a Person and Period Index
 
-从文稿提取人物姓名、身份、生卒年（有据时）、事件年份及年龄阶段。用稳定 character_id 关联全篇；同一人物分别建立青年、中年、晚年或按具体经历划分的 stage_id。阶段不机械按固定岁数切割。出生年或事件年不确定时标明约数或待核验，不编造精确年龄。
+Extract from the manuscript the person's name, identity, birth and death years (when evidenced), event years, and age stages. Link the whole piece with a stable character_id; for the same person, build separate stage_ids for youth, middle age, and old age, or divide them by specific experiences. Do not cut stages mechanically by fixed ages. When the birth year or event year is uncertain, mark it as approximate or pending verification, and do not invent a precise age.
 
-## 2. 搜索与核验真实照片
+## 2. Search and Verify Real Photos
 
-实际项目需要人物身份资料时主动检索姓名加时期、事件或机构；优先档案馆、博物馆、纪念馆、权威媒体原始报道、本人或机构正式资料。图片搜索缩略图只用于发现线索，打开原始来源页面核对图注、人物、拍摄时间与场合；网页发布日期不等于照片拍摄日期。
+When an actual project needs a person's identity material, actively search the name plus period, event, or institution; prefer archives, museums, memorial halls, original reporting from authoritative media, and formal material from the person or an institution. Image search thumbnails are only for finding leads; open the original source page to check the caption, person, shoot time, and occasion. A web page's publication date does not equal the photo's shoot date.
 
-每阶段尽量选择 2—4 张清晰且彼此可核对的照片，保留正面或四分之三角度，必要时补侧面；这是选材建议，不是每次必须传入的数量。找不到足够照片就记录缺口，不用演员剧照、AI 图、美颜修复照或来源不明的网图凑数。角色剧照可作该角色造型证据，不能误当生活装束；用户提供的照片也记录其来源是否已核验。不要仅凭脸相似自行认定照片身份。
+For each stage, try to choose 2 to 4 clear photos that can be cross-checked against each other, keeping front or three-quarter angles, adding a profile when needed; this is a selection suggestion, not a required count to pass in every time. When not enough photos can be found, record the gap; do not fill it with actor stills, AI images, beautified restored photos, or unsourced web images. A character still may serve as evidence for that character's look, but must not be mistaken for everyday dress; user-provided photos also have their source verification status recorded. Do not identify a photo's subject by face similarity alone.
 
-记录 reference_id、character_id、stage_id、来源页面 URL、来源机构、图注、照片日期或区间、日期依据、照片类型、用途、核验状态，以及实际取得时的本地路径。需要公开复用原始照片时另核对其使用条件，不把网上可见当成可任意复用。仅记录链接而未取得图像时不得标为已传入模型。
+Record reference_id, character_id, stage_id, the source page URL, the source institution, the caption, the photo date or range, the date basis, the photo type, the purpose, the verification status, and the local path when actually obtained. When an original photo needs public reuse, check its usage terms separately; do not treat being visible online as freely reusable. Merely recording a link without obtaining the image must not be marked as passed to the model.
 
-## 3. 按镜选图并实际传入
+## 3. Select Images Per Shot and Actually Pass Them In
 
-每镜选择与事件时间最接近、角度合适的已核验照片，以该阶段真实原照作为主要身份依据；清楚写明每张输入图的角色与用途。风格参考只控制黑白灰阶、光线、颗粒与构图，不控制脸。多人物镜头逐一映射人物 ID 和参考图，避免混脸。
+For each shot, choose the verified photo closest in time to the event with a suitable angle, using that stage's real original photo as the main identity basis; state clearly each input image's character and purpose. Style references only control the black-and-white grey scale, lighting, grain, and composition, not the face. For multi-person shots, map character IDs and reference images one by one, to avoid mixing faces.
 
-在工具支持范围内，实际传入参考图并确认加载状态；不要只在提示词写姓名、文件路径或“参考网上照片”。参考图数量、输入次序、保真参数由当次工具说明决定，不编造人脸锁定、种子或权重参数，也不承诺绝对相似。接口不能接收图片时，交付提示词与参考清单并说明相似度限制，不声称已完成参考生图。
+Within the tool's supported range, actually pass in the reference images and confirm the loading status; do not merely write a name, file path, or "reference the online photo" in the prompt. Reference image count, input order, and fidelity parameters are decided by the current tool's instructions; do not invent face-locking, seed, or weight parameters, and do not promise absolute similarity. When the interface cannot receive images, deliver the prompts and reference list and explain the similarity limits, without claiming reference-based generation is complete.
 
-## 4. 跨年代与跨镜一致
+## 4. Consistency Across Eras and Shots
 
-固定稳定的面部比例和可见特征，发际线、皱纹、体态、妆发、服装按同期照片变化。不同年龄的照片不要无说明混在一个请求里让模型平均面容。缺少某阶段照片时，使用最近时期原照加有据年龄变化，但标记为年龄推测；需要精确历史外貌的镜头不能把该推测写成已证实，可改为有据原照展示或减少面部细节的背影、远景。
+Fix stable facial proportions and visible features, changing hairline, wrinkles, build, makeup and hairstyle, and clothing with the same-period photos. Do not mix photos of different ages into one request without explanation and let the model average the face. When a stage's photo is missing, use the nearest period's original photo plus an evidenced age change, but mark it as an age inference; a shot needing precise historical appearance must not present that inference as verified, and may instead show an evidenced original photo or reduce facial detail with a back view or distant shot.
 
-每次新图继续附相应时期真实原照。已生成且认可的图可辅助保持光线与服装连续性，不能代替原照成为唯一身份来源，避免连续以生成图为底造成漂移。先完成当前已授权范围中的一个代表镜头检查相貌，再扩展到其余已授权镜头；不因此额外生成未授权的年龄设定图或变体。
+Keep attaching the matching period's real original photo for each new image. An already generated and approved image may help keep lighting and clothing continuity, but cannot replace the original photo as the sole identity source, to avoid drift from repeatedly building on generated images. First finish one representative shot within the currently authorized scope and check the likeness, then extend to the remaining authorized shots; do not use this to generate extra unauthorized age-setting images or variants.
 
-## 5. 验收与交付
+## 5. Acceptance and Delivery
 
-逐镜对照参考图，检查脸型、眼距、眉眼、鼻口比例、发际线、耳形等可见特征与阶段年龄；光线和角度不同的地方不要硬判为同一几何投影。不输出虚构相似度百分比，不将人工目视比较称为身份鉴定。
+Compare against the reference image shot by shot, checking visible features such as face shape, eye spacing, brow and eye shape, nose and mouth proportions, hairline, and ear shape against the stage age; do not force places with different lighting and angles to be judged as the same geometric projection. Do not output invented similarity percentages, and do not call manual visual comparison identity verification.
 
-同时核对服装、场景、人物关系、时间与关键器物；照片能支持容貌，未必能支持事件细节。记录 reference_ids、stage_id、外貌依据、场景事实来源、未知项、实际传入状态与结果检查。偏差明显时按主入口有限重试规则定向修正。没有生图就报告“流程已配置，生成效果未验证”。
+At the same time, check clothing, scenes, character relationships, timing, and key objects; photos can support appearance, but do not necessarily support event details. Record reference_ids, stage_id, appearance basis, scene fact sources, unknown items, actual passing status, and result checks. When a deviation is clear, revise with targeted corrections per the main entry point's limited retry rules. Without image generation, report "flow configured, generation results not verified".
 
-若要求尽可能忠实原貌，优先在有合适且可用原始照片时直接展示原照或做保守修复；改变姿势、视角、表情和场景的新生成画面都应视为 AI 情景重现。交付清单区分原始照片、修复照片、AI 情景重现、年龄推测；视频需要标识时在后期加入，不要求无字底图承担说明文字。
+When the request is for the closest possible likeness to the original, prefer directly showing a suitable and available original photo or doing a conservative restoration; any new generated image that changes pose, angle, expression, or scene should be treated as an AI scene reconstruction. In the delivery list, distinguish original photos, restored photos, AI scene reconstructions, and age inferences; when video needs labeling, add it in post-production, and do not require the text-free base image to carry the explanation.

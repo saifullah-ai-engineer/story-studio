@@ -1,6 +1,6 @@
-# 写实风提示词示例：老臣筹措军饷
+# Realism-Style Prompt Example: Old Minister Raising Military Funds
 
-此例用于展示完整提示词的结构与细节密度，不代表当前项目已经生图、完成独立视觉验收或通过跨接口测试。案例中的人物、年代和场景细节不应默认出现在其他题材。
+This example shows the structure and detail density of a complete prompt; it does not mean the current project has generated an image, completed standalone visual acceptance, or passed cross-interface testing. The people, era, and scene details in the case must not appear in other subjects by default.
 
 ```text
 生成一张 9:16 竖版历史叙事插图，主题是“老臣筹措军饷”。
