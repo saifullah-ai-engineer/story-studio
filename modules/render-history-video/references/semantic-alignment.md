@@ -1,36 +1,36 @@
-# 图片、原文与当前口播的语义对齐
+# Semantic Alignment of Images, Source Text, and Current Narration
 
-本检查优先于镜长均衡，所有画风、剪映及本地成片都执行。对齐分两件事：文字确实在该时刻被读到；实际图片确实表达这段文字。时间戳存在或脚本通过不能证明第二件事。
+This check takes priority over balancing shot lengths; all styles, Jianying, and local finished videos run it. Alignment has two parts: the text is actually read at that moment; and the actual image actually expresses that passage. A timestamp existing, or a script passing, does not prove the second part.
 
-## 从画面内容建立对应关系
+## Build the Correspondence from Image Content
 
-逐张打开实际图片，不能只读文件名或提示词。核对人物、年龄阶段、地点、动作、时间及因果阶段，记录 image_path、shot_id、source_start/source_end、visual_anchor、observed_content、对应 narration。例如“尚在筹钱”不能配已经出征的军队，“败退”不能配凯旋。图画错了要改图或标出补图缺口，不能靠挪时间把错图解释成正确。抽象概括用覆盖整句的情境，明确是概括画面，不能提前展示后半句才发生的具体结果。
+Open each actual image, one by one; do not rely only on the filename or prompt. Check the person, age stage, place, action, time, and causal stage, and record image_path, shot_id, source_start/source_end, visual_anchor, observed_content, and the corresponding narration. For example, "still raising money" must not be paired with an army already marching out, and "retreat" must not be paired with a triumphal return. When an image is wrong, change the image or mark the gap for a replacement image; do not explain a wrong image into correctness by shifting time. For an abstract summary, use a scene covering the whole sentence, and state clearly that it is a summary image; do not show a specific result from the second half of the sentence early.
 
-## 从全文建立时间对应
+## Build the Time Correspondence from the Full Text
 
-- 先核对配音版本和完整正文，按原文偏移及出现次序定位，重复句结合前后文；不使用全局第一次搜索结果。人名、数字、否定词、转折、回忆起止是重点，禁止以低相似度短句匹配自动确认。
-- Coli 自动路径使用全文顺序匹配和切点两侧上下文，完整 token 时间戳才可使用；不跳过句首、不按字数插值、不将缺失时间当 0。数字写法或人名转录不同会进入 review_required：可核听局部音频，或对照已核验 SRT，建立有记录的纠错/手工对齐版本后重跑；不改配音和原稿迁就 ASR。记录原始转录、纠错文本、时间证据及理由，不能仅为让脚本通过而改字。
-- 单个 token 包含多个字且切点位于内部时，无法声称逐字精确；使用已核验的词级时间或人工核听定位，不能把多个镜头同时挂在 token 起点。SRT 一条跨事件也按此原则处理。没有核听能力或可靠时间证据时保留待核验，不编造结论。
-- 脚本输出 start/end 是显示边界，第一图 start=0；audio_start 为真实首个匹配 token 的发声时间，可大于 0。有静音片头时分别记录。不要再将首镜 audio_start 强制改为 0。
-- 自动输出只标 semantic_review_status=pending。脚本失败时阅读 alignment_review.json，不沿用旧 alignment.json；每次重跑用新版本目录。全文对齐严格失败不代表必须重做配音，只需处理具体差异与证据。
+- First verify the narration version and the complete text, locating by source-text offset and order of occurrence, combining repeated sentences with surrounding context; do not use the first global search result. Person names, numbers, negation words, turning points, and the start and end of flashbacks are the focus; do not auto-confirm with a low-similarity short-sentence match.
+- The Coli automatic path uses full-text order matching and context on both sides of the cut; only complete token timestamps may be used; do not skip the start of a sentence, do not interpolate by character count, and do not treat a missing time as 0. Different written forms of numbers or person names in transcription go to review_required: you may listen to the local audio, or compare against a verified SRT, and re-run after building a recorded correction / manual alignment version; do not change the narration or the original script to accommodate the ASR. Record the original transcription, corrected text, time evidence, and reasons; do not change words just to make the script pass.
+- When a single token contains multiple characters and the cut falls inside it, you cannot claim character-level precision; use verified word-level times or listen manually to locate it, and do not hang multiple shots on one token start. Handle an SRT line spanning events the same way. When you have no listening ability or reliable time evidence, keep it pending verification and do not invent a conclusion.
+- The script output start/end are display boundaries, with the first image start=0; audio_start is the real speaking time of the first matched token and can be greater than 0. When there is a silent opening, record them separately. Do not force the first shot's audio_start to 0 again.
+- Automatic output only marks semantic_review_status=pending. When the script fails, read alignment_review.json and do not reuse the old alignment.json; each re-run uses a new version directory. A strict failure of full-text alignment does not mean the narration must be re-recorded; only handle the specific differences and evidence.
 
-## 在正确语义处切图
+## Cut the Image at the Correct Semantic Point
 
-每镜设计时就确定画面从哪个原文分句开始适用。切入以这个完整语义单元的实际起点为准；代词、省略主语结合上文解析。图片只表达后半句事件时，将边界移到后半句真实起点，或换成能覆盖整句的图，不在句首提前展示结果。转场停顿中默认保持上一图，下一事件开始时再切；跨时空长停顿需记录具体决定。第一镜仍从第 0 帧显示与开场句相符的图。
+When designing each shot, decide from which source-text clause the image starts to apply. The cut-in is based on the actual start of that complete semantic unit; resolve pronouns and omitted subjects from the preceding text. When an image only expresses the second half of a sentence, move the boundary to the real start of that second half, or switch to an image that covers the whole sentence; do not show the result at the start of the sentence. During a pause between transitions, keep the previous image by default, and cut only when the next event starts; a long cross-time pause needs its specific decision recorded. The first shot still shows an image matching the opening sentence from frame 0.
 
-先满足语义，再平衡停留时间。长段包含不兼容事件时按原有授权调整分镜或列补图方案；指定数量无法同时满足时说明冲突，不能用均分时间、复用无关图或大幅提前/延后切点掩盖。剪辑不擅自增减已指定图片。
+Satisfy semantics first, then balance dwell time. When a long segment contains incompatible events, adjust the storyboard under the existing authorization or list a replacement-image plan; when a specified count cannot satisfy both at once, explain the conflict; do not hide it with evenly split time, reusing an unrelated image, or moving a cut point far earlier or later. Editing must not add or remove specified images on its own.
 
-## 逐镜证据与导出前检查
+## Per-Shot Evidence and Pre-Export Check
 
-在版本目录写 semantic_alignment.json，包含本次音频、字幕、分镜、图片路径及文件 SHA-256（或可验证的版本标识），以及逐镜 image_path、原文范围、narration、observed_content、start/end、切点时间依据、前后口播上下文、review_status（verified/pending/mismatch）、issues。verified 必须来自实际查看图片并核对可靠音文证据；自动匹配只能证明文字定位，不能自动设置 verified。
+In the version directory, write semantic_alignment.json, containing this run's audio, subtitles, storyboard, image paths, and file SHA-256 (or a verifiable version identifier), plus per-shot image_path, source-text range, narration, observed_content, start/end, cut-point time basis, narration context before and after, review_status (verified/pending/mismatch), and issues. verified must come from actually viewing the image and checking reliable audio-text evidence; automatic matching only proves text location and cannot automatically set verified.
 
-逐镜查看开始、中部、结束对应的讲述内容；每个切点核对前后完整分句与两张实际图片，重点检查人物换人、年龄跳跃、地点转移、否定和结果提前。量化到视频帧后再次检查最终 plan 与核验时间一致，允许最多一帧量化误差；检查实际草稿/成片的素材映射，防止表对了但图片文件串号。
+Check the narration corresponding to the start, middle, and end of each shot; at each cut, check the complete sentences before and after and the two actual images, focusing on person changes, age jumps, place changes, negation, and results shown early. After quantizing to video frames, check again that the final plan matches the verified times, allowing at most one frame of quantization error; check the actual draft / finished video material mapping, so the table can be right while the image files are swapped.
 
-任何镜头 pending/mismatch 时先完成可做的修复与证据，不得交付为已对齐成品。可以保存明确标记待修复的诊断计划；用户明确接受带问题的预览时才导出该预览并列出镜号。无播放能力时准确说明是图片与时间轴证据核对，不声称看过完整播放。图片、配音、文稿或切点更改后，相应镜头及相邻切点重新核验，不能套用旧报告。
+When any shot is pending/mismatch, first complete the fixes and evidence you can, and do not deliver it as an aligned finished product. You can save a diagnostic plan clearly marked as needing fixes; only export that preview when the user explicitly accepts a preview with problems, and list the shot numbers. When you have no playback ability, state accurately that it is an image and timeline evidence check, and do not claim to have watched the full playback. After an image, narration, script, or cut point changes, re-verify the affected shots and adjacent cut points; do not reuse an old report.
 
-## story-studio 交接检查格式
+## story-studio Handoff Check Format
 
-导出前以本文件原有人工语义核验为基础，补充以下稳定格式，供总入口的 `scripts/check_handoff.py` 只读检查。可保留原来的自定义字段；这不要求重建原分镜。所有相对路径以 semantic_alignment.json 所在目录为基准。已有旧格式先映射字段并实际核对，不把 pending 自动变成 verified。
+Before export, build on this file's existing manual semantic verification and add the following stable format, for the main entry's `scripts/check_handoff.py` to check read-only. You may keep the original custom fields; this does not require rebuilding the original storyboard. All relative paths use semantic_alignment.json's directory as the base. Map fields from an old format first and verify them in practice; do not automatically turn pending into verified.
 
 ```json
 {
@@ -58,6 +58,6 @@
 }
 ```
 
-所有 plan 镜头必须有且只有一项同 ID 记录，路径与实际内容哈希匹配，start/end 与帧量化后的计划相差不超过一帧，原文、观察结果及时间证据非空。视频镜头用 video_path/video_sha256。带配音时 artifacts.audio 必须指向计划中的同一文件；静音但有可靠 SRT 时 workflow=srt_only，可省略 audio，说明核对依据。当前 SRT 必须记录哈希且末条不能超出计划结尾；storyboard、原稿等存在并参与核验的文件也纳入 artifacts。
+All plan shots must have one and only one record with the same ID, with paths and actual content hashes matching, start/end differing from the frame-quantized plan by no more than one frame, and source text, observed result, and time evidence non-empty. Video shots use video_path/video_sha256. When there is narration, artifacts.audio must point to the same file as in the plan; when silent but with a reliable SRT, workflow=srt_only, audio may be omitted, with the verification basis explained. The current SRT must have its hash recorded and its last line must not run past the end of the plan; the storyboard, original script, and other files that exist and took part in verification are also included in artifacts.
 
-脚本通过仅说明文件身份、时间与记录覆盖一致，不会理解 observed_content，不代替前文的真实查看与音文核验。先运行该检查和节奏检查，再调用本模块 export_jianying.py；失败先处理或报告具体阻塞。
+The script passing only shows that file identity, times, and record coverage agree; it does not understand observed_content, and it does not replace the real viewing and audio-text verification above. Run this check and the pacing check first, then call this module's export_jianying.py; if they fail, handle or report the specific block first.
