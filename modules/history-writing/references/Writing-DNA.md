@@ -1,58 +1,58 @@
-# 历史口播 Writing DNA
+# Historical Voiceover Writing DNA
 
-## 依据与适用范围
+## Basis and Scope
 
-版本 1，2026-09-07。57 篇完整转写，4 个账号，点赞 205–37,702，共 114,571 个含标点正文字符。45 篇用于初步归纳，12 篇全文回查。回查篇标题、部分开头之前可见，且同故事跨组，不能称独立盲测。没有低赞对照、播放量、完播率或发布时间，所以这里只提炼样本共有写法，不推断爆款因果。
+Version 1, 2026-09-07. 57 complete transcripts, 4 accounts, likes from 205 to 37,702, a total of 114,571 body characters including punctuation. 45 pieces were used for the initial induction, and 12 were rechecked in full. The rechecked pieces had titles and some text visible before their openings, and the same story spans groups, so this cannot be called an independent blind test. There is no low-like control group, no view counts, completion rates, or publication dates, so this only distills the writing shared across the samples, and does not infer what causes a hit.
 
-统一的是叙事方法；人物立场和说话习惯不强行平均。秦汉、三国及明清样本多，宋代仅在跨朝代盘点出现。器物和民俗模板证据少，按尝试型模板使用。
+What is unified is the narrative method; the figures' positions and speaking habits are not forced into an average. Qin-Han, Three Kingdoms, and Ming-Qing samples are numerous, while Song appears only in cross-dynasty roundups. Evidence for the object and folklore templates is thin, so use them as trial templates.
 
-## 语言
+## Language
 
-用谈话距离讲具体行动：先让听众看见一个处境，再解释里面的难处。可以说“您想想”“咱们看”，不必每段招呼听众。转写句长均值 25.15 字、中位数 23，逗号分句均值 8.51；借鉴长短交替，不按均值机械切句。关键处用短句，背景和因果可稍长。
+Speak at conversational distance about concrete actions: first let the listener see a situation, then explain the difficulty inside it. You may say "just think about it" or "let us look", without greeting the listener in every paragraph. Transcribed sentences average 25.15 characters with a median of 23, and comma-separated clauses average 8.51; borrow the alternation of long and short, but do not cut sentences mechanically by the average. Use short sentences at key points; background and causation may run a little longer.
 
-把“权力发生转移”落实成谁能调兵、任人、决定去留；把“处境艰难”落实成眼前可选的两条路及各自代价。解释官职先说当时管什么，不硬套现代级别。反问只推动一个待解问题，不能连续问而不答。
+Turn "power shifted" into something concrete: who can move troops, appoint people, and decide who stays or goes. Turn "the situation was hard" into the two options actually in front of someone and what each one costs. When explaining an official post, first say what it managed at the time, without forcing it onto a modern rank. Use rhetorical questions only to push one open question forward, never a run of questions with no answers.
 
-留住具体动词和带行动的对比。删去套话、反复复述观点、凭空感官细节与同质化惊叹。不移植原作者的家事、年龄、读书经历。高频催赞和书籍推广是商业习惯，不是本技能默认文风。
+Keep concrete verbs and contrasts carried by action. Cut stock phrases, repeated restatements of a view, invented sensory detail, and uniform gasps of amazement. Do not transplant the original authors' family matters, age, or reading history. Frequent calls for likes and book promotion are commercial habits, not this skill's default style.
 
-## 开头
+## Openings
 
-57 篇开头另作全量标注，归纳九种主要机制：命运待遇反差、现场动作对白、熟悉评价改判、条件行为反差、名单揭晓、现实代入、机制追问、上集承接、权威格言。详见 [开头钩子](开头钩子.md)。首句给具体信息，随后用局部事实推进，留下正文能兑现的原因或后果；既不把全部答案一次说完，也不反复空吊胃口。完整引题段与前几秒分开分析，没有时间戳不声称实测。正常写稿选一版，用户明确要备选时才围绕同一事实池改变切入方式，先供选择再按请求续正文。
+The 57 openings were separately annotated in full, yielding nine main mechanisms: fate and treatment contrast, on-scene action and dialogue, revising a familiar judgment, condition and behavior contrast, list reveal, present-day connection, mechanism questioning, previous-episode continuation, and authority and aphorism. See [Opening Hooks](开头钩子.md) for detail. The first sentence gives concrete information, then local facts advance it, leaving a cause or consequence the body can deliver; neither give away the whole answer at once, nor keep dangling an empty tease. The complete lead paragraph is analyzed separately from the first few seconds, and without timestamps nothing is claimed as measured. Normal drafts choose one version; only when the user explicitly wants alternatives should you vary the entry approach around the same fact pool, offer the choice first, and continue the body on request.
 
-## 六种结构
+## Six Structures
 
-| 模板 | 推进方法 | 使用边界 |
+| Template | How It Advances | Boundaries |
 | --- | --- | --- |
-| T1 命运回溯 | 异常处境或结局 → 回到关键节点 → 选择及代价 → 回扣开头 | 不把全生平塞进短稿，不虚构临终对白 |
-| T2 困局拆解 | 一个矛盾 → 各方条件和选项 → 位置变化 → 后果 | 不把谋杀猜想、读心和阴谋当答案 |
-| T3 主题盘点 | 比较标准 → 每例独有事实和后果 → 比较结论 | 排名属主观观点；短稿少选人 |
-| T4 贡献重估 | 熟悉评价 → 贡献如何形成 → 成本由谁承担 → 有限判断 | 不用后世受益抹掉当时代价 |
-| T5 器物知识 | 日常问题 → 工程约束 → 解决方法 → 可观察的遗产 | 仅 2 篇，不声称稳定通用规律 |
-| T6 民间故事 | 道具难题 → 观察试招 → 受阻改招 → 兑现 | 仅 2 篇；先标明传说或新编性质 |
+| T1 Fate Retrospective | Abnormal situation or ending, back to the key moment, choices and their costs, back to the opening | Do not squeeze a whole life into a short draft, do not invent dying words |
+| T2 Dilemma Breakdown | One contradiction, each side's conditions and options, a shift in position, consequences | Do not treat murder speculation, mind-reading, or conspiracy as the answer |
+| T3 Thematic Roundup | Comparison standard, each example's unique facts and consequences, comparison conclusion | Rankings are subjective views; use few people in a short draft |
+| T4 Contribution Reassessment | Familiar judgment, how the contribution took shape, who bore the cost, a limited judgment | Do not use later benefit to erase the cost paid at the time |
+| T5 Object Knowledge | Everyday question, engineering constraints, how it was solved, observable legacy | Only 2 pieces, do not claim a stable general rule |
+| T6 Folk Story | Prop problem, observation and attempts, setback and change of approach, payoff | Only 2 pieces; first label it legend or new composition |
 
-模板提供因果骨架，不提供固定口头禅。两篇新稿即使模板相同，也应有各自的事实、转折位置和结尾落点。
+Templates provide a skeleton of cause and effect, not fixed catchphrases. Two new drafts on the same template should still have their own facts, turning-point placement, and ending.
 
-## 选题判断
+## Judging Topics
 
-先问：这个人物哪一件事值得听众追问？答案能否由可查材料支撑？有限字数能否讲完？再选择朝代、人群和结构。
+Ask first: which one thing about this figure is worth the listener's questioning? Can checkable material support the answer? Can a limited word count cover it? Then choose the dynasty, the group of people, and the structure.
 
-多维标签比拆成许多朝代技能更实用：主时代用于浏览，细时代用于精确过滤，人物用于定位，冲突用于寻找相似问题，故事簇用于去重，模板用于组织写法。刘宋归南朝；宋朝须区分北宋、南宋，不作字符串混用。
+Multi-dimensional tags work better than splitting into many dynasty skills: the main era is for browsing, fine eras for precise filtering, people for locating, conflict for finding similar questions, story cluster for deduplication, and template for organizing the writing. Liu Song belongs to the Southern Dynasties; the Song dynasty must be split into Northern Song and Southern Song, never mixed by string matching.
 
-灵感分成“库内已有”“同题新角度”“跨题迁移”。新角度有旧稿结构依据，不等于有历史事实依据或热度验证。跨朝代比较必须说清同一个比较标准，不能只把姓名并排列成清单。
+Inspiration falls into "already in the library", "new angle on the same topic", and "cross-topic transfer". A new angle has structural support from an old draft, which is not the same as having historical evidence or proven popularity. Cross-dynasty comparison must state one shared comparison standard, not just list names side by side.
 
-## 认知框架
+## Cognitive Framework
 
-1. 名义位置与实际支配的资源可能不同。先核对权限变化，再谈关系转折。
-2. 当下有用与长久受信任不是同一件事。用行动和制度来解释，不把所有人际关系讲成利用。
-3. 先前的一次自保可能改变此后的选择空间。展示中间环节，不倒推人物早知结局。
-4. 当时的损失与后世的评价采用不同尺度。把受益者、付出者和时间分开说。
-5. 处理一个人未必解决使问题反复发生的机制。由具体时期的税收、任用、信息制度支撑，避免“王朝都一样”。
+1. Nominal position and the resources actually controlled may differ. First check how authority changed, then discuss the turn in the relationship.
+2. Being useful right now and being trusted for the long term are not the same thing. Explain with actions and institutions, and do not turn every relationship into a story of exploitation.
+3. One earlier act of self-protection may change the room for choice afterward. Show the intermediate steps, and do not reason backward as if the figure already knew the ending.
+4. Losses at the time and later judgments use different measures. Say who benefited, who paid, and how much time passed, separately.
+5. Replacing one person does not necessarily fix a mechanism that makes the problem recur. Support it with the taxation, appointment, and information systems of the specific period, and avoid "all dynasties are the same".
 
-这些是样本里的观察视角，不是对所有历史强制适用的定律。保留反例与不确定性，不合理化屠杀，不把受害归咎于“不够聪明”。
+These are observed perspectives found in the samples, not laws forced onto all of history. Keep counterexamples and uncertainty, do not rationalize massacres, and do not blame victims for "not being clever enough".
 
-## 素材与交付
+## Sources and Delivery
 
-史传正文、注引异说、演义、民俗、新编、推测分层。查到书名不算查到论据，引用要到篇章；无记载不等于史官不敢写。缺证据时缩小论断或更换材料，保留戏剧张力可以靠已知选择，不靠编造秘闻。
+Historical biography text, commentary citing variant accounts, romance novels, folklore, new compositions, and speculation are layered separately. Finding a book title does not count as finding the argument; a citation must reach the chapter. No record is not the same as "the historian dared not write it". When evidence is missing, narrow the claim or change the material; dramatic tension can rest on known choices, not on invented secrets.
 
-默认史事稿先建立事实核查表与必要时间线，再动笔；最终从标题、钩子和正文反查出处。用户认可的旧稿仍须纠错，指定字数不能靠虚构补足。未核关键情节不进入默认成稿，只有明确要求才提供就地标记的待核草稿。核过出处不代表史籍绝无误记，争议按材料归属和证据范围表述，详见 [史实与素材](史实与素材.md)。
+By default, a historical draft first builds a fact-check table and any necessary timeline, then writing begins; at the end, the title, hook, and body are checked back against the sources. An old draft the user approved still needs its errors corrected, and a specified word count cannot be met by inventing content. Unverified key plot points do not enter the default finished draft; only an explicitly requested draft is provided with in-place marking of what is pending verification. Having checked a source does not mean the historical record is free of error; disputes are stated by source attribution and the scope of the evidence, as detailed in [Historical Facts and Sources](史实与素材.md).
 
-语料没有图像、镜头或版式证据，无法蒸馏封面、色彩和配图规律。新稿采用适合朗读的短段落，是交付设计。默认正文独立、无商业导流；依用户计数要求校验后交付。
+The corpus has no images, shots, or layout evidence, so no cover, color, or illustration rules can be distilled. New drafts use short paragraphs suited to reading aloud, as a delivery design. By default the body stands alone, without commercial diversion; deliver after checking against the user's counting requirements.

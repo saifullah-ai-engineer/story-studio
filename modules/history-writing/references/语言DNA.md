@@ -1,47 +1,47 @@
-# 语言 DNA
+# Language DNA
 
-## 测量结果
+## Measurement Results
 
-分析对象是保守清洗后的转写正文。字数按 Unicode 字母与数字计，标点、空白不计；句界用 `。！？!?`，分句另含逗号、分号和冒号。原始标点来自转写，不能等同作者书面习惯。
+The object of analysis is the body text of the transcripts after conservative cleaning. Character counts use Unicode letters and digits, excluding punctuation and whitespace; sentence boundaries use `。！？!?`, and clauses additionally include commas, semicolons, and colons. The original punctuation comes from transcription, and cannot be equated with the author's written habits.
 
-| 指标 | 全部 57 篇 | 45 篇发现集 |
+| Metric | All 57 Pieces | 45-Piece Discovery Set |
 | --- | --- | --- |
-| 正文字符，含标点 | 114,571 | 89,698 |
-| 正文字数，不含标点空白 | 102,299 | 80,053 |
-| 转写句数 | 4,067 | 3,192 |
-| 平均句长 | 25.15 | 25.08 |
-| 句长中位数 | 23 | 23 |
-| 不超过 15 字的句子 | 26.78% | 27.51% |
-| 至少 50 字的句子 | 6.71% | 6.83% |
-| 平均分句长度 | 8.51 | 8.47 |
+| Body characters, including punctuation | 114,571 | 89,698 |
+| Body character count, excluding punctuation and whitespace | 102,299 | 80,053 |
+| Transcribed sentences | 4,067 | 3,192 |
+| Average sentence length | 25.15 | 25.08 |
+| Sentence length median | 23 | 23 |
+| Sentences of 15 characters or fewer | 26.78% | 27.51% |
+| Sentences of at least 50 characters | 6.71% | 6.83% |
+| Average clause length | 8.51 | 8.47 |
 
-每篇正文都是一个大段，平均每段 71.35 句，是导出形态，不作为排版规则。正文没有可靠的标题结构，不能统计作者小标题字数。转写中破折号、括号、引号均未出现，不能计算有意义的破折号与括号比例，也不能推断作者从不引用。中文占主体，数字和少量外文不构成稳定中英混写风格。
+Each body text is a single large paragraph, averaging 71.35 sentences per paragraph, which is an export form, not a layout rule. The body text has no reliable title structure, so the authors' subheading character counts cannot be measured. Dashes, parentheses, and quotation marks do not appear in the transcription, so no meaningful dash or parenthesis ratio can be calculated, and it cannot be inferred that the authors never quote. Chinese dominates, and numbers and a small amount of foreign text do not make a stable Chinese-English mixed style.
 
-## 口语与词汇
+## Spoken Language and Vocabulary
 
-| 表达 | 出现次数 | 出现篇数 | 用途与取舍 |
+| Expression | Occurrences | Articles | Use and Choices |
 | --- | --- | --- | --- |
-| 您 | 406 | 51 | 保持谈话距离，可用，不每段硬加 |
-| 咱们 | 201 | 50 | 邀请一起理解，可用，避免虚构共同经历 |
-| 为什么 | 80 | 30 | 提出可回答的问题 |
-| 结果呢 | 12 | 11 | 从决定转向后果，不作固定转场 |
-| 不是 | 261 | 53 | 对比常见，不一律视作 AI 痕迹 |
-| 而是 | 50 | 24 | 使用次数不代表与“不是”逐句配对 |
-| 后背发凉 | 7 | 7 | 样本有使用，新稿不将其当必备情绪 |
-| 关注 | 54 | 43 | 商业及互动结尾，默认不继承 |
-| 评论区 | 43 | 35 | 非必要叙事成分 |
-| 左下角 | 15 | 10 | 带货场景用语，默认移除 |
+| 您 | 406 | 51 | Keeps conversational distance; usable, without forcing it into every paragraph |
+| 咱们 | 201 | 50 | Invites shared understanding; usable, avoid inventing a shared experience |
+| 为什么 | 80 | 30 | Raises a question that can be answered |
+| 结果呢 | 12 | 11 | Moves from a decision to its consequence; not a fixed transition |
+| 不是 | 261 | 53 | Common in contrasts; do not uniformly treat it as an AI tell |
+| 而是 | 50 | 24 | Its count does not mean it pairs with "不是" sentence by sentence |
+| 后背发凉 | 7 | 7 | The samples use it; a new draft does not need it as a required emotion |
+| 关注 | 54 | 43 | Commercial and interactive ending; not inherited by default |
+| 评论区 | 43 | 35 | Not a necessary narrative element |
+| 左下角 | 15 | 10 | Product-selling wording; removed by default |
 
-高频名词如皇帝、曹操、刘邦、韩信主要反映题材；动词中的知道、觉得、琢磨反映谈话解释；副词如真正、到底、偏偏常用于重评与转折。词频不等于推荐用量。完整的名词 100、动词 50、副词 50 见 [词频附表](词频附表.md)，原始数据在 `corpus/statistics.json`。Jieba 自动词性含误分，例如“明白”“大将”，仅供定位表达，不能据此学习错误词性。
+High-frequency nouns such as emperor, Cao Cao, Liu Bang, and Han Xin mainly reflect the topics; verbs such as know, feel, and ponder reflect spoken explanation; adverbs such as truly, in the end, and stubbornly are often used for reassessment and turning points. Frequency does not equal recommended usage. The full noun 100, verb 50, and adverb 50 lists are in the [Word Frequency Appendix](词频附表.md), and the raw data is in `corpus/statistics.json`. Jieba's automatic part of speech contains misclassifications, for example "明白" and "大将", useful only for locating expressions, not for learning wrong parts of speech from it.
 
-## 可执行的语感
+## Workable Feel for the Language
 
-先讲人和动作，再给判断。与其写“权力关系高度复杂”，不如查清谁提出建议、谁有决定权、谁承担后果后直说。长句负责补条件，短句负责显出转折；不追求统计均值。
+First tell people and actions, then give the judgment. Rather than writing "the power relations were highly complex", find out who proposed the advice, who had the power to decide, and who bore the consequences, and then say it directly. Long sentences supply conditions, short sentences make the turning point visible; do not chase the statistical average.
 
-设问在开头或换层时使用，随后给具体进展或局部事实，保留需要正文解释的核心问题；避免一次揭完全部机制，也不反复吊胃口。陈述和动作同样能形成钩子，九类开头及同题备选见 [开头钩子](开头钩子.md)。叙述距离偏近，允许一句“您想想”，但别用“您细品、您琢磨、您猜猜”连续挤占信息。解释一项官职或制度时只补本故事需要的部分。
+Use a question at the opening or when changing layers, then give concrete progress or partial facts, keeping the core question for the body to explain; avoid revealing the whole mechanism at once, and avoid dangling a tease repeatedly. Statements and actions can form a hook just as well; see [Opening Hooks](开头钩子.md) for the nine opening types and same-topic alternatives. The narrative distance is close, allowing one "just think about it", but do not crowd out information with a run of "savor it, ponder it, guess". When explaining an official post or an institution, add only the part this story needs.
 
-用具体对照代替惊叹：从能领兵到失去兵权，比“命运的齿轮骤然转动”更能让听众理解。原稿中已经明确发生的动作可复述，未记载的手抖、落泪、心想与密谈不能因追求画面而补成事实。
+Use concrete contrasts instead of gasps: going from being able to command troops to losing military power helps the listener understand more than "the wheel of fate suddenly turned". Actions in the original drafts that clearly happened may be retold; unrecorded trembling hands, tears, thoughts, and secret talks cannot be added as fact in pursuit of visuals.
 
-## 有限去 AI 味
+## Limited Removal of AI Flavor
 
-完成正文后，只清理可定位的问题：重复前文的总括句、与事件无关的价值升华、同义排比、连续夸张词、没有答案的连环反问、泛用的“深层逻辑”解释。保留有功能的口语、问句和前后对比，不追求把文稿抹成中性百科。清理后重新计数，不加新事实。
+After the body is finished, clean only problems that can be located: summary sentences that repeat earlier text, value uplift unrelated to the events, synonymous parallel phrases, consecutive exaggerated words, chains of rhetorical questions with no answers, and generic "deep logic" explanations. Keep functional spoken language, questions, and before-and-after contrasts, and do not aim to scrub the draft into a neutral encyclopedia entry. Recount after cleaning, without adding new facts.
