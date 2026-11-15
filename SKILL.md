@@ -1,119 +1,119 @@
 ---
 name: story-studio
-description: 历史与真实人物故事的中文内容制作，按需独立执行写作、豆包配音、分镜与配图、剪映草稿，支持自动初始化依赖和接续已有项目。用户提到story-studio、故事工坊，或要求这些题材的文案配音配图剪映一条龙时使用。现有写作风格为历史叙事和玉玲2711人物故事风；民间故事等赛道可扩展。
+description: Chinese content production for history and real-life character stories, with writing, Doubao voiceover, storyboarding and illustration, and JianYing drafts executed independently as needed, plus automatic dependency setup and continuing existing projects. Use when the user mentions story-studio or Story Studio, or asks for voiceover scripts, voiceover, illustration, and JianYing drafts in one flow for these subjects. The built-in writing styles are historical narrative and the Yuling2711 character story style; folklore and other tracks can be extended.
 ---
 
-# Story Studio · 故事工坊
+# Story Studio
 
-一个入口，按本次请求开启写作、配图、剪映草稿。三个开关控制交付范围；内容赛道、写作风格和配图画风分别设置。内置所需语料、参考图、规则和脚本，按需读取。
+One entry point. Enable writing, illustration, and JianYing drafts for this request. Three switches control the delivery scope; the content track, writing style, and illustration style are set separately. The corpus, reference images, rules, and scripts needed are built in; read them as needed.
 
-## 安装与首次使用
+## Installation and First Use
 
-首次使用或依赖报错时，先读 [依赖初始化](references/setup.md)。Agent按本次阶段执行原生启动器check：Windows用 `scripts/bootstrap.ps1`，macOS/Linux用 `scripts/bootstrap.sh`，均以实际技能绝对路径调用，不假设电脑已有Python。只写作或纯文本分镜可先完成不依赖脚本的工作，不安装媒体组件。
+On first use, or when a dependency errors, first read [Dependency setup](references/setup.md). The Agent runs the native launcher check for the current stage: on Windows `scripts/bootstrap.ps1`, on macOS/Linux `scripts/bootstrap.sh`, always called with the actual absolute skill path, never assuming the machine already has Python. Writing only, or a pure-text storyboard, can be finished without the script-dependent work, without installing media components.
 
-需要安装而用户尚未授权时，集中展示缺少的组件，提供一次“自动配置并继续 / 暂不配置”的选择，不让用户运行命令、复制路径或逐项安装。用户已经明确要求初始化、一键配置或自动安装时，直接执行相应install，不重复询问。Agent完成下载、安装、草稿目录发现和复查，再继续原任务；已有可用组件复用。依赖安装与创作开关分别处理，不因初始化生成作品。
+When installation is needed and the user has not authorized it yet, show the missing components together and offer a single choice: "configure automatically and continue / hold off for now". Do not make the user run commands, copy paths, or install items one by one. When the user has explicitly asked for setup, one-click configuration, or automatic installation, execute the matching install without asking again. The Agent finishes the download, installation, draft directory discovery, and re-check before continuing the original task; existing usable components are reused. Dependency installation and the creative switches are handled separately; setup does not generate work.
 
-启动器支持缺Python时配置用户专用Python，再按需安装Node.js、FFmpeg、媒体库及Coli；Windows草稿用户可一并安装缺少的剪映。安装失败由Agent查看原因并修复，实际缺少操作系统授权、账户登录或工具权限时才向用户说明所需操作，不能把失败转换成一串手动命令。生图工具授权单独验证，不把说明文件存在当作工具可用。复制目录本身不会执行安装，首次调用才触发检查。
+The launcher supports configuring a user-dedicated Python when Python is missing, then installing Node.js, FFmpeg, media libraries, and Coli as needed; on Windows, a user drafting can also install a missing JianYing. When installation fails, the Agent looks into the cause and fixes it, and only tells the user what to do when an OS authorization, account login, or tool permission is actually missing; a failure must not be turned into a list of manual commands. Image tool authorization is verified separately; do not treat the existence of a description file as proof the tool is usable. Copying a directory on its own does not perform an install; the check only triggers on first call.
 
-草稿导出直接使用Python库 `pyJianYingDraft==0.3.1`，无需安装额外草稿技能。实际生图可用宿主图像工具，`imagegen` 是可选指导技能；Coli是本地转录CLI。依赖与作者见 [README](README.md)。
+Draft export uses the Python library `pyJianYingDraft==0.3.1` directly, with no extra draft skill to install. Real image generation can use the host image tools; `imagegen` is an optional guidance skill; Coli is the local transcription CLI. See [README](README.md) for dependencies and authors.
 
-初始化后，所有模块示例中的python、python3或py -3.11均替换为外部runtime.json记录的python可执行程序绝对路径；不能假设便携安装已加入全局PATH或存在py启动器。
+After setup, every python, python3, or py -3.11 in the module examples is replaced with the absolute path of the Python executable recorded in the external runtime.json; do not assume the portable install was added to the global PATH or that a py launcher exists.
 
-## 解析本次请求
+## Parsing This Request
 
-接受自然语言和中文开关，不要求用户填写 JSON。明确要求开启的阶段才开启，未请求的阶段关闭；最新明确开关优先。只点名技能、未说明任务时简短询问要做哪一项，不默认全开。
+Accept natural language and Chinese switches; do not require the user to fill in JSON. Only enable the stages the user explicitly asks for; stages not requested stay off; the latest explicit switch wins. When the user only names the skill without saying what to do, briefly ask which item they want; do not default to turning everything on.
 
-| 开关 / 内部键 | 工作范围 | 关闭时可接收 |
+| Switch / internal key | Work scope | What it can accept when off |
 | --- | --- | --- |
-| 写作 / `write` | 选题、核实资料、写稿、改稿、钩子、字数检查 | 用户已有文稿 |
-| 配图 / `illustrate` | 分镜、提示词或实际生图，由下方模式决定 | 已有分镜和图片 |
-| 剪映草稿 / `draft` | 素材核对、必要音文对齐、时间轴、运镜、导出草稿 | 已有或本次上游产物 |
+| Writing / `write` | Topic selection, fact verification, writing, revision, hooks, word count checks | A script the user already has |
+| Illustration / `illustrate` | Storyboard, prompts, or actual image generation, decided by the mode below | Existing storyboard and images |
+| JianYing draft / `draft` | Material checks, necessary audio-text alignment, timeline, camera movement, draft export | Existing materials or products from upstream stages in this session |
 
-- “只写稿” → 仅 write；“只做配图” → 仅 illustrate；“现有素材做剪映草稿” → 仅 draft。
-- “写稿并生成20张图” → write、illustrate；“写稿、配图、做剪映草稿一条龙” → 三项开启，但仍检查最终配音等前置素材。
-- “配图并做草稿”包含实际图片产物，可进入 generate；“只出分镜/提示词，再做草稿”不授权生图，缺图时交付已完成部分和缺口。
-- “继续配图”“只重做第8镜”只开启这次要求的阶段；继承当前项目已确认设置和可用产物，不沿用上次全开的操作范围。
-- 开关与自然语言明显矛盾时澄清冲突；能独立推进的部分先做。非必要设置从当前项目或模块默认值取得，不逐阶段要求确认。
-- 阶段关闭不代表它的已有素材不可用。缺必要素材时不暗中开启写作、生图、配音或本地 MP4；已开启且不依赖缺口的工作继续完成。
+- "Writing only" → write only; "illustration only" → illustrate only; "make a JianYing draft from existing materials" → draft only.
+- "Write a script and generate 20 images" → write and illustrate; "a full one-stop flow of writing, illustration, and JianYing draft" → all three on, while still checking prerequisites such as the final voiceover.
+- "Illustration plus draft" includes actual image products, so it may enter generate; "storyboard/prompts only, then draft" does not authorize image generation, and when images are missing, deliver the finished portion and the gap.
+- "Continue the illustration" or "only redo shot 8" enables only the stage requested this time; inherit the current project's confirmed settings and usable products, without carrying over the previous full-on operating scope.
+- When a switch clearly conflicts with the natural language, clarify the conflict; push ahead independently with the parts that can proceed. Take non-essential settings from the current project or module defaults; do not ask for confirmation at every stage.
+- A stage being off does not mean its existing materials are unusable. When required material is missing, do not quietly enable writing, image generation, voiceover, or local MP4; work that is on and does not depend on the gap continues to completion.
 
-新项目或跨阶段接续时读取 [项目记录与版本](references/project-state.md)。已有用户目录直接使用；无目录时在当前工作区创建可辨识项目目录。不要把创作产物写进技能目录。
+When starting a new project or continuing across stages, read [Project records and versions](references/project-state.md). Use an existing user directory directly; without one, create an identifiable project directory in the current workspace. Do not write creative products into the skill directory.
 
-## 赛道与写作风格
+## Tracks and Writing Styles
 
-仅开启写作时才选择写作分支。先从用户描述推断；“秦怡人物故事，按玉玲风格”已足够，不重复问。真实人物也能用历史叙事写法，人物姓名本身不强制人物风。
+Only choose a writing branch when writing is on. Infer it from the user's description first; "a Qin Yi character story in the Yuling style" is enough, so do not ask again. Real people can also be written in the historical narrative style; a character name alone does not force the character style.
 
-| 内容赛道 | 写作风格 / `writing_profile` | 何时读取 |
+| Content track | Writing style / `writing_profile` | When to read |
 | --- | --- | --- |
-| 历史 / `history` | 历史叙事 / `historical-narrative` | 读取 [历史写作](modules/history-writing/GUIDE.md)，按其索引读取 DNA、相关5篇原稿、核史与字数工具 |
-| 人物故事 / `biography` | 玉玲人物故事 / `yuling-characterstory` | 先读 [人物写作适配](references/biography-writing.md)，再读 [人物模块](modules/characterstory-writing/GUIDE.md) 和其引用的 DNA |
-| 民间故事等新赛道 | 尚未内置专用 profile | 用户实际提出时读 [扩展赛道](references/extending.md)；可按用户指定故事版本做普通创作，标明性质，不伪称已蒸馏专用风格 |
+| History / `history` | Historical narrative / `historical-narrative` | Read the [history writing guide](modules/history-writing/GUIDE.md), then follow its index to read the DNA, the 5 related original scripts, the fact-checking guide, and the word count tools |
+| Character story / `biography` | Yuling character story / `yuling-characterstory` | First read the [character writing adaptation](references/biography-writing.md), then the [character module](modules/characterstory-writing/GUIDE.md) and the DNA it references |
+| Folklore and other new tracks | No dedicated profile built in yet | When the user actually raises one, read the [extension notes](references/extending.md); ordinary writing can follow a story version the user specifies, labeled for what it is, without claiming a distilled dedicated style |
 
-所有真实历史、人物稿先读 [事实与风格优先级](references/fact-and-style.md)。有依据的事实优先于文风要求；人物模板中的精确数字、引语、苦难场景都不得凭空补造。历史风与人物风的结构和结尾规则各自生效，不混用。
+Read [Fact and Style Priority](references/fact-and-style.md) first for all real history and character scripts. Facts with evidence take priority over style requirements; exact numbers, quotations, and scenes of suffering in character templates must not be invented. The structure and ending rules of the historical style and the character style each apply on their own; do not mix them.
 
-只要选题或开头时停在对应产物。最终纯正文单独保存，按用户计数口径校验；无指定口径时复用历史模块的 Unicode 字母数字计数规则。事实表、时间线和来源保存在项目中，不自动写回语料库。
+Stop at the matching product when choosing a topic or an opening. Save the final plain body text separately, and verify it with the user's counting method; without a specified method, reuse the history module's Unicode alphanumeric counting rule. Keep the fact table, timeline, and sources in the project; do not write them back into the corpus automatically.
 
-## 配音衔接
+## Voiceover Handoff
 
-保留三个主开关，配音作为独立可调用的衔接步骤。写完定稿后提示可继续豆包配音；用户只要文稿或明确不要配音时不发送合成请求。
+Keep the three main switches; voiceover is an independently callable connecting step. After the final script is done, note that Doubao voiceover can continue; when the user only wants the script, or explicitly does not want voiceover, do not send a synthesis request.
 
-### 缺少最终配音时：必须先给出两条路径
+### When the Final Voiceover Is Missing: Both Paths Must Be Offered First
 
-凡口播任务需要音频对齐而当前没有可用的本期最终配音，必须在首次发现缺口时读取[豆包配置与配音](references/doubao-voice.md)，主动提示用户选择以下方式。**用户只说“按这篇文稿配图并做剪映草稿”、没有明确说“配音”，也触发本规则。不得仅回复“缺音频，请提供MP3”便结束。**
+Whenever a voiceover task needs audio alignment and there is no usable final voiceover for this episode, read the [Doubao setup and voiceover guide](references/doubao-voice.md) when the gap is first found, and proactively prompt the user to choose one of the following. **Even when the user only says "illustrate this script and make a JianYing draft" without explicitly saying "voiceover", this rule still applies. Do not end with only "audio missing, please provide an MP3."**
 
-1. **配置豆包语音，由Agent生成本期MP3。** 说明需要开通语音服务、通过安全入口配置语音API Key，并提供准确的speaker ID和模型资源resource_id；Agent负责检查及配置本地调用端，确认本期音色、资源、语速和朗读范围后合成。复刻音色的可选model与resource_id分别记录，不继承个人默认音色。
-2. **用户自备本期最终MP3。** 接收文件或本地路径，由Agent核验音频、用本机Coli转录并核对全文，再接续带时间分镜、配图和草稿；不要求用户手工制作SRT。
+1. **Configure Doubao Voice and let the Agent generate this episode's MP3.** Explain that the voice service needs to be enabled, the voice API Key configured through the secure entry, and the exact speaker ID and model resource resource_id provided; the Agent checks and configures the local calling side, then synthesizes after confirming this episode's voice, resource, speech rate, and read-aloud scope. The optional model and resource_id for a cloned voice are recorded separately, and do not inherit the personal default voice.
+2. **The user provides the final MP3 for this episode.** Accept the file or a local path; the Agent verifies the audio, transcribes it with the local Coli, checks it against the full text, and then continues with timed storyboarding, illustration, and the draft; the user is not asked to make an SRT by hand.
 
-可直接询问：“这期配音用哪种方式：配置豆包语音，由我生成MP3；还是你提供本期最终MP3？”同时说明Key通过安全入口配置，不在聊天中粘贴。
+You may ask directly: "Which voiceover method for this episode: configure Doubao Voice and let me generate the MP3, or will you provide the final MP3 for this episode?" Also explain that the Key is configured through the secure entry, and is not pasted in chat.
 
-用户已提供可用音频、已选择上述路径或已确认本期配音参数时沿用，不重复询问。等待选择期间继续不依赖音频的工作；未收到选择不默认同意合成，不发送付费请求。仅维护本技能、独立插图/封面/静态图文、明确不依赖音频的文本分镜不触发本规则。用户要求全部重新制作或禁止复用旧素材时，应按“没有可用的本期最终配音”处理，不以旧项目音频代替本次选择。
+Once the user has provided usable audio, chosen one of the above paths, or confirmed this episode's voiceover parameters, follow it and do not ask again. While waiting for a choice, continue work that does not depend on audio; without a choice, do not agree to synthesis by default, and do not send a paid request. Maintaining only this skill, standalone illustrations, covers, or static text-and-image work, and text-only storyboards that explicitly do not depend on audio, do not trigger this rule. When the user asks for everything to be remade, or forbids reusing old material, treat it as "no usable final voiceover for this episode" and do not substitute audio from an old project for this choice.
 
-配音前确认本期准确音色、资源、语速和朗读范围；本次已明确确认的参数不重问。Key只从宿主安全配置或技能目录之外的专用凭据存储读取，不写入项目或开源文件。用户需完成服务开通、Key获取及音色授权；依赖安装和本地配置由Agent完成。配置后用定稿生成MP3，再执行Coli转录、分镜、配图和草稿。已有最终音频优先复用。配音配置不自动开启未请求的配图或草稿，也不恢复火山字幕服务。
+Confirm this episode's exact voice, resource, speech rate, and read-aloud scope before voiceover; parameters already explicitly confirmed for this session are not asked again. Read the Key only from the host secure configuration or a dedicated credential store outside the skill directory; never write it into a project or open-source file. The user completes service activation, Key acquisition, and voice authorization; the Agent completes dependency installation and local configuration. After setup, generate the MP3 from the finalized script, then run Coli transcription, storyboarding, illustration, and the draft. Reuse an existing final audio first. Voiceover setup does not automatically enable unrequested illustration or drafts, and does not restore the Volcano subtitle service.
 
-## 配图
+## Illustration
 
-仅 illustrate 开启时读取 [配图模块](modules/history-image/GUIDE.md)。保留三种模式：
+Only read the [illustration module](modules/history-image/GUIDE.md) when illustrate is on. Keep the three modes:
 
-| 请求 | `image_mode` | 交付边界 |
+| Request | `image_mode` | Delivery boundary |
 | --- | --- | --- |
-| 按文稿拆镜、给其他 AI 生图 | `storyboard` | 完整分镜与独立提示词，不生图 |
-| 完善已有分镜提示词 | `prompt` | 保留镜号和边界，不生图 |
-| 生成图片、补图、改图 | `generate` | 只生成指定范围并检查实际图片 |
+| Storyboard from the script, for another AI to generate images | `storyboard` | Complete storyboard and standalone prompts, no image generation |
+| Improve existing storyboard prompts | `prompt` | Keep shot numbers and boundaries, no image generation |
+| Generate images, add missing images, revise images | `generate` | Generate only the specified range, and check the actual images |
 
-“只配图”且无法判断层级时询问要分镜提示词还是实际图片；等待期间可分析全文与时代。提示词、预期图片文件名和模型字段均不构成生图授权。
+For "illustration only" when the level cannot be determined, ask whether storyboard prompts or actual images are wanted; while waiting, the full text and era can be analyzed. Prompts, expected image filenames, and model fields do not count as authorization to generate images.
 
-配图画风使用独立的 `style_id`：历史写实 `historical-realism`、厚涂历史漫画 `historical-comic`、黑白叙事 `monochrome-narrative`。本项目未选择时询问，等待期间可做无画风草稿；不能按写作风格、赛道或旧文件夹名称擅自选择。
+Illustration style uses a separate `style_id`: historical realism `historical-realism`, impasto historical comic `historical-comic`, black-and-white narrative `monochrome-narrative`. When this project has not chosen one, ask; while waiting, a style-free draft can be prepared. Do not choose one on your own from the writing style, track, or an old folder name.
 
-实际生图前读[正文画风参考图库](modules/history-image/references/style-reference-library.md)，按已确认画风选同组参考并实际查看；工具支持时传入图片，固定本项目主基准，首张对照核验后再继续。记录参考ID、用途与实际传入状态。厚涂漫画和黑白叙事各附6张正文参考，历史写实暂用文字规则或本期匹配参考；图库人物不能代替本期身份与时代依据，封面另用封面参考。
+Before actual image generation, read the [body text style reference library](modules/history-image/references/style-reference-library.md), choose the reference set matching the confirmed style, and actually view it; pass the images to the tool when it supports them, fixing the main reference for this project, and verify against the first image before continuing. Record the reference ID, purpose, and actual pass-in status. Impasto comic and black-and-white narrative each include 6 body text references; historical realism uses text rules or a matching reference for this episode for now. Reference library figures cannot stand in for this episode's identity or era evidence; covers use the cover references separately.
 
-口播项目遵守 **定稿 → 豆包配音或已有最终配音 → 本机Coli转录并核对 → 带时间分镜 → 生图 → 按同表剪辑**。已有且已核验的当前配音字幕可复用。缺音频时按配音衔接规则引导；尚未配置或未确认音色时只准备待对齐草稿，不编造时间。明确的独立插图、封面、静态图文或纯文本分镜按模块例外完成。
+Voiceover projects follow **final script → Doubao voiceover or an existing final voiceover → local Coli transcription and check → timed storyboard → illustration → edit to the same table**. A current voiceover subtitle that already exists and has been verified may be reused. When audio is missing, guide the user with the voiceover handoff rules; while the voice is not yet configured or confirmed, only prepare a draft pending alignment, and do not invent timing. Explicit standalone illustrations, covers, static text-and-image work, or pure-text storyboards are completed under the module exceptions.
 
-保留模块的封面规则：完整 generate 请求按所选画风处理封面，黑白叙事默认无封面；只做分镜/提示词不出封面，补图不重复生成已有封面。用户指定数量与不要封面的选择优先。首次实际生图时按模块询问是否需要开头首尾帧，未回答不增加这项产物，不阻挡已授权正文图。
+Keep the module's cover rules: a complete generate request handles the cover for the chosen style, with black-and-white narrative having no cover by default; storyboard or prompt-only work produces no cover, and adding images does not regenerate an existing cover. A user-specified quantity, and a choice of no cover, take priority. On the first actual image generation, ask per the module whether opening first and last frames are needed; without an answer, do not add that product, and do not block the authorized body images.
 
-## 剪映草稿
+## JianYing Draft
 
-仅 draft 开启时读取 [草稿模块](modules/render-history-video/GUIDE.md) 及其语义核验、节奏与剪映说明。用户只调用 story-studio 即可；内部调用本技能的导出脚本。
+Only read the [draft module](modules/render-history-video/GUIDE.md) and its semantic verification, pacing, and JianYing notes when draft is on. The user only needs to call story-studio; the export script is called internally by this skill.
 
-- 复用已有文稿、音频、SRT、分镜和图片；关闭配图仍可为既有图片补做必要的 Coli 转录、音文与语义核验，不另写新稿或生新图。
-- 使用上游已核验的显示 start/end 和图片映射，不重新均分。首镜从0秒显示，末镜覆盖完整配音；实际图片须与当前口播人物、时期及事件相符。
-- 缺图、图错或关键时间无依据时完成诊断和可行修复，标明缺口，不交付为已核验成品；不暗中调用生图。缺少封面不阻挡正文草稿。
-- 导出前用配置的Python运行 `"<story-studio目录>/scripts/check_handoff.py" "<版本目录>/plan.json" --review "<版本目录>/semantic_alignment.json"`。该工具检查计划、图片版本与语义记录的交接一致性，不替代人工查看图片和核对音文。退出码非0先处理，不直接导出。
-- 默认竖屏1080×1920、30fps、整段配音、无显示字幕，推拉与切点缩放复用模块规则；用户明确要求优先。字幕用于定位不等于要上屏。
-- 默认只出剪映草稿。除非用户明确要求本地 MP4，不因剪映不可用自动改走 ffmpeg 成片。
-- 剪映导出直接调用 `pyJianYingDraft==0.3.1`。草稿目录优先使用 `--drafts-root`，其次 `JY_PROJECTS_ROOT` 或外部runtime配置，再读取剪映的草稿位置设置；新安装使用标准目录。已有自定义配置仍无法识别时由Agent查看剪映设置核对，不先要求用户复制路径。依赖缺失按自动初始化流程补齐。
-- 修订使用新版本和新草稿名，默认不覆盖旧草稿；不要自动操作剪映10.x导出成片。
+- Reuse existing scripts, audio, SRT, storyboards, and images; with illustration off, still do the necessary Coli transcription, audio-text, and semantic verification for existing images, without writing a new script or generating new images.
+- Use the upstream verified display start/end and image mapping; do not re-split evenly. The first shot displays from 0 seconds, and the last shot covers the full voiceover; actual images must match the current voiceover's person, period, and event.
+- When images are missing or wrong, or key timing has no basis, complete the diagnosis and feasible fixes, mark the gaps, and do not deliver it as a verified finished product; do not quietly call image generation. A missing cover does not block the body draft.
+- Before export, run `"<story-studio directory>/scripts/check_handoff.py" "<version directory>/plan.json" --review "<version directory>/semantic_alignment.json"` with the configured Python. The tool checks the handoff consistency of the plan, image versions, and semantic records; it does not replace a human viewing the images and checking the audio against the text. When the exit code is not 0, handle it first; do not export directly.
+- Default to vertical 1080x1920, 30fps, the full voiceover, and no on-screen subtitles; push-pull and cut punch zoom reuse the module rules, with explicit user requests taking priority. Subtitles used for positioning are not the same as putting them on screen.
+- Only produce a JianYing draft by default. Unless the user explicitly asks for a local MP4, do not switch to an ffmpeg finished video just because JianYing is unavailable.
+- JianYing export calls `pyJianYingDraft==0.3.1` directly. The draft directory prefers `--drafts-root`, then `JY_PROJECTS_ROOT` or the external runtime configuration, then reads JianYing's draft location setting; a fresh install uses the standard directory. When an existing custom configuration still cannot be recognized, the Agent checks JianYing's settings and verifies, rather than asking the user to copy a path first. Top up missing dependencies through the automatic setup flow.
+- Revisions use a new version and a new draft name, and do not overwrite the old draft by default; do not operate JianYing 10.x export to a finished video automatically.
 
-## 共用约束与交付
+## Shared Constraints and Delivery
 
-- 本机 Coli 是字幕路径；不调用火山字幕 API，不恢复其凭据，不用字符比例伪造精确时间。
-- 内置模块是本技能的使用副本。模块文中的“本 skill 目录”指其 GUIDE.md 所在模块目录；`<story-studio目录>` 才是总技能根目录。使用实际绝对路径执行脚本。
-- 总入口的阶段范围和事实规则优先于模块默认值。单个示例和验证结论不扩展为新赛道已验证能力。
-- 本技能不携带作者账户或同步授权；创作或维护不自动推送、发布或修改其他安装副本。
-- 技能源码、示例和语料索引仅保存通用参数与库内相对路径；不保存使用者的真实姓名、电脑用户名、联系方式、账户标识、私人文件位置、凭据或会话记录。运行配置从当前参数、外部环境或工具配置读取，不写回技能目录。
-- 初始化在当前用户的数据目录保存配置和专用工具，不修改全局环境变量或其他技能源码，默认保留已有草稿。macOS/Linux的原生媒体库可通过系统包管理器安装，所需系统授权按实际环境处理。依赖下载失败或版本不兼容时修复具体问题，不静默切换其他实现。
-- 根据实际完成情况交付文件链接，区分文稿、分镜提示词、已生成图片和草稿；说明待音频、缺图或未解决事项。关闭的阶段不写成已完成。
-- 交付前攻击并修正最可能的3–5个问题：越过开关、事实或文风串用、音图版本错配、时代与人物漂移、时间轴或素材丢失。用字数、覆盖、时间与实际产物检查提供证据，不把文件存在或数值通过当作内容验收。
+- The local Coli is the subtitle path; do not call the Volcano subtitle API, restore its credentials, or fake precise timing with character ratios.
+- Built-in modules are usage copies for this skill. "This skill directory" in module text means the directory containing its GUIDE.md; `<story-studio directory>` is the overall skill root. Execute scripts with actual absolute paths.
+- The main entry's stage scope and fact rules take priority over module defaults. A single example or verification conclusion does not extend into a claim that a new track is verified.
+- This skill carries no author account or sync authorization; creation or maintenance does not automatically push, publish, or modify other installed copies.
+- Skill source, examples, and corpus indexes store only generic parameters and relative paths inside the library; they do not store the user's real name, computer username, contact details, account identifiers, private file locations, credentials, or session records. Runtime configuration is read from current parameters, the external environment, or tool configuration, and is not written back into the skill directory.
+- Setup saves configuration and dedicated tools in the current user's data directory, without modifying global environment variables or other skills' source, and keeps existing drafts by default. Native media libraries on macOS/Linux can be installed through the system package manager, with the required system authorization handled for the actual environment. When a dependency download fails or a version is incompatible, fix the specific problem; do not silently switch to another implementation.
+- Deliver file links based on what was actually completed, distinguishing scripts, storyboard prompts, generated images, and drafts; explain pending audio, missing images, or unresolved items. Stages that are off are not written up as completed.
+- Before delivery, attack and fix the 3 to 5 most likely problems: going beyond a switch, mixing facts or styles, audio-image version mismatch, era or character drift, timeline or material loss. Use word count, coverage, timing, and actual products as evidence for checks; do not treat a file existing, or a number passing, as content acceptance.
 
-## 调用示例
+## Usage Examples
 
 ```text
 使用 $story-studio，只写一篇秦怡的人物故事口播稿，玉玲风格，约1500字。

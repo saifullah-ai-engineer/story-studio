@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🎬 Story Studio · 故事工坊
+# 🎬 Story Studio
 
-**从「选题 → 文案 → 配音 → 配图 → 剪映草稿」的一站式 AI 短视频内容创作 Skill**
+**A one-stop AI short-video content creation Skill, from topic selection → script → voiceover → illustration → JianYing draft**
 
 [![Skill Type](https://img.shields.io/badge/AI_Agent-Skill-blue?style=flat-square)](#)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg?style=flat-square)](LICENSE)
@@ -13,23 +13,25 @@
 [![Export](https://img.shields.io/badge/交付-可编辑剪映专业版草稿-ff69b4?style=flat-square)](#)
 
 <p align="center">
-  <b>用自然语言提需求，让 AI Agent 帮你走完短视频口播制作全流程。</b><br/>
-  既能「一句话一条龙」生成完整剪映工程，也能像搭积木一样「只写稿 / 只优化开头钩子 / 只拆镜生图 / 用现成素材做剪映草稿」。
+  <b>Describe what you need in plain language, and let an AI Agent carry your short-form voiceover production from start to finish.</b><br/>
+  It can generate a complete JianYing project from a single sentence, or work like building blocks: write only the script, polish only the opening hook, split only the storyboard and generate images, or build a JianYing draft from materials you already have.
 </p>
 
-[✨ 核心亮点](#-核心亮点) • [🛠️ 四大核心模块详解](#️-四大核心模块详解) • [🚀 快速开始](#-快速开始) • [🎛️ 灵活的工作流开关](#️-灵活的工作流开关) • [💬 常用提示词示例](#-常用提示词示例) • [📦 依赖与隐私说明](#-依赖与隐私说明) • [☕ 赞赏支持](#-赞赏支持-sponsor) • [📬 联系方式](#-联系方式-contact)
+[✨ Highlights](#-highlights) • [🛠️ The Four Core Modules](#-the-four-core-modules-in-detail) • [🚀 Quick Start](#-quick-start) • [🎛️ Flexible Workflow Switches](#-flexible-workflow-switches) • [💬 Example Prompts](#-example-prompts) • [📦 Dependencies and Privacy](#-dependencies-and-privacy) • [☕ Sponsor](#-sponsor) • [📬 Contact](#-contact)
 
 </div>
 
 ---
 
-## 📖 项目简介
+> **Note:** This is an English translation of [konlu/story-studio](https://github.com/konlu/story-studio), original work by konlu, licensed under CC BY-NC-SA 4.0. The story corpus files remain in Chinese, as in the original.
 
-**Story Studio（故事工坊）** 是专为 AI Agent（如 Claude Code、Codex、Cursor 等支持 Skill 的智能体）打造的一站式短视频内容创作技能包。
+## 📖 Project Overview
 
-做历史或人物故事类短视频，往往要在**找选题、查史料、磨开头钩子、写口播稿、配音、对齐时间轴、拆分数十个分镜、保持AI生图画风一致、以及在剪映里一帧帧打关键帧做推拉运镜**之间反复横跳。
+**Story Studio** is a one-stop short-video content creation skill pack built for AI Agents that support Skills, such as Claude Code, Codex, and Cursor.
 
-**Story Studio 把这一整套工业化流水线装进了一个 Skill 里：**
+Making history or character story short videos usually means jumping back and forth between **finding topics, checking historical sources, polishing the opening hook, writing the voiceover script, recording the voiceover, aligning the timeline, splitting dozens of storyboard shots, keeping AI-generated images stylistically consistent, and setting keyframes frame by frame in JianYing for push and pull camera moves**.
+
+**Story Studio packs that whole industrial pipeline into a single Skill:**
 
 ```mermaid
 flowchart LR
@@ -40,109 +42,110 @@ flowchart LR
     E --> F[🎞️ 剪映专业版草稿导出]
 ```
 
-- **不需要从头拼凑多个散装 Skill**：内部已深度整合写作、配音、语音识别、视觉分镜与剪映工程生成。
-- **随时中断与接力**：你可以只让它写稿改钩子；也可以丢给它一篇现成文稿和一段你自己录好的 MP3 放进文件夹，让 Agent 直接读取并接力完成后续的字幕时间戳对齐、配图和剪映草稿编排。
+- **No need to piece together several loose Skills from scratch**: writing, voiceover, speech recognition, visual storyboarding, and JianYing project generation are deeply integrated inside.
+- **Stop and hand off at any point**: you can have it only write the script or revise the hook; or drop a finished script and a self-recorded MP3 into a folder and let the Agent read them and carry on with subtitle timestamp alignment, illustration, and JianYing draft layout.
 
 ---
 
-## ✨ 核心亮点
+## ✨ Highlights
 
-- 🧠 **内置双王牌写作 Skill + 370+ 篇爆款对标文案库**：拒绝 AI 味大纲文！内置经过深度蒸馏的「历史叙事」与「真实人物故事/女性传奇」两套完整 Writing-DNA，涵盖选题策略、黄金 3 秒开头钩子库、句式节奏与史实核查机制。
-- 🎨 **三套成熟配图画风 + 内置成品参考图库**：支持 **历史写实风**、**厚涂历史漫画风**、**黑白纪实叙事风**。内置高水准正文与封面参考图（Reference Images），生图时自动对照材质与光影，告别跨镜头画风漂移与年代穿帮。
-- 🎙️ **双路径灵活配音 + 本地高精度时间戳对齐**：推荐直接接入 **豆包语音大模型（V3 双向流式）** 一键合成高表现力旁白；也支持**将自己提前准备好的配音 MP3 放入项目文件夹让 Agent 直接读取**。配合本地 **Coli（基于 sherpa-onnx）** 离线识别生成精准到字句的 SRT 时间轴，绝不按字数瞎猜时间。
-- 🎞️ **真正可二次编辑的剪映专业版草稿**：基于 `pyJianYingDraft` 直接生成剪映工程文件。自动将 9:16 竖屏图片、完整配音铺上时间轴，并**自动写入覆盖全镜的慢推拉关键帧与切点冲击缩放（Punch Zoom）**，打开剪映即可预览微调并导出成片。
-- ⚡ **零门槛自动环境初始化**：无需手动折腾 Python、Node.js、FFmpeg 或语音识别环境。首次调用时，告诉 Agent 一键配置，即可在用户独立数据目录完成便携环境搭建。
+- 🧠 **Two built-in ace writing Skills plus a 370+ hit benchmark script library**: no more AI-flavored outline writing! Two complete, deeply distilled Writing-DNAs are built in, covering "historical narrative" and "real-life character stories / legendary women", including topic strategy, a golden first-3-seconds hook library, sentence rhythm, and historical fact-checking.
+- 🎨 **Three mature illustration styles plus a built-in finished reference image library**: supports **historical realism**, **impasto historical comic**, and **black-and-white documentary narrative**. Built-in high-quality body text and cover reference images (Reference Images) are checked against material and lighting during generation, ending cross-shot style drift and anachronisms.
+- 🎙️ **Two flexible voiceover paths plus local high-precision timestamp alignment**: connect the **Doubao voice model (V3 bidirectional streaming)** for one-click, highly expressive narration, or **drop a voiceover MP3 you prepared yourself into the project folder for the Agent to read directly**. Paired with local **Coli (built on sherpa-onnx)** offline recognition, it produces SRT timelines accurate down to the word, never guessing timing from character counts.
+- 🎞️ **A genuinely re-editable JianYing Pro draft**: generates JianYing project files directly with `pyJianYingDraft`. It automatically lays 9:16 vertical images and the full voiceover on the timeline, and **automatically writes slow push-pull keyframes across every shot plus punch zoom at cut points**, so you can open JianYing, preview, fine-tune, and export the finished video.
+- ⚡ **Zero-barrier automatic environment setup**: no manual wrestling with Python, Node.js, FFmpeg, or speech recognition environments. On first use, tell the Agent to configure with one click, and the portable environment is set up in your own separate data directory.
 
 ---
 
-## 🛠️ 四大核心模块详解
+## 🛠️ The Four Core Modules in Detail
 
-### 1️⃣ 文稿创作：双风格 Writing-DNA + 370+ 篇对标文案库
+### 1️⃣ Script Writing: Two Writing-DNAs Plus a 370+ Benchmark Script Library
 
-不只是简单地让大模型“写篇故事”，Story Studio 内置了两个完整的专业级写作子模块，提炼自数百篇视频号与短视频平台的高赞爆款逐字稿：
+More than just asking a model to "write a story", Story Studio builds in two complete professional writing submodules, distilled from hundreds of highly liked verbatim hit scripts from Channels and short-video platforms:
 
-| 内置写作风格                                | 适用赛道与特点                                                                                                                                                                                                             | 内置语料与 DNA 武器库                                                                                                                                                                            |
+| Built-in writing style | Best tracks and traits | Built-in corpus and DNA arsenal |
 | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **📜 历史叙事风**<br>`historical-narrative`  | **把历史中值得追问的一件事讲透**<br>• 开头抛出具体历史反常或核心问题<br>• 正文以人物行动、制度条件与连锁后果推进<br>• 结尾严密兑现开头悬念，拒绝空泛升华                                                                   | • **57 篇** 头部爆款历史叙事逐字稿与结构拆解<br>• **9 类黄金开头钩子机制**（逐篇前几秒文字窗口分析）<br>• 内置《选题库》《史实与素材核验》《字数与查重工具》                                     |
-| **👩 人物故事风**<br>`yuling-characterstory` | **真实历史人物与传奇女性连载/单集**<br>• 经典节奏：`钩子先行 → 巅峰数字 → 可谁也没想到 → 磨难场景 → 金句收尾`<br>• 极具感染力的情感锚点（「您说……怎么会……」与精确数字节点）<br>• 支持单集深度人物传记或 2~3 集连续剧式排期 | • **300+ 篇** 头部爆款逐字稿深度蒸馏全套人物写作 DNA<br>• 覆盖民国名媛、巾帼英雄、时代先驱、传奇母亲等多赛道高赞对标库<br>• **A/B/C/D/E 五大类开头钩子模板** + 选题策略 DNA + 情绪升华与金句模板 |
+| **📜 Historical narrative**<br>`historical-narrative`  | **Tell one historical event worth digging into, thoroughly**<br>• Open with a specific historical anomaly or core question<br>• Drive the body with character actions, institutional conditions, and knock-on consequences<br>• Close by resolving the opening suspense tightly, with no empty uplift                                                                   | • **57** top hit historical narrative verbatim scripts with structural breakdowns<br>• **9 types of golden opening hook mechanics** (analyzed from the first seconds of each script)<br>• Built-in topic library, fact and source verification, and word count and duplication check tools                                     |
+| **👩 Character story**<br>`yuling-characterstory` | **Real historical figures and legendary women, in single episodes or series**<br>• Classic rhythm: `hook first → peak numbers → but no one expected → scenes of hardship → quotable closing line`<br>• Highly moving emotional anchors ("You say... how could..." with precise number beats)<br>• Supports single-episode deep biographies or 2 to 3 episode serial scheduling | • Full character writing DNA distilled from **300+** top hit verbatim scripts<br>• Benchmark libraries across Republican-era socialites, heroines, era pioneers, legendary mothers, and more high-like tracks<br>• **Five categories of opening hook templates, A/B/C/D/E**, plus topic strategy DNA, emotional uplift, and quotable closing line templates |
 
-**💡 写作模块能帮你做什么细节优化？**
-- **爆款选题策划**：不知道发什么？指定朝代或人物方向，Agent 结合 370+ 篇对标库为你策划具备戏剧张力的选题卡与切入角度。
-- **黄金开头钩子打磨**：觉得开头不够抓人？让 Agent 按「数字连排」「宿命定格」「反常画面」「结局前置」「历史时刻」等内置钩子 DNA，一口气产出 3~5 版不同切口的开头供你挑选。
-- **史实优先与事实核查**：内置严格的《事实与风格优先级》规范——先建事实表与时间线，区分正史、争议与演义，绝不为了凑模板或押韵凭空捏造数字、引语和苦难情节。
-- **精准字数控制与洗稿改稿**：支持按目标字数（默认正负 5% 内）严格扩写、缩写、续写或调整口播呼吸感。
+**💡 What finer optimizations can the writing module help with?**
+- **Hit topic planning**: not sure what to post? Name a dynasty or a person, and the Agent plans topic cards and angles with dramatic tension from the 370+ benchmark library.
+- **Golden opening hook polishing**: opening not gripping enough? The Agent follows built-in hook DNA such as "number sequences", "fate frozen in a moment", "anomalous scenes", "ending up front", and "historic moments" to produce 3 to 5 openings with different angles for you to pick from.
+- **Facts first and fact-checking**: a strict "Fact and Style Priority" standard is built in. Build the fact table and timeline first, separate official history, controversy, and dramatization, and never invent numbers, quotations, or scenes of suffering out of thin air to fit a template or a rhyme.
+- **Precise word count control and rewriting**: expand, shorten, continue, or adjust the narration's breathing to a target word count (within plus or minus 5% by default).
 
 ---
 
-### 2️⃣ 视觉分镜与配图：三大专属画风 + 时代考据与参考图库
+### 2️⃣ Visual Storyboarding and Illustration: Three Signature Styles, Era Research, and a Reference Library
 
-配图模块将文字转化为贴合口播节奏的视觉画面，支持 **「只拆镜出提示词（交给其他工具生图）」「完善现有分镜」「直接调用生图工具出图」** 三种模式。
+The illustration module turns text into visuals that fit the narration's rhythm, in three modes: **"split the storyboard and output prompts only (for other tools to generate images)", "improve an existing storyboard", or "call the image tools to generate images directly"**.
 
-#### 🎨 内置三种高辨识度配图画风
+#### 🎨 Three Built-in, Highly Distinctive Illustration Styles
 
-| 画风名称 (`style_id`)                          | 视觉特征与适用氛围                                                                                         | 内置参考图与封面策略                                                                                           |
+| Style name (`style_id`) | Visual traits and mood | Built-in reference images and cover strategy |
 | :--------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
-| **🖌️ 厚涂历史漫画风**<br>`historical-comic`     | **强烈叙事张力与雕塑块面感**<br>可见厚涂破碎笔触、赭金与焦褐色调、冷暖对比强烈、极具戏剧张力与电影镜头感   | • 内置 **6 张** 正文风格基准图 (`HC01`~`HC06`)<br>• 默认附带 **3:4 竖版 + 4:3 横版** 两张厚涂金箔榜书标题封面  |
-| **📷 黑白纪实叙事风**<br>`monochrome-narrative` | **克制、厚重的近现代人物传记感**<br>纯正黑白灰阶、胶片摄影质感、细腻的面部年龄纹理与时代光影，情绪深沉克制 | • 内置 **6 张** 正文黑白摄影基准图 (`MN01`~`MN06`)<br>• 默认纯享无字正文图；可选配专属「黑白人物金红书法封面」 |
-| **🏞️ 历史写实风**<br>`historical-realism`       | **自然沉稳的传统历史解说质感**<br>自然人物比例与真实光照、细腻柔和的写实绘画质感、克制的冷暖色彩关系       | • 内置完整时代考据与细节密度样例<br>• 默认附带 **3:4 竖版 + 4:3 横版** 两张同画风标题封面                      |
+| **🖌️ Impasto historical comic**<br>`historical-comic`     | **Strong narrative tension and sculptural mass**<br>Visible broken impasto brushwork, ochre-gold and burnt-brown tones, strong warm-cool contrast, highly dramatic and cinematic   | • **6** built-in body text style reference images (`HC01` to `HC06`)<br>• Two impasto gold-foil calligraphy title covers by default, **3:4 vertical and 4:3 horizontal**  |
+| **📷 Black-and-white documentary narrative**<br>`monochrome-narrative` | **Restrained, weighty, modern-era character biography feel**<br>Pure black-and-white grayscale, film photography texture, fine facial age texture and period light, deep and restrained emotion | • **6** built-in body text black-and-white photography reference images (`MN01` to `MN06`)<br>• Body images only, no text, by default; an optional dedicated "black-and-white portrait with gold-red calligraphy cover" |
+| **🏞️ Historical realism**<br>`historical-realism`       | **Natural, steady, traditional history narration feel**<br>Natural human proportions and real lighting, fine and soft realistic painting texture, restrained warm-cool color relationships       | • Complete era research and detail-density examples built in<br>• Two title covers in the same style by default, **3:4 vertical and 4:3 horizontal**                      |
 
-**🔍 为什么它生成的配图不违和、不穿帮？**
-1. **先音频后分镜（Audio-First）**：绝不把文稿机械均分！先根据真实配音的 SRT 时间戳，按约 8 秒/图的叙事节奏规划镜头切点，确保**第一句话从第 0 帧就有对应画面**，且画面严格匹配当前正在讲的句子。
-2. **逐镜时代与人物年龄阶段考据**：自动识别每一镜所处的朝代、地域与人物年龄阶段（如青年、中年、晚年），将衣冠发式、建筑形制、器物货币落实到独立提示词中；近现代真实人物支持按时期检索对标历史原照。
-3. **参考图锚定机制**：生图时自动读取并传入内置同画风参考图（Reference Image），首图核验笔触与色调后再批量生成，大幅降低多镜头画风漂移。
-4. **片头动态视频首尾帧设计（可选）**：首次生图时可选择额外生成黄金前 6 秒的「首帧 + 尾帧 + 图生视频运镜提示词」，方便你用视频大模型制作极具吸引力的动态片头。
-
----
-
-### 3️⃣ 配音与字幕对齐：豆包语音大模型 / 自备音频双通道
-
-配音是连接「好文案」与「精准画面节奏」的核心桥梁。Story Studio 提供两条极其顺畅的配音路径：
-
-#### 路径 A：推荐配置「豆包语音大模型」，由 Agent 全自动合成
-- 基于火山引擎豆包语音 **V3 双向流式 WebSocket 协议**，支持最新的 `seed-tts-2.0`（2.0通用高表现力音色）与 `seed-icl-2.0`（声音复刻2.0音色）。
-- **安全省心**：你只需在[豆包语音控制台](https://console.volcengine.com/speech/new)获取 `API Key`、`speaker ID（音色ID）` 和 `resource_id`。API Key 支持通过系统加密存储（Windows DPAPI / macOS & Linux 0600 权限文件）或环境变量保存，**绝不写入代码仓库或项目明文**。
-- **防重复扣费与完整性核验**：合成前确认音色与语速，合成后自动通过 `ffprobe/ffmpeg` 校验音频完整性，并记录文本与音频哈希，同稿同音色绝不重复发起收费请求。
-
-#### 路径 B：提前准备好配音 MP3，放入文件夹让 Agent 直接读取
-- 如果你习惯使用剪映克隆音色、其他 TTS 软件，或者**真人自己录好音**，只需将最终的 `.mp3` 音频文件丢进项目文件夹，告诉 Agent：*“配音我已经放进文件夹了，直接用这个音频继续做分镜和剪映草稿”*。
-- Agent 会自动读取你的音频文件，跳过云端合成，直接进入下一步的本地字幕对齐。
-
-#### ⏱️ Coli 本地离线语音识别与音文核验
-- 无论采用哪种配音方式，Agent 都会调用本地 **Coli（基于 sherpa-onnx）** 离线生成带精准时间戳的 `.srt` 字幕，并**自动对照你的定稿原文核对人名、地名与专有名词**，为后续分镜提供毫秒级的时间依据。
+**🔍 Why do its images look right, with no anachronisms?**
+1. **Audio first**: never split the script mechanically! Cut points are planned from the real voiceover's SRT timestamps, at a narrative pace of about 8 seconds per image, so **the first sentence has a matching image from frame 0**, and each image strictly matches the sentence being spoken.
+2. **Per-shot era and character age research**: each shot's dynasty, region, and character age stage (such as young, middle-aged, or elderly) is identified automatically, and clothing and hairstyles, architecture, objects, and currency are written into standalone prompts; for real modern figures, matching historical photographs can be retrieved by period.
+3. **Reference image anchoring**: the built-in reference image (Reference Image) for the same style is automatically read and passed in during generation, and the first image is checked for brushwork and tone before batch generation, greatly reducing style drift across shots.
+4. **Opening motion video first and last frame design (optional)**: on the first image generation, you can also generate the golden first 6 seconds as a "first frame + last frame + image-to-video camera prompt", ready for a video model to make a highly attractive motion opening.
 
 ---
 
-### 4️⃣ 剪映专业版草稿导出：推拉运镜与时间轴一键成型
+### 3️⃣ Voiceover and Subtitle Alignment: Doubao Voice Model or Your Own Audio, Two Paths
 
-所有素材就绪后，Story Studio 会直接生成**剪映专业版（JianYing Pro）可识别的本地草稿工程**：
+Voiceover is the core bridge between a good script and precise visual pacing. Story Studio offers two very smooth voiceover paths:
 
-- **语义对齐核验（Semantic Alignment）**：导出前自动执行 `check_handoff.py` 与逐镜语义核查，确保每一张图片出现的时间段，正好对应口播里讲到的那个人物和事件。
-- **电影感动态运镜（拒绝死板静帧）**：
-  - **全镜缓入缓出慢推拉**：每张图从切入到切出，自动计算平滑的推拉幅度（默认约 16~20 秒走完 12% 幅度，根据镜长智能自适应，远景与人物贴边分别优化），全程流动不停滞。
-  - **切点冲击缩放（Cut Punch）**：在常规镜头切换处自动写入慢速出镜推近（`1.28x`）与进镜拉回（`1.50x`）关键帧，既保留视觉呼吸感与冲击力，又避免了剪映自带转场容易出现的闪黑帧问题。
-- **防素材丢失与纯净交付**：所有图片与音频自动复制进剪映草稿目录，默认 1080×1920（9:16 竖屏）、30fps、铺满整段配音；默认不强制上屏字幕（需要时只需说一句“加上可编辑字幕”）。
-- **可选本地 FFmpeg 渲染**：如果你不需要进剪映微调，也可以明确要求使用内置的高精度亚像素仿射变换脚本，直接在本地渲染输出 `final.mp4`。
+#### Path A: Recommended Setup, the Doubao Voice Model, Fully Synthesized by the Agent
+- Built on the Volcano Engine Doubao voice **V3 bidirectional streaming WebSocket protocol**, supporting the latest `seed-tts-2.0` (2.0 general high-expressiveness voices) and `seed-icl-2.0` (voice cloning 2.0).
+- **Safe and worry-free**: you only need to get an `API Key`, a `speaker ID` (voice ID), and a `resource_id` from the [Doubao voice console](https://console.volcengine.com/speech/new). The API Key can be saved through system encrypted storage (Windows DPAPI, or a 0600 permission file on macOS and Linux) or an environment variable, and is **never written into the code repository or project files in plain text**.
+- **No repeat billing, plus integrity checks**: voice and speech rate are confirmed before synthesis, and after synthesis the audio integrity is verified automatically with `ffprobe/ffmpeg`, while text and audio hashes are recorded, so the same script with the same voice never triggers a repeat paid request.
+
+#### Path B: Prepare a Voiceover MP3 in Advance and Drop It in the Folder for the Agent to Read Directly
+- If you prefer JianYing voice cloning, another TTS app, or **recording it yourself**, just drop the final `.mp3` audio file into the project folder and tell the Agent: *"I have put the voiceover in the folder. Use this audio directly to continue with the storyboard and JianYing draft."*
+- The Agent reads your audio file automatically, skips cloud synthesis, and goes straight to the next step, local subtitle alignment.
+
+#### ⏱️ Coli Local Offline Speech Recognition and Audio-Text Verification
+- Whichever voiceover path you use, the Agent calls local **Coli (built on sherpa-onnx)** to generate offline `.srt` subtitles with precise timestamps, and **automatically checks names of people and places and proper nouns against your finalized script**, giving the storyboard millisecond-level timing evidence.
 
 ---
 
-## 🚀 快速开始
+### 4️⃣ JianYing Pro Draft Export: Push-Pull Camera Moves and a Finished Timeline in One Step
 
-### 第一步：一键安装 Skill（提供三种超简便方式）
+Once all materials are ready, Story Studio generates a **local draft project that JianYing Pro can open** directly:
 
-你可以根据自己的使用习惯，选择以下任意一种方式进行一键安装：
+- **Semantic alignment check**: before export, `check_handoff.py` and a per-shot semantic check run automatically, so each image appears exactly while the narration talks about that person and event.
+- **Cinematic camera movement (no stiff still frames)**:
+  - **Slow push-pull with easing on every shot**: for each image, from cut-in to cut-out, a smooth push-pull range is calculated automatically (about 12% of range over 16 to 20 seconds by default, adapting to shot length, with wide shots and close-cropped figures optimized separately), flowing throughout without stalling.
+  - **Punch zoom at cuts (Cut Punch)**: at regular shot changes, keyframes are written automatically for a slow push-in out of the shot (`1.28x`) and a pull-back into the next shot (`1.50x`), keeping visual breathing room and impact while avoiding the black flash frames JianYing's built-in transitions can cause.
+- **No lost materials, clean delivery**: all images and audio are copied automatically into the JianYing draft directory, at 1080x1920 (9:16 vertical) and 30fps by default, covering the full voiceover; no on-screen subtitles are forced by default (just say "add editable subtitles" when you want them).
+- **Optional local FFmpeg render**: if you do not need to fine-tune in JianYing, you can explicitly ask to use the built-in high-precision sub-pixel affine transform script to render `final.mp4` locally.
 
-#### 方式 A（最推荐·零操作）：在 AI 对话框中发一句话，让 Agent 自动安装
-如果你的 Agent（如 Codex、Claude Code、Cursor 等）拥有终端执行权限，你**连命令行都不用打开**，直接在任意对话框中发送：
+---
+
+## 🚀 Quick Start
+
+### Step 1: Install the Skill with One Click (Three Easy Options)
+
+Pick whichever option fits how you work:
+
+#### Option A (Most Recommended, Zero Effort): Send One Sentence in the AI Chat and Let the Agent Install It
+If your Agent (such as Codex, Claude Code, Cursor, or others) has terminal access, you **do not even need to open a command line**. Just send this in any chat:
 
 ```text
 请帮我把这个 GitHub 仓库克隆安装到你的 skills 目录，并完成依赖环境检查：
 https://github.com/konlu/story-studio
 Agent 会自动识别自身 skills 目录（如 `~/.codex/skills/story-studio`），自动拉取并完成接入！
+```
 
 ---
 
-#### 方式 B（极客·一行命令直达）：终端一条命令克隆
-打开终端（Terminal 或 PowerShell），粘贴对应系统的一行命令即可：
+#### Option B (For Power Users, One Command): Clone with a Single Terminal Command
+Open a terminal (Terminal or PowerShell) and paste the command for your system:
 
 ```powershell
 # Windows (PowerShell)
@@ -153,52 +156,52 @@ git clone https://github.com/konlu/story-studio.git "$HOME\.codex\skills\story-s
 # macOS / Linux
 git clone https://github.com/konlu/story-studio.git ~/.codex/skills/story-studio
 ```
-> 💡 *注：若使用 Claude Code 或其他 Agent，只需将路径中的 `.codex` 替换为 `.claude` 或 `.agents` 即可。*
+> 💡 *Note: if you use Claude Code or another Agent, just replace `.codex` in the path with `.claude` or `.agents`.*
 
 ---
 
-#### 方式 C（下载 Zip 用户）：双击一键安装器
-如果你是从 GitHub 下载的 Release 压缩包（`.zip`），解压后无需手动翻找系统隐藏目录：
-- **Windows**：直接双击运行文件夹内的 **`install.bat`**
-- **macOS / Linux**：终端进入该文件夹后运行 **`./install.sh`**
+#### Option C (For Zip Downloads): Double-Click the One-Click Installer
+If you downloaded a Release archive (`.zip`) from GitHub, unzip it. There is no need to hunt for hidden system directories by hand:
+- **Windows**: just double-click **`install.bat`** in the folder
+- **macOS / Linux**: open a terminal in the folder and run **`./install.sh`**
 
-脚本会自动探测系统中可用的 Agent 技能目录并自动部署到位。
+The script automatically detects the Agent skills directories available on your system and installs into place.
 
 ---
 
-### 第二步：一句话让 Agent 自动配置环境
+### Step 2: Ask the Agent to Configure the Environment in One Sentence
 
-无需自己手动折腾 Python、Node.js、FFmpeg 或配置剪映路径！安装后直接对 Agent 发送：
+No manual setup of Python, Node.js, FFmpeg, or JianYing paths! After installing, send this to the Agent:
 
 ```text
 使用 $story-studio，帮我一键检查并自动配置全部运行环境。
 ```
 
-> 💡 **智能按需初始化**：如果你只用它写文案，它不会安装任何多媒体组件；当需要配音、转录和导出剪映草稿时，原生启动器（`bootstrap.ps1` / `bootstrap.sh`）会自动在用户独立数据目录配置好 Python 3.11 (`uv`)、Node.js LTS、`Coli`、`FFmpeg`、`pyJianYingDraft` 等全部依赖。
+> 💡 **Smart on-demand setup**: if you only use it for writing, it installs no media components at all; when voiceover, transcription, and JianYing draft export are needed, the native launchers (`bootstrap.ps1` / `bootstrap.sh`) automatically configure Python 3.11 (`uv`), Node.js LTS, `Coli`, `FFmpeg`, `pyJianYingDraft`, and all other dependencies in your own separate data directory.
 
-### 第三步：开始你的创作！
+### Step 3: Start Creating!
 
-你可以直接用大白话告诉 Agent 你想做什么。下面看看最常用的几种姿势 👇
+Just tell the Agent what you want in plain language. Here are the most common ways to use it 👇
 ---
 
-## 🎛️ 灵活的工作流开关
+## 🎛️ Flexible Workflow Switches
 
-Story Studio 内部通过 **写作（`write`）、配图（`illustrate`）、剪映草稿（`draft`）** 三个主开关控制边界，配音与转录作为无缝衔接步骤按需触发。
+Inside Story Studio, three main switches control the scope: **writing (`write`), illustration (`illustrate`), and JianYing draft (`draft`)**. Voiceover and transcription run as seamless connecting steps, triggered as needed.
 
-你不需要写任何配置文件，直接用自然语言指挥，或者显式声明开关状态：
+You do not need to write any configuration file. Just direct it in natural language, or state the switch states explicitly:
 
-| 你的使用场景                               | 写作  | 配图  | 剪映草稿 | 说明                                             |
-| :----------------------------------------- | :---: | :---: | :------: | :----------------------------------------------- |
-| **只找选题 / 写口播稿 / 改开头钩子**       | ✅ 开  | ❌ 关  |   ❌ 关   | 纯文本创作，绝不乱调收费生图或配音接口           |
-| **文稿已写好，拆解分镜并生成配图**         | ❌ 关  | ✅ 开  |   ❌ 关   | 支持只出分镜提示词，或直接调用生图工具出图       |
-| **文件夹里已有配音和图片，直接排剪映草稿** | ❌ 关  | ❌ 关  |   ✅ 开   | 自动用 Coli 跑时间轴对齐、加推拉运镜并写入剪映   |
-| **从 0 到 1 全流程一条龙制作**             | ✅ 开  | ✅ 开  |   ✅ 开   | 选题写稿 → 确认定稿 → 配音转录 → 生图 → 剪映草稿 |
+| Your scenario | Writing | Illustration | JianYing draft | Notes |
+|:----------------------------------------- |:---: |:---: |:------: |:----------------------------------------------- |
+| **Only find topics / write a voiceover script / revise the opening hook** | ✅ On | ❌ Off | ❌ Off | Pure text creation; it will not touch paid image generation or voiceover APIs |
+| **Script already written; split the storyboard and generate images** | ❌ Off | ✅ On | ❌ Off | Storyboard prompts only, or call the image tools to generate images |
+| **Voiceover and images already in the folder; lay out the JianYing draft directly** | ❌ Off | ❌ Off | ✅ On | Runs Coli timeline alignment automatically, adds push-pull camera moves, and writes the JianYing draft |
+| **Full end-to-end production from scratch** | ✅ On | ✅ On | ✅ On | Topic and script → finalized script → voiceover and transcription → images → JianYing draft |
 
 ---
 
-## 💬 常用提示词示例
+## 💬 Example Prompts
 
-### 场景 1：全流程一条龙制作（从选题文案到剪映草稿）
+### Scenario 1: Full End-to-End Production (From Topic and Script to JianYing Draft)
 ```text
 使用 $story-studio，制作一期关于「张居正考成法改革」的历史短视频。
 1. 写作：采用历史叙事风，约 1800 字，先给我 3 个不同切入角度的开头钩子让我选，定稿后再继续。
@@ -207,28 +210,28 @@ Story Studio 内部通过 **写作（`write`）、配图（`illustrate`）、剪
 4. 草稿：生成 1080x1920 的剪映专业版草稿，加入慢推拉运镜，默认不显示字幕。
 ```
 
-### 场景 2：使用「人物故事风」写女性传奇口播稿
+### Scenario 2: Write a Voiceover Script About a Legendary Woman in the Character Story Style
 ```text
 使用 $story-studio，只写一篇关于「林巧稚」的人物故事口播稿。
 采用人物故事风，单集约 1600 字。
 请先核实她的生平关键时间节点与真实数字，使用“数字连排”或“反常画面”做开头钩子，只交付文稿和事实核查表。
 ```
 
-### 场景 3：自己准备好配音放在文件夹中，让 Agent 读取并完成后期
+### Scenario 3: Prepare Your Own Voiceover in the Folder and Let the Agent Read It and Finish Post-Production
 ```text
 使用 $story-studio，继续当前文件夹里的项目。
 我已经把定稿文案 `script.md` 和我自己录好的配音 `voice.mp3` 放进这个文件夹了。
 请直接读取我的配音文件，用本地 Coli 生成字幕对齐时间轴，按「黑白叙事风」拆 18 个分镜并生成配图，最后直接导出到我的剪映草稿箱。
 ```
 
-### 场景 4：只拆解分镜与生图提示词（交给外部 Midjourney / 即梦 等工具生图）
+### Scenario 4: Only Split the Storyboard and Write Image Prompts (For External Tools Such as Midjourney or Jimeng)
 ```text
 使用 $story-studio，写作关、配图开、剪映草稿关。
 读取文件夹里的定稿和 MP3 配音，先做音文时间对齐，然后按「历史写实风」拆解 22 个分镜。
 注意：这次只输出带时间戳的 STORYBOARD.md 分镜表和每镜独立的完整中文生图提示词，不要实际调用生图工具。
 ```
 
-### 场景 5：单镜精准返工与版本迭代
+### Scenario 5: Precise Rework of Single Shots and Version Iteration
 ```text
 使用 $story-studio，继续这个项目。
 文案、配音和前面生成的图片都保持不变，只重做第 8 镜和第 15 镜的配图（第 8 镜人物年龄改成晚年阶段），然后用新图片重新导出一版带可编辑字幕的剪映草稿，保留旧草稿别覆盖。
@@ -236,9 +239,9 @@ Story Studio 内部通过 **写作（`write`）、配图（`illustrate`）、剪
 
 ---
 
-## 📂 项目目录结构与交付产物
+## 📂 Project Directory Structure and Deliverables
 
-### 仓库结构一览
+### Repository Layout at a Glance
 ```text
 story-studio/
 ├── SKILL.md                        # AI Agent 核心总控指令与路由规则
@@ -257,76 +260,76 @@ story-studio/
     └── render-history-video/       # 【剪映草稿模块】含时间轴对齐、缓入缓出推拉运镜与草稿导出
 ```
 
-### 每次创作你会得到什么交付物？
-所有创作产物均干净地保存在你自己的**工作区项目目录**中，绝不污染 Skill 源码：
+### What Do You Get with Each Creation?
+All creative products are saved cleanly in your own **workspace project directory**, never polluting the Skill source:
 
-| 阶段             | 交付文件与产物                                                                                                                                                            |
-| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **✍️ 写作阶段**   | 纯口播正文稿、标题备选、事实核查表与时间线记录、参考来源说明                                                                                                              |
-| **🎙️ 配音与转录** | `narration.mp3`（最终配音）、配音参数与哈希校验记录、Coli 本地识别 `.srt` 字幕与核对文件                                                                                  |
-| **🎨 分镜与配图** | `STORYBOARD.md` & `STORYBOARD.json`（含时间戳、原文锚点、逐镜独立提示词）、按镜号命名的正文图片、`COVER_3x4.png` / `COVER_4x3.png` 封面图、（可选）片头首尾帧与视频提示词 |
-| **🎞️ 剪映草稿**   | 直接写入剪映专业版草稿目录的可编辑工程、`plan.json` 时间轴与运镜计划、`semantic_alignment.json` 语义核验记录、（可选）`final.mp4` 本地渲染成片                            |
-
----
-
-## 📦 依赖与隐私说明
-
-### 1. 自动管理的运行环境
-Story Studio 内置的启动器会在技能目录之外的**用户数据目录**（Windows 下为 `%LOCALAPPDATA%\story-studio`，macOS/Linux 为 `~/.local/share/story-studio`）自动按需配置：
-- **Python 3.11**（通过 `uv` 自动管理独立虚拟环境，安装 `websockets==15.0.1`、`pyJianYingDraft==0.3.1`、`Pillow`、`NumPy`、`pymediainfo` 等）
-- **Node.js 20+ LTS & Coli**：用于本地离线语音转字幕（基于 `sherpa-onnx`），**无需调用任何收费云端字幕 API**
-- **FFmpeg & ffprobe**：用于音频完整性解码校验与可选的本地视频渲染
-- **剪映专业版**：Windows 下支持一键检测草稿目录，缺失时可协助通过 WinGet 安装
-
-### 2. 账号安全与隐私保护边界
-- **零私人信息残留**：本开源仓库的源码、示例与语料索引均经过脱敏与哈希化处理，不包含任何个人电脑路径、账户信息或密钥。
-- **密钥安全存储**：豆包语音 `API Key` 仅从环境变量 `DOUBAO_TTS_API_KEY` 或系统级安全凭据文件读取（Windows 采用当前用户 DPAPI 加密，macOS/Linux 采用 `0600` 权限私密文件），**绝不写入对话日志、项目 JSON 或 Git 仓库**。
-- **费用透明可控**：Skill 本身完全免费开源。豆包语音合成（TTS）与宿主环境中的 AI 生图工具可能产生对应服务商的 API 费用；Agent 在首次合成或批量生图前均会征求确认，绝不在后台静默发起循环重试扣费。
+| Stage | Files and products delivered |
+|:--------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **✍️ Writing stage** | Plain voiceover script, alternative titles, fact-check table and timeline notes, source notes |
+| **🎙️ Voiceover and transcription** | `narration.mp3` (final voiceover), voiceover parameters and hash verification records, Coli local recognition `.srt` subtitles and check files |
+| **🎨 Storyboard and illustration** | `STORYBOARD.md` & `STORYBOARD.json` (with timestamps, source text anchors, and standalone prompts per shot), body images named by shot number, `COVER_3x4.png` / `COVER_4x3.png` cover images, and optionally opening first and last frames with video prompts |
+| **🎞️ JianYing draft** | Editable project written directly to the JianYing Pro draft directory, `plan.json` timeline and camera movement plan, `semantic_alignment.json` semantic verification record, and optionally a locally rendered `final.mp4` |
 
 ---
 
-## 🙏 致谢 (Acknowledgements)
+## 📦 Dependencies and Privacy
 
-Story Studio 的诞生离不开以下优秀开源项目与基础设施的支持，特此向相关作者与维护者致敬：
+### 1. Automatically Managed Runtime Environment
+Story Studio's built-in launcher automatically configures the following on demand in the **user data directory** outside the skill directory (`%LOCALAPPDATA%\story-studio` on Windows, `~/.local/share/story-studio` on macOS/Linux):
+- **Python 3.11** (a separate virtual environment managed automatically through `uv`, installing `websockets==15.0.1`, `pyJianYingDraft==0.3.1`, `Pillow`, `NumPy`, `pymediainfo`, and others)
+- **Node.js 20+ LTS & Coli**: for local offline speech-to-subtitle (based on `sherpa-onnx`), with no paid cloud subtitle API calls
+- **FFmpeg & ffprobe**: for audio integrity decoding checks and optional local video rendering
+- **JianYing Pro**: one-click draft directory detection on Windows, with help installing through WinGet when it is missing
 
-- **[GuanYixuan / pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft)** (Apache-2.0)：提供强大的剪映专业版草稿数据结构、轨道、关键帧与工程生成能力。
-- **[MarsWave / Coli](https://github.com/marswaveai/coli)** & **[k2-fsa / sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)**：提供快速、精准的本地离线语音识别 CLI 与底层推理引擎。
-- **[OpenAI / imagegen](https://github.com/openai/skills/tree/main/skills/.system/imagegen)**：提供图像生成工作流协作参考。
-- **[Astral / uv](https://github.com/astral-sh/uv)**、**[Node.js](https://nodejs.org/)**、**[FFmpeg](https://ffmpeg.org/)**、**[python-websockets](https://github.com/python-websockets/websockets)**、**[Pillow](https://python-pillow.github.io/)**、**[NumPy](https://numpy.org/)**：提供坚实的跨平台环境管理与多媒体处理底座。
-- **[火山引擎 / 豆包语音大模型](https://docs.volcengine.com/docs/DoubaoVoice/bidirectional-streaming-text-to-speech-websocket?lang=zh)**：提供自然流畅的中文语音合成服务支持。
+### 2. Account Security and Privacy Boundaries
+- **No private information left behind**: the source, examples, and corpus indexes in this open-source repository have been desensitized and hashed, and contain no personal computer paths, account information, or keys.
+- **Secure key storage**: the Doubao voice `API Key` is only read from the `DOUBAO_TTS_API_KEY` environment variable or a system-level secure credential file (encrypted with the current user's DPAPI on Windows, a `0600` private file on macOS/Linux), and is never written into chat logs, project JSON, or the Git repository.
+- **Transparent and controllable costs**: the Skill itself is completely free and open source. Doubao voice synthesis (TTS) and the AI image tools in the host environment may incur API fees from their providers; the Agent asks for confirmation before the first synthesis or batch image generation, and never silently issues repeated billing requests in the background.
 
 ---
 
-## ☕ 赞赏支持 (Sponsor)
+## 🙏 Acknowledgements
+
+Story Studio would not exist without the following excellent open-source projects and infrastructure. Thanks to their authors and maintainers:
+
+- **[GuanYixuan / pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft)** (Apache-2.0): provides the powerful JianYing Pro draft data structures, tracks, keyframes, and project generation.
+- **[MarsWave / Coli](https://github.com/marswaveai/coli)** & **[k2-fsa / sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)**: provide a fast, accurate local offline speech recognition CLI and the underlying inference engine.
+- **[OpenAI / imagegen](https://github.com/openai/skills/tree/main/skills/.system/imagegen)**: provides an image generation workflow collaboration reference.
+- **[Astral / uv](https://github.com/astral-sh/uv)**, **[Node.js](https://nodejs.org/)**, **[FFmpeg](https://ffmpeg.org/)**, **[python-websockets](https://github.com/python-websockets/websockets)**, **[Pillow](https://python-pillow.github.io/)**, **[NumPy](https://numpy.org/)**: provide a solid cross-platform base for environment management and multimedia processing.
+- **[Volcano Engine / Doubao voice model](https://docs.volcengine.com/docs/DoubaoVoice/bidirectional-streaming-text-to-speech-websocket?lang=zh)**: provides natural, fluent Chinese speech synthesis support.
+
+---
+
+## ☕ Sponsor
 
 <span id="sponsor"></span>
 
-如果你觉得 **Story Studio** 对你的短视频创作、自媒体运营或 AI Agent 工作流有所帮助，欢迎赞赏支持！
+If you find **Story Studio** helpful for your short-video creation, creator business, or AI Agent workflow, tips are welcome!
 
-> **特别声明：本项目所有的赞赏将会全部捐献给山区儿童以及重病患者，用于公益助学与医疗救助。感谢每一位支持者的善意与温度！**
+> **Special note: all tips to this project will be donated in full to children in mountain areas and to seriously ill patients, for charitable education and medical aid. Thank you to every supporter for your kindness and warmth!**
 
 <div align="center">
 
-|                                               微信赞赏码                                                |                                              支付宝赞赏码                                               |
-| :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
-| <img src="assets/sponsor/wechat-pay.png" width="220" alt="微信赞赏码"/><br/><sub>支持微信扫码赞赏</sub> | <img src="assets/sponsor/alipay.png" width="220" alt="支付宝收款码"/><br/><sub>支持支付宝扫码赞赏</sub> |
+| WeChat Tip Code | Alipay Tip Code |
+|:-----------------------------------------------------------------------------------------------------: |:-----------------------------------------------------------------------------------------------------: |
+| <img src="assets/sponsor/wechat-pay.png" width="220" alt="WeChat tip code"/><br/><sub>Scan with WeChat to tip</sub> | <img src="assets/sponsor/alipay.png" width="220" alt="Alipay tip code"/><br/><sub>Scan with Alipay to tip</sub> |
 
 </div>
 
 ---
 
-## 📬 联系方式 (Contact)
+## 📬 Contact
 
-欢迎自媒体创作者、独立开发者、AI 爱好者一起交流探索新玩法：
+Creators, indie developers, and AI enthusiasts are welcome to get in touch and explore new ideas together:
 
-- **微信咨询**：添加个人微信：lukon102（请备注：`Story Studio` 或 `自媒体创作`）
-- **电子邮箱**：`lukonn@163.com`
-- **问题反馈**：欢迎在 [GitHub Issues](https://github.com/konlu/story-studio/issues) 提交 Bug 反馈与新功能建议
+- **WeChat**: add the personal WeChat account lukon102 (please add the note: `Story Studio` or `自媒体创作`)
+- **Email**: `lukonn@163.com`
+- **Feedback**: bug reports and feature suggestions are welcome on [GitHub Issues](https://github.com/konlu/story-studio/issues)
 
 ---
 
-## 📄 开源许可证与声明
+## 📄 Open-Source License and Statement
 
-- **代码与技能规范**：本项目基于 **[CC BY-NC-SA 4.0](LICENSE)**（知识共享 署名-非商业性使用-相同方式共享 4.0 国际许可协议）开源。**仅供个人学习交流与非商业创作使用，严禁任何形式的商业转售、付费二次打包、商业课程分发或作为商业付费工具提供服务**。
-- **内容与语料说明**：本项目内置的对标文案语料库仅用于叙事结构、开头钩子与写作技法学习研究，**不直接作为已核实的历史事实依据**；AI 生成的画风参考图与封面样例亦非历史原照。
-- **第三方生态**：第三方依赖库（如 `pyJianYingDraft`、`Coli`、`websockets` 等）均遵循其各自的开源许可证分发，本仓库不内嵌或重新分发上述外部库源码。
+- **Code and skill specifications**: this project is open source under **[CC BY-NC-SA 4.0](LICENSE)** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International). For personal study, exchange, and non-commercial creation only; any form of commercial resale, paid repackaging, commercial course distribution, or offering as a commercial paid tool is strictly prohibited.
+- **Content and corpus note**: the built-in benchmark script corpus is for studying narrative structure, opening hooks, and writing technique only, and is not a source of verified historical fact; the AI-generated style reference images and cover samples are likewise not historical photographs.
+- **Third-party ecosystem**: third-party dependency libraries (such as `pyJianYingDraft`, `Coli`, `websockets`, and others) are distributed under their own open-source licenses; this repository does not embed or redistribute their source code.
