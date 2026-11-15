@@ -1,13 +1,13 @@
-# 事实与风格优先级
+# Fact and Style Priority
 
-用于历史与真实人物写作。开头、标题、正文、选题前提共同受事实约束。
+Applies to historical and real-life character writing. Openings, titles, body text, and the premise of a topic are all bound by facts.
 
-1. 用户本次要求决定题材和产物；史事、争议、传说和文学演绎明确区分。未明确要求演绎时不自行虚构真实人物的重要经历。
-2. 读取 [历史模块的核史方法](../modules/history-writing/references/史实与素材.md)，实际查阅可靠材料，形成事实表和必要时间线。记录来源支持哪项断言、材料性质与争议，不能只列来源名字。
-3. 所有对标稿与 DNA 都是写法样本。原作者的数字、对白、遗书、因果和叙事细节不因被收入语料而成为已核事实。尤其人物模块中的示例不可直接照抄为史料。
-4. 精确数字只有在证据支持时使用。证据只支持范围、约数或年份时保持该精度；不补月份、日期、年龄、人数。材料冲突则保留不确定性或换切口。
-5. 直接引语须核验出处与原意；没有依据不补临终遗言、私下对白、心理活动或场景动作。画面情境重现也不能倒灌为文稿中的新事实。
-6. 核心情节无法确认时删去、换已证切口或明确介绍争议；不足以完成目标稿时交付已核部分与具体缺口。仅用户明确要求才给就地标记的待核草稿。
-7. 用户要求纯口播时把来源与检查记录留在项目文件；必要的不确定性仍写进相应正文，不只藏在备注里。
+1. The user's request for this session decides the subject and the deliverable; historical fact, controversy, legend, and literary dramatization are kept clearly separate. Unless dramatization is explicitly requested, do not invent major experiences of real people.
+2. Read the [fact-checking method of the history module](../modules/history-writing/references/史实与素材.md), consult reliable sources, and build a fact table and a timeline where needed. Record which source supports each claim, the nature of the source, and any controversy. Listing source names alone is not enough.
+3. All benchmark scripts and DNA are writing samples. The numbers, dialogue, farewell letters, causes and effects, and narrative details from the original authors do not become verified facts just because they were included in the corpus. In particular, examples in the character module must not be copied verbatim as historical sources.
+4. Use exact numbers only when evidence supports them. When the evidence supports only a range, an approximation, or a year, keep that precision; do not add a month, day, age, or headcount. When sources conflict, keep the uncertainty or switch to a different angle.
+5. Direct quotations must be checked against their source and original meaning; without evidence, do not add final words, private dialogue, inner thoughts, or scene actions. Reconstructed scenes must not feed new facts back into the script.
+6. When a core plot point cannot be confirmed, remove it, switch to a verified angle, or present the controversy explicitly; if there is not enough to finish the target script, deliver the verified portion and the specific gaps. A draft marked for fact-checking is given only when the user explicitly asks for one.
+7. When the user asks for a voiceover-only script, keep sources and check records in the project files; necessary uncertainty still goes into the body text itself, not only in the notes.
 
-事实约束确定以后再执行当前 writing_profile 的结构、语言与结尾。人物风的传播号召不传给历史风；历史风默认不加催赞也不取消人物风已选的结尾习惯。用户明确要求不要号召、不要金句等时覆盖风格偏好。
+Once the fact constraints are set, apply the structure, language, and ending rules of the current writing_profile. The character style's call to action does not carry over to the historical style; the historical style does not add a like-begging call to action by default, and does not remove the ending habit the character style already uses. When the user explicitly asks for no call to action, no quotable closing line, or similar, that overrides the style preference.

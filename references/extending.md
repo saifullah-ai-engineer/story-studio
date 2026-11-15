@@ -1,30 +1,30 @@
-# 接入新的赛道或写作风格
+# Adding a New Track or Writing Style
 
-当前已接入历史叙事、玉玲人物故事写法，以及三种已有配图画风。民间故事是可扩展赛道，不是已存在的专用 DNA。不要建立空模块、虚假 corpus 或未验证的能力声明。
+Currently available: historical narrative, the Yuling character story style, and three existing illustration styles. Folklore is an extendable track, not an existing dedicated DNA. Do not create empty modules, fake corpora, or unverified capability claims.
 
-## 当前用户要求民间故事时
+## When a User Asks for Folklore Now
 
-先判断用户指定的故事版本、地域或来源是否已经明确；民间传说、历史史事、文学改编分开标注。普通创作可按给定版本或实际查阅的来源进行，不必等待建立专用技能；记录 `track=folklore`、`writing_profile=general-folklore`，说明属于普通写作而非已有蒸馏风格。没有指定版本且差异会改变主线时询问，不能拼接互斥版本后称原故事。
+First check whether the story version, region, or source the user specifies is already clear; folk legends, historical events, and literary adaptations are labeled separately. Ordinary writing can follow the given version or sources actually consulted, without waiting for a dedicated skill; record `track=folklore` and `writing_profile=general-folklore`, and state that this is ordinary writing rather than an established distilled style. When no version is specified and the differences would change the main plot, ask; do not stitch together mutually exclusive versions and call the result the original story.
 
-配图可复用已确认画风，但现实外观考据与传说设定区分：超自然、幻想人物与虚构场景以选定故事版本或用户设定为依据，不把它们包装成历史照片或考证结论。口播的音频、分镜、图片语义与草稿流程仍适用。
+Illustration can reuse a confirmed style, but realistic appearance research and legendary settings are kept separate: supernatural or fantasy characters and fictional scenes follow the chosen story version or the user's setting, and are not presented as historical photos or research conclusions. The voiceover, storyboard, image semantics, and draft workflow for narration still apply.
 
-## 真正扩展模块时
+## When Actually Extending a Module
 
-1. 在根入口注册 track、writing_profile、适用范围和实际规则文件，只补本赛道会改变决策的指导。一个赛道可有多个 profile，不把风格锁死在题材上。
-2. 有来源语料或用户提供风格时按证据提炼并保留来源边界；没有就不声称已蒸馏。普通人物、男性人物、其他年代不自动套用玉玲女性苦难弧线。
-3. 新写作 profile 只负责写法；配图 style_id、三个阶段开关和项目交接继续复用。新增图片画风则在配图模块注册并维护独立 styles/ 文件。
-4. 各模块在本目录内独立维护，使用相对资源路径。没有明确请求不发布或修改其他安装目录。
-5. 验证只写稿、只分镜、只草稿、组合制作、缺配音、补单镜与版本变更等真实路径；不靠声明有开关就认定独立使用已成立。
+1. Register the track, writing_profile, scope, and actual rule files in the root entry, adding only the guidance that changes decisions for this track. One track can have multiple profiles; do not lock a style to a subject.
+2. When there is source corpus or a style supplied by the user, distill from the evidence and keep the source boundaries; without them, do not claim a style has been distilled. Do not automatically apply the Yuling arc of suffering for women to ordinary people, male characters, or other eras.
+3. A new writing profile is only responsible for the writing; the illustration style_id, the three stage switches, and the project handoff are reused. When adding a new illustration style, register it in the illustration module and maintain a separate styles/ file.
+4. Each module is maintained independently within its own directory, using relative resource paths. Without an explicit request, do not publish or modify other installation directories.
+5. Verify the real paths: writing only, storyboard only, draft only, combined production, missing voiceover, single-shot rework, and version changes; do not treat the existence of switches as proof that standalone use works.
 
-## 内置模块来源与运行依赖
+## Built-in Module Sources and Runtime Dependencies
 
-| 内置路径 | 来源与用途 |
+| Built-in path | Source and purpose |
 | --- | --- |
-| modules/history-writing/ | 历史写作规则、57篇语料及检索/计数工具 |
-| modules/characterstory-writing/ | 人物写作 DNA 与原目录实际语料，原稿不作事实证据 |
-| modules/history-image/ | 分镜与三种画风、封面参考图、Coli转录及分配检查 |
-| modules/render-history-video/ | 语义与节奏核验、推拉运动、剪映导出与显式请求下的本地渲染 |
+| modules/history-writing/ | History writing rules, 57 corpus scripts, and retrieval/counting tools |
+| modules/characterstory-writing/ | Character writing DNA and the actual corpus in its source directory; original scripts are not used as factual evidence |
+| modules/history-image/ | Storyboarding and three illustration styles, cover reference images, Coli transcription, and allocation checks |
+| modules/render-history-video/ | Semantic and pacing checks, push-pull camera movement, JianYing export, and local rendering on explicit request |
 
-内置的是使用资源，不包含原目录的 Git 历史、缓存或原技能发现入口。`GUIDE.md` 所在目录就是模块的脚本与资源基准。原技能目录删除后，内置规则与语料仍可读取。外部依赖按 [初始化流程](setup.md) 选择性配置：Python3.10+、媒体库、ffmpeg/ffprobe、本地Coli及草稿所需pyJianYingDraft。生图复用当前可用工具，可选imagegen指导；不保存密钥或重复实现客户端。
+The built-ins are usage resources; they do not include the source directory's Git history, cache, or the original skill discovery entry. The directory containing `GUIDE.md` is the module's script and resource base. Once the original skill directory is deleted, the built-in rules and corpus remain readable. External dependencies are configured selectively following the [setup flow](setup.md): Python 3.10+, media libraries, ffmpeg/ffprobe, local Coli, and pyJianYingDraft for drafts. Illustration reuses the tools currently available, with optional imagegen guidance; do not store keys or reimplement clients.
 
-后端缺失时报告准确依赖；不要把“规则和素材已内置”表述为“没有任何外部依赖”。
+When a backend is missing, report the exact dependency; do not describe "rules and materials are built in" as "there are no external dependencies."

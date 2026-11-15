@@ -1,75 +1,75 @@
-# 豆包配音与后续制作
+# Doubao Voiceover and Follow-on Production
 
-用于用户要求配音、文案转MP3，或完整口播流程尚无最终配音时。只维护技能时不合成音频；不复制其他技能的个人音色、凭据、草稿路径或画幅。
+For when the user asks for voiceover, turning a script into an MP3, or a full voiceover flow that still has no final voiceover. Only maintaining the skill does not synthesize audio; do not copy another skill's personal voice, credentials, draft paths, or frame size.
 
-## 用户使用流程
+## User Flow
 
-文案定稿 → 选择豆包配音或提供已有配音 → 配置并确认音色 → MP3 → Coli本地SRT与音文核对 → 带时间分镜 → 配图 → 剪映草稿。
+Final script → choose Doubao voiceover or provide an existing voiceover → configure and confirm the voice → MP3 → local Coli SRT and audio-text check → storyboard with timing → illustration → JianYing draft.
 
-保留写作、配图、剪映草稿三个主开关；配音是可独立调用的衔接步骤，记录voice_mode=doubao、provided或none。只写稿时交付稿件，并提示可继续豆包配音，不发送付费请求；用户明确不要配音时不追问。
+Keep the three main switches of writing, illustration, and JianYing draft; voiceover is an independently callable connecting step, recorded as voice_mode=doubao, provided, or none. For writing only, deliver the script and note that Doubao voiceover can continue; do not send a paid request; when the user explicitly does not want voiceover, do not press the point.
 
-口播流程缺少可用的本期最终音频时，必须先执行[总入口的两条路径选择](../SKILL.md#缺少最终配音时必须先给出两条路径)：主动同时提供“配置豆包并由Agent生成MP3”和“用户自备本期最终MP3”。仅说“缺音频，请提供MP3”不算完成引导；用户只要求配图与剪映草稿、没有点名配音，也应提示。用户已选方式或已有可用音频时不重复询问；仅维护技能时不触发配音选择。禁止复用旧素材的项目不使用旧配音。
+When a voiceover flow lacks a usable final audio for this episode, first follow the [two-path choice in the main entry](../SKILL.md#when-the-final-voiceover-is-missing-both-paths-must-be-offered-first): proactively offer both "configure Doubao and let the Agent generate the MP3" and "the user provides the final MP3 for this episode". Only saying "audio missing, please provide an MP3" does not count as completing the guidance; when the user only asks for illustration and a JianYing draft without naming voiceover, still prompt. Do not ask again once the user has chosen a method or usable audio exists; only maintaining the skill does not trigger the voiceover choice. Projects where reusing old material is forbidden do not use old voiceover.
 
-选择豆包后进入以下配置步骤，不要求用户先在其他软件生成文件；选择自备配音后接收文件或路径，由Agent完成Coli转录。等待选择期间只继续不依赖音频的工作，不默认同意合成。已有最终MP3且允许用于本期时直接核验并转录，不重复付费合成。
+After choosing Doubao, follow the setup steps below; the user is not asked to generate files in other software first. After choosing a self-provided voiceover, receive the file or path and let the Agent finish the Coli transcription. While waiting for a choice, only continue work that does not depend on audio; do not treat silence as agreement to synthesize. When a final MP3 already exists and may be used for this episode, verify and transcribe it directly without paying for synthesis again.
 
-## 第一次必须配置的内容
+## What Must Be Configured the First Time
 
-向用户一次说明以下三项，并尽量合并询问本期音色、配图画风和数量；已给出的信息不重问。
+Explain the following three items to the user in one go, and try to ask about this episode's voice, illustration style, and quantity together; do not re-ask for information already given.
 
-| 配置项 | 用户从哪里获取 | 用途 |
+| Setting | Where the user gets it | Purpose |
 | --- | --- | --- |
-| 语音API Key | [豆包语音控制台API Key管理](https://console.volcengine.com/speech/new/setting/apikeys) | 对应X-Api-Key；使用语音服务的Key |
-| speaker ID | [语音控制台](https://console.volcengine.com/speech/new)的音色库 | 准确音色标识，不用音色显示名称替代；确认账号有权使用该音色 |
-| 模型资源resource_id | 根据已开通服务和音色选择 | 普通2.0音色用seed-tts-2.0；声音复刻2.0用seed-icl-2.0 |
+| Voice API Key | [Doubao Voice Console API Key management](https://console.volcengine.com/speech/new/setting/apikeys) | Matches X-Api-Key; use the Key for the voice service |
+| speaker ID | [Voice console](https://console.volcengine.com/speech/new) voice library | The exact voice identifier; do not substitute the voice display name; confirm the account is authorized to use that voice |
+| Model resource resource_id | Chosen according to the enabled service and voice | Regular 2.0 voices use seed-tts-2.0; cloned voices 2.0 use seed-icl-2.0 |
 
-“模型”有两个不同字段：必选的resource_id决定服务资源；req_params.model是复刻音色的可选细分模型参数。官方当前文档给出的默认细分模型为seed-tts-2.0-standard；普通音色不传model，复刻音色仅在用户明确选定或控制台需要时传入。不要把Ark文本模型ID、App ID、字幕Key或音色ID当作resource_id；不要求新版API Key用户额外提供App ID或Access Token。
+"Model" covers two different fields: the required resource_id decides the service resource; req_params.model is an optional fine-grained model parameter for cloned voices. The current official documentation gives seed-tts-2.0-standard as the default fine-grained model; regular voices do not pass model, and cloned voices pass it only when the user explicitly selects it or the console requires it. Do not treat an Ark text model ID, App ID, subtitle Key, or voice ID as the resource_id; do not ask users of the new API Key to also provide an App ID or Access Token.
 
-用户需自行开通语音服务并保证资源可用，Agent负责配置本地调用端。音色和资源是否匹配以其账号控制台及真实接口结果为准，不能仅凭名称保证匹配。首次不要默认克隆任何人的声音或创建复刻任务。
+The user enables the voice service and keeps the resources usable; the Agent configures the local calling side. Whether a voice and resource match is decided by the account console and the real API result, not by the name alone. Do not clone anyone's voice by default on first use, or create a cloning task.
 
-可使用这样的引导：
+You can use this guidance:
 
-> 文案已定稿，可以继续生成豆包配音。请在语音控制台开通对应服务，并通过宿主的安全输入/密钥配置入口提供语音API Key；同时告诉我音色speaker ID和模型资源（普通2.0或复刻2.0）。我会配置并生成MP3，然后接续Coli转录、配图和剪映草稿。已有最终配音也可以直接复用。
+> The script is finalized and we can continue with Doubao voiceover. Please enable the corresponding service in the voice console and provide the voice API Key through the host's secure input or key configuration entry; also tell me the voice speaker ID and model resource (regular 2.0 or cloned 2.0). I will configure it and generate the MP3, then continue with Coli transcription, illustration, and the JianYing draft. An existing final voiceover can also be reused directly.
 
-## 配置由Agent完成
+## The Agent Completes the Configuration
 
-先按[初始化流程](setup.md)检查/配置features=tts；后面还需转录和草稿时用tts,asr,draft,images。缺少的Python、websockets和FFmpeg由Agent安装，不要求用户执行命令。依赖安装不需要语音Key，也不会发送收费测试。
+First check or configure features=tts following the [setup flow](setup.md); when transcription and drafts are also needed later, use tts,asr,draft,images. The Agent installs any missing Python, websockets, and FFmpeg; the user is not asked to run commands. Dependency installation does not need the voice Key, and does not send a paid test.
 
-API Key优先从宿主安全配置的DOUBAO_TTS_API_KEY读取。只检查存在性，不显示值；不要要求在公开聊天中粘贴Key。若用户已经通过可用的保密渠道提供Key，且同意在当前电脑保存，Agent可用voice_settings.py的--key-stdin从标准输入写入专用凭据文件，不把Key放到命令参数、shell历史、项目JSON或日志。--prompt-key仅用于宿主能直接提供隐藏输入的交互终端，不要求用户自行打开终端。没有保密输入能力时引导到宿主密钥/环境变量面板，不能伪称已配置。
+The API Key is read first from the host's secure configuration DOUBAO_TTS_API_KEY. Only check that it exists; do not display the value; do not ask for the Key to be pasted in open chat. If the user has already provided the Key through a usable confidential channel and agrees to save it on this machine, the Agent can use voice_settings.py --key-stdin to write it from standard input into the dedicated credential file, and must not put the Key in command arguments, shell history, project JSON, or logs. --prompt-key is only for interactive terminals where the host can provide hidden input directly; do not ask the user to open a terminal on their own. Without a confidential input capability, guide the user to the host key or environment variable panel; do not claim it is configured when it is not.
 
-Agent使用初始化记录的Python绝对路径运行：
+The Agent runs with the absolute Python path recorded during setup:
 
 ```text
 "<配置的Python>" "<技能绝对路径>/scripts/voice_settings.py" check
 "<配置的Python>" "<技能绝对路径>/scripts/voice_settings.py" configure --speaker "<用户的speaker ID>" --resource-id "<用户选择的resource_id>"
 ```
 
-复刻音色明确需要细分模型时加--model。若要保存已授权的Key，在configure命令加--key-stdin并通过进程标准输入传入；不能使用带实际密钥的--api-key参数。仅保存音色时缺少Key会返回未就绪状态，音色配置仍已保存。check不联网，只返回Key是否存在、非秘密的音色参数和network_verified=false。
+Add --model when a cloned voice explicitly needs the fine-grained model. To save an authorized Key, add --key-stdin to the configure command and pass it through the process standard input; the --api-key parameter with an actual key must not be used. Saving only the voice without a Key returns a not-ready state, while the voice configuration is still saved. check does not go online; it only returns whether the Key exists, the non-secret voice parameters, and network_verified=false.
 
-音色参数保存到用户数据目录story-studio/voice.json，与runtime.json分开。可选Key保存到同一专用目录：Windows使用当前用户DPAPI加密文件；macOS/Linux是权限0600的本地私密文件，保存前说明这一点，用户不愿保存时直接复用宿主密钥环境变量。源码目录拒绝写入这些配置；发布、打包或提交代码时不包含用户数据目录。
+Voice parameters are saved to the user data directory story-studio/voice.json, separate from runtime.json. An optional Key goes to the same dedicated directory: on Windows a file encrypted with the current user's DPAPI; on macOS/Linux a local private file with 0600 permissions, explaining this before saving, and reusing the host key environment variable directly when the user does not want it saved. The source directory refuses writes of these settings; publishing, packaging, or committing code must not include the user data directory.
 
-## 本期确认与生成MP3
+## Confirming This Episode and Generating the MP3
 
-每个新项目在首次生成前展示准确speaker ID、resource_id、可选model、语速（默认0）、音量（默认0）和朗读范围。用户本次已明确确认上述音色用于生成时不重复询问；历史保存配置可作为候选，不能自动代替本期确认。确认后记录在项目voice.json，不含Key。只朗读定稿正文；source.txt保存原稿，narration.txt保存实际送入内容，标题、注释是否朗读按本次请求处理。
+Before the first generation for each new project, show the exact speaker ID, resource_id, optional model, speech rate (default 0), volume (default 0), and read-aloud scope. Do not re-ask when the user has already explicitly confirmed the above voice for this generation; saved historical configuration may be a candidate, but does not automatically replace this episode's confirmation. After confirmation, record it in the project's voice.json, without the Key. Read only the finalized body text aloud; source.txt keeps the original script, narration.txt keeps the text actually sent, and whether titles and notes are read aloud follows this request.
 
 ```text
 "<配置的Python>" "<技能绝对路径>/scripts/doubao_tts.py" --text-file "<项目>/narration.txt" --output "<项目>/narration.mp3" --dry-run
 "<配置的Python>" "<技能绝对路径>/scripts/doubao_tts.py" --text-file "<项目>/narration.txt" --output "<项目>/narration.mp3" --voice-confirmed
 ```
 
-dry-run仅核验本地文本和音色参数，不读取Key、不联网；成功不表示鉴权或额度已验证。只有实际获得确认才能加--voice-confirmed。脚本使用用户指定文档的V3双向WebSocket接口，不静默切换到SSE、旧版鉴权、其他音色或其他服务。
+dry-run only verifies the local text and voice parameters; it does not read the Key or go online, and success does not mean authentication or quota is verified. Only add --voice-confirmed once actual confirmation is obtained. The script uses the V3 bidirectional WebSocket interface from the user-specified documentation, and does not silently switch to SSE, legacy authentication, another voice, or another service.
 
-脚本以不丢字符的文本流发送全文，等到SessionFinished并收到音频后才视为服务完成，再用ffprobe和ffmpeg完整解码校验，保留失败的partial供排查。输出MP3及同名.voice.json，记录文本哈希、音色、协议、音频哈希和时长，不写Key。默认不覆盖已有MP3；同稿同音色先检查已有成功文件，避免再次收费。
+The script sends the full text as a lossless character stream, and only treats the service as complete after SessionFinished arrives and audio is received; then it verifies with a full ffprobe and ffmpeg decode, keeping failed partial output for troubleshooting. The output MP3 and its companion .voice.json record the text hash, voice, protocol, audio hash, and duration, without writing the Key. Existing MP3s are not overwritten by default; the same script and voice first checks for an existing successful file, so no repeat paid request is made.
 
-传输分块不是服务总长度承诺。超长文案先核对当前官方限制；确需多会话时由Agent按句/段拆分，保存顺序、正文及哈希，只续做尚未成功的片段，不能摘要、漏句或截断。独立MP3片段使用ffmpeg concat demuxer合并，不能二进制拼接文件；对最终合并音频重新完整解码，并且Coli只识别最终版本。
+Transmission chunking is not a promise about total service length. For extra-long scripts, first check the current official limits; when multiple sessions are genuinely needed, the Agent splits by sentence or paragraph, saves the order, body text, and hashes, and only continues the segments that have not yet succeeded, without summarizing, dropping sentences, or truncating. Separate MP3 segments are merged with the ffmpeg concat demuxer, not by binary file concatenation; the final merged audio is fully decoded again, and Coli only transcribes the final version.
 
-鉴权、额度、资源或音色错误时停在配音阶段，提示具体缺口，保留已完成文稿。网络超时或不完整流可能已计费，脚本不自动重试；Agent先核对partial、已有MP3及控制台请求状态，明确是否需要重新合成。MP3已成功但后续转录/生图失败时只续做下游。
+When authentication, quota, resource, or voice errors occur, stop at the voiceover stage, state the specific gap, and keep the completed script. A network timeout or incomplete stream may already have been billed, so the script does not retry automatically; the Agent first checks the partial output, existing MP3s, and the console request status, and states clearly whether re-synthesis is needed. When the MP3 succeeded but later transcription or illustration fails, only continue the downstream work.
 
-## 接续转录、配图与草稿
+## Continuing to Transcription, Illustration, and Draft
 
-1. 检查MP3完整解码、正文开头结尾、专名发音与漏读；未试听不称听过。再调用内置[配图模块](../modules/history-image/GUIDE.md)的Coli脚本，识别最终MP3，保留音频哈希与原始结果，对照文案修正错字。
-2. 使用真实SRT与上下文确定分镜时间，重复句消歧，不按字数或镜数均分时长；实际生图仍需遵守本次配图开关、画风和数量选择。
-3. 调用内置[草稿模块](../modules/render-history-video/GUIDE.md)，传同版MP3、核验SRT、分镜与实际图片，沿用本项目画幅；默认仍为9:16，不继承参考技能的16:9。字幕用于定位不等于上屏。
+1. Check that the MP3 fully decodes, and check the start and end of the body text, proper-noun pronunciation, and missed reads; do not claim to have listened without listening. Then call the Coli script in the built-in [illustration module](../modules/history-image/GUIDE.md), transcribe the final MP3, keep the audio hash and raw result, and correct misrecognized characters against the script.
+2. Use the real SRT and context to set storyboard timing, disambiguating repeated sentences; do not split durations evenly by character count or shot count. Actual image generation still follows this session's illustration switch, style, and quantity choices.
+3. Call the built-in [draft module](../modules/render-history-video/GUIDE.md), passing the same MP3, verified SRT, storyboard, and actual images, and keep this project's frame size; the default remains 9:16 and does not inherit the 16:9 of a reference skill. Subtitles are for positioning, which is not the same as putting them on screen.
 
-豆包这里只负责TTS，始终enable_subtitle=false。字幕使用本机Coli，不调用或恢复已停用的火山字幕API及其凭据。交付MP3、SRT、图片和草稿时区分实际生成、结构验证、试听和剪映预览范围。
+Doubao only handles TTS here, always with enable_subtitle=false. Subtitles use the local Coli; do not call or restore the discontinued Volcano subtitle API or its credentials. When delivering the MP3, SRT, images, and draft, distinguish what was actually generated, what was structurally verified, what was listened to, and what was previewed in JianYing.
 
-协议及参数依据：[用户指定的豆包双向WebSocket官方文档](https://docs.volcengine.com/docs/DoubaoVoice/bidirectional-streaming-text-to-speech-websocket?lang=zh)、[官方协议附件](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_5ec6e28945592c909158dc1e2cf9a89c.zip)、[websockets客户端文档](https://websockets.readthedocs.io/en/15.0.1/reference/asyncio/client.html)。本项目自行实现所需二进制帧与流程，不内嵌官方协议附件源码。
+Protocol and parameter sources: [the Doubao bidirectional WebSocket official documentation specified by the user](https://docs.volcengine.com/docs/DoubaoVoice/bidirectional-streaming-text-to-speech-websocket?lang=zh), [the official protocol attachment](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_5ec6e28945592c909158dc1e2cf9a89c.zip), [the websockets client documentation](https://websockets.readthedocs.io/en/15.0.1/reference/asyncio/client.html). This project implements the required binary frames and flow on its own, and does not embed the official protocol attachment source.
