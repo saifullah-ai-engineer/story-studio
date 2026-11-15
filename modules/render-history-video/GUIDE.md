@@ -1,88 +1,88 @@
-# 分镜图片与剪映草稿模块
+# Storyboard Images and Jianying Draft Module
 
-这是 story-studio 的草稿分支，适用于已有分镜图，不只限于历史赛道。仅 draft 开启时执行。配图关闭时仍可核验旧图的时间与语义，但不得生成图片或封面；缺封面不阻挡正文草稿。总入口的范围与保留旧版本规则优先。
+This is the draft branch of story-studio, for projects that already have storyboard images, and not limited to the history track. It runs only when draft is enabled. When image generation is off, you can still verify the timing and semantics of old images, but you must not generate images or covers; a missing cover does not block the main draft. The scope and old-version retention rules of the main entry take priority.
 
-把已有图片按分镜和实际讲述时间排布。默认写成剪映专业版草稿：图片、配音、推拉关键帧一次写入时间轴，由剪映预览和导出。用户明确要求本地成片时，才用逐帧浮点采样生成 mp4。每张图从切进来到切走，运镜走完这一段；切点另加冲击缩放（出镜推近、进镜拉回，幅度要够、进镜出镜都走慢时长）。默认手感约 16–20 秒 12%。用户给出的顺序、配音、画幅和运镜要求优先；已明确制作方式时直接执行，无需重复确认。
+Arrange the existing images by storyboard and actual narration time. By default, write a Jianying Professional draft: images, narration, and push/pull keyframes are written to the timeline in one pass, and Jianying previews and exports it. Only when the user explicitly asks for a local finished video should you generate an mp4 with per-frame float sampling. Each image runs its camera move from the moment it cuts in to the moment it cuts out; add a punch zoom at each cut (push in on the outgoing shot, pull back on the incoming shot, with enough amplitude, and both the outgoing and incoming moves run on slow durations). The default feel is about 12% over roughly 16-20 seconds. The order, narration, frame size, and camera requirements given by the user take priority; when the production method is already clear, execute it directly without asking for confirmation again.
 
-## 调用约定
+## Invocation Convention
 
-用户只需调用 `story-studio` 并开启剪映草稿。草稿导出由 `scripts/export_jianying.py` 直接调用pyJianYingDraft，说明见 [references/jianying.md](references/jianying.md)。
+The user only needs to call `story-studio` and enable the Jianying draft. Draft export is called directly by `scripts/export_jianying.py` using pyJianYingDraft; see [references/jianying.md](references/jianying.md).
 
-- **禁止**把「请改去调用剪映 skill」当作交付步骤
-- 本 skill 被激活后，直接按下面流程做对齐、写 `plan.json`、导出草稿
+- **Do not** treat "please switch to calling the Jianying skill" as a delivery step
+- Once this skill is activated, follow the flow below to align, write `plan.json`, and export the draft
 
-## 接收上游已对齐分镜
+## Receive the Upstream Aligned Storyboard
 
-新项目由内置配图模块按 [先音频后分镜](../history-image/references/audio-first-storyboard.md) 完成 Coli 转录 → SRT 核验 → 带时间与原文的分镜表 → 按表生图。渲染直接复用该表 start/end、时间依据与实际图片映射，不重新均分时间、不以模糊匹配覆盖已核验切点。配音或文稿变更先回到音文核验。
+For a new project, the built-in image module completes Coli transcription → SRT verification → a storyboard table with times and source text → image generation from the table, following [audio first, then storyboard](../history-image/references/audio-first-storyboard.md). Rendering reuses that table's start/end, time basis, and actual image mapping directly; do not re-split time evenly, and do not overwrite verified cut points with fuzzy matching. If the narration or script changes, go back to audio-text verification first.
 
-## 语义对齐优先
+## Semantic Alignment First
 
-必须读取并执行 [逐镜语义对齐](references/semantic-alignment.md)。图片必须对应当前正在讲述的人物、时空和事件阶段；复用上游已核验的原文与音频时间，逐张核对实际图片与该时段原文，再复查镜长；发现版本或时间问题先退回音文核验。导出前所有镜头完成语义核验，不能以节奏检查通过代替。
+You must read and execute [per-shot semantic alignment](references/semantic-alignment.md). Each image must match the person, time and place, and event stage currently being narrated; reuse the upstream verified source text and audio times, check each actual image against the source text of that time span, then re-check the shot length; if you find a version or timing problem, return to audio-text verification first. Before export, every shot must complete semantic verification; passing the pacing check is not a substitute.
 
-## 素材与时间对齐
+## Materials and Time Alignment
 
-- 检查分镜 JSON/Markdown、图片编号、SRT、配音及已有 edit/project.md。图片按分镜 ID 或明确生成编号排序，不用文件修改时间推断顺序。核对数量、缺图、重复编号。
-- 封面是可选交付，缺失不阻挡正文草稿。已有封面可检查其与正文画风是否一致；仅本次配图开关开启且请求包含对应生图时才能补做，否则记录缺口，不生图。明确指定独立封面风格的情况记录在 `edit/project.md`。只复用现成图且不改图时，无需为了渲染重新选择画风。
-- 有参考视频时用 ffprobe 读取画幅、帧率，并抽取同镜头内不同时间的画面对比运镜幅度。保留原图片风格；参考里的字幕、粒子、配乐不自动复制。
-- SRT 是讲述时间依据，不是必须显示的文字。默认无字幕；已有配音连续保留，不因切图而切音频，已有 SRT 经核对来自当前配音且可用时不重复转录。
-- **旧项目有配音但没有 SRT 时，先独立转录再核对现有分镜。** 使用 `py -3.11 "<story-studio目录>/modules/history-image/scripts/transcribe_with_coli.py" --audio "<配音>" --out-dir "<新转录版本目录>"`，无需分镜表即可产出原始 SRT 和时间戳。原有 `py -3.11 "<story-studio目录>/modules/render-history-video/scripts/align_with_coli.py" --audio "<配音>" --storyboard "<表>" --asr-json "<coli_asr.json>" --out-dir "<新核验目录>"` 仅用于后续保守复核；它的按镜 SRT 不是真正的前置转录字幕。已有图与实际口播不符时按修复范围处理，不强套旧边界。
-- 优先使用上游已核验分镜表的显示 `start/end` 生成 `plan.json`。旧项目需要补做边界核验时，才使用 `alignment.json` 的显示 `start/end`；两条路径都保留真实发声 `audio_start` 与边界证据并完成语义复核。若 Coli 不存在、转录失败或没有可用时间戳，必须报告阻塞并停止精确渲染，不能静默退回字符比例估算。不要调用火山字幕 API，也不要配置或恢复 `VOLCENGINE_SUBTITLE_APP_ID`、`VOLCENGINE_SUBTITLE_SECRET_KEY`、`VOLCENGINE_SUBTITLE_ACCESS_TOKEN`。
-- 分镜文稿和 SRT 可能是长短两个版本。逐段匹配叙事含义，为每镜记录 SRT 起始锚点；不能按字数或图片数量均分。分镜无 audio_start 时不把空值当作零。
-- 起始画面从 0 秒覆盖。末镜覆盖完整音频和 SRT 结尾。对齐后必须执行 [节奏复核与修正](references/pacing-review.md)，先诊断再处理过长、过短及连续密集切图；不要只报告平均时长。多个候选配音无法判断时才询问。
+- Check the storyboard JSON/Markdown, image numbers, SRT, narration, and the existing edit/project.md. Sort images by storyboard ID or explicit generation number; do not infer order from file modification time. Verify counts, missing images, and duplicate numbers.
+- The cover is an optional deliverable; a missing cover does not block the main draft. An existing cover can be checked for consistency with the main body style; you may only make up a missing one when the image generation switch for this run is on and the request includes the corresponding image generation, otherwise record the gap and do not generate an image. When a standalone cover style is explicitly specified, record it in `edit/project.md`. When you only reuse existing images and do not change them, there is no need to re-select a style for rendering.
+- When there is a reference video, use ffprobe to read its frame size and frame rate, and extract frames from different times within the same shot to compare camera move amplitude. Keep the original image style; do not automatically copy subtitles, particles, or music from the reference.
+- SRT is the basis for narration timing, not text that must be shown. By default there are no subtitles; keep existing narration continuous and do not cut the audio when the image cuts; when an existing SRT has been verified as coming from the current narration and is usable, do not transcribe it again.
+- **When an old project has narration but no SRT, transcribe it independently first, then check it against the existing storyboard.** Use `py -3.11 "<story-studio目录>/modules/history-image/scripts/transcribe_with_coli.py" --audio "<配音>" --out-dir "<新转录版本目录>"`, which can produce the raw SRT and timestamps without needing a storyboard table. The original `py -3.11 "<story-studio目录>/modules/render-history-video/scripts/align_with_coli.py" --audio "<配音>" --storyboard "<表>" --asr-json "<coli_asr.json>" --out-dir "<新核验目录>"` is only for later conservative re-checking; its per-shot SRT is not a true prerequisite transcription subtitle. When existing images do not match the actual spoken narration, handle them within the fix scope; do not force them into the old boundaries.
+- Prefer the display `start/end` of the upstream verified storyboard table to generate `plan.json`. Only when an old project needs boundary verification redone should you use the display `start/end` of `alignment.json`; both paths keep the real speech `audio_start` and boundary evidence and complete semantic re-checking. If Coli is missing, transcription fails, or there are no usable timestamps, you must report the block and stop precise rendering; do not silently fall back to character-ratio estimation. Do not call the Volcano subtitle API, and do not configure or restore `VOLCENGINE_SUBTITLE_APP_ID`, `VOLCENGINE_SUBTITLE_SECRET_KEY`, or `VOLCENGINE_SUBTITLE_ACCESS_TOKEN`.
+- The storyboard script and SRT may be a long version and a short version. Match narrative meaning segment by segment, and record an SRT starting anchor for each shot; do not split evenly by character count or image count. When a storyboard has no audio_start, do not treat the empty value as zero.
+- The opening frame covers from 0 seconds. The last shot covers the full audio and the end of the SRT. After alignment, you must run [pacing review and correction](references/pacing-review.md), diagnose first, then handle shots that are too long, too short, or densely cut in succession; do not just report the average length. Only ask the user when multiple candidate narrations cannot be distinguished.
 
-## 制作
+## Production
 
-创建 `<素材目录>/edit/<本次版本>/plan.json`。参数与示例见 [references/plan.md](references/plan.md)。脚本接受任意素材路径，不依赖技能目录中的素材。
+Create `<素材目录>/edit/<本次版本>/plan.json`. Parameters and examples are in [references/plan.md](references/plan.md). The script accepts any material path and does not depend on materials in the skill directory.
 
-依赖Python3.10+、`pyJianYingDraft==0.3.1`、Pillow、NumPy与ffmpeg/ffprobe；原库还需要可用的libmediainfo。无SRT时需Coli。按 [初始化流程](../../references/setup.md) 配置，运行环境保存在技能目录之外。Coli在本地转录，不调用火山或其他云端字幕服务。
+Requires Python 3.10+, `pyJianYingDraft==0.3.1`, Pillow, NumPy, and ffmpeg/ffprobe; the original library also needs a working libmediainfo. Coli is needed when there is no SRT. Configure per [setup flow](../../references/setup.md); keep the runtime environment outside the skill directory. Coli transcribes locally and does not call Volcano or any other cloud subtitle service.
 
-### 默认：剪映草稿
+### Default: Jianying Draft
 
-先读 [references/jianying.md](references/jianying.md)，再用封装脚本：
+Read [references/jianying.md](references/jianying.md) first, then use the wrapper script:
 
 ```powershell
 py -3.11 "<skill目录>/scripts/export_jianying.py" "<版本目录>/plan.json"
 ```
 
-脚本先按与本地渲染相同的规则校验 `plan.json`，再写入剪映草稿：竖屏画幅、整段配音、每镜覆盖停留时间的推拉关键帧，以及切点冲击缩放（慢时长、保留冲击幅度；默认不加动感入出场，避免切点闪黑）。素材会复制进草稿目录，避免剪映 5.9+ 报媒体丢失。输出 `jianying_draft.json`、`resolved_plan.json`。草稿写到当前电脑剪映「设置 → 草稿位置」对应的目录。可通过 `--drafts-root` 或 `JY_PROJECTS_ROOT` 指定，否则由后端探测；执行前核对实际位置，不使用作者机器的目录。
+The script first validates `plan.json` with the same rules as local rendering, then writes the Jianying draft: vertical frame, the full narration, push/pull keyframes covering each shot's dwell time, and cut-point punch zoom (slow durations, keeping the punch amplitude; by default no dynamic in/out transitions, to avoid a black flash at the cut). Materials are copied into the draft directory to avoid Jianying 5.9+ reporting missing media. It outputs `jianying_draft.json` and `resolved_plan.json`. The draft goes into the directory set under Jianying "Settings → Draft location" on the current computer. You can specify it with `--drafts-root` or `JY_PROJECTS_ROOT`; otherwise the backend detects it; verify the actual location before running, and do not use the author's machine directory.
 
-- 不要为了出草稿去逐帧编码。剪映预览和导出才是成片步骤。
-- 若使用剪映 10.x，不要跑 UI 自动导出；生成草稿后让用户打开剪映导出。新草稿可能要重启剪映，或先打开一个旧草稿再退回列表才能看见。
-- 修订另建版本目录或换草稿名，保留用户素材和旧成片。
-- 导出失败时按 [references/jianying.md](references/jianying.md) 检查原库版本、目录、素材与元数据读取；报告具体问题并保留旧工程。
+- Do not encode frame by frame just to produce a draft. Jianying preview and export are the finishing steps.
+- If using Jianying 10.x, do not run UI automation to export; after generating the draft, let the user open Jianying and export. A new draft may require restarting Jianying, or opening an old draft and returning to the list before it appears.
+- Revisions go in a new version directory or use a different draft name; keep the user's materials and old finished videos.
+- If export fails, check the original library version, directories, materials, and metadata reading per [references/jianying.md](references/jianying.md); report the specific problem and keep the old project.
 
-### 可选：本地 ffmpeg 成片
+### Optional: Local ffmpeg Finished Video
 
-仅当用户明确要求本地 mp4 时使用；剪映不可用不自动授权本地成片。版本目录不得含已有 `final.mp4`。
+Use only when the user explicitly asks for a local mp4; Jianying being unavailable does not automatically authorize a local finished video. The version directory must not already contain a `final.mp4`.
 
 ```powershell
 py -3.11 "<skill目录>/scripts/render.py" "<版本目录>/plan.json" --workers 3
 ```
 
-脚本会先校验计划，再将每帧按小数坐标做仿射变换与双三次采样，分镜独立编码，最后 copy 合并视频并接入整段配音。输出 final.mp4、resolved_plan.json、连续帧诊断和首中尾联系表。全部输出位于 plan.json 同目录。本地渲染慢，是因为每一帧都在做浮点采样和编码；这不是默认路径。
+The script first validates the plan, then applies an affine transform with bicubic sampling to each frame at fractional coordinates, encodes each shot independently, and finally merges the video with copy and joins the full narration. It outputs final.mp4, resolved_plan.json, consecutive-frame diagnostics, and a first/middle/last contact sheet. All outputs are in the same directory as plan.json. Local rendering is slow because every frame goes through float sampling and encoding; this is not the default path.
 
-- 默认 1080×1920、30fps；参考视频或用户要求可覆盖。
-- **推拉必须铺满该镜停留时间**：`zoom` 从镜头 `start` 缓入缓出到 `end`，中间不停住、不在前几秒走完再静帧。切点由相邻两张图的讲述间隔决定，运镜覆盖这一整段。
-- **切点冲击缩放**（常规镜默认开，短于 5 秒默认关）：推拉走到合适构图后硬切。冲击幅度要够：出镜按 `punch_out`（默认 1.28）推近，进镜从 `zoom[0] * punch_in`（默认 1.50）入画。速度要慢：出镜约 1.00 秒，进镜约 1.80 秒拉回后再接本镜推拉。默认不加「动感缩小 / 放大」——这两个入出场会在切点闪一帧黑；冲击只靠缩放关键帧。视频镜头默认不加。计划级或单镜设 `cut_punch: false` 可关。
-- **默认速度**以约 16–20 秒走完 12% 为准（约每秒 0.6–0.75%）。按时长算幅度：`amp = min(0.0065 × 镜长秒, 0.16)`；人物贴边封顶 12%，大远景可到 16%。邻镜时长接近时速度应接近，推拉交替。不要用固定 5–9% 套所有镜长——短镜会过快、长镜会几乎看不出。单镜过长、封顶后仍慢于参考速度时向用户说明，不擅自循环推拉。
-- 每镜缓入缓出，避免短周期来回摆动。
-- 本地成片不用 zoompan 的整数裁切作为运镜的默认方案。剪映草稿按输出帧率采样共享运镜曲线，再写入原库的缩放/位移关键帧；不编码视频。
-- 分镜并行只用于本地 ffmpeg；剪映草稿单进程写入即可。
+- Default 1080×1920, 30fps; a reference video or user request can override.
+- **Push/pull must fill the shot's dwell time**: `zoom` eases in and out from the shot's `start` to its `end`, never stopping midway and never finishing in the first few seconds and then holding a still frame. The cut point is determined by the narration gap between the two adjacent images, and the camera move covers that whole span.
+- **Cut-point punch zoom** (on by default for normal shots, off by default for shots shorter than 5 seconds): after the push/pull reaches a suitable composition, cut hard. The punch amplitude must be enough: the outgoing shot pushes in by `punch_out` (default 1.28), and the incoming shot enters from `zoom[0] * punch_in` (default 1.50). The speed must be slow: the outgoing move takes about 1.00 second, and the incoming move takes about 1.80 seconds to pull back before joining the shot's own push/pull. By default do not add "dynamic shrink / enlarge": those two in/out transitions flash one black frame at the cut; the punch relies only on scale keyframes. Do not add it to video shots by default. It can be turned off per plan or per shot with `cut_punch: false`.
+- **Default speed** is about 12% over roughly 16-20 seconds (about 0.6-0.75% per second). Compute amplitude from duration: `amp = min(0.0065 × shot length in seconds, 0.16)`; shots with a person near the edge cap at 12%, wide long shots can reach 16%. When neighboring shots have similar lengths, their speeds should be similar, alternating push and pull. Do not apply a fixed 5-9% to every shot length: short shots would move too fast and long shots would barely show movement. When a single shot is too long and still slower than the reference speed after capping, tell the user; do not loop the push/pull on your own.
+- Ease every shot in and out, and avoid short-cycle back-and-forth oscillation.
+- Do not use zoompan integer cropping as the default camera move for the local finished video. The Jianying draft samples the shared camera move curve at the output frame rate and writes it as the original library's scale/position keyframes; it does not encode video.
+- Shot parallelism is only for local ffmpeg; the Jianying draft is written in a single process.
 
-## 验收与交付
+## Acceptance and Delivery
 
-### 剪映草稿
+### Jianying Draft
 
-确认 `jianying_draft.json` 里的草稿路径存在，且含 `draft_info.json`。抽查分镜数量、首镜从 0 秒开始、末镜覆盖配音时长、配音在音频轨。不要声称已经观看剪映播放，除非实际打开了剪映。
+Confirm the draft path in `jianying_draft.json` exists and contains `draft_info.json`. Spot-check the shot count, that the first shot starts at 0 seconds, that the last shot covers the narration length, and that the narration is on the audio track. Do not claim to have watched Jianying playback unless you actually opened Jianying.
 
-交付可点击的草稿目录绝对路径，简述时长、画幅、是否带配音及字幕。提醒用户：打开剪映 → 看到新草稿 → 预览推拉和切点缩放 → 再导出。
+Deliver the clickable absolute path of the draft directory, briefly stating the duration, frame size, and whether it has narration and subtitles. Remind the user: open Jianying → see the new draft → preview the push/pull and cut-point zoom → then export.
 
-### 本地 mp4
+### Local mp4
 
-先用同样参数渲染代表性短样片（另建测试 plan；包含慢推、慢拉及人物边缘），确认连续运动后再全量渲染。
+First render a representative short sample with the same parameters (a separate test plan; include a slow push, a slow pull, and a person at the edge), and confirm continuous motion before rendering the full video.
 
-重点攻击四个问题：语义对齐错误、亚像素跳动或编码纹理闪动、裁切人物/黑边、音频末尾丢失。脚本检查帧数、时长、完整解码，并保存每镜首中尾图和中段连续帧差分。差分波动只是诊断，受压缩/画面内容影响，不是流畅度评分，不能单凭阈值宣称验收通过。
+Attack four problems in particular: semantic alignment errors, subpixel jitter or encoding texture flicker, cropping people / black bars, and audio lost at the end. The script checks frame count, duration, and complete decoding, and saves first/middle/last frames for each shot and mid-segment consecutive-frame differences. Difference fluctuation is only a diagnostic, affected by compression and image content; it is not a smoothness score, and passing a threshold alone does not mean acceptance.
 
-查看联系表，并提取成片每个切点前后一帧检查顺序与黑帧；有播放能力时以正常速度看代表性片段。没有播放能力时明确依据是连续帧分析和解码检查，不声称已观看播放。
+Look at the contact sheet, and extract one frame before and after each cut point in the finished video to check order and black frames; when you can play video, watch representative clips at normal speed. When you cannot play video, state clearly that the basis is consecutive-frame analysis and decoding checks, and do not claim to have watched playback.
 
-把实际参数、对齐选择、验证证据和未解决限制记入项目的 edit/project.md。不要把前一次素材的 12 张图片、376.5 秒或人名固化为通用配置。
+Record the actual parameters, alignment choices, verification evidence, and unresolved limits in the project's edit/project.md. Do not hard-code the previous material's 12 images, 376.5 seconds, or person names as generic configuration.
