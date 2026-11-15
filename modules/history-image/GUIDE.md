@@ -1,130 +1,127 @@
-# 分镜与配图模块
+# Storyboarding and Illustration Module
 
-这是 story-studio 内置模块。仅配图开启时执行；分镜、提示词和实际生图的授权分别判断。本模块目录为 GUIDE.md 所在目录。总入口的阶段范围优先，不能因后续渲染开启而自动补生图片或封面。
+This is a built-in module of story-studio. It runs only when illustration is enabled; the authorization for storyboarding, prompts, and actual image generation is judged separately. This module's directory is the directory containing GUIDE.md. The phase scope of the main entry point takes priority; later rendering being enabled must not automatically trigger extra images or covers.
 
-提供独立的文稿拆镜能力，并作为可复用的历史绘图风格层衔接分镜与图片生成。历史写实风基于八张历史视频截图提炼，附有完整提示词样例；厚涂历史漫画风基于十二张截图提炼，黑白叙事风基于八张近现代人物截图提炼。另附厚涂漫画、黑白叙事各6张正文成品参考，见[正文画风参考图库](references/style-reference-library.md)。成品的视觉选样不代表已在指定模型完成风格复现验证。三种画风分别维护，不默认混合，不将旧样例结论套用于新风格。
+It provides standalone manuscript storyboarding, and serves as a reusable historical drawing style layer connecting storyboards with image generation. The historical realism style was distilled from eight screenshots of historical videos, with complete sample prompts; the impasto historical comic style was distilled from twelve screenshots, and the monochrome narrative style from eight screenshots of modern-era figures. Each of the impasto comic and monochrome narrative styles also has six finished body-text reference images; see [Body-Style Reference Library](references/style-reference-library.md). The visual selection of finished works does not mean style reproduction has been verified on a specified model. The three styles are maintained separately, are not mixed by default, and conclusions from old samples are not applied to new styles.
 
-## 口播配图的默认生产顺序
+## Default Production Order for Voiceover Illustration
 
-必须执行 [先音频后分镜](references/audio-first-storyboard.md)：确定指定 N 张或自动拆分方式 → 本机 Coli 转录最终配音并输出 SRT → 核对全文与时间 → 定稿带时间、原文和明确画面内容的分镜表 → 按表生图并核验 → 按同一表剪辑。三种画风共用此顺序。没有音频时仅准备待对齐草稿；明确的独立插图、封面或纯文本分镜请求按文档中的例外执行。
+You must follow [Audio First, Then Storyboard](references/audio-first-storyboard.md): decide on a specified N images or an automatic split method, then transcribe the final voiceover locally with Coli and output SRT, then check the full text and timing, then finalize a storyboard table with timing, source text, and definite image content, then generate images per the table and verify them, then edit using the same table. All three styles share this order. Without audio, only prepare an alignment-pending draft; clearly defined standalone illustrations, covers, or pure-text storyboard requests follow the exceptions in the documents.
 
-## 风格选择
+## Style Selection
 
-### 黑白叙事封面参考
+### Monochrome Narrative Cover Reference
 
-用户明确要求黑白叙事风封面时，默认采用 `monochrome-gold-red-cover`，读取 [封面规则](references/monochrome-cover-design.md)，优先打开并实际传入技能自带的 [赵一曼 3:4 参考图](assets/cover-reference-zhao-yiman-3x4.png)。必须参考整体文字风格：宽厚榜书字形、粗毛笔笔势、飞白破锋、金箔颗粒、朱砂红重点行和主副标题层级，不能仅沿用金红颜色。文案从本期全文提炼，人物与事件使用本期资料，不照抄样图标题。只生成用户要求的封面比例与数量；正文依然无字且不自动附送封面。本条不改变其他正文画风的封面绑定规则。
+When the user explicitly requests a monochrome narrative style cover, use `monochrome-gold-red-cover` by default, read the [Cover Rules](references/monochrome-cover-design.md), and prefer opening and actually passing in the skill's built-in [Zhao Yiman 3:4 Reference Image](assets/cover-reference-zhao-yiman-3x4.png). You must follow the overall text style: broad large-character calligraphy forms, thick brush strokes, flying-white broken edges, gold-leaf granules, cinnabar-red emphasis lines, and main/subtitle hierarchy; do not merely reuse the gold-red colors. Copy comes from this issue's full text, and people and events use this issue's source material; do not copy the sample image's titles. Generate only the cover ratios and quantities the user requested; body text remains text-free and no cover is added automatically. This rule does not change the cover binding rules of the other body-text styles.
 
-| 用户可选名称 | style_id | 特征与风格文件 |
+| User-selectable name | style_id | Features and style file |
 | --- | --- | --- |
-| 历史写实风（写实风、原来的风格） | historical-realism | 自然人物与光照、细腻柔和绘画质感、克制冷暖关系：[风格规则](styles/historical-realism.md) |
-| 厚涂历史漫画风（漫画风、厚涂漫画风） | historical-comic | 赭金焦褐、可见破碎笔触、雕塑般块面明暗、戏剧化叙事：[风格规则](styles/historical-comic.md) |
-| 黑白叙事风（黑白叙事、黑白纪实叙事风） | monochrome-narrative | 纯黑白灰阶、电影摄影质感、克制人物叙事与分期真实照片约束：[风格规则](styles/monochrome-narrative.md) |
+| Historical realism style (realism style, the original style) | historical-realism | Natural people and lighting, fine and soft painted texture, restrained warm-cool relationships: [Style Rules](styles/historical-realism.md) |
+| Impasto historical comic style (comic style, impasto comic style) | historical-comic | Ochre-gold and burnt brown, visible broken brushstrokes, sculptural block light and shade, dramatic narrative: [Style Rules](styles/historical-comic.md) |
+| Monochrome narrative style (monochrome narrative, monochrome documentary narrative style) | monochrome-narrative | Pure black-white-grey tones, cinematic photographic texture, restrained character narrative and period-specific real-photo constraints: [Style Rules](styles/monochrome-narrative.md) |
 
-- 开始新文稿或新一组插图时，若本次未明确风格且该项目没有已确认的风格，先询问：“这次插图用哪种风格：历史写实风、厚涂历史漫画风，还是黑白叙事风？”可使用可用的选项询问工具。收到选择后才完成风格提示词或生图，不能因等待时间到而自行选定。
-- 等待选择时可读取全文、识别时代、准备不含画风的分镜草稿；不将未确认的风格写入最终提示词或交付表。storyboard、prompt 和 generate 三种模式都遵循这个入口。
-- 当前请求明确写“漫画风”“写实风”“黑白叙事风”或提供有效 `style_id` 时视为已选择，不重复询问。同一文稿的续写、补镜、重试与改图沿用已确认选择；新文稿不擅自继承其他项目风格。用户说“你决定”才可根据题材选择并简述决定。
-- 已有分镜表包含明确 `style_id` 时可以沿用。没有 `style_id` 且没有该项目的确认记录时，不凭旧提示词、参考图或文件夹名称自行定风格，应询问。未知 ID 或用户的名称与 ID 相互冲突时澄清，不能静默退回写实风。
-- 用户明确要求逐镜不同风格时记录镜级覆盖，否则一组镜头统一使用已选风格。旧接口中的 `historical-realism` 仍有效。
-- 只维护本 Skill、分析参考图或讨论使用方法时，不触发生图风格询问；本规则用于实际创作任务。新增画风不代表用户已为未来所有项目选择该画风。
+- When starting a new manuscript or a new set of illustrations, if the style has not been specified this time and the project has no confirmed style, ask first: "Which illustration style should we use this time: historical realism, impasto historical comic, or monochrome narrative?" You may use an available options tool to ask. Only complete the style prompt or image generation after receiving a choice; do not choose one yourself because the waiting time has passed.
+- While waiting for a choice, you may read the full text, identify the era, and prepare a storyboard draft without a style; do not write an unconfirmed style into the final prompt or delivery table. The storyboard, prompt, and generate modes all follow this entry point.
+- When the current request explicitly says "comic style", "realism style", or "monochrome narrative style", or provides a valid `style_id`, treat it as already chosen and do not ask again. Continuations, supplementary shots, retries, and revisions of the same manuscript keep the confirmed choice; a new manuscript does not inherit another project's style on its own. Only when the user says "you decide" may you choose based on the subject and briefly explain the decision.
+- If an existing storyboard table contains a definite `style_id`, it may be reused. When there is no `style_id` and no confirmation record for the project, do not decide the style from old prompts, reference images, or folder names; ask instead. When an ID is unknown, or the user's name conflicts with the ID, clarify; do not silently fall back to the realism style.
+- When the user explicitly requests different styles shot by shot, record the per-shot override; otherwise a set of shots uses the chosen style uniformly. The `historical-realism` in the old interface remains valid.
+- Only maintaining this Skill, analyzing reference images, or discussing how to use it does not trigger the style question for image generation; this rule applies to actual creation tasks. Adding a new style does not mean the user has chosen that style for all future projects.
 
-## 模式选择
+## Mode Selection
 
-| 用户请求 | 模式 | 执行与停止位置 |
+| User request | Mode | Execution and stopping point |
 | --- | --- | --- |
-| “根据文稿拆分分镜”“在这个文件夹生成分镜表”“拆镜后交给别的 AI 生图” | storyboard | 口播项目先 Coli 转录并核验，再按全文与实际时间拆镜、写出分镜表和独立完整提示词；无音频只写草稿，明确纯文本请求除外；不调用生图工具 |
-| 已有分镜或单个画面，要求提示词；已有分镜未说明输出方式 | prompt | 保留镜号、边界与构图，补全提示词，不重新拆镜，不生成图片 |
-| 明确要求“生图”“生成图片”，或选定镜号要求出图 | generate | 口播项目仅复用已核验音文与时间的定稿分镜，按表及用户指定范围生图；未对齐先完成前置流程，不自动重拆已有分镜 |
+| "Split the storyboard from the manuscript", "Generate a storyboard table in this folder", "Split the shots and hand them to another AI to generate images" | storyboard | For voiceover projects, first transcribe with local Coli and verify, then split shots by the full text and actual timing, and write the storyboard table and standalone complete prompts; without audio only write a draft, except for clearly pure-text requests; do not call the image generation tool |
+| Existing storyboard or single image, prompts requested; existing storyboard with no stated output method | prompt | Keep shot numbers, boundaries, and composition, complete the prompts, do not re-split shots, do not generate images |
+| Explicitly requests "generate images" or "generate pictures", or selects shot numbers for image output | generate | For voiceover projects, only reuse the finalized storyboard whose audio text and timing are already verified, and generate images per the table and the user-specified scope; if not yet aligned, complete the prerequisite flow first and do not automatically re-split an existing storyboard |
 
-“分镜表中包含生图提示词”“后续交给别的 AI 生成图片”都不等于要求当前助手生图；generate 必须是要求当前助手实际出图。只给全文而没有拆镜或具体画面意图时，先分析时代，再澄清当前需要哪类产物。要求从全文直接配图且没有镜头划分时，先建立拆镜结果作为图片输入；只有本次已明确要求生成的图片才进入 generate。组合请求也按阶段区分文本产物与实际图片状态；为口播配图执行本机 Coli 转录是前置工作，不生成配音，不调用云字幕 API，不自动进入视频渲染。
+"A storyboard table contains image prompts" and "later handed to another AI to generate images" do not equal a request for the current assistant to generate images; generate must mean the current assistant actually produces images. When only the full text is given without storyboarding or a specific image intent, first analyze the era, then clarify which kind of deliverable is needed now. When a request asks for illustrations directly from the full text with no shot breakdown, first build a storyboard result as the image input; only images explicitly requested for generation this time enter generate. Combined requests also distinguish text deliverables from actual image status by phase; running local Coli transcription for voiceover illustration is preparatory work: it does not generate voiceover, does not call a cloud subtitle API, and does not automatically enter video rendering.
 
-进入 storyboard 模式时，读取 [references/manuscript-storyboard.md](references/manuscript-storyboard.md) 和 [references/storyboard-interface.md](references/storyboard-interface.md)。**第一句话必须有对应图片：第一镜从口播正文首字符开始，默认未来剪辑从视频第 0 帧显示该图。** 无音频时以原文范围准备草稿；口播配图表须在音频转录核验后定稿，不声称草稿已有精确时间。
+When entering storyboard mode, read [references/manuscript-storyboard.md](references/manuscript-storyboard.md) and [references/storyboard-interface.md](references/storyboard-interface.md). **The first sentence must have a matching image: the first shot starts from the first character of the voiceover body text, and by default the future edit shows that image from frame 0 of the video.** Without audio, prepare a draft based on the source-text range; a voiceover illustration table must be finalized only after audio transcription and verification, and a draft must not be claimed to already have precise timing.
 
-所有画风必须读取并执行 [配图与口播节奏](references/narration-pacing.md)：默认以 8 秒/图规划，实际音文对齐优先；无音频只作明确标注的估算，口播流程必须在生图前完成真实时间核验，剪辑复用核验结果。
+All styles must read and follow [Illustration and Voiceover Pacing](references/narration-pacing.md): plan by default at 8 seconds per image, with actual audio-text alignment taking priority; without audio, only make clearly labeled estimates, and the voiceover flow must complete real timing verification before image generation, with editing reusing the verified result.
 
-拆镜默认采用全文均衡分配：先按总镜数为整篇规划覆盖范围，再寻找邻近语义边界，最后才编写各镜完整提示词。首句有图不意味着开头自动加密或一句一镜；不得先耗尽前面的镜数，再把剩余大段正文塞进最后一两镜。指定总数时保持该总数，按专用流程运行文字量分配检查；用户要求修复已有表的分配失衡时，属于明确授权调整镜头边界，但不额外生图。
+Storyboarding uses balanced allocation across the full text by default: first plan coverage ranges for the whole piece based on the total shot count, then look for nearby semantic boundaries, and only then write each shot's complete prompt. A first sentence with an image does not mean the opening is automatically densified or one shot per sentence; do not exhaust the shot budget up front and then cram the remaining large stretch of text into the last one or two shots. When a total is specified, keep that total and run the dedicated flow's text-volume allocation check; when the user asks to fix allocation imbalance in an existing table, that is explicit authorization to adjust shot boundaries, but not to generate extra images.
 
-## 生图开始时询问首尾帧与视频分镜
+## Ask About First/Last Frames and Video Storyboard When Image Generation Starts
 
-- 每期首次开始实际生图前，主动询问一次：“本期是否同时生成开头视频的首帧、尾帧和视频分镜提示词？”可与画风选择合并询问。该询问适用于全部画风；只做分镜表或提示词时不触发。
-- 用户已明确需要、不需要，或本期已交付该组合时，沿用本期选择；补图、重试、改图、单独补封面不重复询问。新一期重新询问，不将上一期回答自动视为本期答案。
-- 等待回答时继续已授权的正文配图与封面工作；未回答不视为同意，不额外生成首尾帧。用户明确要求先等其选择时遵从。
-- 选择需要后，按用户指定时长和原文范围交付首帧、尾帧、分秒动作设计与可直接使用的视频提示词；未指定时默认开头 6 秒，并说明这是镜头设计时长，未与实际音频对齐。首尾帧额外计算，不占正文配图数量；已有适用图片可直接复用。
-- 首尾帧保持同一人物阶段、服饰、场景与光线，尾帧实际传入首帧作为连续性参考；提示词说明两端状态、连续动作、镜头运动和声音意图。生成首尾帧与提示词不自动授权生成视频、配音或调用字幕服务。
+- Before actual image generation begins for the first time in an issue, proactively ask once: "Should this issue also generate the opening video's first frame, last frame, and video storyboard prompts?" This may be combined with the style question. The question applies to all styles; it is not triggered when only a storyboard table or prompts are being made.
+- When the user has clearly said yes or no, or the combination has already been delivered for this issue, follow this issue's choice; supplementary images, retries, revisions, and standalone cover additions do not repeat the question. A new issue asks again; do not treat the previous issue's answer as this issue's answer.
+- While waiting for an answer, continue the already authorized body-text illustration and cover work; no answer does not count as agreement, and no extra first/last frames are generated. When the user explicitly asks to wait for their choice first, comply.
+- After the user chooses yes, deliver the first frame, last frame, per-second action design, and directly usable video prompts for the user-specified duration and source-text range; when unspecified, default to a 6-second opening and state that this is the shot-design duration, not aligned with actual audio. First/last frames are counted separately and do not use up body-text illustration count; an existing suitable image may be reused directly.
+- First and last frames keep the same character stage, costume, scene, and lighting, and the last frame actually passes in the first frame as a continuity reference; prompts state the states at both ends, the continuous action, camera movement, and sound intent. Generating first/last frames and prompts does not automatically authorize video generation, voiceover, or subtitle service calls.
 
-## 职责与默认值
+## Responsibilities and Defaults
 
-- 接收完整文稿作为历史背景，也接收单个主题、具体画面需求或已有分镜。先从内容判断每个所绘事件的朝代与时期，再完成画面编排、风格注入和完整提示词输出；明确要求生图时继续执行。不要求用户先手动标注朝代。
-- 不擅自修改文稿，不把字幕当作要绘制的画面内容。storyboard 模式按全文新建分镜；prompt 和 generate 模式不重新拆分或合并已有分镜，除非用户明确要求。不能因为缺少分镜而跳过全文分析，也不自行接管完整视频流程。
-- 默认中文提示词、9:16 竖版、无文字底图、单一真实空间、每个所选分镜一张图；这些是可覆盖的默认值。
-- **黑白叙事风交付例外**：`monochrome-narrative` 默认只交付 9:16 竖屏纯图，无任何文字，不自动附加封面；仅用户明确另行要求时覆盖。此例外优先于下列通用封面规则。
-- **正文与封面风格绑定**：项目封面默认沿用本期已确认的正文 `style_id`，不得把历史写实风、厚涂历史漫画风或黑白叙事风静默替换成另一种封面风格。封面构图、标题排版和画幅可以变化，但人物表现、笔触、配色、光照和材质必须与正文同类。只有用户明确指定“黑白金红书法封面”“原厚涂封面”等独立封面风格时，才允许覆盖正文 `style_id`，并在项目记录中注明覆盖原因。
-- **项目封面默认交付**：在 generate 模式完成用户指定的配图后，默认继续额外生成两张带标题的成品封面：`COVER_3x4.png`（3:4 竖版）与 `COVER_4x3.png`（4:3 横版），无需用户另说“出封面”。用户指定 N 张配图即 N 张分镜图加 2 张封面，封面不占镜数。明确不要封面时跳过；只做分镜或提示词时不生图；同项目补图、重试且已有确认封面时不重复生成，除非内容变更或用户要求。仅在配图开启且本次请求包含完整 generate 时按此规则处理封面；只做草稿、单镜补图或配图关闭时不因缺封面自动生图，正文草稿可不带封面。封面生成前必须从分镜表或项目状态读取 `style_id`，并将同一风格规则完整写入封面提示词。
-- **独立封面风格仅在明确指定时使用**：技能附有黑白人物金红书法封面参考，但不作为所有项目的默认封面。只有用户明确要求“黑白人物金红书法”“这种封面”或指定 `monochrome-gold-red-cover` 时，才读取并执行 [黑白人物金红书法封面](references/monochrome-cover-design.md)。正文为 historical-comic，或用户明确要求沿用常遇春、曾国藩与左宗棠、原张居正封面时，读取 [厚涂金箔榜书封面规则及参考图](references/cover-design.md)。这套封面的字体、配色与双比例构图见对应规则；其选择不改变正文画风，也不代表当前使用者已选择此封面。生图前打开规则内的技能自带参考图，并在工具支持时实际传入。仅修改封面规则不触发生图。
-- 目标模型偏好为 GPT Image 2；这不是固定 API、尺寸参数或供应商配置。
-- 只要求提示词时不调用生图工具。明确要求“生图/生成图片”时执行当前范围，无需重复询问已确认事项。仅给分镜而未说明输出方式时，先提供可复制提示词。
+- Accept a complete manuscript as historical background, and also accept a single theme, a specific image need, or an existing storyboard. First judge the dynasty and period of each depicted event from the content, then complete image arrangement, style injection, and complete prompt output; when image generation is explicitly requested, continue with it. Do not require the user to label the dynasty manually first.
+- Do not modify the manuscript on your own, and do not treat subtitles as image content to draw. Storyboard mode builds a new storyboard from the full text; prompt and generate modes do not re-split or merge an existing storyboard unless the user explicitly asks. Do not skip full-text analysis because there is no storyboard, and do not take over the complete video flow on your own.
+- Defaults are Chinese prompts, 9:16 vertical format, text-free base images, a single real space, and one image per selected storyboard shot; these are overridable defaults.
+- **Monochrome narrative delivery exception**: `monochrome-narrative` delivers only 9:16 vertical pure images by default, with no text of any kind and no automatically added cover; override only when the user explicitly requests otherwise. This exception takes priority over the general cover rules below.
+- **Body-text and cover style binding**: A project's cover follows this issue's confirmed body-text `style_id` by default; do not silently swap historical realism, impasto historical comic, or monochrome narrative for a different cover style. Cover composition, title layout, and frame size may change, but character rendering, brushwork, color, lighting, and materials must match the body text. Only when the user explicitly specifies an independent cover style such as "monochrome gold-red calligraphy cover" or "original impasto cover" may the body-text `style_id` be overridden, with the reason for the override noted in the project record.
+- **Default project cover delivery**: After completing the user-specified illustrations in generate mode, by default continue to generate two extra finished covers with titles: `COVER_3x4.png` (3:4 vertical) and `COVER_4x3.png` (4:3 horizontal), without the user having to say "make covers". When the user specifies N illustrations, that means N storyboard images plus 2 covers; covers do not count toward the shot count. Skip them when the user explicitly does not want covers; do not generate images when only storyboarding or prompts are requested; when supplementing, retrying, or revising images for the same project and a confirmed cover already exists, do not regenerate it unless the content changed or the user asks. Only apply this cover rule when illustration is enabled and this request includes a complete generate; do not generate images automatically because a cover is missing when only doing a draft, a single-shot supplement, or when illustration is off, and a body-text draft may have no cover. Before generating covers, read `style_id` from the storyboard table or project state and write the full rules of that same style into the cover prompt.
+- **Independent cover styles only when explicitly specified**: The skill includes a monochrome figure gold-red calligraphy cover reference, but it is not the default cover for all projects. Only when the user explicitly requests "monochrome figure gold-red calligraphy", "this kind of cover", or specifies `monochrome-gold-red-cover` should you read and follow [Monochrome Figure Gold-Red Calligraphy Cover](references/monochrome-cover-design.md). When the body text is historical-comic, or the user explicitly asks to follow the Chang Yuchun, Zeng Guofan and Zuo Zongtang, or original Zhang Juzheng cover, read [Impasto Gold-Leaf Large-Character Calligraphy Cover Rules and Reference Images](references/cover-design.md). That cover's typography, colors, and dual-ratio composition are in the corresponding rules; choosing it does not change the body-text style, nor does it mean the current user has chosen this cover. Before generating, open the skill's built-in reference image in the rules and actually pass it in when the tool supports it. Only modifying the cover rules does not trigger image generation.
+- The preferred target model is GPT Image 2; this is not a fixed API, size parameter, or vendor configuration.
+- When only prompts are requested, do not call the image generation tool. When "generate image / generate images" is explicitly requested, execute the current scope without repeatedly asking about already confirmed items. When only a storyboard is given without a stated output method, first provide copyable prompts.
 
-## 读取与执行
+## Reading and Execution
 
-1. 按“风格选择”确定当前项目画风，仅读取所选风格文件。每种风格文件是该风格规则的唯一维护来源；不要把写实风的“避免粗重笔触”附加到厚涂漫画风，也不要将漫画风的金褐色调附加到写实风。
-2. 读取 [references/period-context.md](references/period-context.md)，先看全文及上下文，再识别所绘事件的朝代、时期、地域、人物身份和时间变化；不得沿用示例默认清代。接收批量分镜、角色设定或结构化输入时，再读取 [references/storyboard-interface.md](references/storyboard-interface.md)。
-3. 按模式选择执行：storyboard 先按专用流程建立镜头，再逐镜应用下述规则；prompt/generate 保留镜号、剧情事实、主体关系、动作、景别及明确构图要求。先利用文稿中的年号、年份、人物和事件消除缺失信息；只有仍无法确定且影响画面的关键身份、年代或人物关系才询问。确定朝代但不确定具体年份时，不杜撰精确年份。
-4. 执行 `references/period-context.md` 的“人物传记逐镜现实约束”：不同人物及同一人物的不同年龄阶段分别匹配现实外貌、衣着与环境，画风不决定年代。为当前镜头建立时代设定，将服饰、发式、建筑、兵器、交通、货币和书写载体等可见要素落实为适合该时期与身份的具体描述，再与固定绘画风格组合。用动作、表情、物件数量与空间关系表达叙事重点，避免只有抽象的“史诗、震撼、沉重”。
-5. 每张提示词必须独立完整，开头写明该镜所处朝代或历史时期、已知地域，包含具体时代外观、画面内容、对应的风格与光色、构图及输出约束。不输出“风格同上”、未填占位符或整套互斥选项。按该镜选择白天或夜景、真实空间或蒙太奇，不机械粘贴全部分支。
-6. 交付前检查下述易错点，并修正提示词内的冲突。
+1. Determine the current project's style per "Style Selection" and read only the chosen style file. Each style file is the sole maintenance source for that style's rules; do not attach the realism style's "avoid heavy brushstrokes" to the impasto comic style, and do not attach the comic style's gold-brown tones to the realism style.
+2. Read [references/period-context.md](references/period-context.md), look at the full text and context first, then identify the dynasty, period, region, character identities, and time changes of the depicted events; do not carry over the example's default Qing dynasty. When receiving batch storyboards, character settings, or structured input, also read [references/storyboard-interface.md](references/storyboard-interface.md).
+3. Execute per mode: in storyboard mode first build shots per the dedicated flow, then apply the rules below shot by shot; in prompt/generate mode keep shot numbers, story facts, subject relationships, actions, shot sizes, and explicit composition requirements. First use era names, years, people, and events in the manuscript to resolve missing information; only ask when a key identity, era, or character relationship that affects the image still cannot be determined. When the dynasty is determined but the specific year is not, do not invent a precise year.
+4. Execute the "Per-Shot Realism Constraints for Character Biographies" in `references/period-context.md`: match different characters and different age stages of the same character separately to realistic appearance, clothing, and environment; style does not decide the era. For the current shot, establish a period setting, turn visible elements such as clothing, hairstyles, architecture, weapons, transport, currency, and writing media into concrete descriptions suited to that period and identity, then combine them with the fixed painting style. Express narrative emphasis through actions, expressions, object counts, and spatial relationships; avoid relying only on abstract words like "epic, shocking, heavy".
+5. Every prompt must be standalone and complete, starting by stating the dynasty or historical period and known region of the shot, and including concrete period appearance, image content, the corresponding style and light/color, composition, and output constraints. Do not output "same style as above", unfilled placeholders, or a whole set of mutually exclusive options. Choose day or night scene, real space or montage per the shot; do not mechanically paste in every branch.
+6. Before delivery, check the error-prone points below and fix conflicts inside the prompts.
 
-需要写实风完整样例或了解其细节密度时，读取 [references/validated-example.md](references/validated-example.md)。示例中的清代人物、账册和军饷情节只属于该案例。漫画风的参考观察与未试图示例见 [references/comic-reference.md](references/comic-reference.md)，仅在需要该风格的来源依据或完整示例时读取。
+When a complete realism-style sample is needed or its detail density needs to be understood, read [references/validated-example.md](references/validated-example.md). The Qing-dynasty figures, ledgers, and military-funds plot in the example belong only to that case. For the comic style's reference observations and untested example, see [references/comic-reference.md](references/comic-reference.md), and read it only when the source basis or complete example for that style is needed.
 
-## 真实人物照片依据
+## Real-Person Photo Basis
 
-有可考照片的真实人物，尤其近现代人物传记，读取并执行 [真实人物分期参考流程](references/person-photo-reference.md)。按镜头年代匹配已核验原照，区分身份参考与风格参考；年龄推测与情景重现不能称为真实历史照片。该流程适用于全部画风。仅维护技能时不自动开展具体人物检索或生图。
+For real people with verifiable photos, especially modern-era biographies, read and follow the [Real-Person Staged Photo Reference Flow](references/person-photo-reference.md). Match verified original photos by the shot's era, distinguishing identity references from style references; age inference and scene reconstruction must not be called real historical photos. This flow applies to all styles. Only maintaining the skill does not automatically start a specific person's search or image generation.
 
-## 画面与原文语义核验
+## Image and Source-Text Semantic Verification
 
-按 [配图与口播节奏](references/narration-pacing.md) 记录画面开始适用的原文分句、人物阶段和事件阶段；图片必须从对应内容开始时适用，不提前展示后续结果。生图后核验实际图片，逐镜记录 observed_content 与 image_semantic_status，不能仅靠镜号或提示词判定匹配。
+Per [Illustration and Voiceover Pacing](references/narration-pacing.md), record the source-text clause where the image starts applying, the character stage, and the event stage; an image must only apply from when the corresponding content starts, and must not show later results early. After generating images, verify the actual images and record observed_content and image_semantic_status shot by shot; do not judge a match by shot number or prompt alone.
 
-## 连续分镜
+## Continuous Storyboarding
 
-沿用上游人物 ID、固定外貌描述、年龄阶段及人物参考图；服饰发式沿用的前提是符合当前时段和身份，不每镜重新设计同一角色。时间跳跃、改朝换代或换装按剧情变化，回忆镜头使用回忆事件的时代，不套用讲述者所处时代。上游人物设定或参考图与明确年代冲突时指出冲突，保持身份特征并调整时代外观；若用户明确要求保留异时代造型，则按其架空设定执行并与史实区分。仅有文字描述不能保证跨图人脸一致，不能承诺绝对一致。
+Reuse the upstream character ID, fixed appearance description, age stage, and character reference images; carry over clothing and hairstyles only when they fit the current period and identity, and do not redesign the same character every shot. Time jumps, dynastic changes, or costume changes follow plot changes, and flashback shots use the flashback event's era, not the narrator's era. When an upstream character setting or reference image conflicts with a definite era, point out the conflict, keep the identity features, and adjust the period appearance; if the user explicitly asks to keep the out-of-period look, follow their alternate-history setting and distinguish it from historical fact. Text description alone cannot guarantee a consistent face across images, and absolute consistency must not be promised.
 
-上游指定景别、机位或构图时优先保留。特写无需强塞三层空间；空镜无需加人；不同场景无需都放桌案、门框、地图、队伍。只选择一个清楚的主事件，保持系列材质与色彩逻辑统一，允许日夜、地域与情绪自然变化。
+Keep upstream shot sizes, camera positions, or compositions when specified. A close-up does not need three layers of space forced in; an empty shot needs no person added; different scenes do not all need a desk, door frame, map, or procession. Choose only one clear main event, keep the series' material and color logic consistent, and allow day/night, region, and mood to change naturally.
 
-人物参考图用于身份连续性，风格参考图用于色彩、材质和叙事构图；不要从风格截图中照搬字幕、白色光斑、人物身份或不相关道具。参考文件缺失时说明并继续可行的文字提示词工作，不声称已查看或已传给模型。
+Character reference images serve identity continuity, and style reference images serve color, material, and narrative composition; do not copy subtitles, white light spots, character identities, or unrelated props from style screenshots. When a reference file is missing, explain this and continue with the feasible text-prompt work; do not claim it was viewed or passed to the model.
 
-## 生图工具衔接
+## Image Generation Tool Handoff
 
-风格不绑定服务商，不在此 Skill 保存密钥、接口地址或重复实现 API 客户端。仅当实际生图时，检查当前可用工具或生图 Skill，读取选定工具的使用说明，并以用户指定的模型和工具为先。
+Style is not tied to a vendor; do not save keys, endpoint addresses, or reimplement an API client in this Skill. Only when actually generating images, check the currently available tools or image-generation Skill, read the chosen tool's usage instructions, and prioritize the model and tool the user specified.
 
-实际生图前执行[正文画风参考图库](references/style-reference-library.md)的选图、查看、实际传图及首图核验流程。按已确认style_id选择同组参考，项目内保持主基准；记录参考ID、用途、实际传入状态和视觉核验结果。historical-realism暂无成品参考，按其文字规则执行或使用本期提供的匹配参考，不能混用其他画风充数。参考只约束视觉表现，不能替换本期人物身份、年龄、服饰和时代。只做分镜/提示词不因此触发生图。
+Before actual image generation, run the selection, viewing, actual passing, and first-image verification flow in the [Body-Style Reference Library](references/style-reference-library.md). Choose references from the same group per the confirmed style_id, keep the main benchmark within the project, and record the reference ID, purpose, actual passing status, and visual verification result. historical-realism has no finished references for now; follow its text rules or use a matching reference provided for this issue, and do not substitute another style's references. References only constrain visual presentation; they must not replace this issue's character identity, age, clothing, and era. Only doing storyboards/prompts does not trigger image generation for this reason.
 
-传入完整提示词、角色与风格参考图、画幅要求和镜号。使用选定接口实际支持的参数；不要把 9:16 文本要求当成任意原生像素尺寸均可请求，也不要自行假定模型别名。需要适配比例时优先保护人物、手部和关键物件，不拉伸图像；说明实际交付尺寸及必要裁切。
+Pass in the complete prompt, character and style reference images, frame requirements, and shot number. Use parameters the chosen interface actually supports; do not treat a 9:16 text requirement as freely requestable at any native pixel size, and do not assume model aliases on your own. When adapting ratios, prioritize protecting people, hands, and key objects; do not stretch the image, and state the actual delivered size and any necessary cropping.
 
-若 GPT Image 2 不可用或模型身份无法确认，交付已完成的提示词并说明限制，不悄悄更换模型。只生成用户选定的镜头和数量，不附带多套变体或反复抽卡。失败时报告原因与已有产物，不无限重试。
+If GPT Image 2 is unavailable or the model identity cannot be confirmed, deliver the completed prompts and explain the limitation; do not quietly switch models. Generate only the shots and quantities the user selected, with no extra variant sets or repeated draws. On failure, report the cause and the products already made; do not retry without limit.
 
-实际生图后打开图片，核对叙事、角色、手部、道具、光色、文字和裁切，特别核对服饰发式、建筑与器物是否符合该镜时代；对当前需求内明显的生成瑕疵最多做一次有针对性的修正，仍未达标则如实报告。输出结果路径与镜号，区分已生成、失败和仅完成提示词。未调用生图工具时，不声称图片已验证。
+After actual image generation, open the images and check narrative, characters, hands, props, light/color, text, and cropping, especially whether clothing, hairstyles, architecture, and objects fit the shot's era; for obvious generation flaws within the current scope, make at most one targeted correction, and if it still falls short, report honestly. Output the result paths with shot numbers, distinguishing generated, failed, and prompt-only items. When the image generation tool was not called, do not claim images were verified.
 
-## 交付形式
+## Delivery Format
 
-- 文稿拆镜：在用户指定文件夹写入 `STORYBOARD.md` 和 `STORYBOARD.json`，记录已选 `style_id`，包含全文覆盖表、原文锚点、逐镜时代与画面设计、独立完整提示词和预期图片名；具体格式与检查见 [文稿拆镜流程](references/manuscript-storyboard.md)。只完成文本产物时报告“分镜与提示词已完成，图片未生成”。
-- 单图提示词：一个可直接复制的中文文本代码块，块外用一句话说明判断出的朝代、时期及依据；必要假设明确标注。用户要求仅输出提示词时，将时代落实在提示词中即可。
-- 多镜提示词：按原镜号逐条交付完整提示词；用户要求 JSON 时遵循上游结构并追加 `prompt`，不重命名原字段。
-- 实际图片：展示可用图片并关联镜号、完整提示词和实际模型信息（以工具返回或已验证配置为准）；项目交付路径服从当前工作区约定。
-- 项目封面：在项目根目录或既有封面目录输出 `COVER_3x4.png` 与 `COVER_4x3.png`，记录标题文案、画幅、所参考的既有封面与实际生成方式。封面上的中文必须逐字核对；若生成模型不能可靠呈现中文，可在不改变画面主体的前提下以本地排版叠加标题，不能交付错字或乱码封面。
+- Manuscript storyboarding: write `STORYBOARD.md` and `STORYBOARD.json` in the user-specified folder, recording the chosen `style_id`, including a full-text coverage table, source-text anchors, per-shot era and image design, standalone complete prompts, and expected image names; see [Manuscript Storyboarding Flow](references/manuscript-storyboard.md) for the exact format and checks. When only text deliverables are complete, report "Storyboard and prompts are complete; images were not generated."
+- Single-image prompt: one copyable Chinese text code block, with one sentence outside the block stating the judged dynasty, period, and basis; label any necessary assumptions clearly. When the user asks for prompt output only, putting the era into the prompt is enough.
+- Multi-shot prompts: deliver complete prompts one by one per the original shot numbers; when the user requests JSON, follow the upstream structure and add `prompt` without renaming original fields.
+- Actual images: show the usable images with their shot numbers, complete prompts, and actual model information (based on tool output or verified configuration); the project delivery path follows the current workspace convention.
+- Project covers: output `COVER_3x4.png` and `COVER_4x3.png` in the project root or existing cover directory, recording the title copy, frame size, existing covers referenced, and the actual generation method. Chinese on covers must be checked character by character; if the generation model cannot render Chinese reliably, overlay the title with local typesetting without changing the main image, and never deliver a cover with wrong or garbled characters.
 
-## 交付前的对抗性检查
+## Pre-Delivery Adversarial Checks
 
-1. **时代判断错误或只贴标签**：是否把被引用的古人当成本镜时代，回忆套用主线年代，或只写“唐代”却沿用清代服装？检查每镜年代依据及具体可见要素，删除样例误带内容，时代地域与人物身份优先。
-2. **风格未选、串用或破坏可读性**：是否在新项目未选择时擅自默认写实风？是否将两套笔触要求混合、把漫画风画成 Q 版，或用黑暗黄滤镜代替厚涂？按已确认 style_id 检查画风，保留脸部与手部细节。
-3. **构图重复或互相矛盾**：是否把所有镜头改成桌前中景，或把日夜、特写与全景同时塞入一张图？保留上游机位，裁定单一场景逻辑。
-4. **多镜身份或动作漂移**：是否丢失角色 ID、参考图或同一个年龄阶段？是否把顺序动作误画成多肢体？锁定人物，并选取一个瞬间。
-5. **覆盖、分配或交付失真**：新拆分镜是否从第一句覆盖到最后一句，连续且未改写？总镜数是否符合要求？是否前面短镜过多、后面一两镜承载大量文稿？运行分配检查并修正，不把无遗漏当成均衡。只有文稿时不得伪造秒数；提示词必须独立可用，未生成图片或未核验模型不得称为已验证。
+1. **Wrong era judgment or label-only tagging**: Did you treat a quoted ancient figure as this shot's era, apply the main timeline's era to a flashback, or write only "Tang dynasty" while still using Qing clothing? Check each shot's era basis and concrete visible elements, remove wrongly carried sample content, and prioritize era, region, and character identity.
+2. **Style unchosen, mixed, or harming readability**: Did you default to the realism style on a new project without a choice? Did you mix two sets of brushwork requirements, draw the comic style as chibi, or replace impasto with a dark yellow filter? Check the style against the confirmed style_id and keep face and hand detail.
+3. **Repeated or contradictory composition**: Did you change every shot into a medium shot at a desk, or cram day and night, close-up and wide shot into one image? Keep the upstream camera position and settle on a single scene logic.
+4. **Identity or action drift across shots**: Did you lose the character ID, reference image, or the same age stage? Did you draw a sequence of actions as multiple limbs? Lock the character and pick one moment.
+5. **Coverage, allocation, or delivery distortion**: Does the newly split storyboard cover from the first sentence to the last, continuously and without rewriting? Does the total shot count match the requirement? Are there too many short shots early and one or two shots carrying a large stretch of manuscript at the end? Run the allocation check and fix it; do not treat "nothing missing" as "balanced". With only a manuscript, do not fabricate seconds; prompts must be independently usable, and images or models that were not generated or verified must not be called verified.
 
-## 扩展方式
+## Extension Methods
 
-- 修改已有风格：更新对应 `styles/` 文件；具体案例不自动升级为全局规则。
-- 新增画风：新增 `styles/<style-id>.md`，在本文件的风格选择表和输入约定中注册名称、别名和特征；扩展询问选项并保留已有 ID。没有明确选择时继续先问，不引入隐藏默认风格。
-- 新增分镜字段：在输入约定中增加可选字段，保留原字段兼容；不要求上游采用某个特定拆镜 Skill。
-- 扩展历史设定：更新 `references/period-context.md` 的识别与适配规则；确有需要时再增加带来源的朝代专题资料，不把影视服装印象写成硬性历史事实。
-- 新增生图渠道：复用对应工具或 Skill，保持画风内容与接口参数分离。暂不建立空适配器、脚本或无实际用途的目录。
-
-
-
+- Modifying an existing style: update the corresponding `styles/` file; specific cases do not automatically become global rules.
+- Adding a new style: add `styles/<style-id>.md`, register its name, aliases, and features in this file's style selection table and input conventions; extend the question options and keep existing IDs. Without an explicit choice, keep asking first; do not introduce a hidden default style.
+- Adding a new storyboard field: add an optional field in the input conventions, keeping original fields compatible; do not require the upstream to adopt a specific storyboarding Skill.
+- Extending historical settings: update the identification and adaptation rules in `references/period-context.md`; only add dynasty-specific material with sources when genuinely needed, and do not write film-and-TV costume impressions as hard historical facts.
+- Adding a new image generation channel: reuse the corresponding tool or Skill, keeping style content separate from interface parameters. Do not create empty adapters, scripts, or directories with no practical use.
