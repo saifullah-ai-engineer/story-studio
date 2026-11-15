@@ -1,51 +1,51 @@
-# 厚涂历史漫画风
+# Impasto Historical Comic Style
 
-风格 ID：`historical-comic`。中文选择名“厚涂历史漫画风”，接受用户简称“漫画风”。基于十二张历史叙事截图的视觉提炼；偏写实厚涂、历史图像小说的单幅叙事感，不将“漫画”理解为日系赛璐璐、Q 版或大眼萌系。此文件独立提供画风，不叠加历史写实风的细腻轻笔触约束。
+Style ID: `historical-comic`. The Chinese selection name is "厚涂历史漫画风", and the user shorthand "漫画风" is accepted. It was distilled visually from twelve screenshots of historical narrative; it is a realistic impasto, historical graphic-novel single-image narrative feel, and "comic" must not be read as Japanese cel animation, chibi, or big-eyed cute style. This file provides the style independently, without adding the historical realism style's fine light-brushwork constraint.
 
-## 正文成品参考
+## Finished Body-Text References
 
-包内附HC01—HC06六张成品，按[正文画风参考图库](../references/style-reference-library.md)选图、查看和传入。它们覆盖暗室、明亮室内、户外人物、细节、大场面和近现代环境；绘画材质可参考，人物、服饰和场景不作为本期既定内容。默认封面仍按封面规则，不把正文图替作封面排版参考。
+The package includes six finished works, HC01 to HC06, selected, viewed, and passed in per the [Body-Style Reference Library](../references/style-reference-library.md). They cover a dim interior, a bright interior, outdoor figures, details, a wide scene, and a modern-era environment; the painting material may be referenced, while people, clothing, and scenes are not this issue's established content. The default cover still follows the cover rules; do not use a body-text image as a cover layout reference instead.
 
-## 画面语言
+## Visual Language
 
-单幅完整的历史叙事厚涂插画，人物保持接近真实的身材比例，五官、手和动作可辨。用较明确的面部结构、眉眼、鼻梁和颧骨的块面转折增强神情，兼顾人物年龄与性别差异，不把所有人物画成同一张硬朗脸。
+A single complete historical narrative impasto illustration, with figures kept at near-real body proportions and readable facial features, hands, and actions. Use clear facial structure, with block turns of brow and eyes, nose bridge, and cheekbones to strengthen expression, while respecting differences in character age and gender, instead of drawing every figure with the same tough face.
 
-画面有明确的手绘厚涂感：不规则、破碎、交错的笔触塑造云层、山石、土地、木材与衣料；局部像干刷、擦扫和刮擦形成的颜料边缘，但并非真的在图片表面叠加划痕。以深色形体边界和块面明暗分隔人物，不使用整圈等粗黑描边、网点、气泡或多格漫画边框。
+The image has a clear hand-painted impasto feel: irregular, broken, interlaced brushstrokes shape clouds, rocks, earth, wood, and clothing; locally it looks like dry brushing, wiping, and scraping forming paint edges, but not as if scratches were really layered on the image surface. Dark figure boundaries and block light and shade separate the figures, without using uniform thick black outlines, halftone dots, speech bubbles, or multi-panel comic borders.
 
-脸、手、关键物件用较精细笔触保证阅读，背景可以更粗放；衣纹、旧金属与建筑纹理富有层次，不让笔触盖住五官。呈现绘画塑形而非照片加油画滤镜，不出现摄影级皮肤毛孔、光滑三维材质、塑料高光或游戏角色立绘。
+Faces, hands, and key objects use finer brushwork to guarantee readability, while the background may be looser; clothing patterns, old metal, and building textures are richly layered, without letting brushwork cover the facial features. It presents painted modeling, not a photo with an oil-painting filter, and must not show photographic-level skin pores, smooth 3D materials, plastic highlights, or game-character key art.
 
-## 配色与光照
+## Color and Lighting
 
-核心为旧金、赭黄、焦褐、烟黑与暗赭红的有限配色，暖色占主导，暗部允许带灰绿或冷灰形成微弱区别。亮部为明亮赭金或淡暖灰，暗部厚重但不大面积死黑；避免全图一层不透明棕黄滤镜。具体服装和器物的历史颜色优先，不能为了金褐调把所有服装改成黑金帝王袍。
+The core is a limited palette of old gold, ochre-yellow, burnt brown, smoky black, and dark ochre-red, with warm colors dominant and grey-green or cold grey allowed in dark areas for slight distinction. Bright areas are bright ochre-gold or pale warm grey, dark areas are heavy but not dead black over large areas; avoid covering the whole image with one opaque brown-yellow filter. The historical colors of specific clothing and objects take priority; do not change all clothing into black-and-gold emperor robes for the sake of the gold-brown tone.
 
-通过有方向的侧光、斜逆光、门外天光或合理灯火塑造雕塑般体积，让脸、手与主动作从背景分离。画面可有强烈而清楚的明暗分组，仍保留中间色层；不能用发光描边、魔法光束和过度 HDR 代替照明。
+Use directional side light, diagonal backlight, daylight from outside a door, or reasonable lamplight to shape sculptural volume, separating faces, hands, and the main action from the background. The image may have strong and clear light-and-shade grouping, while keeping middle color layers; do not use glowing outlines, magic light beams, or excessive HDR as a substitute for lighting.
 
-日景按情节选择：辽阔场景可用斜阳照亮尘土或云隙，室内可用门窗明暗形成纵深。夜景自然降低环境亮度，以局部灯火和灰冷暗部保留同一厚涂逻辑，不强制天空金黄。压迫感或温暖感由原文决定，不因参考多有战乱就把平静生活画成灾难。
+Choose daylight by the plot: a vast scene may use slanting sunlight lighting dust or cloud gaps, and an interior may use door and window light and shade to form depth. Night scenes naturally lower the environment brightness, keeping the same impasto logic with local lamplight and grey-cold dark areas, without forcing the sky golden. Oppression or warmth is decided by the source text; do not draw peaceful life as a disaster just because many references show warfare.
 
-## 构图与叙事
+## Composition and Narrative
 
-默认 9:16 竖构图。人物主导画面可用中近景的大体量人物与延伸到远方的场景建立尺度对比；低机位、侧面或四分之三侧面适合强调权力、决断或孤独，但保留上游明确机位，不把每镜变成帝王海报。
+Default 9:16 vertical composition. When figures lead the image, a medium-close shot with large-scale figures and a scene extending into the distance can build a scale contrast; a low angle, profile, or three-quarter profile suits emphasis on power, resolve, or solitude, but keep the upstream camera position when specified, and do not turn every shot into an emperor poster.
 
-需要场面感时，用斜向道路、旗帜、衣摆、骑队或建筑走向引导视线，以前景、中景、远景层层铺开。群像中的神情和动作各不相同，不复制队列。特写、女性人物、平民生活与室内静态场景同样使用本画风，不强塞骑兵、城楼、风暴天空或满地财宝。
+When a sense of scale is needed, use diagonal roads, flags, clothing hems, riding columns, or building lines to guide the eye, spreading foreground, midground, and background layer by layer. Expressions and actions differ across a crowd; do not copy the queue. Close-ups, female figures, civilian life, and quiet indoor scenes likewise use this style; do not force in cavalry, city towers, storm skies, or piles of treasure.
 
-云层和环境边缘可用大块破碎笔触形成流动感，动作场景用衣摆、尘土和倾斜方向表现运动，不加漫画速度线。画面繁密但有一个明确中心，小屏幕仍看得清主要人物和主事件。
+Clouds and environment edges may use large broken brushstrokes to form a flowing feel, and action scenes express movement through clothing hems, dust, and tilted directions, without adding comic speed lines. The image is dense but has one clear center, with the main figure and main event still legible on a small screen.
 
-## 历史与跨时代表达
+## History and Cross-Era Expression
 
-遵循 [时代识别规则](../references/period-context.md)。参考截图中的冕冠、金纹长袍、盔甲、桌案和钱币属于各自画面，不是画风配置，也不凭截图字幕认定这些物件已经考据准确。
+Follow the [Era Identification Rules](../references/period-context.md). The crowns, gold-patterned robes, armor, desks, and coins in the reference screenshots belong to their own images; they are not style settings, and the screenshot subtitles do not certify that these objects have been researched accurately.
 
-默认单一真实空间。参考中的古代人物、现代列车、城市和学生并置，是特定的跨时代叙事；只有原文明确需要古今对照或用户要求时才采用。使用蒙太奇时分别注明古代与现代区域，允许淡化的人物意象或软边叠化，确保它是有意的时间对照，不把现代物品画进普通古代事件。
+The default is a single real space. The ancient figures placed alongside a modern train, city, and students in the references are a specific cross-era narrative; use it only when the source text explicitly needs an old-versus-modern contrast or the user asks for it. When using montage, mark the ancient and modern regions separately, allowing faded figure imagery or soft-edged dissolves, ensuring it is a deliberate time contrast, without drawing modern objects into an ordinary ancient event.
 
-## 输出约束
+## Output Constraints
 
-无字幕、黄色描边文字、气泡、标识、水印和截图黑边。默认按主入口保留低干扰字幕区域，不留空白条。保留颜料颗粒与不规则笔触，不添加无依据的镜头光斑、漂浮颗粒、雪花和视频特效。用户明确要求文字或不同画幅时遵循其设置。
+No subtitles, yellow-outlined text, speech bubbles, logos, watermarks, or screenshot black bars. By default, keep the low-interference subtitle area per the main entry point, without leaving a blank bar. Keep paint granules and irregular brushwork; do not add unsupported lens flares, floating particles, snow, or video effects. When the user explicitly requests text or a different frame size, follow their settings.
 
-每镜完整提示词必须描述本风格的厚涂笔触、块面塑形、主要色调和该场景光照，不能只写“漫画风”或风格 ID。默认排除 Q 版、日系大眼、平涂赛璐璐、粗黑轮廓、气泡分格、塑料三维、照片滤镜感，以及实际不属于该时期的器物；不把原写实风的“无粗笔触”一并传入。
+Every shot's complete prompt must describe this style's impasto brushwork, block modeling, main tones, and the scene's lighting; do not write only "comic style" or the style ID. By default, exclude chibi, Japanese big eyes, flat cel coloring, thick black outlines, speech-bubble paneling, plastic 3D, a photo-filter feel, and objects that do not actually belong to that period; do not also pass in the original realism style's "no heavy brushwork".
 
-## 维护依据
+## Maintenance Basis
 
-来源观察与完整提示词示例见 [参考记录](../references/comic-reference.md)。包内成品已做视觉选样，原生成模型未核验，不能据此声称已在GPT Image 2或其他指定模型完成复现测试。新场景的生成反馈只用于有依据的窄范围调整，不自动改变另一个风格。
+The source observations and complete prompt example are in the [Reference Record](../references/comic-reference.md). The finished works in the package were visually sampled, and the original generation model was not verified, so this cannot be used to claim reproduction testing on GPT Image 2 or another specified model is complete. Generation feedback on new scenes is only for narrow, evidenced adjustments, and does not automatically change another style.
 
-## 口播节奏与画面可读性
+## Voiceover Pacing and Image Readability
 
-拆镜与配图统一执行 [配图与口播节奏](../references/narration-pacing.md)，不因画风改变图片密度。短停留画面只保留一个一眼可辨的主体与动作；较长画面可增加与原文相关的空间层次，但不能堆入尚未讲到的事件。厚涂笔触不能遮盖脸、手和关键动作；不要把漫画理解成连续闪切或一句多图。
+Storyboarding and illustration uniformly follow [Illustration and Voiceover Pacing](../references/narration-pacing.md), without changing image density by style. A short-dwell image keeps only one subject and action recognizable at a glance; a longer image may add spatial layers related to the source text, but must not pile in events not yet spoken. Impasto brushwork must not cover faces, hands, and key actions; do not read "comic" as continuous quick cuts or multiple images per sentence.

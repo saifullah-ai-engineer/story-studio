@@ -1,57 +1,57 @@
-# 历史写实叙事风格
+# Historical Realism Narrative Style
 
-风格 ID：`historical-realism`。以下是需要在每张提示词中具体落实的视觉规则，不是必须逐字粘贴的前缀。题材、时代、人物、景别和用户明确修改优先；默认不是固定清代题材。
+Style ID: `historical-realism`. The following are visual rules to be grounded concretely in every prompt, not a prefix to be pasted word for word. Subject, era, people, shot size, and the user's explicit changes take priority; the default is not a fixed Qing dynasty subject.
 
-## 正文参考状态
+## Body-Text Reference Status
 
-当前包内尚无经分类核验的本画风正文成品。按本文件规则执行，可使用本期用户提供的匹配参考；不将厚涂漫画图、黑白图或封面图冒充本风格基准。参考图片的实际查看、传入和记录方法见[正文画风参考图库](../references/style-reference-library.md)。缺少内置参考不阻断可行的提示词或生图工作，但不能声称已传入内置写实参考。
+The current package has no categorized and verified finished body-text work in this style yet. Follow this file's rules, and matching references provided by the user for this issue may be used; do not pass off impasto comic images, black-and-white images, or cover images as this style's benchmark. The method for actually viewing, passing in, and recording reference images is in the [Body-Style Reference Library](../references/style-reference-library.md). Missing built-in references does not block feasible prompt or image work, but it cannot be claimed that built-in realism references were passed in.
 
-## 核心视觉
+## Core Visuals
 
-严肃历史题材的写实叙事插画，具有历史电影剧照的真实人物、空间和光照，同时保留古典写实油画的细腻色层与柔和边缘。人物和关键物件写实，远景略带绘画感。表面哑光，细节丰富但不过分锐化，不出现粗重油画笔触、塑料皮肤、光滑三维渲染或游戏宣传画质感。
+A serious historical subject's realistic narrative illustration, with the real people, space, and lighting of a historical film still, while keeping the fine color layers and soft edges of classical realistic oil painting. People and key objects are realistic, with the distant view slightly painterly. The surface is matte, rich in detail but not over-sharpened, with no heavy oil-painting brushstrokes, plastic skin, smooth 3D rendering, or game key-art texture.
 
-面容表现自然骨骼、年龄纹理、胡须和皮肤细节；表情克制，通过视线、姿势、手势和他人的反应讲故事。人物正在经历事件，不面向镜头摆拍。衣料有重量、褶皱与适合身份的磨损；只使用该时期与地域可用的织物、书写载体等材料，分别表现木、竹、布帛、纸、皮革或金属等实际入镜物件的质感，不将棉布和纸账册默认为所有时代的标配。旧物不等于所有人物衣衫破败，也不等于一切物件均为古董。
+Faces show natural bone structure, age texture, beards, and skin detail; expressions are restrained, telling the story through gaze, posture, gestures, and other people's reactions. People are in the middle of events, not posing at the camera. Clothing has weight, folds, and wear suited to the identity; only fabrics, writing media, and other materials available in that period and region are used, showing the distinct textures of wood, bamboo, cloth and silk, paper, leather, or metal objects actually in frame, without defaulting to cotton cloth and paper ledgers as the standard for every era. Old things do not mean every person's clothes are ragged, and do not mean every object is an antique.
 
-## 空间与构图
+## Space and Composition
 
-默认 9:16 纵向纵深构图，以明确主事件组织画面。适合中广景时，前景用少量相关物件建立现场感，中景承载人物动作，远景交代环境或事件规模。前景可轻微虚化，背景仍可辨识，避免景深过浅和广角畸变。
+Default 9:16 vertical depth composition, organizing the image around a clear main event. When a medium-wide shot fits, use a few related objects in the foreground to establish the scene, let the midground carry the people's actions, and let the background explain the environment or the event's scale. The foreground may be slightly soft, with the background still recognizable, avoiding overly shallow depth of field and wide-angle distortion.
 
-可以利用门窗、立柱、帐篷、城门作为自然取景框，但仅在场景合理时使用。道路、队列、山势可建立纵深。人物主导、双人互动、群像议事、行军远景、特写与环境空镜按分镜需求选择，不一律安排桌面与门框。
+Doors and windows, columns, tents, and city gates may be used as natural framing, but only when the scene makes it reasonable. Roads, queues, and mountain shapes can build depth. Figure-led shots, two-person interaction, crowd deliberation, marching vistas, close-ups, and environmental empty shots are chosen per the storyboard's needs, without always arranging a desk and a door frame.
 
-群像有不同姿势、朝向和反应，不整齐复制。优先保证一个主事件清楚，避免把一句口播涉及的所有意象堆进一张图。
+Crowds have different poses, orientations, and reactions, without neat copying. First guarantee one main event is clear, avoiding cramming every image from one voiceover sentence into a single picture.
 
-## 色彩与照明
+## Color and Lighting
 
-低至中低饱和度，以烟灰、炭黑、灰褐、旧纸赭黄和褪色靛青为基础，少量暗金用于符合情节的旧刺绣、铜器或局部光线。根据地域与场景引入必要的自然色，不全图套黄褐滤镜。
+Low to low-medium saturation, based on smoky grey, charcoal black, grey-brown, old-paper ochre-yellow, and faded indigo, with a little dark gold for old embroidery, bronze, or local light that fits the plot. Bring in necessary natural colors by region and scene, without applying a yellow-brown filter to the whole image.
 
-- 日景：阴天散射光、门窗侧光或低角度日光，暖灰亮部与偏冷暗部形成克制区别。不是每张都阴暗，可随白天环境提高整体明度。
-- 夜景：灰蓝环境光与局部暖灯火；脸、手和重要物件受光明确。
-- 暗部厚重但保留细节，亮部柔和不过曝。尘雾仅用于有依据的环境和远近层次，不遮住主体。避免过度 HDR、炫光和夸张轮廓光。
+- Daylight: overcast scattered light, side light from doors and windows, or low-angle sunlight, with warm-grey bright areas and cooler dark areas forming a restrained distinction. Not every image is gloomy; overall brightness may rise with the daytime environment.
+- Night: grey-blue ambient light with local warm lamplight; faces, hands, and important objects are clearly lit.
+- Dark areas are heavy but keep detail, and bright areas are soft without overexposure. Dust and mist are only for evidenced environments and near-far layering, without covering the main subject. Avoid excessive HDR, glare, and exaggerated rim light.
 
-## 真实空间与蒙太奇
+## Real Space and Montage
 
-默认单一真实空间，统一透视与光照，不出现悬浮文件、人物幻影或第二场景。
+Default is a single real space, with unified perspective and lighting, and no floating documents, figure phantoms, or second scenes.
 
-仅在上游指定或叙事明确需要象征叠化时采用历史蒙太奇：保留一个完整主场景，在上部远景、天空或建筑开口融入一个低对比次要意象，边缘通过薄雾与相近色调衔接。它是叙事性叠化，不是假装两个地点物理相连；不分屏，不加拼贴边框，不让多个意象争夺中心。
+Use historical montage only when the upstream specifies it or the narrative clearly needs a symbolic dissolve: keep one complete main scene, and blend one low-contrast secondary image into the upper distance, sky, or a building opening, joining the edges with thin mist and similar tones. It is a narrative dissolve, not a claim that two places are physically connected; no split screen, no collage borders, and no multiple images competing for the center.
 
-## 画面表面与字幕
+## Image Surface and Subtitles
 
-轻微细腻颗粒、自然旧物质感和克制边缘暗化，主体始终清楚。默认无大面积划痕、污渍、雪花、白色漂浮光斑和重度暗角。参考截图中的这些元素可能包含视频叠加，不当成底图必需特征。
+Slight fine grain, natural old-material texture, and restrained edge darkening, with the main subject always clear. By default, no large areas of scratches, stains, snow, white floating light spots, or heavy vignetting. These elements in reference screenshots may include video overlays, and must not be treated as required base-image features.
 
-默认不生成字幕、标题、水印、标志或边框。用于短视频且上游未另指定时，画面下方约三分之一处安排相对低干扰内容，关键面部和手部避开该区域；不留白条，不挖空环境。明确要求文字时按用户文本与位置执行，不机械套用无文字规则。
+By default, no subtitles, titles, watermarks, logos, or borders are generated. When used for short video and the upstream has not specified otherwise, arrange relatively low-interference content in roughly the lower third of the image, keeping key faces and hands out of that region; do not leave a white bar or hollow out the environment. When text is explicitly requested, follow the user's text and position, without mechanically applying the no-text rule.
 
-## 历史内容约束
+## Historical Content Constraints
 
-朝代由文稿所描绘的事件决定，不由参考图或本风格决定。生成前遵循 [时代识别与外观适配](../references/period-context.md)，将已判定年代落实到具体外观；不能仅把提示词标题从“清代”改成另一朝代。角色面容连续性与绘画风格可以保留，发式、服装形制、家具和器物必须随实际时期调整。颜色体系不得覆盖有依据的服色和材质，只对其做整体饱和度与照明处理。
+The dynasty is decided by the events the manuscript depicts, not by the reference images or this style. Before generating, follow [Era Identification and Appearance Adaptation](../references/period-context.md), grounding the judged era in concrete appearance; do not merely change the prompt title from "Qing dynasty" to another dynasty. Character face continuity and painting style may be kept, but hairstyles, clothing forms, furniture, and objects must adjust with the actual period. The color system must not override evidenced clothing colors and materials; it only applies overall saturation and lighting treatment to them.
 
-服饰、发式、建筑、武器和交通服从指定年代与地域；图像是历史题材创作，不因画面写实就称为史料复原。没有来源时不杜撰可读文献内容、精确历史地图边界或具体人物史实。需要准确地图时使用用户提供或已核验的地图资料；普通背景纸张可表现模糊墨迹，不能把现代行政区划装饰性地套进古代。
+Clothing, hairstyles, architecture, weapons, and transport follow the specified era and region; the image is a historical-subject creation, and must not be called a historical source reconstruction just because the image is realistic. Without a source, do not invent readable document content, precise historical map boundaries, or specific historical facts about people. When an accurate map is needed, use a map the user provided or one already verified; ordinary background paper may show blurred ink marks, but modern administrative divisions must not be decoratively applied to antiquity.
 
-## 提示词组合
+## Prompt Combination
 
-按当前镜头选取并写实化：主题与事件瞬间 → 人物和动作 → 场景与空间 → 核心材质风格 → 当时光色 → 景别与视觉焦点 → 画幅、字幕与必要排除项。
+Select and realistically render per the current shot: theme and event moment, then people and action, then scene and space, then core material style, then period light and color, then shot size and visual focus, then frame size, subtitles, and necessary exclusions.
 
-最终提示词只有当前镜头的明确选择，不残留填空符、日夜二选一、未选择的构图或“沿用上一张风格”。保持内容的可观察性，比如“打开的钱箱底部只有几枚银锭”优于仅写“资金紧张”。
+The final prompt holds only the current shot's definite choices, with no leftover fill-in markers, unchosen day/night options, unchosen compositions, or "same style as the previous image". Keep the content observable; for example, "only a few ingots at the bottom of the open money chest" is better than only writing "funds are tight".
 
-## 口播节奏与画面可读性
+## Voiceover Pacing and Image Readability
 
-拆镜与配图统一执行 [配图与口播节奏](../references/narration-pacing.md)，不因画风改变图片密度。短停留画面只保留一个一眼可辨的主体与动作；较长画面可增加与原文相关的空间层次，但不能堆入尚未讲到的事件。写实细节服从主体，避免短镜里用拥挤群像要求观众寻找重点。
+Storyboarding and illustration uniformly follow [Illustration and Voiceover Pacing](../references/narration-pacing.md), without changing image density by style. A short-dwell image keeps only one subject and action recognizable at a glance; a longer image may add spatial layers related to the source text, but must not pile in events not yet spoken. Realistic detail serves the main subject; avoid asking viewers to find the focus in a crowded crowd in a short shot.

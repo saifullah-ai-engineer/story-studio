@@ -1,55 +1,55 @@
-# 黑白叙事风
+# Monochrome Narrative Style
 
-风格 ID：`monochrome-narrative`。别名：黑白叙事、黑白纪实叙事风。来自八张人物叙事视频截图的视觉提炼，另附六张正文成品参考；原生成模型未核验，不能据此声称指定模型的复现效果已验证。截图与成品只提供视觉参考，字幕、人物身份与情节不作为史实依据。
+Style ID: `monochrome-narrative`. Aliases: monochrome narrative, monochrome documentary narrative style. It comes from visual distillation of eight screenshots of character narrative video, with six more finished body-text references included; the original generation model was not verified, so this cannot be used to claim reproduction on a specified model is verified. Screenshots and finished works only provide visual reference; subtitles, character identities, and plots are not historical evidence.
 
-## 正文成品参考
+## Finished Body-Text References
 
-包内附MN01—MN06六张成品，按[正文画风参考图库](../references/style-reference-library.md)选图、查看和传入。覆盖窗光、低照度室外、明亮工程环境、室内群像、无人海面及车间人物；光影与摄影语言可以参考，具体人物身份仍使用本期已核验的分期资料。参考原件的少量RGB残留色差、文字与图纸不作为生成目标，正文仍要求纯黑白。不要混入漫画组参考或带字封面。
+The package includes six finished works, MN01 to MN06, selected, viewed, and passed in per the [Body-Style Reference Library](../references/style-reference-library.md). They cover window light, low-light exteriors, a bright engineering environment, an indoor crowd scene, an empty seascape, and workshop figures; the lighting and photographic language may be referenced, while specific character identities still use this issue's verified staged material. The small RGB residual color differences, text, and drawings in the reference originals are not generation targets; body text still requires pure black and white. Do not mix in comic-group references or titled covers.
 
-## 核心视觉
+## Core Visuals
 
-黑白历史电影剧照质感，摄影写实，以自然人物、真实空间和克制动作讲述人物经历。纯黑白灰阶，不带暖褐、泛黄、蓝色偏色，不使用油画笔触、漫画线稿或三维渲染。黑位沉稳，中间调丰富，亮部柔和，脸部、手部和深色衣料保留层次；允许明亮日景，不把悲剧等同于全图压黑。
+Black-and-white historical film still texture, photographic realism, telling a person's experience through natural people, real space, and restrained action. Pure black-and-white grey scale, with no warm brown, yellowing, or blue casts, and no oil-painting brushwork, comic line art, or 3D rendering. Blacks are steady, midtones are rich, bright areas are soft, and faces, hands, and dark clothing keep their layers; bright daylight scenes are allowed, and tragedy must not be equated with pressing the whole image black.
 
-保留真实骨相、年龄纹理、自然皮肤和不对称细节，避免统一网红脸、美颜磨皮和现代时尚妆容。服饰、发式、建筑、纸笔、家具和奖杯等必须符合镜头年代、地域、身份与具体事件；旧时代不等于所有东西破败。近现代人物优先执行 [真实人物分期参考流程](../references/person-photo-reference.md)。本风格也可用于其他时期，但不能伪称当时存在摄影资料。
+Keep real bone structure, age texture, natural skin, and asymmetric details, avoiding uniform influencer faces, beautified smoothed skin, and modern fashion makeup. Clothing, hairstyles, architecture, paper and pens, furniture, trophies, and other items must fit the shot's era, region, identity, and specific event; old eras do not mean everything is broken down. For modern-era people, first follow the [Real-Person Staged Photo Reference Flow](../references/person-photo-reference.md). This style may also be used for other periods, but must not falsely claim photographic material existed at the time.
 
-## 逐镜年代与现实一致
+## Per-Shot Era and Realism Consistency
 
-必须执行 [时代识别与人物传记逐镜现实约束](../references/period-context.md)。先从全文判断每个事件的时期、地域、人物年龄阶段、身份与场合，再选择该镜的面容、衣着、发式、妆容、建筑与器物。黑白只是摄影表现方式，不默认民国、旧上海或破败环境；同一人物跨年代时保留身份但更新年龄与外观，不把青年脸用到晚年，也不把晚年衣着用于童年。风格截图仅供光影构图参考，不能覆盖真实人物和时代依据。
+You must follow the [Era Identification and Per-Shot Realism Constraints for Character Biographies](../references/period-context.md). First judge each event's period, region, character age stage, identity, and occasion from the whole text, then choose the shot's face, clothing, hairstyle, makeup, architecture, and objects. Black and white is only a photographic manner of depiction; it does not default to the Republic of China era, old Shanghai, or a broken-down environment. When the same person crosses eras, keep the identity but update age and appearance; do not use a young face in old age, and do not use old-age clothing for childhood. Style screenshots only serve as lighting and composition reference, and cannot override real people and era evidence.
 
-每镜完整提示词落实具体可见外观与环境，生图前核对分期参考、生成后核对实际结果；资料不足的部分明确标记推测，不将 AI 情景重现称为史料照片。该规则同样适用于根据新文案拆镜、已有分镜写提示词和实际生图。
+Every shot's complete prompt grounds the concrete visible appearance and environment; check the staged references before generating and check the actual result after generating. Mark parts with insufficient material as inferences, and do not call an AI scene reconstruction a historical source photo. This rule applies equally to storyboarding from new copy, writing prompts for an existing storyboard, and actual image generation.
 
-## 光线、空间与镜头
+## Light, Space, and Camera
 
-优先自然窗光、侧光、阴天漫射光；舞台或颁奖场景按现场照明处理。单一连贯空间，合理透视，适度景深，背景交代环境但不抢主体。细腻胶片颗粒、轻微边缘暗化可用，避免厚重划痕、漂浮白点、炫光、过曝和过度锐化。
+Prefer natural window light, side light, and overcast diffused light; stage or award scenes are handled per the venue lighting. A single coherent space, reasonable perspective, moderate depth of field, with the background explaining the environment without stealing the subject. Fine film grain and slight edge darkening are usable; avoid heavy scratches, floating white dots, glare, overexposure, and excessive sharpening.
 
-默认 9:16 竖版。按叙事选择人物近景、双人对话中景、舞台全身远景、隔窗背影或环境空镜，不固定机位。门窗框景仅在场景合理时采用。一个镜头表达一个可见瞬间，用视线、手势、距离和物件体现关系；不把抽象评价变成夸张哭喊。允许传记肖像看向镜头，事件镜头以自然行动为主。
+Default 9:16 vertical. Choose by narrative among a character close-up, a two-person dialogue medium shot, a stage full-body distant shot, a back view through a window, or an environmental empty shot, without fixing the camera position. Use door and window framing only when the scene makes it reasonable. One shot expresses one visible moment, showing relationships through gaze, gestures, distance, and objects; do not turn an abstract judgment into exaggerated wailing. Biographical portraits may look at the camera; event shots mainly use natural action.
 
-## 底图与封面
+## Base Images and Covers
 
-明确要求本画风封面时，可采用 [赵一曼参考图](../assets/cover-reference-zhao-yiman-3x4.png) 的整体文字风格，并执行 [黑白金红封面规则](../references/monochrome-cover-design.md)。需要实际打开并传入参考图，参考榜书字形、笔势、飞白、金箔肌理及金红层级；人物、文案、背景根据本期全文重新设计。该规则只适用于明确要求的封面。
+When this style's cover is explicitly requested, the overall text style of the [Zhao Yiman Reference Image](../assets/cover-reference-zhao-yiman-3x4.png) may be used, following the [Monochrome Gold-Red Cover Rules](../references/monochrome-cover-design.md). The reference image must actually be opened and passed in, referencing the large-character calligraphy forms, brush rhythm, flying white, gold-leaf texture, and gold-red hierarchy; people, copy, and background are redesigned from this issue's full text. These rules apply only to explicitly requested covers.
 
-底图无字幕、标题、标志、水印、播放三角、边框；不复制截图中的黄色文字、右上角标识或浮尘特效。下方约四分之一至三分之一尽量低干扰，面部和关键手部避开字幕覆盖位置，不挖空或加白条。
+Base images have no subtitles, titles, logos, watermarks, play triangles, or borders; do not copy the yellow text, upper-right logo, or floating dust effects from the screenshots. Keep roughly the lower quarter to third as low interference as possible, with faces and key hands away from subtitle coverage positions, without hollowing out or adding white bars.
 
-本画风默认只输出 9:16 竖屏纯图，不添加任何文字、字体、标题或字幕，不自动额外生成封面。本条覆盖主入口的默认两张带字封面规则；仅用户后续明确要求封面、文字或其他比例时才按新要求执行。
+By default, this style outputs only 9:16 vertical pure images, adding no text, fonts, titles, or subtitles of any kind, and does not automatically generate an extra cover. This rule overrides the main entry point's default two titled covers; only when the user later explicitly requests a cover, text, or another ratio is the new request followed.
 
-技能附有常香玉封面参考，用于黑白人物、金色榜书、朱红重点字和烟墨融合效果。明确要求 3:4 或 4:3 封面时，执行 [已确认封面规则](../references/monochrome-cover-design.md)。封面允许金红文字和叙事蒙太奇；正文底图仍保持无字纯黑白，不自动附送封面。
+The skill includes a Chang Xiangyu cover reference, for black-and-white figures, gold large-character calligraphy, cinnabar-red emphasis characters, and smoky-ink blending. When a 3:4 or 4:3 cover is explicitly requested, follow the [Confirmed Cover Rules](../references/monochrome-cover-design.md). Covers allow gold-red text and narrative montage; body-text base images still stay text-free and pure black and white, with no cover added automatically.
 
-## 提示词组织
+## Prompt Organization
 
-每镜独立写清：事件年代与地点 → 角色及年龄阶段 → 已核验人物参考图及其用途 → 一个动作与人物关系 → 时代环境 → 黑白电影摄影、光线和灰阶 → 景别与构图 → 画幅与排除项。人物照片约束骨相和阶段外观，风格截图只约束摄影语言；若冲突，以真实人物参考和史实为先。文件路径或名字不等于图片已传入。
+Write each shot independently and clearly: event era and place, then the character and age stage, then verified character reference images and their uses, then one action and character relationship, then the period environment, then black-and-white cinematic photography, lighting, and grey scale, then shot size and composition, then frame size and exclusions. Character photos constrain bone structure and stage appearance, and style screenshots only constrain photographic language; when they conflict, real-person references and historical fact come first. A file path or name does not equal an image already passed in.
 
-可复用的风格段（与具体镜头内容合并，不能单独代替完整提示词）：
+A reusable style passage (to be merged with the specific shot's content; it cannot replace a complete prompt on its own):
 
-> 黑白人物传记电影剧照，摄影写实，纯黑白灰阶，丰富细腻的中间调，沉稳但保留细节的暗部，柔和不过曝的亮部。自然面容与真实年龄纹理，克制的表情和动作，布料、木器与空间具有真实质感，合理透视与适度景深，轻微胶片颗粒。9:16 竖版，无字幕、标题、水印、标志、播放按钮和边框，无油画笔触、漫画线条、美颜塑料皮肤、重度暗角或漂浮白点。
+> Black-and-white character biography film still, photographic realism, pure black-and-white grey scale, rich and fine midtones, steady dark areas that keep detail, soft bright areas without overexposure. Natural faces with real age texture, restrained expressions and actions, real texture in cloth, wood, and space, reasonable perspective and moderate depth of field, slight film grain. 9:16 vertical, no subtitles, titles, watermarks, logos, play buttons, or borders, no oil-painting brushwork, comic lines, beautified plastic skin, heavy vignetting, or floating white dots.
 
-## 交付前检查
+## Pre-Delivery Checks
 
-1. 是否把黑白做成全图死黑或泛黄？检查脸、手、衣料和中间调。
-2. 是否复制字幕、播放按钮、标志或参考图剧情？剔除界面元素，事实另行核验。
-3. 是否套用年轻脸到所有年代，或让风格参考覆盖人物身份？核对每镜时期与真实照片。
-4. 是否时代道具、奖杯或服装无来源却宣称精确复原？记录不确定性并修正。
-5. 是否仅凭提示词就声称相似度或生成效果已验证？只有实际看过结果并对照参考后才能报告视觉检查结果，不能保证百分之百还原。
+1. Was the black and white made dead black across the whole image, or yellowed? Check faces, hands, clothing, and midtones.
+2. Were subtitles, play buttons, logos, or reference-image plots copied? Remove interface elements, and verify facts separately.
+3. Was a young face applied to every era, or did style references override character identity? Check each shot's period against the real photos.
+4. Were era props, trophies, or clothing claimed as precise reconstructions without a source? Record the uncertainty and fix it.
+5. Was similarity or generation quality claimed as verified from the prompt alone? Visual check results may only be reported after actually viewing the result and comparing it against the reference; one hundred percent reproduction cannot be guaranteed.
 
-## 口播节奏与画面可读性
+## Voiceover Pacing and Image Readability
 
-拆镜与配图统一执行 [配图与口播节奏](../references/narration-pacing.md)，不因画风改变图片密度。短停留画面只保留一个一眼可辨的主体与动作；较长画面可增加与原文相关的空间层次，但不能堆入尚未讲到的事件。用灰阶层次分离人物与背景；克制叙事不等于长段口播只放一张肖像。
+Storyboarding and illustration uniformly follow [Illustration and Voiceover Pacing](../references/narration-pacing.md), without changing image density by style. A short-dwell image keeps only one subject and action recognizable at a glance; a longer image may add spatial layers related to the source text, but must not pile in events not yet spoken. Use grey-scale layers to separate people from the background; restrained narrative does not mean one portrait carries a long stretch of voiceover.
